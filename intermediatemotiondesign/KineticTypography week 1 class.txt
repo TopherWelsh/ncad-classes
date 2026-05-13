@@ -1,0 +1,131 @@
+<div style="max-width: 1000px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; line-height: 1.6; color: #333;">
+
+    <!-- 🎬 HERO HEADER -->
+    <div style="background: linear-gradient(145deg, #1a1a1a, #050505); padding: 50px 20px; border-radius: 12px; text-align: center; border: 1px solid #333; margin-bottom: 30px;">
+        <h2 style="margin: 0; font-size: 1.2em; color: #00c6ff; text-transform: uppercase; letter-spacing: 3px;">Masterclass Series</h2>
+        <h1 style="margin: 10px 0; font-size: 3.5em; background: linear-gradient(to right, #00c6ff, #0072ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✍️ Kinetic Typography</h1>
+        <p style="color: #aaaaaa; max-width: 700px; margin: 15px auto 0 auto; font-size: 1.2em;">Mastering the art of "Moving Language." Learn how to transform static text into a living, breathing performance.</p>
+    </div>
+
+    <!-- 📍 STUDIO ACCESS & RESOURCES -->
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 30px;">
+        <div style="flex: 1; min-width: 200px; background: #5865F2; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>💬 <a href="https://discord.gg/HESQKd4Nzf" style="color: white; text-decoration: none;">NCAD Discord</a></strong>
+        </div>
+        <div style="flex: 1; min-width: 200px; background: #34A853; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>📂 <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" style="color: white; text-decoration: none;">Class Google Drive</a></strong>
+        </div>
+        <div style="flex: 1; min-width: 200px; background: #ea4335; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>📄 <a href="https://drive.google.com/file/d/1ULNN0CcZLrGHWXnJyxXd2-7NFFB0DfcK/view?usp=drive_link" style="color: white; text-decoration: none;">Storyboard Template</a></strong>
+        </div>
+    </div>
+
+    <!-- 🧠 THE CORE PHILOSOPHY: THE GAP -->
+    <div style="background: #e3f2fd; padding: 30px; border-radius: 10px; margin-bottom: 40px; border-left: 8px solid #0277bd;">
+        <h3 style="margin-top: 0; color: #0277bd; font-size: 1.5em;">🎭 Closing "The Gap" (Ira Glass Philosophy)</h3>
+        <p style="margin-bottom: 15px; color: #01579b; font-size: 1.1em;">Most beginners get into motion design because they have <strong>Good Taste</strong>. But for the first few years, your work doesn't match your taste. There is a "Gap."</p>
+        <p style="margin: 0; color: #01579b;"><strong>The Solution:</strong> The only way to close the gap is to do a <em>volume of work</em>. You must fight your way through the phase where your work disappoints you. <strong>Put yourself on a deadline</strong> so that every week you finish one project. Consistency is the only bridge to mastery.</p>
+    </div>
+
+    <!-- 🏗️ THE PROFESSIONAL GALLERY -->
+    <h2 style="color: #888; font-size: 14px; text-transform: uppercase; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px;">1. Professional Examples (The Benchmark)</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; margin-bottom: 40px;">
+        <!-- 3-Column Video Grid -->
+        <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 10px; border-radius: 10px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/_PU49-_qQoI" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+        <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 10px; border-radius: 10px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/wF8f8w6HPoo" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+        <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 10px; border-radius: 10px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/rNxoLJy3m3s" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+        <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 10px; border-radius: 10px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/Sum6A2enC6s" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+        <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 10px; border-radius: 10px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/8fsH8qxDDY4" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+        <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 10px; border-radius: 10px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/-yWuIDyC29o" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+    </div>
+
+    <!-- 🏗️ THE PIXFLOW NUGGETS -->
+    <h2 style="color: #888; font-size: 14px; text-transform: uppercase; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px;">2. Core Theory: The Four Foundations</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; margin-bottom: 40px;">
+        <div style="flex: 1; min-width: 450px; background: #f8f9fa; padding: 25px; border-radius: 12px; border-left: 10px solid #1a1a1a;">
+             <h3 style="margin-top: 0;">🛠️ Making it "Expensive" (Studio Tips)</h3>
+             <p>Expensive edits aren't about doing <em>more</em>; they are about doing <em>less but better</em>. Avoid packing the screen with too many effects—this looks cheap.</p>
+             <ul style="padding-left: 20px;">
+                <li><strong>Font Psychology:</strong> The fastest way to look cheap is the wrong font. Use bold/heavy for strength and script for softness.</li>
+                <li><strong>Cinematic Polish:</strong> Use adjustment layers for subtle film grain, halation, and S-curve color grading.</li>
+                <li><strong>Intentional Sound:</strong> Every movement needs a sonic anchor. Add "clicks" for UI movements and "wooshes" for transitions.</li>
+             </ul>
+        </div>
+        <div style="flex: 1; min-width: 400px; background: #1a1a1a; color: white; padding: 25px; border-radius: 12px;">
+             <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; margin-bottom: 15px;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/fAYVz0Oe3bE" frameborder="0" allowfullscreen></iframe></div>
+             <strong style="color: #00c6ff;">Key Nugget:</strong> "Movement should never be random. It must reflect the emotion or action described. Growing text evokes excitement; shrinking suggests diminishing importance."
+        </div>
+    </div>
+
+    <!-- 🏗️ ADVANCED TUTORIALS GRID -->
+    <h2 style="color: #888; font-size: 14px; text-transform: uppercase; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px;">3. Technical Deep Dives (Workflows)</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; margin-bottom: 40px;">
+        
+        <!-- Tutorial 1: Variable Fonts & Expressions -->
+        <div style="flex: 1; min-width: 450px; background: #f1f3f5; padding: 25px; border-radius: 12px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; margin-bottom: 15px; background: #000;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/lzQwR5Gaz1A" frameborder="0" allowfullscreen></iframe></div>
+            <h4 style="margin-top: 0;">🧪 The Expression Workflow</h4>
+            <p style="font-size: 0.9em;"><strong>The Nugget:</strong> Use After Effects expressions to cycle through <strong>variable font weights</strong>. By parenting a slider control to the "Source Text" of individual letters, you can create a "wave" effect where text morphs from Thin to Black in a single fluid motion.</p>
+            <p style="font-size: 0.9em;"><strong>Depth Trick:</strong> Use <em>CC Spotlight</em> for a light/shadow falloff gradience, giving your text a 3D physical presence on the stage.</p>
+        </div>
+
+        <!-- Tutorial 2: Path Manipulation -->
+        <div style="flex: 1; min-width: 450px; background: #f1f3f5; padding: 25px; border-radius: 12px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; margin-bottom: 15px; background: #000;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/h5F3QM72PY0" frameborder="0" allowfullscreen></iframe></div>
+            <h4 style="margin-top: 0;">📐 Per-Character 3D & Paths</h4>
+            <p style="font-size: 0.9em;"><strong>The Nugget:</strong> Convert text to shapes (Right-click > Create Shapes from Text) to manipulate the actual paths. You can stretch points of a letter over time to create "Stretchy Type."</p>
+            <p style="font-size: 0.9em;"><strong>The Rule:</strong> Strategic selection is key. Straight letters like "D" or "E" stretch beautifully; organic curves like "S" look messy when dragged. <em>Plan your words around your geometry.</em></p>
+        </div>
+    </div>
+
+    <!-- 💡 MASTERCLASS TIPS -->
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+        <div style="flex: 1; min-width: 450px; background-color: #fffde7; padding: 25px 25px 25px 60px; border: 2px solid #fbc02d; border-radius: 12px; position: relative;">
+            <span style="position: absolute; top: 25px; left: 20px; font-size: 1.8em;">💡</span>
+            <strong style="color: #f57f17; text-transform: uppercase; font-size: 0.9em; display: block; margin-bottom: 5px;">Pro-Tip: Track Mattes & Masks</strong>
+            <p style="margin: 0; color: #3e2723;">Use <strong>Track Mattes</strong> to carve out pieces of one layer to expose another. This is how you make text "snake" behind objects or appear as if it's being "sucked up" by a pipe. <em>Static masks + moving text = Professional depth.</em></p>
+        </div>
+        <div style="flex: 1; min-width: 450px; background-color: #e8f5e9; padding: 25px 25px 25px 60px; border: 2px solid #2e7d32; border-radius: 12px; position: relative;">
+            <span style="position: absolute; top: 25px; left: 20px; font-size: 1.8em;">🛠️</span>
+            <strong style="color: #1b5e20; text-transform: uppercase; font-size: 0.9em; display: block; margin-bottom: 5px;">Pro-Tip: Constant Motion</strong>
+            <p style="margin: 0; color: #1b5e20;">Never let the eye rest. Use <strong>Global Scaling</strong> via a Null object. By parenting all layers to a single Null and animating a slow 100% to 120% scale, you create a "camera push" that keeps the composition dynamic even during static text moments.</p>
+        </div>
+    </div>
+
+    <!-- ⚠️ PITFALL WARNING -->
+    <div style="background-color: #ffebee; padding: 25px 25px 25px 60px; border: 2px solid #c62828; border-radius: 12px; margin-bottom: 40px; position: relative;">
+        <span style="position: absolute; top: 25px; left: 20px; font-size: 1.8em;">⚠️</span>
+        <strong style="color: #b71c1c; text-transform: uppercase; font-size: 0.9em; display: block; margin-bottom: 5px;">Common Pitfall: The OCD Trigger</strong>
+        <p style="margin: 0; color: #4a0404;">If you don't center your type, you lose control of your rotations. Always <strong>Center Anchor Points</strong> in layer content (Ctrl+Alt+Home) before animating. If your rotations are wobbly, it’s usually because your anchor point is sitting in the corner of your bounding box.</p>
+    </div>
+
+    <!-- 📝 CHEAT SHEET SUMMARY -->
+    <div style="background: #e0f7fa; color: #006064; padding: 30px; border-radius: 15px; border-left: 10px solid #00bcd4; margin-bottom: 50px;">
+        <h3 style="margin-top: 0; font-size: 1.5em; border-bottom: 1px solid #b2ebf2; padding-bottom: 10px;">📝 Mastery Cheat Sheet</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <ul style="flex: 1; min-width: 280px; margin-bottom: 0; padding-left: 20px; line-height: 2;">
+                <li> <strong>The "Gap":</strong> Closed only through volume of work.</li>
+                <li> <strong>Expensive Look:</strong> Less is more. Clean fonts + Motion.</li>
+                <li> <strong>Graph Editor:</strong> Snappy "in" and "out" curves.</li>
+            </ul>
+            <ul style="flex: 1; min-width: 280px; margin-bottom: 0; padding-left: 20px; line-height: 2;">
+                <li> <strong>3D Focal Point:</strong> Blur the background to focus the eye.</li>
+                <li> <strong>CC Flow Motion:</strong> For that "warpy" high-end feel.</li>
+                <li> <strong>Sound Design:</strong> Clicks, switches, and whooshes.</li>
+            </ul>
+        </div>
+    </div>
+
+</div>

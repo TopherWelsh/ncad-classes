@@ -1,0 +1,104 @@
+<div style="max-width: 1000px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; line-height: 1.6; color: #333;">
+
+    <!-- 🎬 HERO HEADER -->
+    <div style="background: linear-gradient(145deg, #1a1a1a, #050505); padding: 40px 20px; border-radius: 12px; text-align: center; border: 1px solid #333; margin-bottom: 30px;">
+        <h2 style="margin: 0; font-size: 1.2em; color: #00c6ff; text-transform: uppercase; letter-spacing: 2px;">Week 2 Phase</h2>
+        <h1 style="margin: 10px 0; font-size: 2.8em; background: linear-gradient(to right, #ffffff, #888888); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">🎞️ The Animatic & Hero Frames</h1>
+        <p style="color: #aaaaaa; max-width: 600px; margin: 15px auto 0 auto; font-size: 1.1em;">Lock your rhythm, define your timing, and prove your visual direction before the heavy lifting begins.</p>
+    </div>
+
+    <!-- 📍 STUDIO ACCESS & RESOURCES -->
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 30px;">
+        <div style="flex: 1; min-width: 200px; background: #5865F2; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>💬 <a href="https://discord.gg/HESQKd4Nzf" style="color: white; text-decoration: none;">NCAD Discord</a></strong>
+        </div>
+        <div style="flex: 1; min-width: 200px; background: #34A853; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>📂 <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" style="color: white; text-decoration: none;">Class Google Drive</a></strong>
+        </div>
+        <div style="flex: 1; min-width: 200px; background: #ea4335; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>📄 <a href="https://drive.google.com/file/d/1ULNN0CcZLrGHWXnJyxXd2-7NFFB0DfcK/view?usp=drive_link" style="color: white; text-decoration: none;">Storyboard Template</a></strong>
+        </div>
+    </div>
+
+    <!-- 🧠 THE ASSIGNMENT GOAL -->
+    <div style="background-color: #1a1a1a; padding: 25px; border-left: 12px solid #0076c0; border-radius: 8px; margin-bottom: 30px; color: #ffffff;">
+        <h2 style="margin-top: 0; color: #ffffff; font-size: 1.8em;">🎬 The Goal</h2>
+        <p style="margin-bottom: 0; font-size: 1.1em; color: #e0e0e0;">Phase 2 is about <strong>commitment</strong>. You are moving your static storyboards into a timeline to lock the pacing, script, and sound. Simultaneously, you will produce <strong>Hero Frames</strong>—fully rendered style frames—to prove the visual appeal of every scene.</p>
+    </div>
+
+    <!-- 🎞️ TWO-COLUMN DELIVERABLES -->
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+        <!-- Column 1: The Animatic -->
+        <div style="flex: 1; min-width: 300px; padding: 20px; background: #f1f3f5; border-radius: 10px; border-top: 4px solid #343a40;">
+            <h3 style="margin-top: 0; color: #212529;">⚙️ Part 1: The Animatic</h3>
+            <p>This is your technical blueprint. It doesn't need final animation, but it <strong>must</strong> have:</p>
+            <ul style="padding-left: 20px;">
+                <li><strong>Locked Timing:</strong> Exactly how long each principle lasts.</li>
+                <li><strong>VO (Scratch or Final):</strong> The narration must be present to drive the edit.</li>
+                <li><strong>SFX Markers:</strong> Temporary sound effects to establish the "beat."</li>
+                <li><strong>Scene Pacing:</strong> Smooth transitions between the 10 principles.</li>
+            </ul>
+        </div>
+        <!-- Column 2: Hero Frames -->
+        <div style="flex: 1; min-width: 300px; padding: 20px; background: #f1f3f5; border-radius: 10px; border-top: 4px solid #0076c0;">
+            <h3 style="margin-top: 0; color: #212529;">✨ Part 2: Hero Frames</h3>
+            <p>Design "Style Frames" for each scene. These are non-moving, high-fidelity renders that show:</p>
+            <ul style="padding-left: 20px;">
+                <li><strong>Final Visual Direction:</strong> Full color, lighting, and texture.</li>
+                <li><strong>Typography Placement:</strong> Where the "Principle Label" sits.</li>
+                <li><strong>Environmental Context:</strong> The "stage" the hero performs on.</li>
+                <li><strong>Consistency:</strong> Do all 10 frames feel like the same film?</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ✨ GLOBAL PRINCIPLE: APPEAL (REINFORCED) -->
+    <div style="background: #f3e5f5; padding: 20px; border-radius: 10px; margin-bottom: 30px; border-left: 6px solid #7b1fa2; display: flex; align-items: flex-start; gap: 15px;">
+        <div style="font-size: 2em; line-height: 1;">✨</div>
+        <div>
+            <h4 style="margin: 0 0 5px 0; color: #7b1fa2; font-size: 1.2em;">Proving Appeal through Hero Frames</h4>
+            <p style="margin: 0; color: #4a148c;">Your Hero Frames are your first real test of <strong>Appeal</strong>. If your frames look flat or disjointed here, the animation cannot save them. Use this week to ensure your Hero Shape/Character has magnetic charisma in every lighting setup and composition.</p>
+        </div>
+    </div>
+
+    <!-- 💡 PRO-TIP: MARKERS -->
+    <div style="background-color: #fffde7; padding: 20px 20px 20px 50px; border: 2px solid #fbc02d; border-radius: 12px; margin-bottom: 20px; position: relative;">
+        <span style="position: absolute; top: 20px; left: 15px; font-size: 1.5em;">💡</span>
+        <strong style="color: #f57f17; text-transform: uppercase; font-size: 0.9em; display: block; margin-bottom: 5px;">Pro-Tip: Timeline Markers</strong>
+        <p style="margin: 0; color: #3e2723;">In After Effects, use the <code>*</code> key on your number pad to drop markers on your audio layer where the VO mentions a specific principle. This creates a "magnetic" roadmap for your animation next week!</p>
+    </div>
+
+    <!-- ⚠️ PITFALL WARNING -->
+    <div style="background-color: #ffebee; padding: 20px 20px 20px 50px; border: 2px solid #c62828; border-radius: 12px; margin-bottom: 30px; position: relative;">
+        <span style="position: absolute; top: 20px; left: 15px; font-size: 1.5em;">⚠️</span>
+        <strong style="color: #b71c1c; text-transform: uppercase; font-size: 0.9em; display: block; margin-bottom: 5px;">Common Pitfall</strong>
+        <p style="margin: 0; color: #4a0404;">Don't start "Final Keyframing" yet. If you change your mind about the timing in Week 4, you'll have to redo all your work. <strong>Trust the Animatic.</strong> Lock the edit now so you can focus entirely on physics later.</p>
+    </div>
+
+    <!-- 📝 CHEAT SHEET RECAPPING PHASE 2 GOALS -->
+    <div style="background: #e0f7fa; color: #006064; padding: 25px 30px; border-radius: 15px; border-left: 10px solid #00bcd4; margin-bottom: 30px;">
+        <h3 style="margin-top: 0; font-size: 1.5em; border-bottom: 1px solid #b2ebf2; padding-bottom: 10px;">🚀 Phase 2 Checklist</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <ul style="flex: 1; min-width: 280px; margin-bottom: 0; padding-left: 20px; line-height: 1.8;">
+                <li> <strong>VO Locked:</strong> Script is read and timed.</li>
+                <li> <strong>Pacing Established:</strong> The 90s flow feels right.</li>
+                <li> <strong>SFX Cues:</strong> Every principle has a sound concept.</li>
+            </ul>
+            <ul style="flex: 1; min-width: 280px; margin-bottom: 0; padding-left: 20px; line-height: 1.8;">
+                <li> <strong>10 Hero Frames:</strong> One per scene, full style.</li>
+                <li> <strong>Consistency:</strong> Visuals feel like one brand.</li>
+                <li> <strong>Appeal Check:</strong> Frames look "portfolio ready."</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 📁 SUBMISSION BOX -->
+    <div style="background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
+        <h3 style="margin-top: 0; border-bottom: 2px solid #0076c0; display: inline-block; padding-bottom: 5px;">✅ NCAD Submission Standard</h3>
+        <div style="background: #e9ecef; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 1.1em; border-left: 5px solid #495057; margin: 15px 0;">
+            Capstone2_Phase2_StudentName_Animatic_YYYYMMDD_v01
+        </div>
+        <p><strong>Deliverables:</strong> 1x Rendered .MP4 Animatic (with scratch VO) and 1x PDF containing your 10 Hero Frames.</p>
+    </div>
+
+</div>

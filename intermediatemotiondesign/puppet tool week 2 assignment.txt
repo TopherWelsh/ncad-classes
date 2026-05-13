@@ -1,0 +1,246 @@
+import React, { useState } from 'react';
+import { 
+  Sparkles, 
+  Puppet, 
+  Play, 
+  Info, 
+  AlertTriangle, 
+  CheckCircle, 
+  Send, 
+  Loader2, 
+  RefreshCw,
+  Video,
+  FileArchive,
+  Layers,
+  Wand2
+} from 'lucide-react';
+
+// --- CONFIGURATION ---
+const apiKey = ""; // Provided at runtime
+const appId = typeof __app_id !== 'undefined' ? __app_id : 'ncad-puppet-v1';
+
+// --- GEMINI API UTILITY ---
+async function callGemini(prompt, systemInstruction = "") {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+  
+  const payload = {
+    contents: [{ parts: [{ text: prompt }] }],
+    systemInstruction: { parts: [{ text: systemInstruction }] }
+  };
+
+  const retry = async (fn, retries = 5, delay = 1000) => {
+    try {
+      return await fn();
+    } catch (err) {
+      if (retries <= 0) throw err;
+      await new Promise(resolve => setTimeout(resolve, delay));
+      return retry(fn, retries - 1, delay * 2);
+    }
+  };
+
+  const response = await retry(() => fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }));
+
+  if (!response.ok) throw new Error('AI Service Unavailable');
+  const result = await response.json();
+  return result.candidates?.[0]?.content?.parts?.[0]?.text || "No response generated.";
+}
+
+export default function App() {
+  const [characterDesc, setCharacterDesc] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [strategy, setStrategy] = useState(null);
+  const [error, setError] = useState("");
+
+  const generateActs = async () => {
+    if (!characterDesc) return;
+    setLoading(true);
+    setError("");
+    
+    const sys = `You are the Lead Motion Design Instructor at NCAD. A student provides a character or object description. 
+    You must generate a 3-Act strategy for a 60-second Puppet Tool technical demonstration.
+    Act 1: Organic Flow (Position + Starch). 
+    Act 2: Advanced Control (Advanced + Bend). 
+    Act 3: Depth & Overlap (Overlap + Position).
+    Be technically specific about WHERE to place the pins on their specific character. 
+    Format your response as a structured technical brief.`;
+
+    const prompt = `My character/object is: ${characterDesc}. Suggest a movement for each act and explain exactly where the pins should go.`;
+
+    try {
+      const res = await callGemini(prompt, sys);
+      setStrategy(res);
+    } catch (e) {
+      setError("The AI strategist is temporarily offline. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 pb-20">
+      {/* 🎬 HERO HEADER */}
+      <div className="bg-gradient-to-br from-[#1a1a1a] to-[#050505] p-10 md:p-16 border-b border-gray-800 text-center shadow-2xl">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-[#00c6ff] text-sm uppercase tracking-[0.2em] font-bold mb-3">Intermediate Motion Design</h2>
+          <h1 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent mb-6">
+            🎬 Puppet Tool Explorations
+          </h1>
+          <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+            Master the "noodle rig." Create a multi-act technical demonstration of organic motion and looping secondary action.
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-4 -mt-10">
+        {/* 📍 STUDIO ACCESS ROW */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+          <a href="https://discord.gg/HESQKd4Nzf" className="flex items-center justify-center gap-3 bg-[#5865F2] text-white p-4 rounded-xl shadow-lg hover:scale-[1.02] transition-all no-underline">
+            <strong>💬 NCAD Discord</strong>
+          </a>
+          <a href="#" className="flex items-center justify-center gap-3 bg-[#34A853] text-white p-4 rounded-xl shadow-lg hover:scale-[1.02] transition-all no-underline">
+            <strong>📂 Class Google Drive</strong>
+          </a>
+          <a href="#" className="flex items-center justify-center gap-3 bg-[#ea4335] text-white p-4 rounded-xl shadow-lg hover:scale-[1.02] transition-all no-underline">
+            <strong>📄 Storyboard Template</strong>
+          </a>
+        </div>
+
+        {/* 🧠 THE ASSIGNMENT GOAL */}
+        <div className="bg-slate-900 border-l-[12px] border-[#0076c0] rounded-xl p-8 mb-10 shadow-xl text-white">
+          <h2 className="text-2xl font-bold mb-3 flex items-center gap-2">
+            <Play size={24} className="text-[#00c6ff]" /> The Technical Brief
+          </h2>
+          <p className="text-slate-300 text-lg">
+            Produce a <strong>60-second video</strong> showcasing three distinct character/object animations. Each segment must utilize a different combination of puppet pins, rely on <strong>Live Motion Recording</strong>, and loop seamlessly using expressions.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
+          {/* Main Content */}
+          <div className="lg:col-span-2 space-y-8">
+            
+            {/* 📋 ACT BREAKDOWN */}
+            <section>
+              <h2 className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-4 border-b border-slate-200 pb-2">📂 The 3-Act Performance</h2>
+              <div className="grid grid-cols-1 gap-4">
+                {[
+                  { title: "Act 1: Organic Flow", color: "border-slate-800", pins: "Position + Starch", desc: "Focus on a tail, hair, or a simple waving arm. Use Starch pins to keep the 'bones' rigid while the limb flows." },
+                  { title: "Act 2: Advanced Control", color: "border-yellow-400", pins: "Advanced + Bend", desc: "Animate a complex head nod or torso twist. Use the Advanced pin to scale and rotate simultaneously for a '3D-ish' perspective." },
+                  { title: "Act 3: Depth & Overlap", color: "border-blue-600", pins: "Overlap + Position", desc: "Animate an arm or leg crossing in front of the body. Use the Overlap pin to define Z-depth." }
+                ].map((act, i) => (
+                  <div key={i} className={`bg-white p-6 rounded-xl border-t-4 shadow-sm ${act.color}`}>
+                    <h3 className="font-bold text-lg mb-1">{act.title}</h3>
+                    <div className="text-xs font-mono bg-slate-100 text-slate-600 inline-block px-2 py-1 rounded mb-3">PINS: {act.pins}</div>
+                    <p className="text-slate-600 text-sm leading-relaxed">{act.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* 📐 TECHNICAL SPECS */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-xl">
+                <h3 className="font-bold text-blue-800 flex items-center gap-2 mb-3"><Video size={20}/> Video Specs</h3>
+                <ul className="text-sm text-blue-700 space-y-2">
+                  <li>• <strong>Duration:</strong> 60s total (~15s/act)</li>
+                  <li>• <strong>Labels:</strong> Must label pin types used</li>
+                  <li>• <strong>Loops:</strong> Use loopOut expressions</li>
+                </ul>
+              </div>
+              <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl">
+                <h3 className="font-bold text-yellow-800 flex items-center gap-2 mb-3"><Layers size={20}/> Workflow</h3>
+                <ul className="text-sm text-yellow-700 space-y-2">
+                  <li>• <strong>Live Record:</strong> Ctrl/Cmd + Drag</li>
+                  <li>• <strong>Mesh Prep:</strong> Pre-compose artwork</li>
+                  <li>• <strong>Refine:</strong> Check Graph Editor</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* ✨ AI STRATEGIST SIDEBAR */}
+          <div className="space-y-6">
+            <div className="bg-white rounded-2xl border-2 border-blue-100 shadow-xl overflow-hidden sticky top-6">
+              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-4 text-white flex items-center gap-2">
+                <Sparkles size={20} />
+                <h3 className="font-bold">✨ Act Strategist</h3>
+              </div>
+              <div className="p-5 space-y-4">
+                <p className="text-xs text-slate-500 italic">Describe your character to get a custom technical rigging guide for all 3 acts.</p>
+                <textarea 
+                  className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg text-sm h-24 outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="e.g. A character with a cape and a long tail..."
+                  value={characterDesc}
+                  onChange={(e) => setCharacterDesc(e.target.value)}
+                />
+                <button 
+                  onClick={generateActs}
+                  disabled={loading || !characterDesc}
+                  className="w-full py-3 bg-slate-900 text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-all disabled:opacity-50"
+                >
+                  {loading ? <Loader2 size={18} className="animate-spin" /> : <Wand2 size={18} />}
+                  ✨ Generate Ideas
+                </button>
+
+                {error && <p className="text-red-500 text-xs text-center">{error}</p>}
+
+                {strategy && (
+                  <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-100 max-h-[400px] overflow-y-auto">
+                    <h4 className="text-xs font-bold text-blue-800 uppercase mb-2">Technical Guidance:</h4>
+                    <div className="text-xs text-slate-700 leading-relaxed whitespace-pre-wrap italic">
+                      {strategy}
+                    </div>
+                    <button 
+                      onClick={() => setStrategy(null)}
+                      className="mt-4 text-[10px] text-blue-400 hover:text-blue-600 uppercase font-bold tracking-tighter flex items-center gap-1"
+                    >
+                      <RefreshCw size={10} /> Clear Strategy
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* PITFALL CALLOUT */}
+            <div className="bg-red-50 border-2 border-red-200 p-6 rounded-2xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-4 opacity-10">
+                <AlertTriangle size={80} />
+              </div>
+              <strong className="text-red-800 block mb-2 uppercase text-xs tracking-tighter">Common Pitfall</strong>
+              <p className="text-red-700 text-xs leading-relaxed relative z-10">
+                If your artwork isn't separated into layers, moving the arm will pull the torso like dough. <strong>Separate your art in AI/PSD first</strong>!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 📁 SUBMISSION BOX */}
+        <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 shadow-sm">
+          <h3 className="text-xl font-bold border-b-2 border-[#0076c0] inline-block pb-1 mb-6 flex items-center gap-2">
+            <CheckCircle className="text-blue-600" /> NCAD Submission Standard
+          </h3>
+          <div className="bg-slate-100 p-4 rounded-lg font-mono text-sm border-l-4 border-slate-800 mb-4 overflow-x-auto">
+            InterMD_Puppet_StudentName_Final_YYYYMMDD_v01
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-600">
+            <div className="flex items-center gap-2">
+              <FileArchive className="text-slate-400" /> 1x Zipped Project Folder (Collected)
+            </div>
+            <div className="flex items-center gap-2">
+              <Video className="text-slate-400" /> 1x Rendered .MP4 (60 seconds)
+            </div>
+          </div>
+        </div>
+
+        {/* FOOTER */}
+        <div className="text-center mt-10 text-slate-400 text-xs">
+          NCAD Intermediate Motion Design &bull; © 2026 Lead Instructor Gem
+        </div>
+      </div>
+    </div>
+  );
+}

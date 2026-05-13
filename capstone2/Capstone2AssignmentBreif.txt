@@ -1,0 +1,134 @@
+<div style="max-width: 1000px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; line-height: 1.6; color: #333;">
+
+    <!-- 🎬 HERO HEADER -->
+    <div style="background: linear-gradient(145deg, #1a1a1a, #050505); padding: 40px 20px; border-radius: 12px; text-align: center; border: 1px solid #333; margin-bottom: 30px;">
+        <h1 style="margin: 0; font-size: 3em; background: linear-gradient(to right, #00c6ff, #0072ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">🎬 The Motion Lexicon</h1>
+        <p style="color: #aaaaaa; max-width: 700px; margin: 15px auto 0 auto; font-size: 1.2em;"><strong>Capstone Project:</strong> A high-end brand film defining the 10 Principles of Motion through the lens of a Hero Character or Shape.</p>
+    </div>
+
+    <!-- 📍 STUDIO ACCESS & RESOURCES -->
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 30px;">
+        <div style="flex: 1; min-width: 200px; background: #5865F2; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>💬 <a href="https://discord.gg/HESQKd4Nzf" style="color: white; text-decoration: none;">NCAD Discord</a></strong>
+        </div>
+        <div style="flex: 1; min-width: 200px; background: #34A853; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>📂 <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" style="color: white; text-decoration: none;">Class Google Drive</a></strong>
+        </div>
+        <div style="flex: 1; min-width: 200px; background: #ea4335; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>📄 <a href="https://drive.google.com/file/d/1ULNN0CcZLrGHWXnJyxXd2-7NFFB0DfcK/view?usp=drive_link" style="color: white; text-decoration: none;">Storyboard Template</a></strong>
+        </div>
+    </div>
+
+    <!-- 🧠 PEDAGOGICAL PHILOSOPHY: TEACHING AS MASTERY -->
+    <div style="background: #e3f2fd; padding: 25px; border-radius: 10px; margin-bottom: 30px; border-left: 6px solid #0277bd;">
+        <h3 style="margin-top: 0; color: #0277bd;">🧠 Teaching as Mastery</h3>
+        <p style="margin-bottom: 15px; color: #01579b; font-size: 1.1em;">The best way to truly learn a concept is to <strong>teach it to someone else</strong>. By building this Lexicon, you are proving to future employers that you don't just "use" these principles—you <em>own</em> them.</p>
+        <p style="margin: 0; color: #01579b;"><strong>The Career Edge:</strong> This film serves as a high-level proof of concept for your portfolio. It shows art directors that you understand the underlying physics and "why" behind every keyframe.</p>
+    </div>
+
+    <!-- 🎞️ INSPIRATION GALLERY -->
+    <h2 style="color: #888; font-size: 14px; text-transform: uppercase; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px;">🎬 Professional Inspiration</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px; margin-top: 15px;">
+        <!-- Video 1 -->
+        <div style="flex: 1; min-width: 400px; background: #1a1a1a; padding: 15px; border-radius: 10px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; background: #000;">
+                <iframe src="https://www.youtube.com/embed/Cz-GcIITNrs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p style="color: #fff; margin: 10px 0 0 0;"><strong>Visual Language:</strong> Exploring the Disney 12 in Motion</p>
+        </div>
+        <!-- Video 2 -->
+        <div style="flex: 1; min-width: 400px; background: #1a1a1a; padding: 15px; border-radius: 10px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; background: #000;">
+                <iframe src="https://www.youtube.com/embed/EqMi1AzbFqs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p style="color: #fff; margin: 10px 0 0 0;"><strong>Abstract Principles:</strong> Shape-based storytelling</p>
+        </div>
+        <!-- Video 3 -->
+        <div style="flex: 1; min-width: 400px; background: #1a1a1a; padding: 15px; border-radius: 10px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; background: #000;">
+                <iframe src="https://www.youtube.com/embed/MepJ8aFDK5k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p style="color: #fff; margin: 10px 0 0 0;"><strong>UI Motion:</strong> Applying physics to interfaces</p>
+        </div>
+        <!-- Video 4 -->
+        <div style="flex: 1; min-width: 400px; background: #1a1a1a; padding: 15px; border-radius: 10px;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; background: #000;">
+                <iframe src="https://www.youtube.com/embed/uDqjIdI4bF4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p style="color: #fff; margin: 10px 0 0 0;"><strong>Masterclass:</strong> Motion Theory Breakdown</p>
+        </div>
+    </div>
+
+    <!-- 📅 7-WEEK PRODUCTION TIMELINE -->
+    <h2 style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 40px;">📅 Production Timeline</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+        <!-- Week 1 -->
+        <div style="flex: 1; min-width: 300px; background: #f8f9fa; padding: 20px; border-radius: 12px; border-top: 4px solid #1a1a1a;">
+            <h4 style="margin-top: 0; text-transform: uppercase; color: #1a1a1a;">🎨 Week 1: Identity & Storyboards</h4>
+            <p><strong>Mandatory:</strong> Define your Hero Shape or Hero Character. This is the visual anchor for the entire piece. Create your full storyboard defining the visual flow between principles.</p>
+        </div>
+        <!-- Week 2 -->
+        <div style="flex: 1; min-width: 300px; background: #f8f9fa; padding: 20px; border-radius: 12px; border-top: 4px solid #0076c0;">
+            <h4 style="margin-top: 0; text-transform: uppercase; color: #0076c0;">🎞️ Week 2: The Animatic</h4>
+            <p><strong>Focus:</strong> Timing and Script. Produce a full animatic including scratch VO, sound effect markers, and final narration. Your pacing is locked here.</p>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+        <!-- Week 3-4 -->
+        <div style="flex: 1; min-width: 300px; background: #f8f9fa; padding: 20px; border-radius: 12px; border-top: 4px solid #0277bd;">
+            <h4 style="margin-top: 0; text-transform: uppercase; color: #0277bd;">⚙️ Week 3-4: Core Physics</h4>
+            <p><strong>Scenes 1-5:</strong> Timing, Spacing, Eases, Mass, and Arcs. No shortcuts—dial in every movement using the Value Graph to establish weight and intention.</p>
+        </div>
+        <!-- Week 5-6 -->
+        <div style="flex: 1; min-width: 300px; background: #f8f9fa; padding: 20px; border-radius: 12px; border-top: 4px solid #fbc02d;">
+            <h4 style="margin-top: 0; text-transform: uppercase; color: #fbc02d;">💧 Week 5-6: Liquid & Mastery</h4>
+            <p><strong>Scenes 6-9:</strong> Squash & Stretch, Overlapping Action, and Exaggeration. Layer in micro-animations and smears to add high-end polish and complexity.</p>
+        </div>
+    </div>
+
+    <!-- Week 7 -->
+    <div style="background: #e8f5e9; padding: 20px; border-radius: 12px; border-top: 4px solid #2e7d32; margin-bottom: 30px;">
+        <h4 style="margin-top: 0; text-transform: uppercase; color: #1b5e20;">🔊 Week 7: Final Audio & Render</h4>
+        <p><strong>The Final 50%:</strong> Replace scratch audio with high-fidelity SFX that reinforce the physical weight of your character. Color grade and export your final 4K/1080p film.</p>
+    </div>
+
+    <!-- ✨ GLOBAL PRINCIPLE: APPEAL -->
+    <div style="background-color: #fffde7; padding: 20px 20px 20px 50px; border: 2px solid #fbc02d; border-radius: 12px; margin-bottom: 30px; position: relative;">
+        <span style="position: absolute; top: 20px; left: 15px; font-size: 1.5em;">✨</span>
+        <strong style="color: #f57f17; text-transform: uppercase; font-size: 0.9em; display: block; margin-bottom: 5px;">Principle 10: Appeal (The Soul)</strong>
+        <p style="margin: 0; color: #3e2723;">Appeal is not a "Week 6" task. It is a <strong>global principle</strong> that must be baked into your design from Week 1. Whether your hero is a simple circle or a 3D rig, it must have charisma, clear silhouettes, and a magnetic personality.</p>
+    </div>
+
+    <!-- 📝 THE CHEAT SHEET -->
+    <div style="background: #e0f7fa; color: #006064; padding: 25px 30px; border-radius: 15px; border-left: 10px solid #00bcd4; margin-bottom: 30px;">
+        <h3 style="margin-top: 0; font-size: 1.5em; border-bottom: 1px solid #b2ebf2; padding-bottom: 10px;">📝 Lexicon Checklist</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <ul style="flex: 1; min-width: 250px; margin-bottom: 0; padding-left: 20px; line-height: 1.8;">
+                <li><strong>1. Timing/Spacing:</strong> The "Beat" of life.</li>
+                <li><strong>2. Eases:</strong> Realistic acceleration/friction.</li>
+                <li><strong>3. Mass/Weight:</strong> Does it feel heavy or light?</li>
+                <li><strong>4. Anticipation:</strong> The preparation for action.</li>
+                <li><strong>5. Arcs:</strong> Natural, non-linear movement.</li>
+            </ul>
+            <ul style="flex: 1; min-width: 250px; margin-bottom: 0; padding-left: 20px; line-height: 1.8;">
+                <li><strong>6. Squash/Stretch/Smears:</strong> Preserving volume.</li>
+                <li><strong>7. Follow Through:</strong> The inertia of parts.</li>
+                <li><strong>8. Exaggeration:</strong> Pushing reality for impact.</li>
+                <li><strong>9. Secondary Animation:</strong> Supporting details.</li>
+                <li><strong>10. Appeal:</strong> The overall charisma/design.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 📁 SUBMISSION BOX -->
+    <div style="background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
+        <h3 style="margin-top: 0; border-bottom: 2px solid #0076c0; display: inline-block; padding-bottom: 5px;">✅ NCAD Submission Standard</h3>
+        <div style="background: #e9ecef; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 1.1em; border-left: 5px solid #495057; margin: 15px 0;">
+            Capstone2_Lexicon_StudentName_Final_YYYYMMDD_v01
+        </div>
+        <p><strong>Note:</strong> Package your project using AE's "Collect Files" feature before zipping.</p>
+    </div>
+
+</div>

@@ -1,0 +1,138 @@
+<div style="max-width: 1000px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; line-height: 1.6; color: #333;">
+
+    <!-- 🎬 HERO HEADER -->
+    <div style="background: linear-gradient(145deg, #1a1a1a, #050505); padding: 50px 20px; border-radius: 12px; text-align: center; border: 1px solid #333; margin-bottom: 30px;">
+        <h2 style="margin: 0; font-size: 1.2em; color: #00c6ff; text-transform: uppercase; letter-spacing: 3px;">Character Animation Series</h2>
+        <h1 style="margin: 10px 0; font-size: 3.5em; background: linear-gradient(to right, #00c6ff, #0072ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">🪆 The Puppet Tool</h1>
+        <p style="color: #aaaaaa; max-width: 700px; margin: 15px auto 0 auto; font-size: 1.2em;">Transform static artwork into organic, living characters. Master the mesh before we move to advanced skeletal rigging.</p>
+    </div>
+
+    <!-- 📍 STUDIO ACCESS & RESOURCES -->
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 30px;">
+        <div style="flex: 1; min-width: 200px; background: #5865F2; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>💬 <a href="https://discord.gg/HESQKd4Nzf" style="color: white; text-decoration: none;">NCAD Discord</a></strong>
+        </div>
+        <div style="flex: 1; min-width: 200px; background: #34A853; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>📂 <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" style="color: white; text-decoration: none;">Class Google Drive</a></strong>
+        </div>
+        <div style="flex: 1; min-width: 200px; background: #ea4335; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>📄 <a href="https://drive.google.com/file/d/1ULNN0CcZLrGHWXnJyxXd2-7NFFB0DfcK/view?usp=drive_link" style="color: white; text-decoration: none;">Storyboard Template</a></strong>
+        </div>
+    </div>
+
+    <!-- 🧠 THE CORE PHILOSOPHY: SUBTLE LIFE -->
+    <div style="background: #e3f2fd; padding: 30px; border-radius: 10px; margin-bottom: 40px; border-left: 8px solid #0277bd;">
+        <h3 style="margin-top: 0; color: #0277bd; font-size: 1.5em;">🌊 Secondary Motion vs. Primary Rigging</h3>
+        <p style="margin-bottom: 15px; color: #01579b; font-size: 1.1em;">The Puppet Tool is <strong>not</strong> for full-scale walk cycles. It is a "Noodle Rig" meant for <strong>subtle, added movement</strong>.</p>
+        <p style="margin: 0; color: #01579b;">Think of it as the "Soul Tool." Use it for hair sway, tail wags, waving hands, toe taps, and head nods. In the coming weeks, we will learn <em>Rubberhose</em>, <em>Joysticks & Sliders</em>, and <em>DUIK Angela</em> for complex physics, but the Puppet Tool provides the essential organic foundation for all of them.</p>
+    </div>
+
+    <!-- 🏗️ THE PIN TOOLKIT GRID -->
+    <h2 style="color: #888; font-size: 14px; text-transform: uppercase; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px;">1. The 5 Pin Toolset</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; margin-bottom: 40px; text-align: center;">
+        <!-- Position Pin -->
+        <div style="flex: 1; min-width: 180px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-top: 4px solid #1a1a1a;">
+            <strong style="display: block; margin-bottom: 5px;">📍 Position Pin</strong>
+            <small style="color: #666;">Basic translation. Move points A to B.</small>
+        </div>
+        <!-- Starch Pin -->
+        <div style="flex: 1; min-width: 180px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-top: 4px solid #0076c0;">
+            <strong style="display: block; margin-bottom: 5px;">🦴 Starch Pin</strong>
+            <small style="color: #666;">Adds rigidity. Use this to "freeze" joints or bones.</small>
+        </div>
+        <!-- Bend Pin -->
+        <div style="flex: 1; min-width: 180px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-top: 4px solid #fbc02d;">
+            <strong style="display: block; margin-bottom: 5px;">🌀 Bend Pin</strong>
+            <small style="color: #666;">Local rotation and scaling at the pin site.</small>
+        </div>
+        <!-- Advanced Pin -->
+        <div style="flex: 1; min-width: 180px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-top: 4px solid #ea4335;">
+            <strong style="display: block; margin-bottom: 5px;">🚀 Advanced Pin</strong>
+            <small style="color: #666;">The "All-in-One." Position, Scale, and Rotate simultaneously.</small>
+        </div>
+        <!-- Overlap Pin -->
+        <div style="flex: 1; min-width: 180px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-top: 4px solid #2e7d32;">
+            <strong style="display: block; margin-bottom: 5px;">🎭 Overlap Pin</strong>
+            <small style="color: #666;">Defines Z-depth. Keeps the arm in front of the body.</small>
+        </div>
+    </div>
+
+    <!-- 🎞️ TECHNICAL WORKFLOWS (LONG FORM) -->
+    <h2 style="color: #888; font-size: 14px; text-transform: uppercase; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px;">2. Mastering the Mesh & Motion</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; margin-bottom: 40px;">
+        <!-- Mesh Workflow -->
+        <div style="flex: 1; min-width: 450px; background: #f1f3f5; padding: 25px; border-radius: 12px;">
+            <h3 style="margin-top: 0;">📐 The Mesh Anatomy</h3>
+            <p>When you place your first pin, After Effects generates a <strong>triangulated mesh</strong> over your alpha pixels. To keep your animation smooth, you must adjust the toolbar settings:</p>
+            <ul>
+                <li><strong>Expansion:</strong> The "buffer" around your artwork. Increase this if your edges are being cut off by the warp.</li>
+                <li><strong>Density:</strong> Adds more triangles. Higher density = smoother bends but slower render times.</li>
+                <li><strong>Pre-Compose First:</strong> Always pre-compose your character artwork (Move All Attributes) before pinning to keep your mesh clean.</li>
+            </ul>
+        </div>
+        <!-- Recording Workflow -->
+        <div style="flex: 1; min-width: 400px; background: #1a1a1a; color: white; padding: 25px; border-radius: 12px;">
+            <h3 style="margin-top: 0; color: #00c6ff;">🎙️ Live Motion Recording</h3>
+            <p>You don't have to manually set every keyframe. You can "perform" your character:</p>
+            <ol>
+                <li>Select a Position Pin.</li>
+                <li>Hold <kbd style="background: #333; padding: 2px 5px; border-radius: 4px; border: 1px solid #555;">Ctrl</kbd> (PC) or <kbd style="background: #333; padding: 2px 5px; border-radius: 4px; border: 1px solid #555;">Cmd</kbd> (Mac).</li>
+                <li><strong>Click and Drag</strong> the pin. AE will record your mouse movement in real-time as keyframes.</li>
+            </ol>
+            <p style="font-size: 0.9em; color: #aaa;"><em>Nugget: Use 'Motion Sketch' recording options to increase smoothing and eliminate "jittery" mouse hand.</em></p>
+        </div>
+    </div>
+
+    <!-- 🎞️ RAPID INSPIRATION (SHORTS GRID) -->
+    <h2 style="color: #888; font-size: 14px; text-transform: uppercase; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px;">3. Rapid Technique Breakdowns</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; margin-bottom: 40px;">
+        <!-- Vertical Shorts Grid -->
+        <div style="flex: 1; min-width: 180px; aspect-ratio: 9/16; background: #1a1a1a; border-radius: 10px; overflow: hidden; position: relative;">
+             <iframe src="https://www.youtube.com/embed/gtzENMlsL5k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div style="flex: 1; min-width: 180px; aspect-ratio: 9/16; background: #1a1a1a; border-radius: 10px; overflow: hidden; position: relative;">
+             <iframe src="https://www.youtube.com/embed/Y0kOoMdsdyU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div style="flex: 1; min-width: 180px; aspect-ratio: 9/16; background: #1a1a1a; border-radius: 10px; overflow: hidden; position: relative;">
+             <iframe src="https://www.youtube.com/embed/hbWGN0azrug" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div style="flex: 1; min-width: 180px; aspect-ratio: 9/16; background: #1a1a1a; border-radius: 10px; overflow: hidden; position: relative;">
+             <iframe src="https://www.youtube.com/embed/mBKjET_cuSY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div style="flex: 1; min-width: 180px; aspect-ratio: 9/16; background: #1a1a1a; border-radius: 10px; overflow: hidden; position: relative;">
+             <iframe src="https://www.youtube.com/embed/vh17rKmxlTM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- ⚠️ PITFALL WARNING: THE MESH PULL -->
+    <div style="background-color: #ffebee; padding: 25px 25px 25px 60px; border: 2px solid #c62828; border-radius: 12px; margin-bottom: 40px; position: relative;">
+        <span style="position: absolute; top: 25px; left: 20px; font-size: 1.8em;">⚠️</span>
+        <strong style="color: #b71c1c; text-transform: uppercase; font-size: 0.9em; display: block; margin-bottom: 5px;">Common Pitfall: The Artwork "Pull"</strong>
+        <p style="margin: 0; color: #4a0404;">If your character's arm is touching its torso in the original artwork, the Puppet Tool treats them as <strong>one single piece of rubber</strong>. When you move the arm, the torso will "pull" and stretch with it. To fix this, you must separate your artwork into different layers in Illustrator/Photoshop before bringing it into AE. <strong>If they aren't separated, the mesh can't be independent.</strong></p>
+    </div>
+
+    <!-- 💡 PRO-TIP: LOOPING -->
+    <div style="background-color: #fffde7; padding: 25px 25px 25px 60px; border: 2px solid #fbc02d; border-radius: 12px; margin-bottom: 40px; position: relative;">
+        <span style="position: absolute; top: 25px; left: 20px; font-size: 1.8em;">💡</span>
+        <strong style="color: #f57f17; text-transform: uppercase; font-size: 0.9em; display: block; margin-bottom: 5px;">Pro-Tip: Endless Secondary Action</strong>
+        <p style="margin: 0; color: #3e2723;">Once you've animated a subtle wave or sway, Alt-Click the pin's position stopwatch and type <code>loopOut("pingpong")</code>. This will keep that subtle "life" moving forever, allowing you to focus on the character's primary movements.</p>
+    </div>
+
+    <!-- 📝 CHEAT SHEET SUMMARY -->
+    <div style="background: #e0f7fa; color: #006064; padding: 30px; border-radius: 15px; border-left: 10px solid #00bcd4; margin-bottom: 50px;">
+        <h3 style="margin-top: 0; font-size: 1.5em; border-bottom: 1px solid #b2ebf2; padding-bottom: 10px;">📝 Puppet Tool Mastery Checklist</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <ul style="flex: 1; min-width: 280px; margin-bottom: 0; padding-left: 20px; line-height: 2;">
+                <li> <strong>Subtle Only:</strong> Use for hair, tails, and sways.</li>
+                <li> <strong>Starch is Key:</strong> Don't let your elbows turn to jelly.</li>
+                <li> <strong>Overlap:</strong> Define what stays in front manually.</li>
+            </ul>
+            <ul style="flex: 1; min-width: 280px; margin-bottom: 0; padding-left: 20px; line-height: 2;">
+                <li> <strong>Record Live:</strong> Use Ctrl/Cmd+Drag for organic feel.</li>
+                <li> <strong>Mesh Pull:</strong> Separate artwork layers if warping occurs.</li>
+                <li> <strong>Toolkit Path:</strong> Puppet Pins ➔ Rubberhose ➔ DUIK.</li>
+            </ul>
+        </div>
+    </div>
+
+</div>

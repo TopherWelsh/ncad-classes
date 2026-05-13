@@ -1,0 +1,102 @@
+<div style="max-width: 1000px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; line-height: 1.6; color: #333;">
+
+    <!-- 🎬 HERO HEADER -->
+    <div style="background: linear-gradient(145deg, #1a1a1a, #050505); padding: 40px 20px; border-radius: 12px; text-align: center; border: 1px solid #333; margin-bottom: 30px;">
+        <h2 style="margin: 0; font-size: 1.2em; color: #00c6ff; text-transform: uppercase; letter-spacing: 2px;">Capstone 2: Final Phase</h2>
+        <h1 style="margin: 10px 0; font-size: 2.8em; background: linear-gradient(to right, #ffffff, #888888); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">🏆 The Master Submission</h1>
+        <p style="color: #aaaaaa; max-width: 650px; margin: 15px auto 0 auto; font-size: 1.1em;">The Motion Lexicon is complete. It is time to archive your process, export your masterpiece, and reflect on your growth as a motion architect.</p>
+    </div>
+
+    <!-- 📍 STUDIO ACCESS & RESOURCES -->
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 30px;">
+        <div style="flex: 1; min-width: 200px; background: #5865F2; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>💬 <a href="https://discord.gg/HESQKd4Nzf" style="color: white; text-decoration: none;">NCAD Discord</a></strong>
+        </div>
+        <div style="flex: 1; min-width: 200px; background: #34A853; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>📂 <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" style="color: white; text-decoration: none;">Class Google Drive</a></strong>
+        </div>
+        <div style="flex: 1; min-width: 200px; background: #ea4335; padding: 15px; border-radius: 8px; text-align: center;">
+            <strong>📄 <a href="https://drive.google.com/file/d/1ULNN0CcZLrGHWXnJyxXd2-7NFFB0DfcK/view?usp=drive_link" style="color: white; text-decoration: none;">Storyboard Template</a></strong>
+        </div>
+    </div>
+
+    <!-- 🧠 THE FINAL OBJECTIVE -->
+    <div style="background-color: #1a1a1a; padding: 25px; border-left: 12px solid #2e7d32; border-radius: 8px; margin-bottom: 30px; color: #ffffff;">
+        <h2 style="margin-top: 0; color: #ffffff; font-size: 1.8em;">🎬 The Culmination</h2>
+        <p style="margin-bottom: 0; font-size: 1.1em; color: #e0e0e0;">This is more than just a final render. You are submitting a <strong>professional case study package</strong>. This archive proves to employers that you can take a complex technical concept from ideation to high-fidelity execution.</p>
+    </div>
+
+    <!-- 📁 COMPLETE DELIVERABLES CHECKLIST -->
+    <h2 style="color: #888; font-size: 14px; text-transform: uppercase; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px;">📦 Final Deliverables Checklist</h2>
+    
+    <!-- Row 1: The Archive -->
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px; margin-bottom: 20px;">
+        <div style="flex: 1; min-width: 300px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-top: 4px solid #343a40;">
+            <h3 style="margin-top: 0; color: #212529;">📂 Part 1: The Process Archive</h3>
+            <p>Re-submit your polished process documents from Phases 1 & 2:</p>
+            <ul style="padding-left: 20px;">
+                <li><strong>Identity & Moodboard:</strong> The finalized visual anchor.</li>
+                <li><strong>Storyboards:</strong> The original narrative roadmap.</li>
+                <li><strong>Hero Frames:</strong> The 10 high-fidelity style frames.</li>
+                <li><strong>The Animatic:</strong> Your timing and pacing blueprint.</li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 300px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-top: 4px solid #00c6ff;">
+            <h3 style="margin-top: 0; color: #212529;">🎬 Part 2: The Master Film</h3>
+            <p>The final, polished "Motion Lexicon" brand film:</p>
+            <ul style="padding-left: 20px;">
+                <li><strong>Resolution:</strong> 1920x1080 or 4K.</li>
+                <li><strong>Master Audio:</strong> Final SFX, Narration, and Music mix.</li>
+                <li><strong>Visual Polish:</strong> Motion blur, grain, and color grading applied.</li>
+                <li><strong>Appeal Check:</strong> Does the piece have "Mastery Charisma"?</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Row 2: Reflection & Source -->
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+        <div style="flex: 1; min-width: 300px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-top: 4px solid #fbc02d;">
+            <h3 style="margin-top: 0; color: #212529;">✍️ Part 3: Reflection Writeup</h3>
+            <p>A 500-word post-mortem PDF answering:</p>
+            <ul style="padding-left: 20px;">
+                <li><strong>The Teaching Moment:</strong> Which principle was hardest to "teach" and why?</li>
+                <li><strong>The Technical Pivot:</strong> What did you change between the Animatic and the Final?</li>
+                <li><strong>The Appeal Audit:</strong> How did your Hero's personality evolve?</li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 300px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-top: 4px solid #ea4335;">
+            <h3 style="margin-top: 0; color: #212529;">📦 Part 4: Source Project</h3>
+            <p>A fully packaged After Effects project folder:</p>
+            <ul style="padding-left: 20px;">
+                <li><strong>Collect Files:</strong> Use AE "Collect Files" to include assets.</li>
+                <li><strong>Clean Project:</strong> Remove unused layers and compositions.</li>
+                <li><strong>Naming:</strong> Follow the NCAD naming standard strictly.</li>
+                <li><strong>Zipped:</strong> Compress the entire Root Folder.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 💡 PRO-TIP: THE REEL CUT -->
+    <div style="background-color: #fffde7; padding: 20px 20px 20px 50px; border: 2px solid #fbc02d; border-radius: 12px; margin-bottom: 20px; position: relative;">
+        <span style="position: absolute; top: 20px; left: 15px; font-size: 1.5em;">💡</span>
+        <strong style="color: #f57f17; text-transform: uppercase; font-size: 0.9em; display: block; margin-bottom: 5px;">Pro-Tip: The Demo Reel Cut</strong>
+        <p style="margin: 0; color: #3e2723;">While you are exporting the full 90-second film, consider also exporting 5-10 second "Principle Shorts." These are perfect for Instagram/TikTok and show potential clients your technical range in bite-sized chunks!</p>
+    </div>
+
+    <!-- ⚠️ PITFALL WARNING -->
+    <div style="background-color: #ffebee; padding: 20px 20px 20px 50px; border: 2px solid #c62828; border-radius: 12px; margin-bottom: 30px; position: relative;">
+        <span style="position: absolute; top: 20px; left: 15px; font-size: 1.5em;">⚠️</span>
+        <strong style="color: #b71c1c; text-transform: uppercase; font-size: 0.9em; display: block; margin-bottom: 5px;">Common Submission Pitfall</strong>
+        <p style="margin: 0; color: #4a0404;">Do not simply upload the .aep file. If your project isn't "Collected," we will see "Missing Media" bars instead of your hard work. Always open your Zipped folder on a different drive or computer to verify it works before uploading.</p>
+    </div>
+
+    <!-- 📁 FINAL SUBMISSION BOX -->
+    <div style="background-color: #f8f9fa; border: 2px solid #dee2e6; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
+        <h3 style="margin-top: 0; border-bottom: 2px solid #0076c0; display: inline-block; padding-bottom: 5px;">✅ NCAD Submission Standard</h3>
+        <div style="background: #e9ecef; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 1.1em; border-left: 5px solid #495057; margin: 15px 0;">
+            Capstone2_MASTER_StudentName_Lexicon_YYYYMMDD_v01
+        </div>
+        <p><strong>Deliverables Summary:</strong> Upload your Master .MP4, the Process PDF, the Reflection PDF, and the Zipped Project Folder to the Canvas portal.</p>
+    </div>
+
+</div>

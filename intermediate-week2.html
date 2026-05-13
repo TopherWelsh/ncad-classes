@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2: The Puppet Tool - Intermediate Motion Design - NCAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand"><img src="homepage/NCAD-lockup-orange-white.webp" alt="NCAD"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="capstone2.html">Capstone 2</a>
+            <a href="intermediate.html" class="active">Intermediate Motion</a>
+            <a href="capstone1.html">Capstone 1 (IS)</a>
+            <a href="intro-motion.html">Intro Motion (IS)</a>
+        </div>
+    </div>
+</nav>
+
+<div class="page">
+
+    <div class="hero">
+        <div class="label">Week 2 &bull; May 14, 2026</div>
+        <h1 class="gradient-blue">The Puppet Tool</h1>
+        <p>Transform static artwork into organic, living characters. Master the mesh before we move to advanced skeletal rigging.</p>
+    </div>
+
+    <div class="resource-row">
+        <a href="https://discord.gg/HESQKd4Nzf" class="resource-btn discord">Discord</a>
+        <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" class="resource-btn drive">Google Drive</a>
+        <a href="https://drive.google.com/file/d/1ULNN0CcZLrGHWXnJyxXd2-7NFFB0DfcK/view?usp=drive_link" class="resource-btn template">Storyboard Template</a>
+    </div>
+
+    <!-- PHILOSOPHY -->
+    <div class="callout callout-info">
+        <span class="icon">&#127754;</span>
+        <strong class="label">Secondary Motion vs. Primary Rigging</strong>
+        <p>The Puppet Tool is <strong>not</strong> for full-scale walk cycles. It is a "Noodle Rig" meant for <strong>subtle, added movement</strong>. Think of it as the "Soul Tool." Use it for hair sway, tail wags, waving hands, toe taps, and head nods. In the coming weeks, we will learn <em>Rubberhose</em>, <em>Joysticks &amp; Sliders</em>, and <em>DUIK Angela</em> for complex physics.</p>
+    </div>
+
+    <!-- THE ASSIGNMENT -->
+    <div class="goal-box">
+        <h2>The Technical Brief</h2>
+        <p>Produce a <strong>60-second video</strong> showcasing three distinct character/object animations. Each segment must utilize a different combination of puppet pins, rely on <strong>Live Motion Recording</strong>, and loop seamlessly using expressions.</p>
+    </div>
+
+    <!-- 3-ACT BREAKDOWN -->
+    <h2 class="section-header">The 3-Act Performance</h2>
+    <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:30px;">
+        <div class="card card-accent-dark">
+            <h3>Act 1: Organic Flow</h3>
+            <div style="display:inline-block;font-family:monospace;background:#111;color:var(--ncad-accent-blue);padding:4px 10px;border-radius:4px;font-size:0.85em;margin-bottom:10px;">PINS: Position + Starch</div>
+            <p>Focus on a tail, hair, or a simple waving arm. Use Starch pins to keep the "bones" rigid while the limb flows.</p>
+        </div>
+        <div class="card card-accent-yellow">
+            <h3>Act 2: Advanced Control</h3>
+            <div style="display:inline-block;font-family:monospace;background:#111;color:var(--ncad-accent-blue);padding:4px 10px;border-radius:4px;font-size:0.85em;margin-bottom:10px;">PINS: Advanced + Bend</div>
+            <p>Animate a complex head nod or torso twist. Use the Advanced pin to scale and rotate simultaneously for a "3D-ish" perspective.</p>
+        </div>
+        <div class="card card-accent">
+            <h3>Act 3: Depth &amp; Overlap</h3>
+            <div style="display:inline-block;font-family:monospace;background:#111;color:var(--ncad-accent-blue);padding:4px 10px;border-radius:4px;font-size:0.85em;margin-bottom:10px;">PINS: Overlap + Position</div>
+            <p>Animate an arm or leg crossing in front of the body. Use the Overlap pin to define Z-depth.</p>
+        </div>
+    </div>
+
+    <!-- THE 5 PIN TOOLKIT -->
+    <h2 class="section-header">The 5 Pin Toolset</h2>
+    <div class="pin-grid">
+        <div class="pin-card" style="border-top:4px solid #1a1a1a;">
+            <strong>Position Pin</strong>
+            <small>Basic translation. Move points A to B.</small>
+        </div>
+        <div class="pin-card" style="border-top:4px solid #0076c0;">
+            <strong>Starch Pin</strong>
+            <small>Adds rigidity. Use this to "freeze" joints or bones.</small>
+        </div>
+        <div class="pin-card" style="border-top:4px solid #fbc02d;">
+            <strong>Bend Pin</strong>
+            <small>Local rotation and scaling at the pin site.</small>
+        </div>
+        <div class="pin-card" style="border-top:4px solid #ea4335;">
+            <strong>Advanced Pin</strong>
+            <small>The "All-in-One." Position, Scale, and Rotate simultaneously.</small>
+        </div>
+        <div class="pin-card" style="border-top:4px solid #2e7d32;">
+            <strong>Overlap Pin</strong>
+            <small>Defines Z-depth. Keeps the arm in front of the body.</small>
+        </div>
+    </div>
+
+    <!-- TECHNICAL WORKFLOWS -->
+    <h2 class="section-header">Mastering the Mesh &amp; Motion</h2>
+    <div class="grid-2">
+        <div class="card">
+            <h3>The Mesh Anatomy</h3>
+            <p>When you place your first pin, After Effects generates a <strong>triangulated mesh</strong> over your alpha pixels. To keep your animation smooth, adjust these toolbar settings:</p>
+            <ul>
+                <li><strong>Expansion:</strong> The "buffer" around your artwork. Increase this if your edges are being cut off by the warp.</li>
+                <li><strong>Density:</strong> Adds more triangles. Higher density = smoother bends but slower render times.</li>
+                <li><strong>Pre-Compose First:</strong> Always pre-compose your character artwork (Move All Attributes) before pinning to keep your mesh clean.</li>
+            </ul>
+        </div>
+        <div class="dark-content" style="border-radius:12px;">
+            <h3>Live Motion Recording</h3>
+            <p>You don't have to manually set every keyframe. You can "perform" your character:</p>
+            <ol style="padding-left:20px;color:#ccc;">
+                <li>Select a Position Pin.</li>
+                <li>Hold <kbd>Ctrl</kbd> (PC) or <kbd>Cmd</kbd> (Mac).</li>
+                <li><strong>Click and Drag</strong> the pin. AE will record your mouse movement in real-time as keyframes.</li>
+            </ol>
+            <p style="margin-top:12px;color:#888;font-style:italic;">Nugget: Use 'Motion Sketch' recording options to increase smoothing and eliminate "jittery" mouse hand.</p>
+        </div>
+    </div>
+
+    <!-- TECHNIQUE VIDEOS -->
+    <h2 class="section-header">Rapid Technique Breakdowns</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px;">
+        <div class="video-card-vertical"><iframe src="https://www.youtube.com/embed/gtzENMlsL5k" allowfullscreen></iframe></div>
+        <div class="video-card-vertical"><iframe src="https://www.youtube.com/embed/Y0kOoMdsdyU" allowfullscreen></iframe></div>
+        <div class="video-card-vertical"><iframe src="https://www.youtube.com/embed/hbWGN0azrug" allowfullscreen></iframe></div>
+        <div class="video-card-vertical"><iframe src="https://www.youtube.com/embed/mBKjET_cuSY" allowfullscreen></iframe></div>
+        <div class="video-card-vertical"><iframe src="https://www.youtube.com/embed/vh17rKmxlTM" allowfullscreen></iframe></div>
+    </div>
+
+    <!-- SPECS -->
+    <div class="grid-2">
+        <div class="card card-accent">
+            <h3>Video Specs</h3>
+            <ul>
+                <li><strong>Duration:</strong> 60s total (~15-20s per act)</li>
+                <li><strong>Labels:</strong> Must label pin types used on screen</li>
+                <li><strong>Loops:</strong> Use loopOut expressions for seamless loops</li>
+            </ul>
+        </div>
+        <div class="card card-accent-yellow">
+            <h3>Workflow</h3>
+            <ul>
+                <li><strong>Live Record:</strong> Ctrl/Cmd + Drag for organic feel</li>
+                <li><strong>Mesh Prep:</strong> Pre-compose artwork first</li>
+                <li><strong>Refine:</strong> Check the Graph Editor after recording</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PITFALL -->
+    <div class="callout callout-warn">
+        <span class="icon">&#9888;&#65039;</span>
+        <strong class="label">Common Pitfall: The Artwork "Pull"</strong>
+        <p>If your character's arm is touching its torso in the original artwork, the Puppet Tool treats them as <strong>one single piece of rubber</strong>. When you move the arm, the torso will "pull" and stretch with it. To fix this, you must separate your artwork into different layers in Illustrator/Photoshop before bringing it into AE. <strong>If they aren't separated, the mesh can't be independent.</strong></p>
+    </div>
+
+    <!-- PRO TIP -->
+    <div class="callout callout-tip">
+        <span class="icon">&#128161;</span>
+        <strong class="label">Pro-Tip: Endless Secondary Action</strong>
+        <p>Once you've animated a subtle wave or sway, Alt-Click the pin's position stopwatch and type <code style="background:#333;padding:2px 6px;border-radius:4px;">loopOut("pingpong")</code>. This will keep that subtle "life" moving forever, allowing you to focus on the character's primary movements.</p>
+    </div>
+
+    <!-- CHECKLIST -->
+    <div class="checklist">
+        <h3>Puppet Tool Mastery Checklist</h3>
+        <div class="cols">
+            <ul>
+                <li><strong>Subtle Only:</strong> Use for hair, tails, and sways.</li>
+                <li><strong>Starch is Key:</strong> Don't let your elbows turn to jelly.</li>
+                <li><strong>Overlap:</strong> Define what stays in front manually.</li>
+            </ul>
+            <ul>
+                <li><strong>Record Live:</strong> Use Ctrl/Cmd+Drag for organic feel.</li>
+                <li><strong>Mesh Pull:</strong> Separate artwork layers if warping occurs.</li>
+                <li><strong>Toolkit Path:</strong> Puppet Pins -> Rubberhose -> DUIK.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SUBMISSION -->
+    <div class="submission">
+        <h3>NCAD Submission Standard</h3>
+        <div class="file-format">InterMD_Puppet_StudentName_Final_YYYYMMDD_v01</div>
+        <p><strong>Deliverables:</strong> 1x Rendered .MP4 (60 seconds) and 1x Zipped Project Folder (Collected).</p>
+    </div>
+
+    <p style="text-align:center;margin-top:20px;"><a href="intermediate-week1.html">&larr; Week 1: Kinetic Type</a> &nbsp;&bull;&nbsp; <a href="intermediate.html">Intermediate Motion</a></p>
+
+    <div class="site-footer">NCAD Motion Design &bull; Intermediate Week 2 &bull; Spring 2026</div>
+</div>
+
+</body>
+</html>
