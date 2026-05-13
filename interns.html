@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Production Hub - NCAD</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lock-screen {
+            max-width: 420px;
+            margin: 120px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .lock-screen h1 { color: #fff; font-size: 1.8em; margin-bottom: 8px; }
+        .lock-screen p { color: #666; margin-bottom: 24px; }
+        .lock-screen input {
+            width: 100%;
+            padding: 14px 18px;
+            background: #1a1a1a;
+            border: 2px solid #333;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 1em;
+            text-align: center;
+            letter-spacing: 2px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .lock-screen input:focus { border-color: var(--ncad-accent-blue); }
+        .lock-screen input.wrong { border-color: #c62828; animation: shake 0.4s; }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-8px); }
+            40%, 80% { transform: translateX(8px); }
+        }
+        .lock-screen button {
+            margin-top: 14px;
+            width: 100%;
+            padding: 14px;
+            background: var(--ncad-accent-blue);
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .lock-screen button:hover { background: #fff; }
+        .lock-hint { color: #333; font-size: 0.75em; margin-top: 16px; }
+
+        #protected-content { display: none; }
+    </style>
+</head>
+<body>
+
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand"><img src="homepage/NCAD-lockup-orange-white.webp" alt="NCAD"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="capstone2.html">Capstone 2</a>
+            <a href="intermediate.html">Intermediate Motion</a>
+            <a href="capstone1.html">Capstone 1 (IS)</a>
+            <a href="intro-motion.html">Intro Motion (IS)</a>
+        </div>
+    </div>
+</nav>
+
+<!-- PASSWORD GATE -->
+<div id="lock-gate">
+    <div class="lock-screen">
+        <div style="font-size:3em;margin-bottom:16px;">&#128274;</div>
+        <h1>Intern Access</h1>
+        <p>This area is for NCAD production interns only.</p>
+        <input type="password" id="pw-input" placeholder="Enter password" autofocus>
+        <button id="pw-btn">Unlock</button>
+        <div class="lock-hint">Ask Topher if you don't have the password.</div>
+    </div>
+</div>
+
+<!-- PROTECTED CONTENT -->
+<div id="protected-content">
+<div class="page">
+
+    <div class="hero">
+        <div class="label">Production Internship &bull; 15 Weeks &bull; Spring/Summer 2026</div>
+        <h1 class="gradient-blue">Intern Production Hub</h1>
+        <p>Welcome to the war room. We're building the Intro to Motion Design video curriculum from scratch.</p>
+    </div>
+
+    <div class="resource-row">
+        <a href="https://discord.gg/HESQKd4Nzf" class="resource-btn discord">Discord</a>
+        <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" class="resource-btn drive">Google Drive</a>
+    </div>
+
+    <!-- THE MISSION -->
+    <div class="goal-box" style="border-left-color: #c62828;">
+        <h2>The Mission</h2>
+        <p>We are producing a full library of weekly lesson videos for Introduction to Motion Design. This is a <strong>real-world production pipeline</strong>. We start with the history content, lock a motion language and visual flow, then expand into tutorial videos.</p>
+    </div>
+
+    <!-- EXPECTATIONS -->
+    <div class="callout callout-info">
+        <span class="icon">&#128640;</span>
+        <strong class="label">How This Internship Works</strong>
+        <p>This is a real world project. I am looking for you to develop <strong>smart workflows</strong> -- YES -- using AI to help with organization, scripting, flow, ideation, and things like that. Use the tools you're gonna use in the real world. Get the free versions of <strong>Claude</strong>, <strong>ChatGPT</strong>, and <strong>Gemini</strong> if you don't already.</p>
+    </div>
+
+    <div class="callout callout-appeal">
+        <span class="icon">&#127916;</span>
+        <strong class="label">The Production Pipeline</strong>
+        <p><strong>Phase 1:</strong> History of Motion Design videos -- chunk the textbook content into digestible episodes.<br>
+        <strong>Phase 2:</strong> Lock the motion language and visual flow for the series.<br>
+        <strong>Phase 3:</strong> Expand into technique tutorial videos using the established style.</p>
+    </div>
+
+    <!-- TEXTBOOK & RESOURCES -->
+    <h2 class="section-header">Textbook &amp; Reference Materials</h2>
+
+    <div class="card card-accent-red" style="margin-bottom:20px;">
+        <h3>Required Reading: First Few Chapters</h3>
+        <p>Re-familiarize yourself with the history content. These are the chapters we'll be turning into video.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:14px;">
+            <a href="https://drive.google.com/file/d/1IR4bamPyf4FNjdyKBnUAeh_3TX2E3gCm/view?usp=drive_link" style="display:block;background:#111;padding:12px 16px;border-radius:8px;border-left:4px solid var(--ncad-accent-blue);">Textbook Resource 1</a>
+            <a href="https://drive.google.com/file/d/1h5GzpDDmyIYAppRB1fdGIkZ2HbCxWwz_/view?usp=drive_link" style="display:block;background:#111;padding:12px 16px;border-radius:8px;border-left:4px solid var(--ncad-accent-blue);">Textbook Resource 2</a>
+            <a href="https://drive.google.com/file/d/1TWOa0hwxTGofBjYB_y3jV0aLlqX7xlrM/view?usp=drive_link" style="display:block;background:#111;padding:12px 16px;border-radius:8px;border-left:4px solid var(--ncad-accent-blue);">Textbook Resource 3</a>
+            <a href="https://drive.google.com/file/d/1S9F0VF5t8SUuk_JlcooE-ljP6OM16ekn/view?usp=drive_link" style="display:block;background:#111;padding:12px 16px;border-radius:8px;border-left:4px solid var(--ncad-accent-blue);">Textbook Resource 4</a>
+        </div>
+    </div>
+
+    <div class="card card-accent" style="margin-bottom:30px;">
+        <h3>Shared Textbook Drive Folder</h3>
+        <p>Full reference materials live here:</p>
+        <a href="https://drive.google.com/drive/u/0/folders/19EuHWfH6Kk5sdh6-rbyoLBjlwMZ8odgs" style="display:block;background:#111;padding:12px 16px;border-radius:8px;border-left:4px solid var(--ncad-drive);margin-top:10px;">Textbook Google Drive Folder</a>
+    </div>
+
+    <!-- WEEKLY SCHEDULE -->
+    <h2 class="section-header">15-Week Internship Timeline</h2>
+
+    <div class="week-grid">
+        <div class="week-card" style="border-top:4px solid #0076c0;">
+            <div class="week-num">Week 1</div>
+            <h3>History Deep Dive &amp; Orientation</h3>
+            <p>Read the first few chapters of the textbook. Familiarize yourself with the history of motion design. Topher is preparing direction for the first video productions.</p>
+            <div class="date">May 7, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 2</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">May 14, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 3</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">May 21, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 4</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">May 28, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 5</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">June 4, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 6</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">June 11, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #2e7d32;">
+            <div class="week-num" style="color:#2e7d32;">Week 7 &mdash; Midterm</div>
+            <h3 style="color:#555;">Midterm Check-In</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">June 18, 2026 &bull; <strong style="color:#888;">Midterm due Sun, June 21</strong></div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 8</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">June 25, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 9</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">July 2, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 10</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">July 9, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 11</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">July 16, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 12</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">July 23, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 13</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">July 30, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #333;">
+            <div class="week-num" style="color:#555;">Week 14</div>
+            <h3 style="color:#555;">Coming Soon</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">August 6, 2026</div>
+        </div>
+        <div class="week-card" style="border-top:4px solid #2e7d32;">
+            <div class="week-num" style="color:#2e7d32;">Week 15 &mdash; Finals</div>
+            <h3 style="color:#555;">Final Deliverables</h3>
+            <p style="color:#444;">Topher will be uploading this content soon.</p>
+            <div class="date">August 13, 2026 &bull; <strong style="color:#888;">Finals due Sun, August 16</strong></div>
+        </div>
+    </div>
+
+    <!-- AI TOOLS CALLOUT -->
+    <div class="callout callout-tip">
+        <span class="icon">&#129302;</span>
+        <strong class="label">Your AI Toolkit</strong>
+        <p>This internship expects you to use AI as a real production tool. Get free accounts set up now:<br>
+        <strong>Claude</strong> (claude.ai) &bull; <strong>ChatGPT</strong> (chat.openai.com) &bull; <strong>Gemini</strong> (gemini.google.com)<br>
+        Use them for scripting, organization, flow ideation, research, and workflow optimization.</p>
+    </div>
+
+    <div class="site-footer">
+        NCAD Motion Design &bull; Intern Production Hub &bull; Spring/Summer 2026
+    </div>
+
+</div>
+</div>
+
+<script>
+(function() {
+    var gate = document.getElementById('lock-gate');
+    var content = document.getElementById('protected-content');
+    var input = document.getElementById('pw-input');
+    var btn = document.getElementById('pw-btn');
+    var key = 'ncad-intern-auth';
+
+    if (sessionStorage.getItem(key) === 'true') {
+        gate.style.display = 'none';
+        content.style.display = 'block';
+    }
+
+    function tryUnlock() {
+        if (input.value === 'caseyjones') {
+            sessionStorage.setItem(key, 'true');
+            gate.style.display = 'none';
+            content.style.display = 'block';
+        } else {
+            input.classList.add('wrong');
+            input.value = '';
+            setTimeout(function() { input.classList.remove('wrong'); }, 400);
+        }
+    }
+
+    btn.addEventListener('click', tryUnlock);
+    input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') tryUnlock();
+    });
+})();
+</script>
+
+</body>
+</html>
