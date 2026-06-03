@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3: RubberHose 3 - Intermediate Motion Design - NCAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand"><img src="homepage/NCAD-lockup-orange-white.webp" alt="NCAD"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="capstone2.html">Capstone 2</a>
+            <a href="intermediate.html" class="active">Intermediate Motion</a>
+            <a href="capstone1.html">Capstone 1 (IS)</a>
+            <a href="intro-motion.html">Intro Motion (IS)</a>
+        </div>
+    </div>
+</nav>
+
+<div class="page">
+
+    <div class="hero">
+        <div class="label">Week 3 &bull; May 21, 2026</div>
+        <h1 class="gradient-blue">RubberHose 3: Character Limbs</h1>
+        <p>Build fast, clean character rigs in After Effects using Battle Axe's RubberHose 3. This week is about controllable limbs, readable poses, hose styling, and animation workflow.</p>
+    </div>
+
+    <div class="resource-row">
+        <a href="https://discord.gg/HESQKd4Nzf" class="resource-btn discord">Discord</a>
+        <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" class="resource-btn drive">Google Drive</a>
+        <a href="https://battleaxe.co/rubberhose/docs" class="resource-btn template">RubberHose Docs</a>
+    </div>
+
+    <div class="callout callout-info">
+        <span class="icon">&#129302;</span>
+        <strong class="label">Why RubberHose?</strong>
+        <p>The Puppet Tool bends pixels. RubberHose builds a simple, art-directable limb system. It is ideal for arms, legs, tails, tentacles, simple characters, explainer animation, mascot rigs, and stylized motion where you need speed without building a full DUIK character rig.</p>
+    </div>
+
+    <div class="goal-box">
+        <h2>Lesson Goal</h2>
+        <p>By the end of this lesson, you should be able to create a RubberHose limb, pose it with controllers, style the hose to match a character design, attach hands/feet/props, and animate a clean walk or gesture with intentional arcs and overlap.</p>
+    </div>
+
+    <h2 class="section-header">Official Core References</h2>
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/uZb8F2ub5yc" allowfullscreen></iframe></div>
+            <p><strong>RubberHose 3 - hose basics:</strong> Start here for the basic build workflow and controller logic.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/wTumec0YZzk" allowfullscreen></iframe></div>
+            <p><strong>RubberHose 3 - style:</strong> The most important reference for today's hose styling work.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/5QtQfhRTHA8" allowfullscreen></iframe></div>
+            <p><strong>Advanced limb styles:</strong> A strong follow-up for sleeves, cuffs, outlines, and more designed character limbs.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">RubberHose Mental Model</h2>
+    <div class="grid-3">
+        <div class="card card-accent">
+            <h3>Hose</h3>
+            <p>The visible bendy limb. Think of it as the arm or leg shape. It is built from After Effects shape-layer logic, which is why styling is so flexible.</p>
+        </div>
+        <div class="card card-accent-orange">
+            <h3>Controllers</h3>
+            <p>The points you animate. Instead of dragging pixels like Puppet Tool, you pose a limb by moving the controller ends and adjusting bend behavior.</p>
+        </div>
+        <div class="card card-accent-green">
+            <h3>Style</h3>
+            <p>The visual design applied to the hose: stroke width, fills, trims, cuffs, sleeves, outlines, tapers, dashes, effects, and saved presets.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">Core Workflow</h2>
+    <div class="grid-2">
+        <div class="card">
+            <h3>Build Order</h3>
+            <ol style="padding-left:22px;color:#bbb;">
+                <li>Create or import your character artwork.</li>
+                <li>Separate body, upper arms, forearms, hands, legs, feet, head, and props into clean layers.</li>
+                <li>Create a RubberHose limb for each arm/leg section you need.</li>
+                <li>Place controllers at believable shoulder/elbow/wrist or hip/knee/ankle positions.</li>
+                <li>Pose the character in a strong neutral stance before animating.</li>
+                <li>Parent hands, feet, sleeves, gloves, shoes, and props to the correct hose/controller.</li>
+            </ol>
+        </div>
+        <div class="dark-content">
+            <h3>The Pose Test</h3>
+            <p>Before you animate, hit three test poses:</p>
+            <ul style="padding-left:20px;color:#ccc;">
+                <li>Neutral standing pose</li>
+                <li>Extreme reach pose</li>
+                <li>Compressed/bent pose</li>
+            </ul>
+            <p>If the limb breaks, collapses, twists, or loses its design in any of those poses, fix the rig before making keyframes.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">Hose Styling: What We Focused On In Class</h2>
+    <div class="grid-2">
+        <div class="card card-accent-yellow">
+            <h3>Shape-Layer Styling</h3>
+            <p>A hose is built from shape-layer behavior, so the styling power comes from familiar AE tools.</p>
+            <ul>
+                <li><strong>Stroke width:</strong> Controls limb thickness and character weight.</li>
+                <li><strong>Stroke color:</strong> Match skin, clothing, gloves, pants, shoes, or graphic color palettes.</li>
+                <li><strong>Caps:</strong> Round caps feel soft and noodle-like. Butt caps feel graphic, cut, and flatter.</li>
+                <li><strong>Multiple strokes:</strong> Create outlines, cuffs, socks, gloves, sleeves, shadows, and stripes.</li>
+                <li><strong>Fills and shapes:</strong> Add elbows, joints, shoulder caps, pads, buttons, or simple costume details.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-purple">
+            <h3>Style Operators</h3>
+            <p>Use shape operators to make the hose feel designed instead of default.</p>
+            <ul>
+                <li><strong>Trim Paths:</strong> Make partial sleeves, bands, gloves, socks, and reveal animations.</li>
+                <li><strong>Taper:</strong> Narrow the hose toward wrists, ankles, tentacle tips, or stylized extremities.</li>
+                <li><strong>Dashes:</strong> Create segmented limbs, stitch lines, striped socks, or mechanical details.</li>
+                <li><strong>Offset:</strong> Move decorative bands along the limb without rebuilding the rig.</li>
+                <li><strong>Layer styles/effects:</strong> Use cautiously for shadows, highlights, glow, or graphic treatment.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="callout callout-tip">
+        <span class="icon">&#128161;</span>
+        <strong class="label">Style Presets vs. Bend Presets</strong>
+        <p><strong>Style presets</strong> change how the hose looks. <strong>Bend presets</strong> change how the hose bends. Keep those two ideas separate so you can reuse a good limb design while still changing the motion behavior.</p>
+    </div>
+
+    <h2 class="section-header">Styling Recipes</h2>
+    <div class="grid-3">
+        <div class="card card-accent">
+            <h3>Simple Cartoon Arm</h3>
+            <ul>
+                <li>One round stroke</li>
+                <li>Round caps</li>
+                <li>Color matched to skin or shirt</li>
+                <li>Small hand layer parented to wrist controller</li>
+            </ul>
+        </div>
+        <div class="card card-accent-orange">
+            <h3>Sleeve + Glove</h3>
+            <ul>
+                <li>Base arm stroke</li>
+                <li>Second stroke for shirt sleeve</li>
+                <li>Trim Paths to stop sleeve before wrist</li>
+                <li>Separate glove/hand artwork parented at the end</li>
+            </ul>
+        </div>
+        <div class="card card-accent-green">
+            <h3>Outlined Limb</h3>
+            <ul>
+                <li>Thick dark stroke underneath</li>
+                <li>Thinner colored stroke above it</li>
+                <li>Consistent outline thickness across arms and legs</li>
+                <li>Best for mascot/cartoon design</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">Animation Principles Inside RubberHose</h2>
+    <div class="grid-2">
+        <div class="card">
+            <h3>Pose-to-Pose First</h3>
+            <p>Do not noodle around randomly. Block the important poses first, then add breakdowns and overlap.</p>
+            <ul>
+                <li><strong>Contact:</strong> Where the foot or hand touches.</li>
+                <li><strong>Passing:</strong> The limb crosses through the body center.</li>
+                <li><strong>Extreme:</strong> The furthest reach or squash.</li>
+                <li><strong>Settle:</strong> The small recovery after the main movement.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Arcs, Overlap, and Drag</h3>
+            <p>Controllers should move in clean arcs, not mechanical straight lines. Hands and feet can lead or drag depending on the acting choice.</p>
+            <ul>
+                <li>Use Easy Ease as a starting point, then refine in the Graph Editor.</li>
+                <li>Offset hand, elbow, knee, or foot motion by a few frames for organic overlap.</li>
+                <li>Add anticipation before big gestures.</li>
+                <li>Keep silhouettes readable at every major pose.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">Walk Cycle Reference Stack</h2>
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/VvMFtZ19x8I" allowfullscreen></iframe></div>
+            <p><strong>RubberHose walk cycle:</strong> Use this as the bridge between rig setup and actual character animation.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/IiqgRB6Taqc" allowfullscreen></iframe></div>
+            <p><strong>Parent to hose:</strong> Useful when attaching hands, feet, props, or costume pieces to the limb.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/dcCS2vPYA-c" allowfullscreen></iframe></div>
+            <p><strong>Bones:</strong> For deeper control once the simple hose workflow makes sense.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">Common Problems</h2>
+    <div class="grid-2">
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">Broken Limb Silhouette</strong>
+            <p>If the hose looks good in one pose but ugly in another, the design is too dependent on one angle. Test extremes before committing.</p>
+        </div>
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">Default Noodle Syndrome</strong>
+            <p>The default hose is only a starting point. If every limb is the same stroke width and color, the character will feel unfinished.</p>
+        </div>
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">Hands and Feet Floating</strong>
+            <p>Parent or attach end pieces carefully. A strong hose animation fails fast if the wrist, shoe, or prop drifts away from the controller.</p>
+        </div>
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">Too Many Controls Too Soon</strong>
+            <p>RubberHose is valuable because it is fast. Keep the rig simple until the acting requires more complexity.</p>
+        </div>
+    </div>
+
+    <div class="checklist">
+        <h3>RubberHose 3 Mastery Checklist</h3>
+        <div class="cols">
+            <ul>
+                <li><strong>Create:</strong> Build a hose and place controllers cleanly.</li>
+                <li><strong>Pose:</strong> Test neutral, reach, and compression poses.</li>
+                <li><strong>Style:</strong> Use strokes, trims, tapers, and presets intentionally.</li>
+                <li><strong>Attach:</strong> Parent hands, feet, and props without drift.</li>
+            </ul>
+            <ul>
+                <li><strong>Animate:</strong> Block contact, passing, extreme, and settle poses.</li>
+                <li><strong>Polish:</strong> Refine timing, easing, arcs, and overlap.</li>
+                <li><strong>Organize:</strong> Name layers and controllers clearly.</li>
+                <li><strong>Export:</strong> Render clean MP4s and collect the project folder.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="submission">
+        <h3>Key Links</h3>
+        <p><strong>Official docs:</strong> <a href="https://battleaxe.co/rubberhose/docs">RubberHose 3 Quickstart</a> &bull; <a href="https://battleaxe.co/rubberhose/docs/styles">Styles Documentation</a> &bull; <a href="https://battleaxe.co/rubberhose/docs/controls">Controls Documentation</a></p>
+        <p style="margin-top:10px;"><strong>Next:</strong> Week 4 turns this lesson into a three-animation RubberHose assignment.</p>
+    </div>
+
+    <p style="text-align:center;margin-top:20px;"><a href="intermediate-week2.html">&larr; Week 2: Puppet Tool</a> &nbsp;&bull;&nbsp; <a href="intermediate.html">Intermediate Motion</a> &nbsp;&bull;&nbsp; <a href="intermediate-week4.html">Week 4: RubberHose Assignment &rarr;</a></p>
+
+    <div class="site-footer">NCAD Motion Design &bull; Intermediate Week 3 &bull; Spring 2026</div>
+</div>
+
+</body>
+</html>
+

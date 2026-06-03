@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5: DUIK Angela - Intermediate Motion Design - NCAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand"><img src="homepage/NCAD-lockup-orange-white.webp" alt="NCAD"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="capstone2.html">Capstone 2</a>
+            <a href="intermediate.html" class="active">Intermediate Motion</a>
+            <a href="capstone1.html">Capstone 1 (IS)</a>
+            <a href="intro-motion.html">Intro Motion (IS)</a>
+        </div>
+    </div>
+</nav>
+
+<div class="page">
+
+    <div class="hero">
+        <div class="label">Week 5 &bull; June 3, 2026</div>
+        <h1 class="gradient-blue">DUIK Angela Character Rigging</h1>
+        <p>Use this page as your Week 5 reference for moving from simple bendy limbs into a full character rigging workflow: prepared artwork, bones, IK controllers, auto-rigging, walk-cycle tools, and clean animation tests.</p>
+    </div>
+
+    <div class="resource-row">
+        <a href="https://discord.gg/HESQKd4Nzf" class="resource-btn discord">Discord</a>
+        <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" class="resource-btn drive">Google Drive</a>
+        <a href="https://duik.org/" class="resource-btn template">DUIK Official Site</a>
+    </div>
+
+    <div class="goal-box">
+        <h2>What This Page Helps You Do</h2>
+        <p>By the end of this reference, you should understand how DUIK Angela turns layered artwork into a controllable character rig. Your goal is not a perfect production rig yet. Your goal is a rig you can pose, test, fix, and animate without losing control of the character.</p>
+    </div>
+
+    <div class="callout callout-info">
+        <span class="icon">&#129504;</span>
+        <strong class="label">Big Picture</strong>
+        <p>RubberHose is fast limb animation. DUIK Angela is a deeper rigging system. It can build bones, controllers, inverse kinematics, walk cycles, springs, loops, and reusable animation helpers. That power is useful, but only if the artwork is organized first.</p>
+    </div>
+
+    <h2 class="section-header">Official DUIK Resources</h2>
+    <div class="grid-3">
+        <div class="card card-accent-yellow">
+            <h3>DUIK Download + Overview</h3>
+            <p>The official DUIK page from RxLaboratory. Use this for download links, tool overview, and the current version of the plugin.</p>
+            <p><a href="https://duik.org/">Open DUIK official site</a></p>
+        </div>
+        <div class="card card-accent">
+            <h3>Official Video Course</h3>
+            <p>Long-form official training for DUIK Angela. Use this when you want the full system explained in more depth.</p>
+            <p><a href="https://rxlaboratorio.org/rx-tutorial/duik-17/">Open official course</a></p>
+        </div>
+        <div class="card card-accent-green">
+            <h3>Free Tutorials</h3>
+            <p>RxLaboratory's free tutorial library for shorter demos, workflow refreshers, and specific DUIK tools.</p>
+            <p><a href="https://rxlaboratorio.org/tutorials/">Open free tutorials</a></p>
+        </div>
+    </div>
+
+    <h2 class="section-header">Start Here Videos</h2>
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/hQVPKyHHAtI" title="DUIK Angela Easy Way Character Rigging and Animation" allowfullscreen></iframe></div>
+            <p><strong>10 min:</strong> Best first pass. Shows the basic character rigging and animation flow without overwhelming the page.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/LRmqFmftsnA" title="DUIK Angela Full Character Rig and Animate" allowfullscreen></iframe></div>
+            <p><strong>12 min:</strong> Full character rig and simple animation test. Good for seeing the rig as one complete system.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/VoQ23wxtyk4" title="DUIK Angela Full Body Rigging Animation" allowfullscreen></iframe></div>
+            <p><strong>16 min:</strong> Full-body rigging walkthrough. Watch this when arms, legs, torso, and head need to connect.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">The DUIK Workflow</h2>
+    <div class="grid-5">
+        <div class="pin-card">
+            <strong>1. Prep</strong>
+            <small>Separate body parts into clean layers before rigging.</small>
+        </div>
+        <div class="pin-card">
+            <strong>2. Bones</strong>
+            <small>Add a skeleton that matches the character's joints.</small>
+        </div>
+        <div class="pin-card">
+            <strong>3. Rig</strong>
+            <small>Use DUIK controls and IK so limbs can be posed.</small>
+        </div>
+        <div class="pin-card">
+            <strong>4. Test</strong>
+            <small>Pose extremes and find broken pivots early.</small>
+        </div>
+        <div class="pin-card">
+            <strong>5. Animate</strong>
+            <small>Block the action first, then polish timing and arcs.</small>
+        </div>
+    </div>
+
+    <div class="checklist">
+        <h3>Before You Rig: Artwork Prep Checklist</h3>
+        <div class="cols">
+            <ul>
+                <li><strong>Separate:</strong> Head, torso, upper arms, forearms, hands, thighs, shins, and feet.</li>
+                <li><strong>Name:</strong> Use clear layer names like L_UpperArm, R_Hand, Head, Torso.</li>
+                <li><strong>Overlap:</strong> Artwork should overlap slightly at elbows, knees, shoulders, and hips.</li>
+                <li><strong>Anchor:</strong> Move anchor points to real joints before animation gets messy.</li>
+            </ul>
+            <ul>
+                <li><strong>Neutral pose:</strong> Start from a clean standing pose with readable limb spacing.</li>
+                <li><strong>Simple shapes:</strong> Avoid tiny details until the rig moves correctly.</li>
+                <li><strong>Hierarchy:</strong> Know what should follow what before parenting everything.</li>
+                <li><strong>Save version:</strong> Duplicate the project before heavy rigging experiments.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">Rigging Concepts</h2>
+    <div class="grid-3">
+        <div class="card card-accent">
+            <h3>Bones</h3>
+            <p>Bones are the skeleton of the rig. They define where the character bends and how the body structure is understood by DUIK.</p>
+            <ul>
+                <li>Shoulder to elbow to wrist</li>
+                <li>Hip to knee to ankle</li>
+                <li>Spine and neck for torso/head control</li>
+            </ul>
+        </div>
+        <div class="card card-accent-orange">
+            <h3>Controllers</h3>
+            <p>Controllers are the handles the animator grabs. Students should animate controllers, not hunt through artwork layers.</p>
+            <ul>
+                <li>Hand controls</li>
+                <li>Foot controls</li>
+                <li>Body/root controls</li>
+            </ul>
+        </div>
+        <div class="card card-accent-green">
+            <h3>IK</h3>
+            <p>Inverse kinematics lets the end of a limb drive the chain. Move the hand control and the forearm/upper arm solve together.</p>
+            <ul>
+                <li>Great for planted hands or feet</li>
+                <li>Useful for walk cycles</li>
+                <li>Needs clean joint direction</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">Quick Help Videos</h2>
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/nFrhDJ57Nts" title="DUIK Angela IK Rigging in 2 Minutes" allowfullscreen></iframe></div>
+            <p><strong>3 min:</strong> Quick IK setup. Use this as the fast rescue video when you only need hand or leg IK.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/W7fRHhff4mA" title="Rigging in After Effects DUIK Angela Part 1" allowfullscreen></iframe></div>
+            <p><strong>54 min:</strong> Slower humanoid rigging walkthrough. Best when you need a more detailed step-by-step reference.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/j7i9pHawRJY" title="Full Face Rig and Animation with DUIK Angela" allowfullscreen></iframe></div>
+            <p><strong>20 min:</strong> Face rigging reference if you want mouth, eyes, expressions, and slider controls.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">Shorts / Fast Refreshers</h2>
+    <div class="grid-3">
+        <div class="video-card-vertical">
+            <iframe src="https://www.youtube.com/embed/R9C2nBr3xaM" title="DUIK Angela Simple Character Rigging Short" allowfullscreen></iframe>
+        </div>
+        <div class="video-card-vertical">
+            <iframe src="https://www.youtube.com/embed/7Lkjq1wM49g" title="Steps of Rigging and Animating Characters Short" allowfullscreen></iframe>
+        </div>
+        <div class="card card-accent-yellow">
+            <h3>Use Shorts Correctly</h3>
+            <p>Shorts are good for seeing the order of operations quickly, but they are not enough to debug a broken rig. Use them as memory refreshers after the longer lesson videos.</p>
+            <ul>
+                <li>Watch once for the sequence.</li>
+                <li>Pause and recreate one step.</li>
+                <li>Switch to a full tutorial when something breaks.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">Advanced / Optional References</h2>
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/M5GwWVOv9KQ" title="Full 2D Character Animation with DUIK Angela" allowfullscreen></iframe></div>
+            <p><strong>45 min:</strong> Full 2D character animation workflow. Good when you want a deeper end-to-end example.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/P8KXAAHArI0" title="Character Animation A to Z DUIK Angela" allowfullscreen></iframe></div>
+            <p><strong>26 min:</strong> Character animation from setup through motion. Useful bridge between rigging and performance.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/b9cOpSWvqEA" title="Rig Animal With DUIK Angela" allowfullscreen></iframe></div>
+            <p><strong>4 min:</strong> Animal rigging reference. Useful if you want to rig a creature instead of a human character.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">Common Problems</h2>
+    <div class="grid-2">
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">The Limb Bends Backward</strong>
+            <p>The joint direction or controller placement is probably wrong. Check the neutral pose, bone order, and where the elbow/knee should point.</p>
+        </div>
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">Artwork Falls Apart</strong>
+            <p>The layers were not prepared enough before rigging. Go back to separation, overlap, naming, anchor points, and clean hierarchy.</p>
+        </div>
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">Too Many Controls</strong>
+            <p>More controls do not automatically make a better rig. Start with the controls needed for the assignment and add complexity only when the animation needs it.</p>
+        </div>
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">Rig Works, Animation Feels Stiff</strong>
+            <p>That is an animation problem, not only a rig problem. Add anticipation, arcs, offset timing, and follow-through after the pose test works.</p>
+        </div>
+    </div>
+
+    <div class="submission">
+        <h3>Practice Export</h3>
+        <div class="file-format">InterMD_DUIK_Test_StudentName_YYYYMMDD_v01.mp4</div>
+        <p>Render a 5-8 second pose test showing your DUIK rig in at least three readable poses: neutral, extreme reach/step, and a small animated action. The goal is proof that the rig can be controlled.</p>
+    </div>
+
+    <div class="callout callout-tip">
+        <span class="icon">&#128161;</span>
+        <strong class="label">Rigging Tip</strong>
+        <p>Rigging is debugging. If the rig breaks, do not panic. Isolate one limb, fix one control chain, then test again. Clean rigs are built through small checks, not one giant perfect setup.</p>
+    </div>
+
+    <p style="text-align:center;margin-top:20px;"><a href="intermediate-week4.html">&larr; Week 4: RubberHose Assignment</a> &nbsp;&bull;&nbsp; <a href="intermediate.html">Intermediate Motion</a></p>
+
+    <div class="site-footer">NCAD Motion Design &bull; Intermediate Week 5 &bull; Spring 2026</div>
+</div>
+
+</body>
+</html>
