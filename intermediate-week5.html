@@ -89,11 +89,90 @@
         </div>
         <div class="video-card">
             <div class="video-wrap"><iframe src="https://www.youtube.com/embed/Y0RRBVnn2MA" title="DUIK Angela Jumpstart Complete Beginner's Guide" allowfullscreen></iframe></div>
-            <p><strong>24 min in-class follow-along:</strong> This is the main tutorial we are watching together. Use it with the Google Drive starter assets linked at the top of this page.</p>
+            <p><strong>56 min in-class follow-along:</strong> This is the main tutorial we are watching together. Use it with the Google Drive starter assets linked at the top of this page.</p>
         </div>
         <div class="video-card">
             <div class="video-wrap"><iframe src="https://www.youtube.com/embed/VoQ23wxtyk4" title="DUIK Angela Full Body Rigging Animation" allowfullscreen></iframe></div>
             <p><strong>16 min support reference:</strong> Use this if you need another full-body rigging walkthrough after the in-class video.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">DUIK Jumpstart Cheat Sheet</h2>
+    <div class="checklist">
+        <h3>Small Tips From The Video That Prevent Big Problems</h3>
+        <div class="cols">
+            <ul>
+                <li><strong>Use circular joints:</strong> Elbows, knees, hips, shoulders, wrists, and ankles should overlap with clean circle-like joint areas so rotations do not reveal seams.</li>
+                <li><strong>Plan the camera crop early:</strong> Illustrator layers behave like flat artwork once rigged. If you need close-ups, build the character larger instead of relying on continuous rasterize or shape-layer conversion.</li>
+                <li><strong>Name layers clearly:</strong> Use readable labels such as R_Arm, R_Forearm, R_Hand, L_Thigh, L_Calf, and L_Foot. Label from the character's right/left, not the viewer's, if possible.</li>
+                <li><strong>Design for the motion:</strong> A 3/4 pose gives more acting range. A true side/profile pose is usually better if the main goal is only a walk cycle.</li>
+                <li><strong>Add a slight limb bend:</strong> A small bend in the arm or leg helps DUIK understand which direction the elbow or knee should solve.</li>
+            </ul>
+            <ul>
+                <li><strong>Import correctly:</strong> Bring Photoshop or Illustrator artwork into After Effects as a composition and choose <em>Retain Layer Sizes</em>.</li>
+                <li><strong>Use Rookie mode:</strong> In DUIK settings, switch the UI to Rookie while learning so the buttons show text labels.</li>
+                <li><strong>Make a rigging workspace:</strong> Put the timeline on the side, keep Project/Effects visible, dock DUIK, and save the layout as a Character Rigging workspace.</li>
+                <li><strong>Duplicate comps in stages:</strong> Keep separate versions for artwork, bones, rig, and animation so you can go backward without rebuilding everything.</li>
+                <li><strong>Give yourself timeline room:</strong> Set the comp to at least 30 seconds before rigging so you are not extending layers later.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">Follow-Along Checkpoints</h2>
+    <div class="grid-3">
+        <div class="card card-accent-yellow">
+            <h3>0:00-8:00 &bull; Artwork Prep</h3>
+            <ul>
+                <li>Check circular joints in outline view.</li>
+                <li>Confirm artwork resolution is large enough for your closest crop.</li>
+                <li>Name all body-part layers before importing.</li>
+                <li>Decide whether the character needs 3/4 acting range or profile walk-cycle clarity.</li>
+            </ul>
+        </div>
+        <div class="card card-accent">
+            <h3>8:00-14:00 &bull; Setup + DUIK Basics</h3>
+            <ul>
+                <li>Open DUIK Angela from Window.</li>
+                <li>Check the DUIK version if your interface looks different.</li>
+                <li>Switch to Rookie mode for labeled buttons.</li>
+                <li>Use Open Cutout/meta rigs as a design reference, even if you build the rig manually.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-orange">
+            <h3>14:00-28:00 &bull; Bones</h3>
+            <ul>
+                <li>Move anchor points to the actual joints first.</li>
+                <li>Hold Command/Control while dragging anchor points to snap to guide shapes.</li>
+                <li>Select limb artwork from root to tip before generating bones.</li>
+                <li>For legs, place toe and heel bones carefully because foot roll depends on them.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-green">
+            <h3>28:00-38:00 &bull; Auto-Rig Cleanup</h3>
+            <ul>
+                <li>Hide bone visibility after auto-rigging to reduce clutter and lag.</li>
+                <li>Do not edit DUIK marker tags; DUIK uses them to track generated layers.</li>
+                <li>Use <em>Add Zero</em> on controllers immediately so zero/zero returns to the neutral pose.</li>
+                <li>Lock and shy artwork/bones so students animate controllers, not art layers.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-purple">
+            <h3>38:00-48:00 &bull; Walk/Run Cycle</h3>
+            <ul>
+                <li>Select all relevant controllers before running the walk/run cycle.</li>
+                <li>Open settings first to verify DUIK detected the correct body controls.</li>
+                <li>Use cycle duration in frames to set the work area; use one frame less than the loop length.</li>
+                <li>Invert walk speed if the character walks the wrong direction.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-red">
+            <h3>48:00-56:00 &bull; Animation Polish</h3>
+            <ul>
+                <li>Keyframe General Motion from 0 to 100 to ease into the walk cycle.</li>
+                <li>Pose body/head controllers to transition from neutral into the walking pose.</li>
+                <li>When moving from walk to run, also adjust step amplitude, step frequency, body lean, and foot rotation.</li>
+                <li>Use DUIK Copy Animation/Paste Animation when copying controller keyframes across layers.</li>
+            </ul>
         </div>
     </div>
 
@@ -129,9 +208,11 @@
                 <li><strong>Name:</strong> Use clear layer names like L_UpperArm, R_Hand, Head, Torso.</li>
                 <li><strong>Overlap:</strong> Artwork should overlap slightly at elbows, knees, shoulders, and hips.</li>
                 <li><strong>Anchor:</strong> Move anchor points to real joints before animation gets messy.</li>
+                <li><strong>Guides:</strong> Add small guide circles on joints so you know exactly where rotations should happen.</li>
             </ul>
             <ul>
                 <li><strong>Neutral pose:</strong> Start from a clean standing pose with readable limb spacing.</li>
+                <li><strong>Built-in bend:</strong> Give arms and legs a slight bend so IK solves in the intended direction.</li>
                 <li><strong>Simple shapes:</strong> Avoid tiny details until the rig moves correctly.</li>
                 <li><strong>Hierarchy:</strong> Know what should follow what before parenting everything.</li>
                 <li><strong>Save version:</strong> Duplicate the project before heavy rigging experiments.</li>
@@ -226,17 +307,37 @@
         <div class="callout callout-warn">
             <span class="icon">&#9888;</span>
             <strong class="label">The Limb Bends Backward</strong>
-            <p>The joint direction or controller placement is probably wrong. Check the neutral pose, bone order, and where the elbow/knee should point.</p>
+            <p>The joint direction, built-in limb bend, or IK side is probably wrong. In the hand/foot controller, check the IK side value and try switching it from 100% to -100%, or the reverse.</p>
         </div>
         <div class="callout callout-warn">
             <span class="icon">&#9888;</span>
             <strong class="label">Artwork Falls Apart</strong>
-            <p>The layers were not prepared enough before rigging. Go back to separation, overlap, naming, anchor points, and clean hierarchy.</p>
+            <p>The layers were not prepared enough before rigging. Go back to separation, overlap, circular joints, naming, anchor points, and clean hierarchy.</p>
         </div>
         <div class="callout callout-warn">
             <span class="icon">&#9888;</span>
-            <strong class="label">Too Many Controls</strong>
-            <p>More controls do not automatically make a better rig. Start with the controls needed for the assignment and add complexity only when the animation needs it.</p>
+            <strong class="label">You Cannot Return To Neutral</strong>
+            <p>You probably skipped Add Zero. After auto-rigging, select controller layers and use DUIK's Add Zero so typing 0,0 on a controller brings it back to its starting pose.</p>
+        </div>
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">The Comp Is Impossible To Read</strong>
+            <p>Lock and shy the artwork and bones, hide bone visibility, move controller icons off the artwork, and animate only the controller layers.</p>
+        </div>
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">The Walk Goes Backward</strong>
+            <p>Invert the walk speed value. A positive value walks one direction; the negative version walks the opposite direction.</p>
+        </div>
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">The Knees Pop Straight</strong>
+            <p>The steps are stretching too far. Lower the body controller slightly, adjust step amplitude/frequency, and avoid poses where the leg fully locks straight.</p>
+        </div>
+        <div class="callout callout-warn">
+            <span class="icon">&#9888;</span>
+            <strong class="label">The Loop Has A Hitch</strong>
+            <p>Check DUIK's cycle duration in frames and set your work area to one frame before the repeated frame. For a 24-frame cycle, preview frames 0-23.</p>
         </div>
         <div class="callout callout-warn">
             <span class="icon">&#9888;</span>
