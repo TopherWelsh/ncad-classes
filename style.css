@@ -321,6 +321,42 @@ a:hover { color: #fff; }
   border: none;
 }
 
+.horizontal-video-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 4px 2px 18px;
+  margin-bottom: 30px;
+  scroll-snap-type: x mandatory;
+}
+.horizontal-video-row .short-card {
+  flex: 0 0 220px;
+  background: #111;
+  border: 1px solid var(--ncad-card-border);
+  border-radius: 10px;
+  padding: 10px;
+  scroll-snap-align: start;
+}
+.horizontal-video-row .short-card .short-wrap {
+  position: relative;
+  aspect-ratio: 9/16;
+  overflow: hidden;
+  border-radius: 7px;
+  background: #000;
+}
+.horizontal-video-row .short-card iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+.horizontal-video-row .short-card p {
+  color: #ccc;
+  font-size: 0.85em;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
 /* SECTION HEADERS */
 .section-header {
   color: #666;
