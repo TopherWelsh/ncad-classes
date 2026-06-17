@@ -1,0 +1,81 @@
+{
+  "title": "NCAD AI for Artists Workshop",
+  "weeks": [
+    {
+      "week": 1,
+      "title": "AI Without the Ick: Literacy, Integrity, and Creative Control",
+      "slug": "week-01"
+    },
+    {
+      "week": 2,
+      "title": "Prompting Like an Art Director: Briefs, References, and Critique Loops",
+      "slug": "week-02"
+    },
+    {
+      "week": 3,
+      "title": "Research, Moodboards, and Concept Development Without Copying",
+      "slug": "week-03"
+    },
+    {
+      "week": 4,
+      "title": "Image Generation and Editing for Illustration, Design, and Previs",
+      "slug": "week-04"
+    },
+    {
+      "week": 5,
+      "title": "Motion Design: Boards, Style Frames, Scripts, and Production Assistants",
+      "slug": "week-05"
+    },
+    {
+      "week": 6,
+      "title": "Animation and Story: Characters, Worlds, Continuity, and Previsualization",
+      "slug": "week-06"
+    },
+    {
+      "week": 7,
+      "title": "Graphic Design and Branding: Systems, Layouts, Copy, and Production",
+      "slug": "week-07"
+    },
+    {
+      "week": 8,
+      "title": "UX and Product Design: Research, Flows, Wireframes, and Prototypes",
+      "slug": "week-08"
+    },
+    {
+      "week": 9,
+      "title": "3D Workflows: Modeling Support, Materials, Scenes, and Render Planning",
+      "slug": "week-09"
+    },
+    {
+      "week": 10,
+      "title": "Audio, Voice, Video, and Multimodal Critique",
+      "slug": "week-10"
+    },
+    {
+      "week": 11,
+      "title": "Coding for Artists: Websites, Tools, and Tiny Apps with Codex/Claude Code",
+      "slug": "week-11"
+    },
+    {
+      "week": 12,
+      "title": "Agentic Workflows: Automating the Boring Parts Without Losing Control",
+      "slug": "week-12"
+    },
+    {
+      "week": 13,
+      "title": "Jobs, Portfolios, Freelance, and Creative Career Leverage",
+      "slug": "week-13"
+    },
+    {
+      "week": 14,
+      "title": "Capstone Sprint: Build a Personal AI-Enhanced Creative Workflow",
+      "slug": "week-14"
+    },
+    {
+      "week": 15,
+      "title": "Demo Day, Future-Proofing, and the Artist's AI Operating System",
+      "slug": "week-15"
+    }
+  ],
+  "site": "/Users/tophclaw/Documents/NCAD AI Workshop/site/index.html"
+}

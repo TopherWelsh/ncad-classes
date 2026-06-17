@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../styles.css">
+<script src="../slides.js" defer></script>
+<title>Week 01 Slides — AI Without the Ick</title>
+</head>
+<body class="slides">
+
+<section class="slide s-title">
+  <p class="kicker">NCAD AI for Artists Workshop · Week 01</p>
+  <h1>AI Without the Ick</h1>
+  <p>Literacy, Integrity, and Creative Control</p>
+  <p class="small" style="opacity:.6">4 hours · all tracks · drop-in friendly</p>
+  <div class="notes">Music off, lights up. People arrive skeptical, curious, anxious. Open warm, not salesy.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The deal</p>
+  <h2>The deal in this room</h2>
+  <p>You do not have to like AI.<br>You do not have to let it make your art.<br>Skepticism is welcome <strong>when it's specific</strong>.</p>
+  <div class="notes">Read it slowly. This slide buys trust with the hostile third of the room. "All three positions — excited, hostile, overwhelmed — are welcome and useful here."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Today</p>
+  <h2>Today's promise</h2>
+  <ul>
+    <li>What these machines actually are</li>
+    <li>Where they reliably fail</li>
+    <li>Your own written rules for using them — or refusing them</li>
+  </ul>
+  <div class="notes">Point at the third line: "That document is yours. You'll rewrite it in Week 15 and be surprised."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Deliverable</p>
+  <h2>You will leave with</h2>
+  <p><strong>An AI Boundary Map</strong> — what you'll use AI for, what you won't</p>
+  <p><strong>Your AI Use Manifesto v1</strong> — 8–12 rules, in your words</p>
+  <div class="notes">Show a real example manifesto for 20 seconds (demos/week-01). Don't read it all — just prove it's small and real.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The one rule</p>
+  <h1 style="font-size:clamp(34px,5vw,64px)">AI for friction.<br>Humans for meaning.</h1>
+  <p>Friction = summaries, options, checklists, file names, transcripts<br>Meaning = concept, taste, selection, ethics, final craft, your name</p>
+  <div class="notes">"Everything else this term is a footnote to this sentence." It's also on the board all day.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Today's map</p>
+  <h2>Today's map</h2>
+  <ol>
+    <li>What these machines actually are — 50 min</li>
+    <li>The objections, taken seriously — 20 min</li>
+    <li>Demo: one task, three ways — 30 min</li>
+    <li>Lab: your map + your manifesto — 70 min</li>
+    <li>Share, critique, reflect — 40 min</li>
+  </ol>
+  <p class="small" style="opacity:.6">Breaks every ~50 minutes. Protected.</p>
+  <div class="notes">Drop-in reassurance: "If this is your only week, you still leave with the full kit."</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1</p>
+  <h1>What these machines actually are</h1>
+  <div class="notes">Timer check: should be ~0:10.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">LLMs</p>
+  <h2>Inside ChatGPT and Claude</h2>
+  <p>A <strong>large language model</strong>: trained on enormous amounts of text to do exactly one job —</p>
+  <p><strong>predict what plausibly comes next.</strong></p>
+  <div class="notes">"No fact database. No looking things up (unless search is on). No understanding the way you understand. Prediction — one token at a time, billions of times."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">LLMs</p>
+  <h2>Predict → sample → repeat</h2>
+  <p>It writes one word-chunk (<strong>token</strong>) at a time.<br>Each one: "what's likely next?"</p>
+  <p>The scale is the miracle. The method is the catch.</p>
+  <div class="notes">The miracle: prediction at this scale captures logic, style, code. The catch: it optimizes for plausible, never for true.</div>
+</section>
+
+<section class="slide s-video">
+  <span class="flag">Video</span>
+  <p class="kicker">Watch</p>
+  <h2>The best 3 minutes on this</h2>
+  <div class="video-embed">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/wjZofJX0v4M" title="But what is a GPT? — 3Blue1Brown" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <p class="video-note"><b>Play 0:00–3:30</b> — the predict/sample/repeat loop. Rest is optional homework (it's excellent).</p>
+  </div>
+  <div class="notes">Say first: "Watch what it's actually doing when it 'writes'." Play only the opening segment; full video is linked on the week page.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The catch</p>
+  <h2>Plausible ≠ true</h2>
+  <p>It optimizes for <strong>sounds right</strong>.<br>It has no concept of <strong>is right</strong>.</p>
+  <p>And it cannot tell you which one you're getting.</p>
+  <div class="notes">"This isn't a bug they'll patch next version. It's what the machine is."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The trap</p>
+  <h2>How sure does it sound? vs. How right is it?</h2>
+  <div class="compare">
+    <div class="bad"><h3>Sounds</h3><p>Confident.<br>Confident.<br>Confident.</p></div>
+    <div class="good"><h3>Is</h3><p>Sometimes right.<br>Sometimes wrong.<br>Sometimes invented entirely.</p></div>
+  </div>
+  <p><strong>The confidence is constant. The truth isn't.</strong></p>
+  <div class="notes">"The fluency is the trap. The better it reads, the less you check. Train the opposite reflex."</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Try this now</span>
+  <p class="kicker">90 seconds</p>
+  <h2>Ask your chat tool:</h2>
+  <p>"What do you know about <strong>[your name / your townland / your tiny local landmark]</strong>?"</p>
+  <p>Hands up when you catch an invention.</p>
+  <div class="notes">Phones fine. Collect 2–3 examples aloud. Someone always gets confident nonsense about a small place. If everything's right: "Today it was right. You still had to check — that's the habit."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Two limits</p>
+  <h2>Two limits worth knowing</h2>
+  <p><strong>Token</strong> — the word-chunk it reads/writes. Everything is counted in these.</p>
+  <p><strong>Context window</strong> — its working memory. Outgrow it and it <em>forgets your brief mid-conversation</em>.</p>
+  <p class="small">Fix: keep briefs in a doc. Re-paste. Fresh chats.</p>
+  <div class="notes">This explains the #1 confusing experience: "it was great, then it got stupid." It forgot. Not moody — full.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Multimodal</p>
+  <h2>"Multimodal" = it has eyes now</h2>
+  <p>Upload a screenshot of your layout → get critique.<br>Upload your storyboard → get continuity questions.</p>
+  <p><strong>The critique loop works on images. This matters more for you than generation does.</strong></p>
+  <div class="notes">Seed for Week 10. For artists who never want to generate: this is the AI skill that still serves them.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Image models</p>
+  <h2>How image generators actually work</h2>
+  <p><strong>Diffusion models</strong> learn to turn noise into images, step by step, steered by your words.</p>
+  <p>Nothing is stored. Nothing is pasted. Everything is synthesized.</p>
+  <div class="notes">The Vox diffusion animation is two slides ahead if the room wants the visual.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Image models</p>
+  <h2>What it doesn't do</h2>
+  <p>It does <strong>not</strong> keep a folder of stolen images.<br>It does <strong>not</strong> cut and paste anyone's work.</p>
+  <p>There is nothing "in there" to copy out — only learned patterns.</p>
+  <div class="notes">Be precise here; the room will quote you. The mechanical claim is narrow and true.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Image models</p>
+  <h2>What it did do</h2>
+  <p>It <strong>was trained on millions of artists' images</strong> — mostly scraped, mostly without consent.</p>
+  <p>It reproduces the <em>patterns</em> of what it saw.</p>
+  <div class="notes">Equally true, equally important. Don't rush past this slide.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Both at once</p>
+  <h2>Hold both facts</h2>
+  <p>"It doesn't copy" — true, and doesn't settle the question.<br>"The data was taken without asking" — true, and doesn't make every use theft.</p>
+  <p><strong>Tool choice becomes an ethical act.</strong></p>
+  <div class="notes">Mention Firefly's licensed-data training vs. scraped-data tools. "Choosing your tool is one of your levers."</div>
+</section>
+
+<section class="slide s-video">
+  <span class="flag">Optional video</span>
+  <p class="kicker">If the room wants the visual</p>
+  <h2>AI art, explained — Vox</h2>
+  <div class="video-embed">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/SVcsDDABEkM" title="AI art, explained — Vox" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <p class="video-note"><b>Play 5:30–8:00</b> — the diffusion animation. Made 2022: tools dated, questions current.</p>
+  </div>
+  <div class="notes">Use if the diffusion idea didn't land visually. Otherwise skip — it's on the week page for homework.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Why output is generic</p>
+  <h2>The average machine</h2>
+  <p>Trained on everything → defaults to the <strong>average of everything</strong>.</p>
+  <p>"Make it cyberpunk" returns the mean of every cyberpunk image online.</p>
+  <p><strong>Specific direction is the only escape from average.</strong></p>
+  <div class="notes">This reframes prompting before Week 2 teaches it: not magic words — escaping the mean.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, continued</p>
+  <h1>The four failure modes</h1>
+  <p>(memorize these — they're structural)</p>
+  <div class="notes">Timer check: ~0:35. "Every tool, every week, fails these same four ways."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Failure 1 of 4</p>
+  <h2>Hallucination</h2>
+  <p>Invented facts. Fake sources. Artists who don't exist.<br>Delivered in perfect confidence.</p>
+  <p><strong>Counter-move:</strong> verify every name, date, quote, citation. Every one.</p>
+  <div class="notes">"Not lying — it has no concept of truth, only plausibility. You are the fact-checker now."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Failure 2 of 4</p>
+  <h2>Genericness</h2>
+  <p>Competent. Soulless. Looks like everything else.<br>The mean of the internet, served warm.</p>
+  <p><strong>Counter-move:</strong> constraints, references, an "avoid" list — your taste.</p>
+  <div class="notes">"Generic isn't a moral failure of the machine. It's the machine working as designed. Direction is your job."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Failure 3 of 4</p>
+  <h2>Bias</h2>
+  <p>Default faces. Default beauty. Default art history.<br>The data's blind spots become the output's defaults.</p>
+  <p><strong>Counter-move:</strong> notice the defaults. Direct against them deliberately.</p>
+  <div class="notes">Concrete example: ask for "a designer" and look at who it pictures. Worth doing live if time allows.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Failure 4 of 4</p>
+  <h2>Amnesia</h2>
+  <p>Long chat → brief forgotten → quality collapses.<br>(That's the context window, full.)</p>
+  <p><strong>Counter-move:</strong> restate constraints. Fresh chats. Briefs live in docs, not chats.</p>
+  <div class="notes">The practical habit that saves students the most frustration this term.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Try this now</span>
+  <p class="kicker">2 minutes</p>
+  <h2>"Name three real Irish illustrators and their best-known work."</h2>
+  <p>Check one claim. Hands up when you find the invention.</p>
+  <div class="notes">Usually at least one hallucinated or mismatched detail in the room. Tie-off: "Hallucination isn't rare. It's ambient."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The point</p>
+  <h2>Notice what all four counter-moves are</h2>
+  <p>Verify. Direct. Notice. Restate.</p>
+  <p><strong>All human habits. None automatable.</strong><br>This is why judgment is the skill — and why this course exists.</p>
+  <div class="notes">End of Part 1. Break next.</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <p>Back at :00</p>
+  <div class="notes">Protect it. Hostile students often approach 1:1 now — that conversation matters more than restarting to the second.</div>
+</section>
+
+<section class="slide s-section s-ethics">
+  <p class="kicker">Part 2</p>
+  <h1>The objections, taken seriously</h1>
+  <div class="notes">Tone shift: slower, no jokes for 15 minutes. This section is why skeptics stay.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Objection 1</p>
+  <h2>Consent</h2>
+  <p>Training data was largely scraped without permission. <strong>True.</strong> Lawsuits ongoing. Laws moving.</p>
+  <p>Tools differ: some train on licensed content (Firefly); most don't.<br>→ <strong>Your tool choice is an ethical act.</strong></p>
+  <div class="notes">Don't soften, don't catastrophize. "If this makes you angry, your anger is well-founded. Now make it precise."</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Objection 2</p>
+  <h2>Copyright</h2>
+  <p>In most jurisdictions: purely AI-generated output <strong>can't be copyrighted</strong>.<br>Human authorship is the legal test.</p>
+  <p><strong>The law agrees with your art teachers: the human decisions are the work.</strong></p>
+  <div class="notes">US Copyright Office is explicit; linked on the week page. This quietly reframes the course: judgment isn't just ethics — it's ownership.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Objection 3</p>
+  <h2>Labor</h2>
+  <p>Some creative tasks are getting automated. <strong>True.</strong></p>
+  <p>What's defensible: taste, judgment, accountability, relationships — the things clients actually pay a <em>person</em> for.</p>
+  <div class="notes">Anxious students need this straight: "Some doors narrow. The ones that stay open belong to people whose judgment sits on top of the tools."</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Objection 4</p>
+  <h2>Slop</h2>
+  <p>Feeds and stock sites are flooding with low-effort AI content.</p>
+  <p>Consequence: <strong>generic is now free.</strong><br>Distinctive human work just became more valuable, not less.</p>
+  <div class="notes">The market logic skeptics rarely hear: when average is free, only above-average sells.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Objection 5</p>
+  <h2>Disclosure</h2>
+  <p>Audiences feel deceived when AI use is hidden.<br>The EU AI Act is making synthetic-media transparency <strong>law</strong>.</p>
+  <p>We practise specific, honest disclosure every single week.</p>
+  <div class="notes">"Not because you're suspects — because it's about to be a professional skill, like accessibility."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">So</p>
+  <h2>Where does that leave us?</h2>
+  <p>Not worship. Not refusal-from-fear.</p>
+  <p><strong>Literacy → then your own rules.</strong></p>
+  <div class="notes">Bridge slide. Energy back up.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The framework</p>
+  <h2>AI for friction. Humans for meaning.</h2>
+  <ul>
+    <li><strong style="color:#7fc8a9">GREEN</strong> — AI freely: no authorship at stake</li>
+    <li><strong style="color:var(--gold)">YELLOW</strong> — AI with care: control + maybe disclosure</li>
+    <li><strong style="color:#e98778">RED</strong> — human only: where your voice lives</li>
+  </ul>
+  <p>You draw these lines yourself, today, in the lab.</p>
+  <div class="notes">Preview of lab Part A. "Nobody else can draw them — nobody else knows which parts of your practice are load-bearing."</div>
+</section>
+
+<section class="slide s-section s-demo">
+  <p class="kicker">Demo</p>
+  <h1>One task, three ways</h1>
+  <div class="notes">Timer check: ~1:20. Switch to the chat tool. Prompts pre-staged in DEMOS_AND_VISUAL_AIDS.md — paste, don't improvise.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">Stage 1</p>
+  <h2>The weak prompt</h2>
+  <div class="prompt">Make a poster concept for an art school degree show.</div>
+  <p>Watch how confident it is.</p>
+  <div class="notes">Paste it. Read the output flatly. Then THE question to the room: "What did it get wrong?" Collect three answers before you offer yours.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">Stage 1 debrief</p>
+  <h2>What did it get wrong?</h2>
+  <p>No audience. No constraints. No venue. No voice.<br>Could be any college, any year, anywhere.</p>
+  <p><strong>The model didn't fail. The brief did.</strong></p>
+  <div class="notes">This sentence is the bridge to Week 2. Let it sit.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">Stage 2</p>
+  <h2>The creative brief</h2>
+  <p>Same task + audience + tone + constraints (riso, 2-colour, typography-led) + references +</p>
+  <p><strong>"Don't pick a winner — that's my job."</strong></p>
+  <div class="notes">Paste the full Field Notes brief from the demos file. While output streams, narrate WHY each constraint exists. Point hard at the last line: the human keeps the decision.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">Compare</p>
+  <h2>Same model. Different human.</h2>
+  <div class="compare">
+    <div class="bad"><h3>Weak prompt</h3><p>Generic poster #4,000,000<br>Model decided everything<br>10 seconds</p></div>
+    <div class="good"><h3>Creative brief</h3><p>5 usable directions + risks<br>Human kept every decision<br>90 seconds</p></div>
+  </div>
+  <p><strong>The quality lives in the brief.</strong></p>
+  <div class="notes">"Eighty seconds of thinking bought all of that."</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">Stage 3</p>
+  <h2>The critique loop</h2>
+  <div class="prompt">Direction 3 is the weakest. Critique it against my brief: where is it generic, where does it fight the riso constraint? Then give me two sharper variants that fix those problems.</div>
+  <div class="notes">Let the ROOM pick the weakest direction first — instant engagement. The model critiquing itself, steered by human taste, is the move students remember.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">The planned failure</p>
+  <h2>When it confidently breaks the rules</h2>
+  <p>(One direction usually violates a constraint — full-colour photography in a 2-colour riso brief.)</p>
+  <p><strong>It was confident about an impossible direction.<br>This is why you stay the director.</strong></p>
+  <div class="notes">If it happens live, celebrate it. If not, show the saved screenshot from prep. Never pretend failures don't happen — they're the syllabus.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">Division of labor</p>
+  <h2>What the human supplied</h2>
+  <p>Audience. Constraints. References. Taste. The decision.</p>
+  <h2 style="margin-top:14px">What the model supplied</h2>
+  <p>Speed. Volume. Options. A tireless first draft.</p>
+  <div class="notes">"That division of labor is the entire course. Everything from here is discipline-specific versions of this slide."</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Your turn</span>
+  <p class="kicker">5 minutes</p>
+  <h2>Mini-try</h2>
+  <ol>
+    <li>Type your weak prompt for a real project of yours</li>
+    <li>Rewrite it with: audience, 3 constraints, "options + risks, don't pick"</li>
+    <li>Compare the two outputs</li>
+  </ol>
+  <div class="notes">Circulate. You're listening for the "oh" sound. Pull one before/after to the projector if a volunteer offers.</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <p>Lab next: you write your rules.</p>
+  <div class="notes">~1:50. Stage the lab slide before you walk away.</div>
+</section>
+
+<section class="slide s-section s-lab">
+  <p class="kicker">Lab · 70 minutes</p>
+  <h1>Your map. Your rules.</h1>
+  <p><strong>A.</strong> Boundary Map — 20 min · <strong>B.</strong> Same brief, two tools — 30 min · <strong>C.</strong> Manifesto v1 — 20 min</p>
+  <div class="notes">Instructions stay on screen during each part. Write the three parts + times on the board too.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab A · 20 min</span>
+  <p class="kicker">Part A</p>
+  <h2>AI Boundary Map</h2>
+  <p>Three columns. <strong>Your real tasks</strong>, sorted:</p>
+  <p><strong style="color:#7fc8a9">GREEN</strong> AI freely · <strong style="color:var(--gold)">YELLOW</strong> AI with care · <strong style="color:#e98778">RED</strong> human only</p>
+  <p>Minimum 5 real tasks per column.<br>"Ideation" is not a task. "Finding type references" is.</p>
+  <div class="notes">Paper first. Circulate: "What did you actually make this week? Which column does each step go in?" Empty red column = romanticizing; empty green = underestimating. Say both aloud.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab B · 30 min</span>
+  <p class="kicker">Part B</p>
+  <h2>Same brief, two tools</h2>
+  <ol>
+    <li>5-line brief for a real project (recipe in handout)</li>
+    <li>Run in ChatGPT <strong>and</strong> Claude — pairs welcome</li>
+    <li>Compare: differences? shared genericness?</li>
+    <li>Critique-loop the better one</li>
+    <li><strong>Write down 3 places the human had to intervene</strong></li>
+  </ol>
+  <div class="notes">The three interventions are the deliverable from B — they feed the manifesto. Keep saying it.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Always available</span>
+  <p class="kicker">Part B alternative</p>
+  <h2>Zero-generation track</h2>
+  <p>Same lab, no generation:<br>paste a <strong>past project description</strong> into both tools → pure critique mode → compare the critiques → same 3 interventions.</p>
+  <p><strong>Equal credit. Equal lesson.</strong></p>
+  <div class="notes">Offer it neutrally, to everyone. Some of your strongest students take this track on principle. The course means it — so should you.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab C · 20 min</span>
+  <p class="kicker">Part C</p>
+  <h2>Manifesto v1 — 8–12 bullets</h2>
+  <div class="compare">
+    <div class="bad"><h3>Weak</h3><p>"I'll use AI responsibly."</p></div>
+    <div class="good"><h3>Strong</h3><p>"AI can generate layout options; final composition is always drawn by me, and I keep the rejected options as process evidence."</p></div>
+  </div>
+  <div class="notes">The weak/strong pair does the teaching. Demand a real task or real rule in every bullet. This document returns in Week 15 as the pre/post instrument.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Share-out · 30 min</p>
+  <h2>Volunteers: one map row + one manifesto bullet</h2>
+  <p>Room responds with:</p>
+  <ul>
+    <li>Where's the human point of view in that rule?</li>
+    <li>Protecting craft, or avoiding learning — how do you tell?</li>
+    <li>Would that bullet survive a deadline?</li>
+  </ul>
+  <div class="notes">4–6 volunteers. If anyone wrote a refusal statement, have it read aloud and give it equal weight — the room must see refusal-with-reasons earns full respect.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Every week</span>
+  <p class="kicker">Integrity check</p>
+  <h2>The weekly four</h2>
+  <ol>
+    <li>What part of this work requires <strong>your taste</strong>?</li>
+    <li>What can AI <strong>safely accelerate</strong>?</li>
+    <li>What must be <strong>verified</strong> before you trust it?</li>
+    <li>What should be <strong>disclosed</strong> if this goes public?</li>
+  </ol>
+  <div class="notes">Same four questions every week, until they're reflexes.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Reflection</p>
+  <h2>Write 4 lines</h2>
+  <ul>
+    <li>One useful thing AI did today</li>
+    <li>One thing it got wrong (and how you caught it)</li>
+    <li>One human decision that improved the result</li>
+    <li>One boundary you're keeping</li>
+  </ul>
+  <div class="notes">Two quiet minutes. These notes accumulate into their process portfolio — say so.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Before you leave</p>
+  <h2>Keep your manifesto somewhere findable</h2>
+  <p>Week 15: you'll write v2 next to it.<br><strong>The distance between them is what this course measures.</strong></p>
+  <div class="notes">Practical: photograph it, notes app, email to self — now, before leaving.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Next Wednesday</p>
+  <h2>Prompting Like an Art Director</h2>
+  <p>Briefs, references, and critique loops — turning today's "the brief is everything" into a repeatable skill.</p>
+  <p class="small" style="opacity:.6">Drop-ins always welcome. Bring a real project.</p>
+  <div class="notes">End on time. Stay 10 minutes for 1:1 questions — Week 1 corridor conversations decide who comes back.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Tonight, optional</p>
+  <h2>Go deeper</h2>
+  <ul>
+    <li>3Blue1Brown — <em>But what is a GPT?</em> (full video)</li>
+    <li>Vox — <em>AI art, explained</em></li>
+    <li>haveibeentrained.com — search the training sets</li>
+    <li>The full Integrity Pact + this week's handout</li>
+  </ul>
+  <p class="small">All linked on the week page.</p>
+  <div class="notes">Final slide stays up while people pack.</div>
+</section>
+
+<nav class="slide-nav">
+  <a href="./week-01.html">Week Page</a>
+  <a href="../index.html">Home</a>
+</nav>
+
+</body>
+</html>

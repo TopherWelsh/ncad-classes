@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../styles.css">
+<script src="../slides.js" defer></script>
+<title>Week 04 Slides — Image Generation and Editing</title>
+</head>
+<body class="slides">
+
+<section class="slide s-title">
+  <p class="kicker">NCAD AI for Artists Workshop · Week 04</p>
+  <h1>Image Generation and Editing</h1>
+  <p>For Illustration, Design, and Previs</p>
+  <div class="notes">The loaded week. Calm, structured, honest.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">60-second recap</p>
+  <h2>The deal</h2>
+  <p>AI for friction, humans for meaning.<br>Raw output is never finished work.<br>Verify before trusting. Disclose where it matters.<br>Skepticism welcome when specific.</p>
+  <div class="notes">Standing recap. New faces: handout has everything.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Today's reframe</p>
+  <h1 style="font-size:clamp(28px,4.2vw,54px)">The deliverable of an image session is not an image.<br>It's a decision trail.</h1>
+  <div class="notes">"Professionals generate wide, kill fast with reasons, repair by hand. We grade the trail, not the pictures."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Deliverable</p>
+  <h2>You will leave with</h2>
+  <p><strong>A process board:</strong> 6+ iterations · keep/kill decisions with written reasons · one human-repaired direction</p>
+  <p>Your kills are where your taste shows.</p>
+  <div class="notes">Acknowledge opt-outs now: art-director round = direct and judge without generating. Equal deliverable.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Today's map</p>
+  <h2>Today's map</h2>
+  <ol>
+    <li>The four legitimate jobs + prompt anatomy — 40 min</li>
+    <li>Rights: training data, copyright, provenance — 20 min</li>
+    <li>Demo: generate → reject → critique → repair — 30 min</li>
+    <li>Lab: your process board — 70 min</li>
+    <li>Share: defend a kill — 40 min</li>
+  </ol>
+  <div class="notes">Breaks protected.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1</p>
+  <h1>What image tools are actually for</h1>
+  <div class="notes">~0:10.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Legitimate</p>
+  <h2>The four legitimate jobs</h2>
+  <ol>
+    <li><strong>Sketching/exploration</strong> — 20 thumbnails to find what you DON'T want</li>
+    <li><strong>Reference &amp; previs</strong> — lighting studies, mood frames, set ideas</li>
+    <li><strong>Compositing parts</strong> — generated texture under hand-made foreground</li>
+    <li><strong>Repair &amp; extension</strong> — inpaint a region, outpaint a new format</li>
+  </ol>
+  <div class="notes">Each maps to tracks: 1 illustration/design, 2 motion/3D/video, 3 design, 4 everyone.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Illegitimate</p>
+  <h2>The illegitimate job</h2>
+  <p><strong>Final art replacement.</strong></p>
+  <ul>
+    <li>It's the part that's actually yours</li>
+    <li>Raw output isn't copyrightable</li>
+    <li>Clients can buy raw output without you</li>
+  </ul>
+  <div class="notes">"Generating your final art is competing with yourself at €0 an hour."</div>
+</section>
+
+<section class="slide s-video">
+  <span class="flag">Video</span>
+  <p class="kicker">The mechanism</p>
+  <h2>How these machines work</h2>
+  <div class="video-embed">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/1CIpzeNxIhU" title="How AI Image Generators Work — Computerphile" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <p class="video-note"><b>Play 2–3 minutes</b> if Week 1's diffusion intro didn't land — noise → image, steered by text. Otherwise: homework.</p>
+  </div>
+  <div class="notes">Knowing the mechanism explains the magic AND the mush.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Prompt anatomy</p>
+  <h2>Your Week 2 brief, visual edition</h2>
+  <p><strong>Subject + action</strong> · <strong>territory qualities</strong> · <strong>composition with a named empty zone</strong> · <strong>medium/process words</strong> · <strong>avoid list</strong></p>
+  <div class="notes">Anatomy maps 1:1 to the creative brief. Returning students should feel the rhyme.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The strongest lever</p>
+  <h2>Process words beat style words</h2>
+  <div class="compare">
+    <div class="bad"><h3>Weak</h3><p>"painterly"<br>"cinematic"<br>"retro print look"</p></div>
+    <div class="good"><h3>Strong</h3><p>"gouache on rough paper"<br>"35mm photo, raking warm light"<br>"riso misregistration, flat spot colours"</p></div>
+  </div>
+  <div class="notes">"Style words invoke the average. Process words invoke physics."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Always</p>
+  <h2>The avoid list always includes</h2>
+  <h1 style="font-size:clamp(26px,4vw,52px)">"No text. No logos. No letters."</h1>
+  <p>Models grow fake type. Type is yours anyway.</p>
+  <div class="notes">Today's planned demo failure is exactly this. Seed it now.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Course rule</span>
+  <p class="kicker">Still true</p>
+  <h2>Still off the table</h2>
+  <p>Living artists' names as style prompts.</p>
+  <p>Process + quality words do the same work — legitimately, and they teach you WHY the look works.</p>
+  <div class="notes">One slide, firm, no relitigating — Week 2 covered the reasoning.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, continued</p>
+  <h1>Iteration discipline</h1>
+  <p>Wide, then narrow</p>
+  <div class="notes">~0:30.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The loop</p>
+  <h2>The loop</h2>
+  <ol>
+    <li><strong>Generate wide</strong> — 4–8 from one brief-shaped prompt</li>
+    <li><strong>Kill fast, with reasons</strong> — one line each</li>
+    <li><strong>Select</strong> — also with a reason</li>
+    <li><strong>Refine narrow</strong> — change exactly ONE variable</li>
+  </ol>
+  <div class="notes">Board version stays up all day.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The vocabulary</p>
+  <h2>Kill-reasons: the vocabulary of review</h2>
+  <p>✗ "Don't like it"</p>
+  <p>✓ "Kill — texture is mush where the eye lands"<br>✓ "Kill — palette drifted warm; brief says bone and rust"<br>✓ "Keep — the light behaviour is real"</p>
+  <div class="notes">"This is literally how art directors review. Today you build that vocabulary."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The difference</p>
+  <h2>Rerolling vs. directing</h2>
+  <div class="compare">
+    <div class="bad"><h3>Rerolling</h3><p>Same prompt, again, again, hoping.<br>Slot machine.</p></div>
+    <div class="good"><h3>Directing</h3><p>"Keep option 3, change only the light direction."<br>Studio.</p></div>
+  </div>
+  <div class="notes">Seed/variation features make this concrete; name them when demoing.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, finale</p>
+  <h1>Surgical edits</h1>
+  <p>The production skills</p>
+  <div class="notes">~0:38.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Surgical 1/4</p>
+  <h2>Inpainting (Generative Fill)</h2>
+  <p>Select a region → regenerate ONLY that.<br>Fix a prop. Remove an object. Change one element.</p>
+  <p><strong>Your hand chooses what changes. Surgical, not slot machine.</strong></p>
+  <div class="notes">The skill that transfers to real client work immediately.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Surgical 2/4</p>
+  <h2>Outpainting (Generative Expand)</h2>
+  <p>Extend past the frame.<br>A4 poster → wide banner without re-shooting.</p>
+  <p><strong>Verify the invented regions.</strong></p>
+  <div class="notes">Campaign reformatting is a real junior-designer task; this halves it.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Surgical 3/4</p>
+  <h2>Image-to-image: your sketch, its rendering</h2>
+  <p>Your rough drawing in → rendered options out.<br><strong>Strength</strong> = how much of YOUR structure survives.</p>
+  <p>If the composition isn't yours anymore, you gave it too much freedom.</p>
+  <div class="notes">"The bridge between rolling dice and directing." For students mourning their drawing time — this is their lane.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Surgical 4/4</p>
+  <h2>Upscaling invents detail</h2>
+  <p>Plausible texture, hallucinated exactly where it matters.</p>
+  <p><strong>Inspect at 100% before print. Always.</strong></p>
+  <div class="notes">Quick war story if you have one (type edges, skin, fabric weave).</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <p>Rights block next — the part everyone has opinions about.</p>
+  <div class="notes">Stage contentcredentials.org tab.</div>
+</section>
+
+<section class="slide s-section s-ethics">
+  <p class="kicker">Part 2</p>
+  <h1>Rights, tools, and honest choices</h1>
+  <div class="notes">~1:00. 20 minutes. Don't rush, don't preach.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Rights 1/4</p>
+  <h2>Training data tiers</h2>
+  <p><strong>Firefly:</strong> licensed + Adobe Stock → the classroom-safe default<br><strong>Most others:</strong> scraped data → a values decision</p>
+  <p>Make it knowingly, not by default.</p>
+  <div class="notes">Honest footnote for Q&A: Firefly contributor compensation is itself contested. "Licensed" is cleaner, not spotless.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Rights 2/4</p>
+  <h2>Output copyright</h2>
+  <p>Purely AI-generated images: generally <strong>not copyrightable</strong>.<br>Your edits, composition, combination: <strong>protectable</strong>.</p>
+  <p>The law keeps siding with your craft.</p>
+  <div class="notes">US Copyright Office guidance linked on week page; EU broadly similar on human authorship.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Rights 3/4</p>
+  <h2>Content Credentials (C2PA)</h2>
+  <p>Tamper-evident metadata: <em>how this image was made.</em></p>
+  <p>Provenance is becoming infrastructure — clients and platforms will ask.</p>
+  <div class="notes">Show contentcredentials.org for 60 seconds live if wifi allows.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Ethics</span>
+  <p class="kicker">Rights 4/4</p>
+  <h2>Disclosure, the image edition</h2>
+  <p>✗ "Made with AI"</p>
+  <p>✓ "Background textures generated with Firefly, then composited, repainted, and colour-graded by hand. Characters and type are original."</p>
+  <div class="notes">"Say it like it's normal, because it is."</div>
+</section>
+
+<section class="slide s-section s-demo">
+  <p class="kicker">Demo</p>
+  <h1>Generate → Reject → Critique → Repair</h1>
+  <div class="notes">~1:20. Firefly + Photoshop. Prompts from DEMOS file.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">Stage 1</p>
+  <h2>The brief-shaped prompt</h2>
+  <div class="prompt">Poster background for a contemporary dance festival called "Hinge." Visual territory: industrial materials under stage light — folded steel, tensioned fabric, raking warm light, deep shadow. Bold abstract composition with clear empty zone in the upper third for typography. Muted palette: rust, bone, near-black. No people, no text, no logos.</div>
+  <div class="notes">Narrate the anatomy while it generates: "named empty zone — type needs somewhere to live." Number outputs 1–6.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">Stage 2</p>
+  <h2>The rejection round</h2>
+  <p>Six outputs. Keep/kill + one reason each. Fast. Aloud.</p>
+  <p>Then: <strong>overrule me.</strong></p>
+  <div class="notes">Take one overrule seriously and reverse the call with their reason on record. The room doing kill-reasons IS the lesson.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">Stage 3</p>
+  <h2>Critique the survivor</h2>
+  <div class="prompt">Critique this poster background against my brief [paste brief]. Where will typography fight the image? What reads as AI-generic at arm's length? What would a print production person flag?</div>
+  <div class="notes">Screenshot into chat tool. Read the two sharpest points; reject one critique point with a reason — filtering critique is also modelled.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">Stage 4</p>
+  <h2>Repair by hand</h2>
+  <p>Crop for the type zone · Generative Fill ONE region · levels · place real type.</p>
+  <p><strong>Five minutes of recognizable design craft. The part that's yours.</strong></p>
+  <div class="notes">Slow down here. This is when skeptical students decide the week is legitimate.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Planned failure</span>
+  <p class="kicker">It happened, didn't it</p>
+  <h2>It grew letters. It always grows letters.</h2>
+  <p>"No text" was in the prompt.</p>
+  <p><strong>It can't be trusted with type. Type is ours.</strong></p>
+  <div class="notes">If it didn't happen live, show the prep screenshot. Never skip.</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <p>Lab next: your board.</p>
+  <div class="notes">Per-track subject slide staged.</div>
+</section>
+
+<section class="slide s-section s-lab">
+  <p class="kicker">Lab · 70 minutes</p>
+  <h1>From Prompt to Process</h1>
+  <p>brief (10) → generate 6–8 (10) → <strong>kill round, written (10)</strong> → select + refine (10) → repair by hand (15) → board (15)</p>
+  <div class="notes">The kill round is the core assessment artifact — say it twice.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab</span>
+  <p class="kicker">Your subject</p>
+  <h2>By track</h2>
+  <ul>
+    <li><strong>Illustration:</strong> book cover rough for a folk tale you like</li>
+    <li><strong>Graphic design:</strong> gig poster background with a named type zone</li>
+    <li><strong>Animation/motion:</strong> one shot, three light moods (style frames)</li>
+    <li><strong>3D:</strong> previs of a set you might actually build</li>
+  </ul>
+  <div class="notes">Same structure for all; subject is the only variable.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">The graded part</span>
+  <p class="kicker">Kill round</p>
+  <h2>Minimum 4 kills, one written reason each</h2>
+  <p>✓ "Palette drifted warm; brief says bone/rust"<br>✗ "Don't like it"</p>
+  <div class="notes">Circulate upgrading vague reasons live: "What drifted — palette, texture, composition?"</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Always available</span>
+  <p class="kicker">Alternative</p>
+  <h2>Zero-generation track</h2>
+  <p><strong>Art-director round:</strong> you brief + judge; a partner operates.<br>Or: full kill round + critique + repair plan on the prepared 8-image set.</p>
+  <p><strong>The decision trail is the deliverable either way.</strong></p>
+  <div class="notes">Check in personally; these boards are often the sharpest in the room.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">By design</span>
+  <p class="kicker">Quota reality</p>
+  <h2>If your free generations run out</h2>
+  <p>Documentation, critique loop, and repair planning on what you already have <strong>completes the deliverable.</strong></p>
+  <div class="notes">No one is blocked. Limits are built into the lab's shape.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Share-out · 30 min</p>
+  <h2>Defend a kill</h2>
+  <p>Show your board. Defend ONE kill (not your pick).</p>
+  <ul>
+    <li>Specific enough to teach from?</li>
+    <li>Does the repair read as craft or cover-up?</li>
+    <li>Would the direction survive your rubric?</li>
+  </ul>
+  <div class="notes">Close with a zero-gen board getting equal stage time, deliberately.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Every week</span>
+  <p class="kicker">Integrity check</p>
+  <h2>This week's four</h2>
+  <ol>
+    <li>Could you defend every kill in a crit?</li>
+    <li>Is anything secretly "final art" hoping to ship raw?</li>
+    <li>Did you choose your tool <strong>knowingly</strong>?</li>
+    <li>Write the disclosure line now, while the process is fresh.</li>
+  </ol>
+  <div class="notes">Four beats, same rhythm as every week.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Reflection</p>
+  <h2>Write 4 lines</h2>
+  <ul>
+    <li>Your sharpest kill-reason today</li>
+    <li>One thing the model did better than expected; one worse</li>
+    <li>Where exactly your hand improved the survivor</li>
+    <li>The disclosure draft for this board</li>
+  </ul>
+  <div class="notes">Two quiet minutes.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Next Wednesday</p>
+  <h2>Motion Design</h2>
+  <p>Your image skills become style frames — and AI starts planning shots, scripts, and production tasks.</p>
+  <p class="small" style="opacity:.6">Bring a 15–30 second idea you'd actually like to make.</p>
+  <div class="notes">End on time; corridor questions after.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Tonight, optional</p>
+  <h2>Go deeper</h2>
+  <ul>
+    <li>Computerphile — diffusion mechanics (embedded on week page)</li>
+    <li>Adobe Generative Fill docs</li>
+    <li>contentcredentials.org — the provenance standard</li>
+    <li>Re-check haveibeentrained.com now that you've generated</li>
+  </ul>
+  <div class="notes">Final slide stays up while people pack.</div>
+</section>
+
+<nav class="slide-nav">
+  <a href="./week-04.html">Week Page</a>
+  <a href="../index.html">Home</a>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 12 — Agentic Workflows · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-12-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 12 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">All tracks — 4 hours, drop-in friendly</p>
+  <h1>Agentic Workflows: Automating the Boring Parts Without Losing Control</h1>
+  <p class="promise">Design a supervised agent workflow — one that does your most repetitive production chore with human checkpoints at every irreversible step — and learn exactly which parts of your practice should never be automated.</p>
+  <div class="resource-row">
+    <a href="./week-12-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#words">Glossary</a>
+  <a href="#demo">Demo</a>
+  <a href="#workflow">Workflows</a>
+  <a href="#recipes">Prompt Recipes</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> an agent workflow spec (steps, tools, risks, checkpoints) + an Automation Boundary Map for your real practice.</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Concepts (40 min)</strong><p>Agent vs chatbot vs workflow; tool use as risk surface; the checkpoint; the four safety rails.</p></article>
+    <article><strong>2 · Concepts (15 min)</strong><p>The Automation Boundary Map; what makes a good agent task.</p></article>
+    <article><strong>3 · Demo (35 min)</strong><p>An agent organizes a messy folder — plan-then-act, the rejection, the audit.</p></article>
+    <article><strong>4 · Lab + share (105 min)</strong><p>Your boundary map + workflow spec; critique swap finds the missing checkpoint.</p></article>
+  </div>
+  <div class="callout work">
+    <span class="label">The week in one line</span>
+    <p><strong>Automate friction, never judgment — and put a human at every door that doesn't open backwards.</strong> An agent is an extremely fast intern with no judgment and no stake in the outcome. The whole week is one discipline: delegating without abdicating.</p>
+  </div>
+</section>
+
+<section class="b" id="concepts">
+  <h2><span class="bnum">02</span>Key Concepts</h2>
+
+  <h3>1 · Agent vs. chatbot vs. workflow</h3>
+  <div class="table-scroll">
+  <table>
+    <tr><th></th><th>Chatbot</th><th>Workflow</th><th>Agent</th></tr>
+    <tr><td><strong>What it does</strong></td><td>Answers</td><td>Runs fixed steps you defined</td><td>Decides its own steps</td></tr>
+    <tr><td><strong>Control</strong></td><td>You drive each turn</td><td>You wrote the path</td><td>It picks the path</td></tr>
+    <tr><td><strong>Best for</strong></td><td>Thinking, drafting</td><td>Predictable repeated tasks</td><td>Messy, variable tasks</td></tr>
+    <tr><td><strong>Risk</strong></td><td>Low</td><td>Low–medium</td><td>Higher — it can surprise you</td></tr>
+  </table>
+  </div>
+  <p>Most "agentic" creative work is actually a <strong>workflow</strong> (predictable, safe) with one or two agentic steps. You don't need a robot; you need a reliable assembly line with a human inspector.</p>
+
+  <h3>2 · Tool use is where capability and danger both live</h3>
+  <p>An agent's power comes from <strong>tool use</strong> — operating other software. Every tool is a capability <em>and</em> a risk surface. The rule: <strong>give the smallest access that does the job.</strong> Broad access is how "organize my folder" becomes "email my drafts to a client."</p>
+
+  <h3>3 · The checkpoint: where you stay the director</h3>
+  <div class="callout try"><span class="label">The thesis</span><p><strong>Plan first, act second.</strong> Make the agent propose its plan and <em>stop</em> for approval before touching anything. The non-negotiable: a checkpoint before every irreversible action — sending, deleting, publishing, paying, overwriting. Twenty seconds of reading a plan and killing one bad line is the whole difference between delegating and abdicating.</p></div>
+
+  <h3>4 · Safety rails (design these in, every time)</h3>
+  <ul class="check">
+    <li><strong>Never delete</strong> — move ambiguous things to <code>/_review</code>.</li>
+    <li><strong>Run on copies</strong> until trusted. Your only copy is sacred.</li>
+    <li><strong>Changelog everything</strong> — every action and every uncertainty.</li>
+    <li><strong>Flag uncertainty, don't guess</strong> — "if unsure, skip and report."</li>
+  </ul>
+  <div class="callout warn"><span class="label">Watch out</span><p>An agent will invent a decision you never gave it — a naming rule, an alt-text guess, a "this is probably the final." The changelog and <code>/_review</code> folder are how you <em>catch</em> those. Read the log.</p></div>
+
+  <h3>5 · The Automation Boundary Map</h3>
+  <div class="tracks">
+    <div class="track"><b>Automate</b>Pure friction; repeatable, reversible, taste-free (renaming, alt-text drafts, export checklists).</div>
+    <div class="track"><b>Assist</b>AI helps but a human decides every time (the best cut, the client email, the final crop).</div>
+    <div class="track"><b>Human-only</b>Your authorship and relationships — the concept, the art, the client trust. An empty column here is a warning sign.</div>
+  </div>
+
+  <h3>6 · Good agent tasks</h3>
+  <p>Batch renaming · alt-text drafting · folder packaging · social cut-down checklists · contact sheets · QA checklists · admin scaffolding. The pattern: <strong>structured, repetitive, reversible, verifiable.</strong> Not all four? It wants assist, not automation.</p>
+</section>
+
+<section class="b" id="words">
+  <h2><span class="bnum">03</span>This Week's Words</h2>
+  <div class="glossary">
+    <div class="term"><b>Agent</b>An AI that acts: breaks a goal into steps, uses tools, checks work, continues.</div>
+    <div class="term"><b>Tool use</b>An agent operating other software. Capability = risk surface.</div>
+    <div class="term"><b>Workflow automation</b>Wiring a repeatable multi-step process to run with minimal supervision.</div>
+    <div class="term"><b>Human-in-the-loop</b>A person reviewing at designed points. Delegating vs. abdicating.</div>
+    <div class="term"><b>Checkpoint / approval gate</b>A designed stop — mandatory before irreversible steps.</div>
+    <div class="term"><b>Plan-then-act</b>Agent proposes its plan and waits for approval before touching anything.</div>
+    <div class="term"><b>Safety rails</b>Never-delete, run-on-copies, changelog, flag-uncertainty.</div>
+    <div class="term"><b>Changelog</b>The agent's log of every action + uncertainties. Your accountability trail.</div>
+    <div class="term"><b>Scope (of access)</b>What an agent is allowed to touch. Smallest that works.</div>
+    <div class="term"><b>Boundary map</b>Automate / assist / human-only — sorted by reversibility and authorship.</div>
+  </div>
+  <p class="small"><a href="../GLOSSARY.md">Full course glossary →</a></p>
+</section>
+
+<section class="b" id="demo">
+  <h2><span class="bnum">04</span>Demo: An Agent Does Production Chores (Supervised)</h2>
+  <div class="callout demo">
+    <span class="label">I made this, so can you</span>
+    <p>An agent organizes a real-feeling messy folder — on a <strong>copy</strong> — with a brief that demands plan-then-act.</p>
+  </div>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-12/messy-folder">messy-folder</a> <a href="../demos/week-12/agent-run/CHANGELOG.md">agent-run/CHANGELOG.md</a> <a href="../demos/week-12/agent-run/QA-CHECKLIST.md">agent-run/QA-CHECKLIST.md</a> <a href="../demos/week-12/agent-run/alt-text.md">agent-run/alt-text.md</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+  <ol class="steps">
+    <li><strong>Plan first.</strong> "Propose a folder structure and naming convention — STOP and show me before touching anything."</li>
+    <li><strong>The checkpoint moment.</strong> The instructor rejects one element of the plan out loud and approves the rest. Twenty seconds; the whole week's thesis.</li>
+    <li><strong>The run, with rails.</strong> Rename and organize (never delete; ambiguous → <code>/_review</code>), draft <code>alt-text.md</code>, build <code>QA-CHECKLIST.md</code>, write <code>CHANGELOG.md</code>.</li>
+    <li><strong>The audit.</strong> Open the changelog and <code>/_review</code>. Find where it decided something it wasn't told — and which of those decisions would have hurt on a real client job.</li>
+  </ol>
+  <div class="callout warn"><span class="label">The planned failure</span><p>It misclassifies at least one ambiguous file or invents a slightly-wrong alt text — caught by the rails. That catch is the point: we plan, log, and quarantine instead of trust.</p></div>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">05</span>Step-by-Step Workflows</h2>
+
+  <h3>Designing a safe agent workflow</h3>
+  <ol class="steps">
+    <li><strong>Pick a chore</strong> that's structured, repetitive, reversible, verifiable.</li>
+    <li><strong>Write the inputs</strong> — and the permission status of anything not solely yours.</li>
+    <li><strong>List the AI steps</strong>, each with the smallest tool access that works.</li>
+    <li><strong>Place the checkpoints</strong> — minimum one before anything irreversible; note what you check and what makes you reject.</li>
+    <li><strong>Add the safety rails</strong> — never-delete/<code>_review</code>, run-on-copy, changelog, flag-uncertainty.</li>
+    <li><strong>Define verification</strong> — how you confirm it worked <em>this run</em>.</li>
+    <li><strong>Run on a copy. Read the changelog. Then trust it a little more.</strong></li>
+  </ol>
+
+  <h3>The Automation Boundary Map (15 min, revisit forever)</h3>
+  <ol class="steps">
+    <li>List 10–15 real recurring tasks.</li>
+    <li>For each: reversible? repeatable? taste-free? whose material?</li>
+    <li>Sort into Automate / Assist / Human-only.</li>
+    <li>The "automate" column is your agent candidates; "human-only" is your manifesto, sharpened.</li>
+  </ol>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">06</span>Prompt Recipes</h2>
+
+  <div class="prompt"><span class="prompt-label">The plan-then-act brief (the core move)</span>This folder is [what it is — a finished project for client X]. Plan first, act second. Step 1: propose a folder structure and a file-naming convention for this project — STOP and show me before touching anything. After my approval: rename and organize all files (NEVER delete; move anything ambiguous to /_review), draft alt text for each image into alt-text.md, build QA-CHECKLIST.md for handoff, and write CHANGELOG.md logging every action and anything you were unsure about.</div>
+
+  <div class="prompt"><span class="prompt-label">The scope-tightening clause</span>Constraints: work only inside this folder. No internet access. No deletions — ever. Don't overwrite originals; if a name collides, append a version suffix. If you're unsure about any file, skip it and note it in CHANGELOG.md rather than guessing.</div>
+
+  <div class="prompt"><span class="prompt-label">The boundary-map sorter</span>Here are 12 recurring tasks in my creative practice: [list]. For each, tell me: is it reversible, repeatable, and taste-free, and whose material does it touch? Then sort them into Automate / Assist / Human-only, and flag any I've miscategorized — especially anything in "automate" that actually needs my judgment.</div>
+
+  <div class="prompt"><span class="prompt-label">The changelog auditor (after a run)</span>Here is the CHANGELOG.md from an agent run: [paste]. Point out: every decision the agent made that wasn't explicitly in my instructions, which of those could cause a problem on a real client job, and what I should verify by hand before trusting this output.</div>
+
+  <div class="prompt"><span class="prompt-label">The workflow critic (before you build it)</span>Here is my draft agent workflow spec: [paste]. Find the missing checkpoint before an irreversible step, the tool access that's broader than the task needs, and the one failure that would be most expensive if it happened unnoticed. Be specific.</div>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: Boundary Map + Workflow Spec (70 min)</h2>
+  <p class="lede">Cold start friendly. No agent access? Fully fine — this lab is design work; the spec is the deliverable.</p>
+  <ol class="steps">
+    <li><strong>Boundary map (15 min):</strong> 10–15 real tasks → Automate / Assist / Human-only. Defend your "human-only" column to a neighbour.</li>
+    <li><strong>Pick + spec (30 min):</strong> one "automate" task → fill the <a href="../templates/ai-workflow-spec-template.md">workflow spec template</a> completely — steps, smallest access per step, a checkpoint before every irreversible action, the four rails, a verification method. ✏️ every checkpoint with <em>what would make you reject</em>.</li>
+    <li><strong>Critique swap (15 min):</strong> trade specs; each finds the <em>missing checkpoint</em> and the <em>over-broad access</em>. Every first-draft spec has at least one.</li>
+    <li><strong>Revise (10 min):</strong> fix what your partner found; note what you missed.</li>
+  </ol>
+  <div class="callout try"><span class="label">Zero-AI / paper track (fully equal)</span><p>The boundary map and the spec are design documents. A workflow you can't write on paper is a workflow you can't trust to a machine.</p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">This week's four</span>
+    <ol>
+      <li>Is there a human checkpoint before <em>every</em> irreversible step? (Find the one you missed.)</li>
+      <li>Does any step have broader access than the task needs? Tighten it.</li>
+      <li>Whose material does the workflow touch — and is every non-yours item permission-cleared?</li>
+      <li>If an agent touches client deliverables: the changelog <em>is</em> your audit trail. "Production organized by a supervised agent; all selection and client-facing decisions human."</li>
+    </ol>
+  </div>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>The agent did something I didn't ask</td><td>Read the changelog — it's logged. Tighten the brief and scope; add a checkpoint where it improvised</td></tr>
+    <tr><td>It deleted/overwrote something</td><td>You skipped the never-delete rail or ran on originals. Recover from your copy; the rail is non-optional</td></tr>
+    <tr><td>Plan-then-act gets ignored</td><td>Put "STOP and show me before touching anything" in capitals at the end — many agents respect the last instruction most</td></tr>
+    <tr><td>The changelog is vague</td><td>Demand specifics: "log the exact old→new name for every file and a reason for every /_review placement"</td></tr>
+    <tr><td>It's slower than doing it myself</td><td>Then it belongs in "assist" or "human-only," not "automate." Killing a bad automation is a correct result</td></tr>
+    <tr><td>I can't tell if it worked</td><td>Your spec lacked a verification step. Add one that checks <em>this run</em> — spot-check 3 outputs against the rules</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+  <ul class="resources">
+    <li><span class="tag article">Guide</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.anthropic.com/research/building-effective-agents">Building Effective AI Agents — Anthropic</a><span class="r-why">The definitive guide: workflows vs. agents, simplest-pattern-that-works, and why most "agents" should be workflows. This week's stance, from the source.</span></li>
+    <li><span class="tag article">Guide</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.anthropic.com/engineering/writing-tools-for-agents">Writing Tools for AI Agents — Anthropic</a><span class="r-why">On tool design and scope — why a few tightly-scoped tools beat broad access. The "smallest access that works" principle, expanded.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag verify">Verify before teaching</span><a class="r-title" href="https://code.claude.com/docs">Claude Code documentation</a><span class="r-why">The agent tool in the demo — permissions, file access, and approval flows change; check current behaviour.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag verify">Verify before teaching</span><span class="r-title">OpenAI Codex / Agents documentation</span><span class="r-why">The other agentic toolset; verify current scope/approval model before demoing.</span></li>
+    <li><span class="tag docs">Reference</span><span class="tag linked">Linked</span><a class="r-title" href="https://artificialintelligenceact.eu/">The EU AI Act explorer</a><span class="r-why">Re-visit from Week 1: automated decision-making and transparency obligations are tightening — relevant when agents touch client- or public-facing work.</span></li>
+    <li><span class="tag video">Video</span><span class="tag verify">Verify before teaching</span><span class="r-title">A current "what is an AI agent" explainer (credible source)</span><span class="r-why">A short, calm explainer helps the agent-vs-chatbot distinction land for absolute beginners; pick the current best.</span></li>
+  </ul>
+
+  <h3>Optional extension</h3>
+  <ul>
+    <li>Design a second workflow for a <em>collaborative</em> chore (packaging deliverables for a teammate) — collaboration adds permission and disclosure questions.</li>
+    <li>Stress-test your spec: write the three worst things the agent could do if one instruction were misread, then add a rail or checkpoint for each.</li>
+    <li>Hard mode: sketch how your Week 11 tiny tool and this workflow would chain — the tool produces, the workflow packages. That's a personal pipeline (a Week 14 capstone in disguise).</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-13.html">Jobs, Portfolios, and Career Leverage →</a> — turning everything you've built into the materials that get you hired, in your voice.</p>
+</section>
+
+</main>
+</body>
+</html>

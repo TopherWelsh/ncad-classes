@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../styles.css">
+<script src="../slides.js" defer></script>
+<title>Week 09 Slides — 3D Workflows</title>
+</head>
+<body class="slides">
+
+<section class="slide s-title">
+  <p class="kicker">NCAD AI for Artists Workshop · Week 09</p>
+  <h1>3D Workflows</h1>
+  <p>Modeling Support, Materials, Scenes, and Render Planning</p>
+  <div class="notes">3D/animation room; motion + game-adjacent welcome.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">60-second recap</p>
+  <h2>The deal</h2>
+  <p>AI for friction, humans for meaning.<br>Raw output is never finished work.<br>Verify before trusting. Disclose where it matters.<br>Skepticism welcome when specific.</p>
+  <div class="notes">Standing recap.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Today</p>
+  <h2>Today's promise</h2>
+  <p>You'll make AI write <strong>working Blender Python</strong> for you — zero coding knowledge required —</p>
+  <p>and you'll spot, in ten seconds of wireframe, why "free AI 3D model" usually isn't free.</p>
+  <div class="notes">Both halves happen to every student today, hands-on.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The week in one line</p>
+  <h1 style="font-size:clamp(28px,4.4vw,56px)">You don't need to learn Python.<br>You need to describe, run, and report.</h1>
+  <div class="notes">Board: DESCRIBE → RUN → REPORT → RE-RUN.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Deliverable</p>
+  <h2>You will leave with</h2>
+  <p><strong>A 3D scene plan</strong> — lights with motivations, honest budget</p>
+  <p><strong>One keeper</strong> — a script or checklist you'll actually reuse</p>
+  <div class="notes">"The keeper is the real deliverable — the thing that saves you an hour next week."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Today's map</p>
+  <h2>Today's map</h2>
+  <ol>
+    <li>The 3D AI map + code as dictation — 40 min</li>
+    <li>The topology tax + scene planning — 15 min</li>
+    <li>Demo: the scaffold, the dials, the crash — 40 min</li>
+    <li>Lab: your scaffold + Reality Check — 70 min</li>
+    <li>Share: keepers + verdicts — 35 min</li>
+  </ol>
+  <div class="notes">Breaks protected.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1</p>
+  <h1>The 3D AI map</h1>
+  <div class="notes">~0:10.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Honestly rated</p>
+  <h2>What exists</h2>
+  <ul>
+    <li>AI-written scripts (Blender Python) — <strong>★★★ today's core</strong></li>
+    <li>Planning / checklists / triage — <strong>★★★</strong></li>
+    <li>Image gen for reference/previs — <strong>★★</strong> (Week 4 rules)</li>
+    <li>Text-to-3D meshes — <strong>★</strong> eyes open</li>
+    <li>Texture/material generation — <strong>★★</strong> improving</li>
+  </ul>
+  <div class="notes">"The headline tech is the weakest row. The boring rows are the paycheck. Familiar pattern by now."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Why 3D especially</p>
+  <h2>The steepest grunt-to-art ratio in the building</h2>
+  <p>setup · scattering · lighting rigs · naming · render babysitting · troubleshooting</p>
+  <p><strong>AI attacks exactly that layer.</strong></p>
+  <div class="notes">Every 3D student is nodding. The door in is dictation, next.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, continued</p>
+  <h1>Code as dictation</h1>
+  <div class="notes">~0:18. The week's superpower.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The loop</p>
+  <h2>Four steps</h2>
+  <ol>
+    <li><strong>Describe</strong> the setup in artist language</li>
+    <li><strong>Demand artist comments</strong> — "for an artist who doesn't code"</li>
+    <li><strong>Paste → Scripting tab → Run</strong></li>
+    <li><strong>Change values → re-run</strong></li>
+  </ol>
+  <div class="notes">That's the entire method. The demo proves it in 40 minutes.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The mindset</p>
+  <h2>A script is a dial, not a black box</h2>
+  <p>Rock count. Fog density. Light warmth.<br><strong>Numbers, in plain view, that you're allowed to change.</strong></p>
+  <p>The first time you edit a value and re-run, you have technically edited Python.</p>
+  <div class="notes">"Nobody will check your licence."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">When it breaks</p>
+  <h2>The error loop</h2>
+  <div class="prompt">I ran your script in Blender 4.x and got this error: [paste the ENTIRE traceback]. Explain in plain language and fix it.</div>
+  <h2 style="margin-top:10px">You don't debug. You report.</h2>
+  <div class="notes">"Like describing a render glitch to support — except the support answers. Usually first try."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Absolute</p>
+  <h2>Safety rules</h2>
+  <ol>
+    <li><strong>Fresh or saved files only.</strong> Never your only copy.</li>
+    <li><strong>Read for destructive operations</strong> — <code>delete</code>, <code>remove</code>, file paths → ask first.</li>
+    <li>Undo exists. Rule 1 anyway.</li>
+  </ol>
+  <div class="notes">Deliver flatly. These return in Week 12 as agent rules.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">In real work</p>
+  <h2>The scripting person</h2>
+  <p>Every studio has someone who "knows a bit of scripting" and saves the team hours weekly.</p>
+  <p><strong>That person can now be you. On day one.</strong></p>
+  <div class="notes">The employability sentence of the week.</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <div class="notes">Stage the beauty render of the sample mesh.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 2</p>
+  <h1>The topology tax</h1>
+  <div class="notes">~1:00.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Exhibit A</p>
+  <h2>This AI mesh looks fine</h2>
+  <p class="small" style="opacity:.6">(beauty render of the sample mesh on the projector)</p>
+  <div class="notes">Show the good-looking render. Hold. Next slide is the reveal.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Exhibit A, in wireframe</p>
+  <h2>Triangle soup · no edge flow · melted backside · ngons · 40 metres tall</h2>
+  <h1 style="font-size:clamp(26px,4vw,52px)">"Free model" = "paid in cleanup."</h1>
+  <div class="notes">The gasp is the lesson. Show the actual wireframe screenshot.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Sorting, not banning</p>
+  <h2>Legitimate uses anyway</h2>
+  <p>Background props at distance ✓ · Blocking volumes ✓ · Scale reference ✓</p>
+  <p><strong>Hero assets ✗ · Anything that deforms ✗</strong></p>
+  <div class="notes">Not a ban — a sorting skill. The Reality Check is the sorter.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The professional eye</p>
+  <h2>The Reality Check — 10 seconds, forever</h2>
+  <p>Wireframe view → density? · loops where it bends? · backside? · ngons? · scale?</p>
+  <p>→ <strong>Verdict:</strong> background / blocking / retopo (cost it) / reject</p>
+  <div class="notes">Runs in the lab on a provided mesh. Studios literally pay for this judgment now.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Before and after the build</p>
+  <h2>Scene plans + render QA</h2>
+  <p><strong>Plan:</strong> frame contents · asset sources · <strong>every light has a motivation</strong> · camera intent · honest budget</p>
+  <p><strong>Triage:</strong> "grainy shadows, Cycles, 40-min frames" → diagnostic order</p>
+  <div class="notes">AI drafts both; the motivations and verdicts are yours.</div>
+</section>
+
+<section class="slide s-section s-demo">
+  <p class="kicker">Demo</p>
+  <h1>The scaffold, the dials, the crash</h1>
+  <div class="notes">~1:15. Pre-tested script ready. Prompts from DEMOS file.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 1</span>
+  <p class="kicker">The ask</p>
+  <div class="prompt">Write a Blender 4.x Python script that builds a previz scene: ground plane with subtle displacement, 12 low-poly rocks scattered without overlaps, three-point area lighting, camera framing the cluster from low angle, light volumetric fog. Comment every section in plain language for an artist who doesn't code. List what could go wrong when I run it.</div>
+  <div class="notes">Read the comments aloud when it returns. Read its own risk list.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 2</span>
+  <p class="kicker">The run</p>
+  <h2>Scripting tab → paste → Run → orbit</h2>
+  <h2 style="margin-top:10px">One paste. That used to be forty minutes of setup.</h2>
+  <div class="notes">Let the scene land. Orbit slowly.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 3</span>
+  <p class="kicker">The dials</p>
+  <h2>Rocks: 12 → 40. Fog: doubled. Re-run.</h2>
+  <p><strong>A script is a dial, not a black box.</strong></p>
+  <div class="notes">Invite a student to call a value. Change it live.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 4</span>
+  <p class="kicker">The planned crash</p>
+  <h2>It failed. Good.</h2>
+  <p>Read the traceback. Copy ALL of it. Paste it back.</p>
+  <p><strong>"You don't need Python. You need copy-paste and honesty about what happened."</strong></p>
+  <div class="notes">Let the error be scary for two seconds, then run the loop. Fix usually lands first try.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 5</span>
+  <p class="kicker">The artist's judgment</p>
+  <h2>What does this scene still need that no script provides?</h2>
+  <p>Composition intent · story · materials with meaning · <strong>light motivation</strong></p>
+  <div class="notes">Ask the room first. Close with the render checklist request — previz vs portfolio still.</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <p>Lab next: your scaffold, your verdicts.</p>
+  <div class="notes">Share-folder link slide staged.</div>
+</section>
+
+<section class="slide s-section s-lab">
+  <p class="kicker">Lab · 70 minutes</p>
+  <h1>Scaffold → Reality Check → Keeper</h1>
+  <p>Class scaffold + 2 values (15) → YOUR scaffold (20) → Reality Check (15) → Plan + keeper (20)</p>
+  <div class="notes">Parts + times on board. Share folder link visible.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 1</span>
+  <p class="kicker">15 min</p>
+  <h2>Run the class scaffold</h2>
+  <p>Paste the provided script → Run → <strong>change two values of your choice</strong> → re-run.</p>
+  <p>You have now edited Python. That's the whole trick.</p>
+  <div class="notes">Guaranteed success first builds courage for step 2.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 2</span>
+  <p class="kicker">20 min</p>
+  <h2>Your scaffold</h2>
+  <p>Request one for YOUR project: Week 6 character's set · degree-show space · product turntable.</p>
+  <p><strong>Errors are wanted. Run the error loop. That's the skill.</strong></p>
+  <div class="notes">Celebrate every completed error loop aloud. Check they name their Blender version.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 3</span>
+  <p class="kicker">15 min</p>
+  <h2>Reality Check</h2>
+  <p>The provided AI mesh → wireframe pass → <strong>5 written findings</strong> + a verdict:</p>
+  <p>background / blocking / retopo (cost it) / reject</p>
+  <div class="notes">Push past "it's messy" to named crimes: density, flow, backside, ngons, scale.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 4</span>
+  <p class="kicker">20 min</p>
+  <h2>Plan + keeper</h2>
+  <p>Scene plan for your real project — lights with motivations.</p>
+  <p><strong>The keeper:</strong> one script or checklist you'll actually reuse.<br>Save the prompt WITH the script.</p>
+  <div class="notes">"Which of these will you genuinely run next week? That one's the deliverable."</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Always available</span>
+  <p class="kicker">No Blender?</p>
+  <h2>The planning track</h2>
+  <p>Scene plan + light motivations + script <strong>spec</strong> + Reality Check on annotated screenshots.</p>
+  <p><strong>The director's version of the same knowledge. Equal credit.</strong></p>
+  <div class="notes">Or pair as director/operator with a Blender owner.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Share-out · 25 min</p>
+  <h2>Keepers + verdicts</h2>
+  <ul>
+    <li>Keepers demoed live — <em>would you actually reuse this?</em></li>
+    <li>Reality Check verdicts defended — <em>and why?</em></li>
+    <li>One planning-track scene plan read — the light motivations especially</li>
+  </ul>
+  <div class="notes">The keeper demos are quick and satisfying — run 3–4.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Every week</span>
+  <p class="kicker">Integrity check</p>
+  <h2>This week's four</h2>
+  <ol>
+    <li>Read your script for destructive ops before running?</li>
+    <li>AI meshes: disclosed in a portfolio breakdown?</li>
+    <li>Can you state <strong>why each light exists</strong>?</li>
+    <li>Save the prompt with the script — it's a dependency now</li>
+  </ol>
+  <div class="notes">#2: "'Background rocks AI-generated, cleaned; hero modelled by me' is exactly how studios talk."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Reflection</p>
+  <h2>Write 4 lines</h2>
+  <ul>
+    <li>The value you changed (and what it taught you about dials)</li>
+    <li>Your sharpest Reality Check finding</li>
+    <li>Your keeper — and when you'll next run it</li>
+    <li>One thing in 3D you'd never delegate</li>
+  </ul>
+  <div class="notes">Two quiet minutes.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Next Wednesday</p>
+  <h2>Audio, Voice, Video, and Multimodal Critique</h2>
+  <p>Transcripts, captions, temp VO — and critique workflows that work on any visual work you make.</p>
+  <p class="small" style="opacity:.6">Bring 60 seconds of any rough footage or a WIP still.</p>
+  <div class="notes">End on time; corridor questions after.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Tonight, optional</p>
+  <h2>Go deeper</h2>
+  <ul>
+    <li><em>Scripting for Artists</em> — Blender's official series (embedded on week page)</li>
+    <li>Blender Python API docs — know they exist</li>
+    <li>Blender Studio open projects — what GOOD topology looks like</li>
+    <li>The gift script: kill a chore for a classmate's workflow</li>
+  </ul>
+  <div class="notes">Final slide stays up while people pack.</div>
+</section>
+
+<nav class="slide-nav">
+  <a href="./week-09.html">Week Page</a>
+  <a href="../index.html">Home</a>
+</nav>
+
+</body>
+</html>

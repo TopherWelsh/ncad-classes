@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 11 Demo - Moodboard Generator</title>
+<style>
+:root{--paper:#f3efe5;--ink:#12120f;--card:#fffaf0;--red:#e6422e;--blue:#176c8c;--green:#22745a;--gold:#c8952d;--purple:#6d4aa2;--muted:#625d55;--line:#d8ccba}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,serif;line-height:1.45}main{max-width:1180px;margin:0 auto;padding:34px 22px 60px}h1,h2,h3{font-family:Helvetica,Arial,sans-serif;line-height:1.05;margin:0 0 12px}h1{font-size:clamp(34px,5vw,72px);letter-spacing:0}h2{font-size:28px;border-top:4px solid var(--ink);padding-top:14px;margin-top:28px}p{margin:0 0 12px}.kicker{font:700 13px Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--red)}.grid{display:grid;gap:16px}.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:var(--card);border:2px solid var(--ink);border-radius:8px;padding:18px;box-shadow:5px 5px 0 var(--ink)}.soft{border-color:var(--line);box-shadow:none}.prompt,pre{white-space:pre-wrap;background:#181713;color:#fff6de;padding:14px;border-radius:6px;font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace}.placeholder{min-height:150px;border:2px dashed var(--muted);border-radius:6px;background:#e4ded1;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font:700 14px Helvetica,Arial,sans-serif;padding:12px}.badge{display:inline-block;border:2px solid var(--ink);border-radius:999px;padding:4px 9px;font:700 12px Helvetica,Arial,sans-serif;text-transform:uppercase}.keep{background:#d9eadf}.kill{background:#f7d6ce}.human{background:#ffe7a3}.swatches{display:flex;gap:6px;margin:10px 0}.swatches span{height:34px;flex:1;border:2px solid var(--ink);border-radius:4px}.note{font:14px Helvetica,Arial,sans-serif;color:var(--muted)}table{width:100%;border-collapse:collapse;background:var(--card)}th,td{border:1.5px solid var(--ink);padding:10px;vertical-align:top}th{font-family:Helvetica,Arial,sans-serif;text-align:left;background:#efe4d0}.hi{background:#fff0a8}.red{background:#ffd8d2}.green{background:#d9eadf}.screen{aspect-ratio:9/16;border:2px solid var(--ink);border-radius:14px;background:#eee7da;padding:12px;display:flex;flex-direction:column;gap:10px}.wire{background:#cfc8ba;border-radius:6px;min-height:28px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tab{border:2px solid var(--ink);padding:8px 12px;border-radius:999px;font:700 13px Helvetica,Arial,sans-serif;background:#fff8ea}@media(max-width:850px){.cols-3,.cols-2{grid-template-columns:1fr}main{padding:24px 14px}.card{box-shadow:3px 3px 0 var(--ink)}}@media print{body{background:white}.card{break-inside:avoid;box-shadow:none}main{max-width:none}.placeholder{background:#eee}}
+</style>
+</head>
+<body>
+<main>
+
+<p class="kicker">Week 11 safety twin</p><h1>Moodboard Prompt Generator</h1>
+<p>Fill the inputs. Generate a structured image-exploration brief. Copy it into your image or research tool.</p>
+<section class="grid cols-2"><form class="card" id="f"><label>Project type<br><input name="type" value="degree show poster"></label><br><br><label>Mood words<br><input name="mood" value="tactile, confident, offbeat"></label><br><br><label>Reference quality 1<br><input name="r1" value="two-colour risograph texture"></label><br><br><label>Reference quality 2<br><input name="r2" value="typographic hierarchy"></label><br><br><label>Reference quality 3<br><input name="r3" value="student work as the hero"></label><br><br><label>Palette preference<br><input name="pal" value="teal, warm black, paper"></label><br><br><label>What to avoid<br><input name="avoid" value="generic art-school collage, fake text, corporate polish"></label><br><br><button type="submit">Generate Brief</button> <button type="button" id="copy">Copy</button></form><article class="card"><h2>Output</h2><pre id="out">Your brief will appear here.</pre></article></section>
+<script>
+const f=document.getElementById('f'), out=document.getElementById('out');
+function val(n){return f.elements[n].value.trim();}
+function render(e){if(e)e.preventDefault();out.textContent =
+`Image exploration brief
+Project: ${val('type')}
+Mood: ${val('mood')}
+
+Explore visual territory using:
+- ${val('r1')}
+- ${val('r2')}
+- ${val('r3')}
+
+Palette: ${val('pal')}
+
+Constraints:
+- Leave clear space for real typography.
+- No fake letters, logos, watermarks, or copied artist styles.
+- Produce 4 distinct directions, each with a risk.
+- Do not pick a winner. The human designer chooses.
+
+Avoid:
+${val('avoid')}
+
+After output, critique each direction against the project and mark what needs human repair.`;}
+f.addEventListener('submit',render);document.getElementById('copy').onclick=()=>navigator.clipboard.writeText(out.textContent);render();
+</script>
+</main>
+</body>
+</html>
+

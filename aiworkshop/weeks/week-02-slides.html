@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../styles.css">
+<script src="../slides.js" defer></script>
+<title>Week 02 Slides — Prompting Like an Art Director</title>
+</head>
+<body class="slides">
+
+<section class="slide s-title">
+  <p class="kicker">NCAD AI for Artists Workshop · Week 02</p>
+  <h1>Prompting Like an Art Director</h1>
+  <p>Briefs, References, and Critique Loops</p>
+  <div class="notes">Returning students sit anywhere; new students get the 5-min recap next slide.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Recap + callback</p>
+  <h2>"The model didn't fail. The brief did."</h2>
+  <p>Today we turn that sentence into a repeatable skill.</p>
+  <div class="notes">5-min integrity recap for drop-ins: friction vs meaning, raw output isn't finished work, disclosure, verification, skepticism-when-specific.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Today</p>
+  <h2>Today's promise</h2>
+  <p>A briefing system you'll reuse all term:</p>
+  <ul>
+    <li>A real brief for a real project of yours</li>
+    <li>A rubric that makes any AI — or classmate — give you <strong>useful criticism instead of compliments</strong></li>
+  </ul>
+  <div class="notes">Both artifacts feed every later week + the capstone. Say so.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Deliverable</p>
+  <h2>You will leave with</h2>
+  <p><strong>One AI-ready creative brief</strong> — your project</p>
+  <p><strong>One track critique rubric</strong> — 6 lines that bite</p>
+  <div class="notes">Show the templates exist: creative-brief-template.md, critique-rubric-template.md.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">First</p>
+  <h2>Kill the myth</h2>
+  <p>There are no magic words.</p>
+  <p>"Prompt engineering" for creative work =<br><strong>90% classic creative-brief discipline</strong> + 10% machine quirks</p>
+  <div class="notes">"You're in art school. You're closer to expert at this than the tech bros are."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Today's map</p>
+  <h2>Today's map</h2>
+  <ol>
+    <li>Anatomy of a brief — 40 min</li>
+    <li>Demo: one brief, six tracks — 45 min</li>
+    <li>Lab: surgery → your brief → your rubric — 70 min</li>
+    <li>Share, critique, reflect — 45 min</li>
+  </ol>
+  <div class="notes">Breaks protected, as always.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1</p>
+  <h1>The anatomy of a brief that works</h1>
+  <div class="notes">The 8 parts go on the board as a column; they stay up all day.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Anatomy</p>
+  <h2>Eight parts, eight failure modes</h2>
+  <p>Role · Context · Constraints · References<br>Avoid · Output format · Criteria · <strong>The decision line</strong></p>
+  <p>Remove any one → a specific, predictable kind of bad output.</p>
+  <div class="notes">Teaching move: for each part ask "what happens without it?" BEFORE revealing. They can derive most from Week 1 memory.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Anatomy 1/8</p>
+  <h2>Role</h2>
+  <p>"Act as a practical creative director for motion design."</p>
+  <p><strong>Without it:</strong> generic assistant voice, generic standards.</p>
+  <div class="notes">Role sets the bar the model aims at. "Practical" is doing work in that sentence — it suppresses fluff.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Anatomy 2/8</p>
+  <h2>Context</h2>
+  <p>Project, audience, where the work lives.</p>
+  <p><strong>Without it:</strong> the model invents a default context. The default is wrong.</p>
+  <div class="notes">"Narrow audience beats broad: 'Dublin gig-goers who already like synth music' outperforms 'everyone' every time."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Anatomy 3/8</p>
+  <h2>Constraints</h2>
+  <p>Format, palette, duration, budget, the non-negotiables.</p>
+  <p><strong>Without them:</strong> you get the average of the internet.</p>
+  <div class="notes">Full constraints section coming — this is the headline.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Anatomy 4/8</p>
+  <h2>References</h2>
+  <p>The qualities you want — described precisely, or shown.</p>
+  <p><strong>Without them:</strong> "style" collapses into cliché.</p>
+  <div class="notes">The consent line gets its own slide shortly.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Anatomy 5/8</p>
+  <h2>The avoid list</h2>
+  <p>What you explicitly don't want.</p>
+  <p><strong>Without it:</strong> the clichés walk right in wearing lanyards.</p>
+  <div class="notes">Cheapest upgrade in prompting. "No neon, no rain, no hooded figures" does visible work.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Anatomy 6/8</p>
+  <h2>Output format</h2>
+  <p>"Five directions, each: one-line concept, layout in words, one risk."</p>
+  <p><strong>Without it:</strong> one long, confident essay.</p>
+  <div class="notes">Output shape keeps the model from deciding for you — "directions + risks" forces options open.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Anatomy 7/8</p>
+  <h2>Criteria</h2>
+  <p>How drafts will be judged — written into the brief.</p>
+  <p><strong>Without them:</strong> you can't critique what has no standard. Neither can the model.</p>
+  <div class="notes">These become the rubric in the lab. Plant the seed now.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Anatomy 8/8</p>
+  <h2>The decision line</h2>
+  <p style="font-size:clamp(24px,3vw,40px)"><strong>"Don't pick a winner — that's my job."</strong></p>
+  <p><strong>Without it:</strong> the model decides. You rubber-stamp.</p>
+  <div class="notes">"Eight words that keep you the director. Make them a habit."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Reality check</p>
+  <h2>Do you need all eight every time?</h2>
+  <p>No. Quick tasks: role + ask.</p>
+  <p>But when output disappoints, the diagnosis is always:<br><strong>"Which organ is missing?"</strong></p>
+  <p>That's the lab.</p>
+  <div class="notes">Frames Prompt Surgery before lunch-brain forgets.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, continued</p>
+  <h1>Constraints are creative direction</h1>
+  <div class="notes">The counterintuitive section. ~0:30.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Recall</p>
+  <h2>Remember the average machine</h2>
+  <p>Unconstrained model → the mean of everything online.<br>By design. Not fixable with politeness.</p>
+  <div class="notes">Callback to Week 1 — returning students nod, new students catch up.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Compare</p>
+  <h2>Loose vs. tight</h2>
+  <div class="compare">
+    <div class="bad"><h3>"Poster, any style"</h3><p>The global average<br>Nothing to judge against<br>Model's defaults win</p></div>
+    <div class="good"><h3>"2-colour riso, type-led, reads at 5m + phone story"</h3><p>A specific corner<br>Pass/fail-able<br>Your direction wins</p></div>
+  </div>
+  <p><strong>Corners are where interesting work lives.</strong></p>
+  <div class="notes">"You already know this: 'anything you like' is the hardest client sentence in the world."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Watch out</p>
+  <h2>Constraints it can't satisfy</h2>
+  <p>Exact word counts · arithmetic · pixel-precise layout<br>→ confidently ignored.</p>
+  <p><strong>Constrain direction. Verify compliance yourself.</strong></p>
+  <div class="notes">"Ask it to 'list my constraints back before answering' — catches drift early."</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, continued</p>
+  <h1>References: show, don't just tell</h1>
+  <div class="notes">~0:38.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">References</p>
+  <h2>Three levels</h2>
+  <ol>
+    <li><strong>Telling:</strong> "1970s print feeling" — okay</li>
+    <li><strong>Telling precisely:</strong> "flat colour, heavy grain, slight misregistration, like a 1970s riso gig poster" — much better</li>
+    <li><strong>Showing:</strong> paste 1–3 examples of what good looks like — fastest taste transfer</li>
+  </ol>
+  <div class="notes">Level 2 vocabulary: materials, light, colour behaviour, texture, type feeling. Level 3 = "few-shot."</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Course rule</span>
+  <p class="kicker">References</p>
+  <h2>The consent line</h2>
+  <p>We do not prompt with living artists' names.</p>
+  <p>✓ Qualities: "Bauhaus poster geometry"<br>✗ Signature theft: "in the style of [working illustrator]"</p>
+  <div class="notes">Deliver carefully: consent fight centre + professionally radioactive + community trust. "This appears in every integrity check this term."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The craft argument</p>
+  <h2>Why qualities beat names (besides ethics)</h2>
+  <p>Naming qualities forces you to understand<br><strong>why you like the reference.</strong></p>
+  <p>That understanding works on every brief, every tool, every collaborator, forever.</p>
+  <div class="notes">The craft argument lands with students the ethics argument doesn't reach. Use both.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, finale</p>
+  <h1>The critique loop</h1>
+  <p>Your hostile reviewer on demand</p>
+  <div class="notes">~0:44. "Highest-value prompting skill. Needs zero generation."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Critique loops</p>
+  <h2>Without criteria: compliments</h2>
+  <p>The model is trained to be liked.<br>The word is <strong>sycophancy</strong>.</p>
+  <p class="small" style="opacity:.7">"This is a strong concept with great potential!" — about everything.</p>
+  <div class="notes">Have a real saccharine example ready from prep. The room laughs, then gets it.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Critique loops</p>
+  <h2>With your rubric: a second pair of eyes</h2>
+  <p>Work + <strong>your criteria</strong> + "be specific" + you decide</p>
+  <p>= competent criticism at 2am before the deadline</p>
+  <div class="notes">"The model doesn't replace crit. It makes you arrive at crit with the obvious problems already fixed."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Critique loops</p>
+  <h2>The loop, four steps</h2>
+  <ol>
+    <li>Give it the work (text or screenshot)</li>
+    <li>Give it <strong>your criteria</strong> (from your brief)</li>
+    <li>Demand: the weakness, why it matters for this audience, one concrete fix</li>
+    <li><strong>You decide what to accept</strong> — filtering critique is taste training</li>
+  </ol>
+  <div class="notes">Step 4 is the integrity step. Accepting everything = outsourcing taste.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Try this now</span>
+  <p class="kicker">90 seconds</p>
+  <h2>The anti-sycophancy clause</h2>
+  <div class="prompt">Do not compliment me. Do not soften. If the work is generic, say where and why. Give me the review a tired, skeptical creative director would give at 6pm on a Friday.</div>
+  <div class="notes">Students paste it onto anything they have. The tone change is immediate and memorable.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Habits</p>
+  <h2>Iteration etiquette</h2>
+  <ul>
+    <li>React with specifics, not "make it better"</li>
+    <li>One variable at a time when close; start over when not</li>
+    <li>Fresh chats for fresh directions</li>
+    <li>Three failed revisions = the <strong>brief</strong> has a hole</li>
+    <li>Briefs live in docs, never only in chats</li>
+  </ul>
+  <div class="notes">Five habits, one slide. The handout repeats them.</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <div class="notes">Demo staged before you walk away: base brief in paste buffer.</div>
+</section>
+
+<section class="slide s-section s-demo">
+  <p class="kicker">Demo</p>
+  <h1>One brief, six tracks</h1>
+  <div class="notes">~1:00. Prompts from DEMOS_AND_VISUAL_AIDS.md Week 02.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">The base</p>
+  <h2>The base brief</h2>
+  <p>Week 1's degree-show poster brief.<br>Audience: Dublin creative industry + families. Tone: confident, not corporate.</p>
+  <p><strong>Watch what survives translation — and what must change.</strong></p>
+  <div class="notes">Paste the universal-vs-specific prompt first; its two-column answer structures the whole demo.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">The pattern</p>
+  <h2>The spine vs. the moving parts</h2>
+  <div class="compare">
+    <div class="good"><h3>Never changes</h3><p>Audience · Goal · Tone</p></div>
+    <div class="bad"><h3>Changes per discipline</h3><p>Deliverable specs · Constraints · References · Critique criteria</p></div>
+  </div>
+  <div class="notes">Keep score on the board as adaptations run. The pattern teaches itself by the third track.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · live</span>
+  <p class="kicker">Adaptation 1</p>
+  <h2>Motion design</h2>
+  <p>15-second Instagram story version:<br>specs, timing, type-in-motion constraints, sound note, motion references</p>
+  <div class="notes">Run live. Ask after: "What changed? What survived?"</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · live</span>
+  <p class="kicker">Adaptation 2</p>
+  <h2>UX</h2>
+  <p>Degree-show website:<br>wayfinding, accessibility, mobile-first, performance constraints</p>
+  <div class="notes">Run live. This one usually smuggles the riso colours in — don't point it out yet.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · live</span>
+  <p class="kicker">Adaptation 3</p>
+  <h2>3D</h2>
+  <p>Physical signage / installation:<br>materials, sightlines, fabrication constraints, budget reality</p>
+  <div class="notes">Run live. Illustration/graphic/animation versions shown from demos/week-02 prepared page.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Planned failure</span>
+  <p class="kicker">Demo</p>
+  <h2>Find the smuggled constraint</h2>
+  <p>One adaptation kept a rule that makes no sense in its medium.</p>
+  <p><strong>Catching that is your job. Every time. Every tool.</strong></p>
+  <div class="notes">Let the room hunt. If the model didn't oblige today, show the prep screenshot where it did.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">The closing move</p>
+  <h2>From brief to rubric</h2>
+  <div class="prompt">Build me a 6-line critique rubric. Each line: one pass/fail question tied to a SPECIFIC constraint in this brief. No generic design-school questions.</div>
+  <p>Then: <strong>reject any line that could apply to any project.</strong></p>
+  <div class="notes">Reject at least one line live and make it regenerate. The rejection is the teachable moment.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Your turn</span>
+  <p class="kicker">5 minutes</p>
+  <h2>Adapt your brief</h2>
+  <p>"Rewrite my brief for [your track] producing [your deliverable]. Change only what must change. Highlight what you changed."</p>
+  <div class="notes">Circulate. Listen for "huh, it kept the wrong constraint" — celebrate every catch aloud.</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <p>Lab next: surgery, then your own brief + rubric.</p>
+  <div class="notes">Stage the three bad prompts slide.</div>
+</section>
+
+<section class="slide s-section s-lab">
+  <p class="kicker">Lab · 70 minutes</p>
+  <h1>Surgery → Brief → Rubric</h1>
+  <p><strong>A.</strong> Prompt surgery, teams — 25 min · <strong>B.</strong> Your brief — 25 min · <strong>C.</strong> Your rubric — 20 min</p>
+  <div class="notes">Parts + times on the board.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab A · 25 min</span>
+  <p class="kicker">Teams of 2–3</p>
+  <h2>The patients</h2>
+  <ol>
+    <li>"Design me a logo for my brand. Make it modern and clean."</li>
+    <li>"Write something for my portfolio about my project."</li>
+    <li>"Give me ideas for my animation."</li>
+  </ol>
+  <div class="notes">All three are real student prompts in spirit.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab A</span>
+  <p class="kicker">The discipline</p>
+  <h2>Predict first</h2>
+  <ol>
+    <li><strong>Predict what's wrong before running</strong> (anatomy table)</li>
+    <li>Run it. Were you right?</li>
+    <li>Fix the <strong>two weakest organs only</strong></li>
+    <li>Re-run. Save before/after for share-out</li>
+  </ol>
+  <div class="notes">Enforce predict-first hard. Teams fixing everything at once: "Two organs. Which two?"</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab B · 25 min</span>
+  <p class="kicker">Solo</p>
+  <h2>Your brief, your ✏️ marks</h2>
+  <p>Full skeleton, <strong>real current project</strong>. Run. One surgery pass.</p>
+  <p>Mark ✏️ every line <strong>only you could have written</strong> — audience knowledge, taste, constraints.</p>
+  <div class="notes">The ✏️ marks are authorship evidence. No project? Imaginary band/show/app — but push for real.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab C · 20 min</span>
+  <p class="kicker">Solo</p>
+  <h2>Your rubric must bite</h2>
+  <p>Six lines from YOUR brief's constraints.</p>
+  <p>Test on Part B's output: <strong>at least two lines must fail.</strong><br>All passing? Sharpen the rubric, not your feelings.</p>
+  <div class="notes">"A rubric that everything passes is a greeting card."</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Always available</span>
+  <p class="kicker">Alternative</p>
+  <h2>Zero-generation track</h2>
+  <p>A: diagnose the three prompts on paper — predict, don't run<br>B + C: brief and rubric are writing tasks — the actual deliverable</p>
+  <p><strong>Model as critic only, or not at all. Equal credit.</strong></p>
+  <div class="notes">Offer neutrally to everyone.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Share-out · 35 min</p>
+  <h2>Show the work</h2>
+  <ul>
+    <li>Teams: one surgery before/after — room names which organ did the work</li>
+    <li>Solos: read your best ✏️ line</li>
+    <li>Rubrics: one line that made the output fail</li>
+  </ul>
+  <div class="notes">Applaud specificity. Ask of rubric lines: "Would that also improve a human crit?" Yes — say so.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Every week</span>
+  <p class="kicker">Integrity check</p>
+  <h2>This week's four</h2>
+  <ol>
+    <li>Whose <strong>taste</strong> is in the brief?</li>
+    <li>References: qualities — or a living artist in a trench coat?</li>
+    <li>Portfolio work from this brief → disclosure starts now</li>
+    <li>Classmate's project or client material in a prompt? <strong>Permission first</strong></li>
+  </ol>
+  <div class="notes">Same four-beat rhythm as every week.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Reflection</p>
+  <h2>Write 4 lines</h2>
+  <ul>
+    <li>The brief-part that most improved output today</li>
+    <li>One thing your rubric caught that you'd have missed</li>
+    <li>One line of your brief only you could have written</li>
+    <li>Where your brief library lives (decide now)</li>
+  </ul>
+  <div class="notes">Two quiet minutes. Brief + rubric get reused every week from here.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Next Wednesday</p>
+  <h2>Research, Moodboards, and Concept Development Without Copying</h2>
+  <p>Your briefing skill, aimed at the research phase — plus the verification habits that keep AI research honest.</p>
+  <div class="notes">Tease: "We'll watch AI invent a very convincing artist who has never existed."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Tonight, optional</p>
+  <h2>Go deeper</h2>
+  <ul>
+    <li>Anthropic — <em>Prompting 101</em> (embedded on the week page)</li>
+    <li>Anthropic interactive prompt tutorial (free, hands-on)</li>
+    <li>The Futur — brief-writing for client work</li>
+    <li>Set up your custom instructions / Project system prompt</li>
+  </ul>
+  <div class="notes">Final slide stays up while people pack.</div>
+</section>
+
+<nav class="slide-nav">
+  <a href="./week-02.html">Week Page</a>
+  <a href="../index.html">Home</a>
+</nav>
+
+</body>
+</html>

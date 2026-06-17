@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 01 Demo - Prompt Comparison Board</title>
+<style>
+:root{--paper:#f3efe5;--ink:#12120f;--card:#fffaf0;--red:#e6422e;--blue:#176c8c;--green:#22745a;--gold:#c8952d;--purple:#6d4aa2;--muted:#625d55;--line:#d8ccba}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,serif;line-height:1.45}main{max-width:1180px;margin:0 auto;padding:34px 22px 60px}h1,h2,h3{font-family:Helvetica,Arial,sans-serif;line-height:1.05;margin:0 0 12px}h1{font-size:clamp(34px,5vw,72px);letter-spacing:0}h2{font-size:28px;border-top:4px solid var(--ink);padding-top:14px;margin-top:28px}p{margin:0 0 12px}.kicker{font:700 13px Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--red)}.grid{display:grid;gap:16px}.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:var(--card);border:2px solid var(--ink);border-radius:8px;padding:18px;box-shadow:5px 5px 0 var(--ink)}.soft{border-color:var(--line);box-shadow:none}.prompt,pre{white-space:pre-wrap;background:#181713;color:#fff6de;padding:14px;border-radius:6px;font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace}.placeholder{min-height:150px;border:2px dashed var(--muted);border-radius:6px;background:#e4ded1;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font:700 14px Helvetica,Arial,sans-serif;padding:12px}.badge{display:inline-block;border:2px solid var(--ink);border-radius:999px;padding:4px 9px;font:700 12px Helvetica,Arial,sans-serif;text-transform:uppercase}.keep{background:#d9eadf}.kill{background:#f7d6ce}.human{background:#ffe7a3}.swatches{display:flex;gap:6px;margin:10px 0}.swatches span{height:34px;flex:1;border:2px solid var(--ink);border-radius:4px}.note{font:14px Helvetica,Arial,sans-serif;color:var(--muted)}table{width:100%;border-collapse:collapse;background:var(--card)}th,td{border:1.5px solid var(--ink);padding:10px;vertical-align:top}th{font-family:Helvetica,Arial,sans-serif;text-align:left;background:#efe4d0}.hi{background:#fff0a8}.red{background:#ffd8d2}.green{background:#d9eadf}.screen{aspect-ratio:9/16;border:2px solid var(--ink);border-radius:14px;background:#eee7da;padding:12px;display:flex;flex-direction:column;gap:10px}.wire{background:#cfc8ba;border-radius:6px;min-height:28px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tab{border:2px solid var(--ink);padding:8px 12px;border-radius:999px;font:700 13px Helvetica,Arial,sans-serif;background:#fff8ea}@media(max-width:850px){.cols-3,.cols-2{grid-template-columns:1fr}main{padding:24px 14px}.card{box-shadow:3px 3px 0 var(--ink)}}@media print{body{background:white}.card{break-inside:avoid;box-shadow:none}main{max-width:none}.placeholder{background:#eee}}
+</style>
+</head>
+<body>
+<main>
+
+<p class="kicker">Week 01 demo artifact</p>
+<h1>One Task, Three Ways</h1>
+<p>Same poster problem. Different amount of human direction. The lesson: output quality follows the brief, and the human keeps authorship.</p>
+<section class="grid cols-3">
+<article class="card"><h2>Weak Prompt</h2><pre>Make a poster concept for an art school degree show.</pre><div class="placeholder">INSTRUCTOR: drop screenshot or generated concept here</div><h3>Human decisions still required</h3><ul><li>Audience</li><li>Format and production method</li><li>Voice and references</li><li>What to reject</li></ul></article>
+<article class="card"><h2>Creative Brief</h2><pre>Act as a practical creative director. I'm designing a poster for NCAD's degree show, "Field Notes." Audience: Dublin creative industry + students' families. Tone: confident, not corporate; the work is the hero. Constraints: A1 print, must work pasted in cafes and on Instagram stories, two-colour risograph (teal + warm black), typography-led because student work varies wildly in style. Give me 5 directions. For each: concept in one line, headline treatment idea, layout sketch in words, and one risk. Don't pick a winner - that's my job.</pre><div class="placeholder">INSTRUCTOR: drop better output screenshot here</div><h3>Human decisions still required</h3><ul><li>Which direction has taste</li><li>Which risk matters</li><li>What is too generic</li><li>Final design craft</li></ul></article>
+<article class="card"><h2>After Critique Loop</h2><pre>Direction 3 is the weakest. Critique it against my brief: where is it generic, where does it fight the riso constraint, what would a skeptical Dublin designer roll their eyes at? Then give me two sharper variants that fix those problems.</pre><div class="placeholder">INSTRUCTOR: drop critique-loop screenshot here</div><h3>Human decisions still required</h3><ul><li>Accept or reject the critique</li><li>Repair impossible constraints</li><li>Choose what survives</li><li>Disclose AI assist if used publicly</li></ul></article>
+</section>
+</main>
+</body>
+</html>
+

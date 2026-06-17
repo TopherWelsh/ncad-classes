@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 04 — Image Generation and Editing · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-04-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 04 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">Illustration · graphic design · animation · motion · 3D — 4 hours, drop-in friendly</p>
+  <h1>Image Generation and Editing for Illustration, Design, and Previs</h1>
+  <p class="promise">Use image tools the way professionals actually use them — as sketching, reference, compositing, and repair systems — with an iteration discipline that proves your authorship instead of eroding it.</p>
+  <div class="resource-row">
+    <a href="./week-04-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#words">Glossary</a>
+  <a href="#demo">Demo</a>
+  <a href="#workflow">Workflows</a>
+  <a href="#recipes">Prompt Recipes</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> a process board — 6+ iterations, keep/kill decisions with written reasons, one human-repaired direction.</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Concepts (40 min)</strong><p>The four legitimate jobs; image prompt anatomy; iteration discipline; surgical edits.</p></article>
+    <article><strong>2 · Rights (20 min)</strong><p>Training-data tiers, output copyright, Content Credentials, disclosure.</p></article>
+    <article><strong>3 · Demo (30 min)</strong><p>Campaign poster: generate → reject → critique → repair.</p></article>
+    <article><strong>4 · Lab + share (110 min)</strong><p>Your process board, then defend-a-kill critique.</p></article>
+  </div>
+  <div class="callout work">
+    <span class="label">The reframe that makes this week work</span>
+    <p><strong>The deliverable of an image session is not an image — it's a decision trail.</strong> Professionals generate wide, kill fast with reasons, and repair by hand. The rejects, and your reasons, are where your taste becomes visible and your authorship becomes defensible.</p>
+  </div>
+  <div class="callout try"><span class="label">Opted out of generating?</span><p>Full critique/direction track today: you'll brief, judge, and document — the art-director round. Higher-order skills, same deliverable, equal credit.</p></div>
+</section>
+
+<section class="b" id="concepts">
+  <h2><span class="bnum">02</span>Key Concepts</h2>
+
+  <h3>1 · The four legitimate jobs (and the illegitimate one)</h3>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Job</th><th>Looks like</th><th>Who uses it</th></tr>
+    <tr><td><strong>Sketching/exploration</strong></td><td>20 thumbnails in 10 min to find what you <em>don't</em> want</td><td>Illustration, design</td></tr>
+    <tr><td><strong>Reference & previs</strong></td><td>Lighting studies, mood frames, set ideas</td><td>Motion, animation, 3D, video</td></tr>
+    <tr><td><strong>Compositing parts</strong></td><td>Generated texture under hand-made foreground</td><td>Design, illustration</td></tr>
+    <tr><td><strong>Repair & extension</strong></td><td>Inpaint a region; outpaint a new aspect ratio</td><td>Everyone in production</td></tr>
+  </table>
+  </div>
+  <div class="callout warn"><span class="label">The illegitimate job</span><p><strong>Final art replacement.</strong> Not because a rule says so: it's the part that's actually yours, raw output isn't copyrightable, and clients can buy raw output without you. Generating your final art is competing with yourself at €0/hour.</p></div>
+
+  <div class="video-embed">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/1CIpzeNxIhU" title="How AI Image Generators Work — Computerphile" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <p class="video-note"><b>Why this video:</b> Mike Pound's whiteboard explanation of diffusion — noise to image, steered by text. Knowing the mechanism explains both the magic and the mush.</p>
+  </div>
+
+  <h3>2 · Image prompt anatomy (your Week 2 brief, visual edition)</h3>
+  <ul>
+    <li><strong>Subject + action</strong> — concrete, specific.</li>
+    <li><strong>Territory qualities</strong> — your verified Week 3 vocabulary: materials, light behaviour, colour logic, texture.</li>
+    <li><strong>Composition</strong> — framing, viewpoint, and a <em>named empty zone</em> with a purpose ("clear upper third for typography").</li>
+    <li><strong>Medium/process words</strong> — "gouache on rough paper" beats "painterly"; "35mm photo" beats "cinematic." Process words invoke physics; style words invoke the average.</li>
+    <li><strong>Avoid list</strong> — always includes "no text, no logos, no letters." Models grow fake type; type is yours anyway.</li>
+  </ul>
+
+  <h3>3 · Iteration discipline: wide, then narrow</h3>
+  <ol class="steps">
+    <li><strong>Generate wide</strong> — 4–8 from one brief-shaped prompt.</li>
+    <li><strong>Kill fast, with reasons</strong> — "Kill: texture is mush where the eye lands." One line each.</li>
+    <li><strong>Select</strong> — with a reason too.</li>
+    <li><strong>Refine narrow</strong> — change exactly ONE variable. Rerolling is a slot machine; controlled variation is direction.</li>
+  </ol>
+
+  <h3>4 · Surgical edits: the production skills</h3>
+  <ul>
+    <li><strong>Inpainting</strong> (Generative Fill) — regenerate only a selected region. Your hand chooses what changes.</li>
+    <li><strong>Outpainting</strong> (Generative Expand) — extend past the frame; reformat without re-shooting. Verify the invented regions.</li>
+    <li><strong>Image-to-image</strong> — your sketch in, rendered options out; <em>strength</em> decides how much of your structure survives. If the composition isn't yours anymore, you gave it too much freedom.</li>
+    <li><strong>Upscaling</strong> — invents plausible detail. Inspect at 100% before print.</li>
+  </ul>
+
+  <h3>5 · Rights, tools, and the classroom-safe choice</h3>
+  <ul>
+    <li><strong>Training tiers:</strong> Firefly trains on licensed/Adobe Stock content — the conservative default for classroom and client work. Most other tools train on scraped data; using them is a values decision to make knowingly. (Honest footnote: Firefly's contributor compensation is itself contested — "licensed" is cleaner, not spotless.)</li>
+    <li><strong>Output copyright:</strong> purely AI-generated images generally can't be copyrighted; your edits, composition, and combination are what's protectable.</li>
+    <li><strong>Content Credentials (C2PA):</strong> tamper-evident "how this was made" metadata. Provenance is becoming infrastructure.</li>
+    <li><strong>Disclosure:</strong> generated elements that survive into final work get disclosed, specifically.</li>
+  </ul>
+</section>
+
+<section class="b" id="words">
+  <h2><span class="bnum">03</span>This Week's Words</h2>
+  <div class="glossary">
+    <div class="term"><b>Text-to-image</b>Generating images from description. A sketching tool, not a finishing tool.</div>
+    <div class="term"><b>Image-to-image</b>Your image + instructions → variations. Strength = how much of yours survives.</div>
+    <div class="term"><b>Inpainting</b>Regenerating a selected region only. Surgical, not slot machine.</div>
+    <div class="term"><b>Outpainting</b>Extending beyond the original edges. Reformatting's best friend.</div>
+    <div class="term"><b>Upscaling</b>Resolution increase with invented detail. Inspect before print.</div>
+    <div class="term"><b>Seed</b>The random start number. Same seed + prompt ≈ same image — controlled variation.</div>
+    <div class="term"><b>Structure control</b>Steering with a sketch/pose/depth map: composition obeys, rendering varies.</div>
+    <div class="term"><b>Negative prompt</b>The avoid list. "No text" is almost always in it.</div>
+    <div class="term"><b>Latent space</b>The model's map of visual concepts — prompting is navigation, not retrieval.</div>
+    <div class="term"><b>Content Credentials</b>Embedded provenance metadata (C2PA) — machine-readable "how this was made."</div>
+  </div>
+  <p class="small"><a href="../GLOSSARY.md">Full course glossary →</a></p>
+</section>
+
+<section class="b" id="demo">
+  <h2><span class="bnum">04</span>Demo: Campaign Poster — Generate, Reject, Repair</h2>
+  <div class="callout demo">
+    <span class="label">I made this, so can you</span>
+    <p>A poster background for a contemporary dance festival ("Hinge") taken through the full professional loop.</p>
+  </div>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-04/process-board.html">process-board.html</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+  <ol class="steps">
+    <li><strong>Brief-shaped prompt:</strong> territory qualities + composition with a named type zone + palette + "no people, no text."</li>
+    <li><strong>Rejection round:</strong> 4–6 outputs, keep/kill + one reason each, fast and aloud — and the room overrules one call.</li>
+    <li><strong>Critique loop:</strong> the survivor screenshot into a chat model with the brief — "where will typography fight the image? what reads as AI-generic at arm's length?"</li>
+    <li><strong>Human repair:</strong> crop for the type zone, generative-fill ONE region, levels, real type placed. Five minutes of recognizable design craft.</li>
+  </ol>
+  <div class="callout warn"><span class="label">The planned failure</span><p>At least one generation ignores "no text" and grows fake letters. It always does. <strong>That's why type stays yours.</strong></p></div>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">05</span>Step-by-Step Workflows</h2>
+
+  <h3>From prompt to process board</h3>
+  <ol class="steps">
+    <li><strong>Write the image brief</strong> from your Week 3 territory (or build a quick territory first).</li>
+    <li><strong>Generate 6–8.</strong> Number them. No judging mid-generation.</li>
+    <li><strong>Kill round:</strong> minimum 4 killed, one written reason each — specific beats vibes.</li>
+    <li><strong>Select + reason.</strong> One survivor (two max).</li>
+    <li><strong>One controlled refinement:</strong> change exactly one variable; note what and why.</li>
+    <li><strong>One surgical edit</strong> — inpaint/crop/adjust, by hand where you can.</li>
+    <li><strong>Board it:</strong> iterations in order, decisions visible, final direction + repair notes. (<a href="../templates/process-documentation-template.md">Process documentation template</a>)</li>
+  </ol>
+
+  <h3>Image-to-image from your sketch</h3>
+  <ol class="steps">
+    <li>Rough sketch (90 seconds, ugly is fine) of <em>your</em> composition.</li>
+    <li>Photograph/scan → image-to-image with your territory prompt.</li>
+    <li>Strength high enough that your composition survives.</li>
+    <li>Treat results as <strong>rendering studies of your drawing</strong> — steal back what works into the real piece.</li>
+  </ol>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">06</span>Prompt Recipes</h2>
+
+  <div class="prompt"><span class="prompt-label">The image brief</span>[Subject + action, concrete]. Visual territory: [3–5 verified qualities — materials, light behaviour, colour logic, texture, process era]. Composition: [framing/viewpoint] with [empty zone + what it's for]. Medium: [process words — e.g., flat screen-print shapes / gouache on rough paper / 35mm photograph]. Palette: [named colours]. Avoid: text, logos, watermarks, [your clichés].</div>
+
+  <div class="prompt"><span class="prompt-label">The variation director</span>Keep everything about option [N] the same, but change only: [one variable — the light direction / the camera height / the palette to X]. Do not change the composition.</div>
+
+  <div class="prompt"><span class="prompt-label">The multimodal critique</span>Critique this image against my brief: [paste brief]. Where will typography fight the image? What reads as AI-generic at arm's length? What would a print production person flag? Don't soften.</div>
+
+  <div class="prompt"><span class="prompt-label">The repair planner</span>I'm keeping this image but repairing it by hand. Based on my brief, list the 5 highest-impact manual interventions (crop, paint-over, colour, type zone, texture) in priority order, with one sentence on why each earns its place.</div>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: From Prompt to Process (70 min)</h2>
+  <p class="lede">Cold start friendly — a quick territory takes 10 minutes if you missed Week 3.</p>
+
+  <h3>Your subject, by track</h3>
+  <div class="tracks">
+    <div class="track"><b>Illustration</b>Book cover rough for a folk tale you actually like — territory from its setting.</div>
+    <div class="track"><b>Graphic design</b>Gig/event poster background with a named type zone.</div>
+    <div class="track"><b>Animation / motion</b>Three style frames for one shot — same scene, three light moods.</div>
+    <div class="track"><b>3D</b>Previs of a set/environment you might actually build — composition + lighting study.</div>
+  </div>
+
+  <h3>The structure (all tracks)</h3>
+  <ul class="check">
+    <li>Image brief from your territory — 10 min</li>
+    <li>Generate 6–8 — 10 min</li>
+    <li><strong>Kill round with written reasons — 10 min (the core assessment artifact)</strong></li>
+    <li>Select + one controlled refinement — 10 min</li>
+    <li>One surgical edit or crop by hand — 15 min</li>
+    <li>Board assembly + selection notes — 15 min</li>
+  </ul>
+
+  <div class="callout try"><span class="label">Zero-generation track</span><p><strong>Art-director round:</strong> you write the brief and make every keep/kill call; a partner operates. Or run the full kill round + critique + repair plan on the instructor's prepared 8-image set. The decision trail is the deliverable either way.</p></div>
+  <div class="callout warn"><span class="label">Free generations ran out?</span><p>By design: documentation, critique loop, and repair planning on what you already have completes the deliverable. Nobody is blocked by a quota.</p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">This week's four</span>
+    <ol>
+      <li>Could you show this board in a crit and <strong>defend every kill</strong>?</li>
+      <li>Is anything on the board secretly "final art" you're hoping to ship raw?</li>
+      <li>Did you choose your generator <strong>knowingly</strong> (training data, rights tier) — or by default?</li>
+      <li>Write the disclosure line <strong>now</strong>, while the process is fresh.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>Everything looks "AI" (waxy, over-lit, hollow)</td><td>Add process/medium words and texture qualities; ban the defaults in your avoid list</td></tr>
+    <tr><td>It keeps adding text/letters</td><td>It will. "No text, no typography, no letters" — and plan type as your job</td></tr>
+    <tr><td>Same-y results across prompts</td><td>You're rerolling, not directing. Change one named variable — or your territory is too thin; go back to qualities</td></tr>
+    <tr><td>Hands/faces/details broken</td><td>Inpaint the region, crop past it, or let it not matter — it's a rough, not a final</td></tr>
+    <tr><td>Free generations ran out</td><td>Switch to kill-round documentation, critique, repair planning — that's most of the deliverable</td></tr>
+    <tr><td>"It's doing the fun part"</td><td>Keep the fun part: sketch first, image-to-image at high structure strength — outputs become rendering studies of YOUR drawing</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+  <ul class="resources">
+    <li><span class="tag video">Video</span><span class="tag embedded">Embedded</span><a class="r-title" href="https://www.youtube.com/watch?v=1CIpzeNxIhU">How AI Image Generators Work — Computerphile</a><span class="r-why">Embedded above in Concepts. The diffusion mechanism, explained at a whiteboard — the magic and the mush both make sense afterwards.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag linked">Linked</span><a class="r-title" href="https://helpx.adobe.com/photoshop/using/generative-fill.html">Generative Fill — Adobe Photoshop documentation</a><span class="r-why">The official reference for the inpainting workflow in today's demo and lab.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag verify">Verify before teaching</span><a class="r-title" href="https://docs.midjourney.com/">Midjourney documentation</a><span class="r-why">Parameters, image prompts, style references — useful even if you only watch demos. Features shift fast.</span></li>
+    <li><span class="tag docs">Standard</span><span class="tag linked">Linked</span><a class="r-title" href="https://contentcredentials.org/">Content Credentials</a><span class="r-why">The C2PA provenance standard — how "what made this image" becomes verifiable metadata.</span></li>
+    <li><span class="tag docs">Official</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.copyright.gov/ai/">Copyright and AI — US Copyright Office</a><span class="r-why">This week's angle: registration guidance for works <em>containing</em> AI material — your human contributions are what's protectable. Document them.</span></li>
+    <li><span class="tag docs">Tool</span><span class="tag linked">Linked</span><a class="r-title" href="https://haveibeentrained.com/">Have I Been Trained — Spawning</a><span class="r-why">Re-check from Week 1, now that you're generating: see the training sets, register opt-outs for your own work.</span></li>
+    <li><span class="tag video">Video</span><span class="tag verify">Verify before teaching</span><span class="r-title">Adobe Firefly official tutorials (Adobe Learn / YouTube)</span><span class="r-why">Short official walkthroughs of Fill/Expand — the UI changes often; grab the current one the week you teach.</span></li>
+  </ul>
+
+  <h3>Optional extension</h3>
+  <ul>
+    <li>Take one <em>rejected</em> generation; write 3 sentences on what would have to change to pass your rubric.</li>
+    <li>Run the same brief in Firefly and one other tool; note 3 differences in their defaults — different training data, thinking differently.</li>
+    <li>Hard mode: recreate your selected direction entirely by hand (sketch/collage/photo). What did each version teach you?</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-05.html">Motion Design →</a> — your image skills become style frames; AI starts planning shots and production tasks.</p>
+</section>
+
+</main>
+</body>
+</html>

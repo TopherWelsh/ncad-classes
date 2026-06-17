@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 05 — Motion Design · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-05-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 05 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">Motion design · graphic design · animation — 4 hours, drop-in friendly</p>
+  <h1>Motion Design: Boards, Style Frames, Scripts, and Production Assistants</h1>
+  <p class="promise">A complete preproduction chain — treatment → shot list → style-frame prompts → task list — and the judgment to know where AI helps motion work and where it wrecks it.</p>
+  <div class="resource-row">
+    <a href="./week-05-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#words">Glossary</a>
+  <a href="#demo">Demo</a>
+  <a href="#workflow">Workflows</a>
+  <a href="#recipes">Prompt Recipes</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> a 15-second motion treatment pack — one of three directions, fully developed.</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Concepts (40 min)</strong><p>The pipeline map; the treatment's five slots; shot-list audit habits; the style-frame bridge.</p></article>
+    <article><strong>2 · Reality check (15 min)</strong><p>Video generation, honestly: control, continuity, cost, rights.</p></article>
+    <article><strong>3 · Demo (35 min)</strong><p>Tide pools: treatment → shot list → AE task list → style frame prompt.</p></article>
+    <article><strong>4 · Lab + pitch (110 min)</strong><p>One Prompt, Three Treatments → your full pack → 90-second pitches.</p></article>
+  </div>
+  <div class="callout work">
+    <span class="label">Why this matters in real work</span>
+    <p>Motion design lives or dies in <strong>preproduction</strong> — and preproduction is exactly where AI is genuinely strong, because treatments, shot lists, and task lists are structured, checkable documents. Video <em>generation</em> is the least-ready part: studios use it for mood and previs, not finals. <strong>AI is your production assistant, not your animator.</strong></p>
+  </div>
+</section>
+
+<section class="b" id="concepts">
+  <h2><span class="bnum">02</span>Key Concepts</h2>
+
+  <h3>1 · Where AI sits in the motion pipeline</h3>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Stage</th><th>AI usefulness</th><th>Why</th></tr>
+    <tr><td>Brief / treatment</td><td>★★★</td><td>Options + structure; your taste picks</td></tr>
+    <tr><td>Script / VO draft</td><td>★★★</td><td>Drafts fast; your voice edits</td></tr>
+    <tr><td>Storyboard / shot list</td><td>★★★</td><td>Structured + checkable; timing maths needs you</td></tr>
+    <tr><td>Style frames</td><td>★★</td><td>Week 4 skills; previs-quality, not finals</td></tr>
+    <tr><td><strong>Animation itself</strong></td><td>★</td><td>Keyframes, easing, acting — the job stays yours</td></tr>
+    <tr><td>Video generation</td><td>★ (previs/mood)</td><td>Continuity + control weak; credits cost money</td></tr>
+    <tr><td>Render / export / admin</td><td>★★★</td><td>Checklists, naming, specs — pure friction</td></tr>
+  </table>
+  </div>
+
+  <h3>2 · The treatment: 120 words that decide everything</h3>
+  <p>Five slots, every time: <strong>visual approach</strong> (territory language), <strong>pacing logic</strong> (how time behaves), <strong>type behaviour</strong> (type is a character — say how it acts), <strong>palette</strong> (named, limited), <strong>sound feeling</strong> (one line changes everything).</p>
+  <div class="callout try"><span class="label">The edit-two-lines move</span><p>AI drafts the treatment; <strong>you rewrite the two lines that matter.</strong> After that it's yours — and you'll feel the difference.</p></div>
+
+  <h3>3 · Shot lists: structured, checkable, slightly wrong</h3>
+  <p>Shot #, duration, action, camera, type on screen, asset needed, transition out. AI builds these fast, with two reliable failures:</p>
+  <div class="callout warn"><span class="label">Watch out — the two failures</span>
+    <ul>
+      <li><strong>Durations don't sum.</strong> You asked for 15 seconds; it produced 17 in a confident table. It does <em>arithmetic-shaped output</em> — you do arithmetic.</li>
+      <li><strong>Fantasy shots.</strong> It will specify the fluid sim you can't make by Friday. Killing those shots isn't failure — it's called producing.</li>
+    </ul>
+  </div>
+
+  <h3>4 · Style frames: the Week 4 bridge</h3>
+  <p>Brief-shaped prompt, type zone <em>reserved</em>, kill round, repair. <strong>Generate the world; comp the type yourself</strong> — models still mangle letterforms, and type in motion is your craft.</p>
+
+  <h3>5 · Video generation: the honest state (mid-2026)</h3>
+  <ul>
+    <li><strong>Good for:</strong> mood reels, pitch previs, abstract texture, image-to-video on your own style frames.</li>
+    <li><strong>Bad at:</strong> continuity across shots, precise art direction, type, anything approved frame-by-frame.</li>
+    <li><strong>Costly:</strong> credits burn fast; queues eat lab time.</li>
+    <li><strong>The evaluation pattern that outlives every tool:</strong> control · continuity · cost · rights. (Gen-4, Veo, Kling today; Sora's consumer app already died once.)</li>
+  </ul>
+</section>
+
+<section class="b" id="words">
+  <h2><span class="bnum">03</span>This Week's Words</h2>
+  <div class="glossary">
+    <div class="term"><b>Treatment</b>The 100–150 word sell: visual approach, pacing, type behaviour, palette, sound.</div>
+    <div class="term"><b>Storyboard</b>Sequential frames planning the piece. AI roughs them; timing and acting are yours.</div>
+    <div class="term"><b>Shot list</b>The production table of every shot. Prime AI territory — audited by you.</div>
+    <div class="term"><b>Style frame</b>One fully-resolved frame defining the look.</div>
+    <div class="term"><b>Animatic</b>Boards cut to time with scratch audio — the cheapest place to find timing problems.</div>
+    <div class="term"><b>Kinetic type</b>Typography as the performer. Models can't do it; you can.</div>
+    <div class="term"><b>Previs</b>Cheap rough visualization for decisions before production.</div>
+    <div class="term"><b>Text-to-video / image-to-video</b>Generated motion. Previs and mood, not finals.</div>
+    <div class="term"><b>Continuity</b>Consistency across shots — generative video's classic failure.</div>
+    <div class="term"><b>Pacing</b>How time behaves. The motion designer's actual instrument.</div>
+  </div>
+  <p class="small"><a href="../GLOSSARY.md">Full course glossary →</a></p>
+</section>
+
+<section class="b" id="demo">
+  <h2><span class="bnum">04</span>Demo: Tide Pools — Concept to Production Plan</h2>
+  <div class="callout demo">
+    <span class="label">I made this, so can you</span>
+    <p>A rough concept ("20-second title sequence for a documentary about tide pools") through four moves — every artifact checkable, every one edited by a human.</p>
+  </div>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-05/shotlist.html">shotlist.html</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+  <ol class="steps">
+    <li><strong>Treatment</strong> (120 words, five slots) — then two lines edited live. Taste, visibly applied.</li>
+    <li><strong>Shot list</strong> — 7–9 shots, durations must total exactly 20s, hardest shots flagged. The sum is wrong on the first try; watch the recount.</li>
+    <li><strong>AE task list</strong> — grouped by pre-comp, assets, animation, finishing — then the producer's edit: merge, cut, halve the fantasy hours.</li>
+    <li><strong>Style frame prompt</strong> for shot 3, type zone reserved — Week 4 skills aimed at motion.</li>
+  </ol>
+  <div class="callout try"><span class="label">What to notice</span><p>Every artifact is checkable; the human edit pass tightened all four; the chain reuses for any motion job — kinetic type, product spot, title sequence, gig-screen loop.</p></div>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">05</span>Step-by-Step Workflows</h2>
+
+  <h3>The preproduction chain (any motion job)</h3>
+  <ol class="steps">
+    <li><strong>Brief</strong> (Week 2 skeleton): message, audience, duration, platform, constraints.</li>
+    <li><strong>Treatment ×3:</strong> three contrasting directions; pick one; rewrite its two most load-bearing lines yourself.</li>
+    <li><strong>Shot list:</strong> durations sum to spec (verify by hand), assets named, hardest shots flagged.</li>
+    <li><strong>Audit pass:</strong> kill fantasy shots; re-spec for your real toolkit and deadline.</li>
+    <li><strong>Style frames:</strong> 1–3 key moments, Week 4 discipline, type zones reserved.</li>
+    <li><strong>Task list:</strong> grouped, estimated — then re-estimated by you (halve its optimism).</li>
+    <li><strong>Document:</strong> the pack is your process evidence and your pitch artifact.</li>
+  </ol>
+
+  <h3>The 60-second timing audit</h3>
+  <ul class="check">
+    <li>Sum the durations column — by hand, not by trusting.</li>
+    <li>First 2 seconds: does something <strong>earn attention</strong>?</li>
+    <li>Breath: one hold ≥ 1.5s, or is it all churn?</li>
+    <li>The out: does the last shot resolve, or just stop?</li>
+  </ul>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">06</span>Prompt Recipes</h2>
+
+  <div class="prompt"><span class="prompt-label">The treatment writer</span>Act as a motion design director. Concept: [piece, duration, platform, audience]. Write a treatment in 120 words covering exactly: visual approach (use this territory: [your verified qualities]), pacing logic, type behaviour, palette, sound feeling. No shot list yet. Then list the 2 biggest risks in this direction.</div>
+
+  <div class="prompt"><span class="prompt-label">The three-treatment expander (lab core)</span>Take this one message: "[your message]". Give me THREE contrasting 15-second treatments: (1) kinetic typography — type is the only performer; (2) product/object spot — one hero object, real-world light; (3) abstract title sequence — texture and motion carry the feeling, type minimal. Each: 100 words, the five treatment slots, one risk. Don't pick a winner — that's my job.</div>
+
+  <div class="prompt"><span class="prompt-label">The shot list builder</span>Break my chosen treatment into a shot list table: shot #, duration (must total EXACTLY [15] seconds), action, camera/movement, type on screen, asset needed (2D anim / footage / generated still / pure type), transition out. 5–8 shots. Flag the two hardest shots and say why. Then list every asset I must gather or make, as a checklist.</div>
+
+  <div class="prompt"><span class="prompt-label">The AE task list generator</span>From this shot list, build my After Effects task checklist grouped by: project/pre-comp setup, assets to gather or make, animation tasks per shot, finishing (grade, sound placement, exports for [platforms]). Estimate hours per group honestly, then add 30% because you're an optimist.</div>
+
+  <div class="prompt"><span class="prompt-label">The timing doctor</span>Here is my shot list: [paste]. Audit it like a broadcast producer: do the durations sum to [15s]? Does the first 2 seconds earn attention? Where does the piece breathe? Does the ending resolve or just stop? Suggest the single highest-impact timing change.</div>
+
+  <div class="prompt"><span class="prompt-label">The style frame prompt</span>Write one image-generation prompt for the style frame of shot [N], strictly in this treatment's territory: [paste treatment]. Composition must reserve [zone] for typography. Medium/process words, palette named, no text in the image.</div>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: One Prompt, Three Treatments (70 min)</h2>
+  <p class="lede">Cold start friendly. No message of your own? Standing one: <em>"Slow down — Dublin moves better when it breathes."</em></p>
+  <ol class="steps">
+    <li><strong>Three treatments (15 min):</strong> run the expander; <strong>pick one + write two sentences on why</strong> — the pick rationale is assessed thinking.</li>
+    <li><strong>Edit the treatment (10 min):</strong> rewrite its two most load-bearing lines in your own words.</li>
+    <li><strong>Shot list (15 min):</strong> build it; run the timing audit <em>by hand</em>; kill/re-spec fantasy shots.</li>
+    <li><strong>Style frame (15 min):</strong> generate one frame (Week 4 discipline) <em>or</em> write the full frame brief + thumbnail sketch.</li>
+    <li><strong>Task list (10 min):</strong> generate, then producer's edit — cross out, merge, re-estimate.</li>
+    <li><strong>Pack it (5 min):</strong> treatment + shot list + frame + task list.</li>
+  </ol>
+  <div class="callout try"><span class="label">Zero-generation track</span><p>The entire pack except the style frame image is text. The frame becomes prompt + sketch — which is exactly what studios call a <strong>frame brief</strong>. Equal credit, professional document.</p></div>
+  <div class="callout def"><span class="label">Pairs option</span><p>One "director" + one "producer" per pack works beautifully — swap roles at the shot list.</p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">This week's four</span>
+    <ol>
+      <li>Which two treatment lines did you rewrite — are they actually <strong>yours</strong> now?</li>
+      <li>Did you verify the timing maths <strong>yourself</strong>?</li>
+      <li>Client pack: planning documents usually need only a process note; <strong>generated style frames need disclosure</strong>.</li>
+      <li>Generated scratch music? Check the rights state first — it's contested. Never client deliverables.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>Treatments all feel like ads</td><td>Your message is a slogan. Give it a feeling + audience; ban advertising clichés explicitly</td></tr>
+    <tr><td>Durations don't sum</td><td>They won't. Recount yourself; tell it the correct total and which shots to trim</td></tr>
+    <tr><td>Shot list demands skills you don't have</td><td>Good catch — that's producing. "Replace shots needing [3D/sim] with achievable 2D alternatives"</td></tr>
+    <tr><td>Style frame ignores the type zone</td><td>Name the zone AND its purpose; regenerate or crop to create it</td></tr>
+    <tr><td>Hour estimates are fantasy</td><td>Always. "+30% because you're an optimist" helps; your own history helps more</td></tr>
+    <tr><td>Type animation ideas feel generic</td><td>Models suggest the same 6 type behaviours. Use them as the banned list; design the seventh</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+  <ul class="resources">
+    <li><span class="tag article">Article</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.schoolofmotion.com/blog/helpful-ai-tools-for-motion-designers">AI Tools for Motion Design That Are Actually Helpful — School of Motion</a><span class="r-why">A working studio educator's sober take on what's real vs. noise — the same "friction, not finals" stance as this course.</span></li>
+    <li><span class="tag article">Article</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.schoolofmotion.com/blog/better-moodboards-storyboards">Using Storyboards &amp; Moodboards for Better Compositions — School of Motion</a><span class="r-why">Boards and frames as design thinking — the standard your AI-drafted boards must live up to.</span></li>
+    <li><span class="tag article">Guide</span><span class="tag linked">Linked</span><a class="r-title" href="https://boords.com/how-to-storyboard/motion-graphics">How to Storyboard for Motion Graphics — Boords</a><span class="r-why">A clean step-by-step storyboard method; map each step to what you'd delegate vs. keep.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag linked">Linked</span><a class="r-title" href="https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide">Gen-4 Video Prompting Guide — Runway (official)</a><span class="r-why">For when you DO try video gen — note how much of it is camera language and shot discipline you already have.</span></li>
+    <li><span class="tag article">Research</span><span class="tag linked">Linked</span><a class="r-title" href="https://runwayml.com/research/introducing-runway-gen-4">Introducing Runway Gen-4 — Runway Research</a><span class="r-why">The vendor's own best-case demos — examined in class with the rubric: what's controlled, what's lucky?</span></li>
+    <li><span class="tag video">Video</span><span class="tag verify">Verify before teaching</span><span class="r-title">Runway Academy / official tutorial playlists</span><span class="r-why">Official walkthroughs change with each model version — grab the current one the week you teach.</span></li>
+    <li><span class="tag docs">Course</span><span class="tag verify">Verify before teaching</span><a class="r-title" href="https://motiondesign.school/courses/ai-motion/">AI Motion — Motion Design School</a><span class="r-why">A paid structured course for students who want to go deep afterwards; verify current state before recommending.</span></li>
+  </ul>
+
+  <h3>Optional extension</h3>
+  <ul>
+    <li>Cut an <strong>animatic</strong>: style frame(s) + shot list timings in any editor, scratch VO from your phone. Watch where the timing lies to you.</li>
+    <li>Run the expander on a real client-style brief (society event, friend's single launch); send the pack and note what they pick.</li>
+    <li>Hard mode: storyboard your shot list entirely by hand in 12 thumbnails. Where did your drawing <em>disagree</em> with the plan — and which was right?</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-06.html">Animation and Story →</a> — characters, continuity, and why the model sheet matters more with AI, not less.</p>
+</section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 10 — Audio, Voice, Video, Multimodal Critique · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-10-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 10 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">Motion · animation · UX · all tracks — 4 hours, drop-in friendly</p>
+  <h1>Audio, Voice, Video, and Multimodal Critique</h1>
+  <p class="promise">The post-production assist kit — transcription, captions done properly, temp VO with consent rules — and the multimodal critique relay: useful, filtered feedback on any work-in-progress, any discipline, at 2am.</p>
+  <div class="resource-row">
+    <a href="./week-10-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#words">Glossary</a>
+  <a href="#demo">Demo</a>
+  <a href="#workflow">Workflows</a>
+  <a href="#recipes">Prompt Recipes</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> a captioned clip (or critique packet on a still) + a corrections table + a prioritized edit list.</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Concepts (40 min)</strong><p>Transcription and its reliable failures; captions as craft; the voice consent line.</p></article>
+    <article><strong>2 · Concepts (15 min)</strong><p>The multimodal critique relay; sound briefs; the music rights wall.</p></article>
+    <article><strong>3 · Demo (35 min)</strong><p>Dirty audio recorded live → transcript error hunt → professional captions → the relay on a real WIP.</p></article>
+    <article><strong>4 · Lab + share (110 min)</strong><p>Your clip, your relay; error trophies and defended rejections.</p></article>
+  </div>
+  <div class="callout work">
+    <span class="label">Why this matters in real work</span>
+    <p>Captions aren't garnish: they're an <strong>accessibility deliverable</strong> with legal weight in the EU — and most social video plays silent, so captions are reach. And the critique relay generalizes past video: models can <em>see</em> now. Filtered by you, that's a second pair of eyes that never sleeps. <strong>The filtering is the skill.</strong></p>
+  </div>
+</section>
+
+<section class="b" id="concepts">
+  <h2><span class="bnum">02</span>Key Concepts</h2>
+
+  <h3>1 · Transcription: the quiet workhorse</h3>
+  <p>Captions, interview notes, edit-by-text, searchable footage. Its <strong>reliable failures</strong> cluster exactly where audiences notice: proper nouns ("NCAD" → "encad"), Irish names and places, craft terms ("risograph"), homophones.</p>
+  <div class="callout try"><span class="label">The professional pattern</span><p><strong>Machine transcribes → human corrects → the corrections table is kept</strong> (heard → corrected). That table is QA evidence and disclosure note in one document.</p></div>
+
+  <h3>2 · Captions are craft (not autocaption sludge)</h3>
+  <ul class="check">
+    <li>≤ 42 characters per line, 2 lines max.</li>
+    <li>Break at <strong>sense boundaries</strong> — never mid-name.</li>
+    <li>Keep the speaker's <strong>rhythm</strong> — captions preserve voice, they don't formalize it.</li>
+    <li>Sound information when it matters: [door slams], [music swells].</li>
+    <li>Watch once with the sound OFF — the silent-autoplay test.</li>
+  </ul>
+
+  <h3>3 · Temp VO and the voice consent line</h3>
+  <p><strong>Legitimate:</strong> scratch narration for animatics, accessibility reads of your own texts, placeholders you'll re-record — and phone-recorded human scratch is often better for timing anyway.</p>
+  <div class="callout ethics"><span class="label">The brightest line in the course</span><p><strong>Never clone a real person's voice without documented consent.</strong> Not classmates, not celebrities, not "just for the rough." This is hardening into law — and "it was temporary" does not work.</p></div>
+
+  <h3>4 · The multimodal critique relay (works on everything)</h3>
+  <ol class="steps">
+    <li><strong>Screenshot the WIP</strong> — frame, layout, model sheet, UI.</li>
+    <li><strong>Three named reviewers</strong> — 3 observations + 1 priority fix each, no softening.</li>
+    <li><strong>You filter</strong> — accept/reject each point with written reasons. At least one critique will be confidently wrong; rejecting it well is the skill.</li>
+    <li><strong>Peer challenges</strong> one accept and one reject.</li>
+    <li><strong>Triage:</strong> blocker / should-fix / polish, with minutes per fix.</li>
+  </ol>
+  <div class="callout work"><span class="label">In real work</span><p>The triage list with time estimates is a producer's artifact — it shows you can convert feedback into a plan. That's hireable.</p></div>
+
+  <h3>5 · Sound briefs and the music rights wall</h3>
+  <p>Describing sound is a deliverable skill ("dry clicks, room tone, one swell at the title"). AI drafts sound briefs from your treatment. <strong>Generated music stays out of deliverables</strong> — rights contested, active litigation. Scratch-only, private.</p>
+</section>
+
+<section class="b" id="words">
+  <h2><span class="bnum">03</span>This Week's Words</h2>
+  <div class="glossary">
+    <div class="term"><b>Transcription</b>Speech-to-text. The quiet workhorse; verify names and terms.</div>
+    <div class="term"><b>SRT</b>The standard caption file: numbered cues, timecodes, text.</div>
+    <div class="term"><b>Captions vs. subtitles</b>Captions = same-language + sound info; subtitles = translation.</div>
+    <div class="term"><b>Caption QA pass</b>The human round: names, terms, breaks, timing.</div>
+    <div class="term"><b>Corrections table</b>"Heard → corrected." QA evidence + disclosure in one.</div>
+    <div class="term"><b>Temp VO / scratch</b>Placeholder narration for timing. Phone-recorded is craft.</div>
+    <div class="term"><b>Voice cloning</b>Synthesizing a real person's voice. Documented consent or never.</div>
+    <div class="term"><b>Multimodal critique</b>Model-as-reviewer on screenshots, steered by your criteria.</div>
+    <div class="term"><b>Critique filtering</b>Accepting/rejecting feedback with reasons. The taste skill.</div>
+    <div class="term"><b>Edit triage</b>Blocker / should-fix / polish, with minutes. The producer's artifact.</div>
+  </div>
+  <p class="small"><a href="../GLOSSARY.md">Full course glossary →</a></p>
+</section>
+
+<section class="b" id="demo">
+  <h2><span class="bnum">04</span>Demo: Dirty Audio to Professional Captions (plus the Relay)</h2>
+  <div class="callout demo">
+    <span class="label">I made this, so can you</span>
+    <p>The instructor records 45–60 seconds live — imperfect, with a stumble — and takes it all the way to broadcast-rule captions, then runs the relay on a real WIP.</p>
+  </div>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-10/captions-pipeline.html">captions-pipeline.html</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+  <ol class="steps">
+    <li><strong>The recording:</strong> live, with planted traps — "NCAD," an Irish place name, "risograph," a restart.</li>
+    <li><strong>The error hunt:</strong> raw transcript on screen; the room finds the failures as sport, tallied by type.</li>
+    <li><strong>The cleanup:</strong> caption-ready SRT (line lengths, sense breaks, rhythm preserved) + <strong>the corrections table</strong> — the teaching object.</li>
+    <li><strong>The relay:</strong> a volunteered WIP through three named reviewers; the volunteer filters aloud with reasons; the room challenges; the triage list assembles itself.</li>
+  </ol>
+  <div class="callout try"><span class="label">What to notice</span><p>The machine did volume; the human did names, rhythm, and judgment. One critique point was confidently wrong and got rejected with a reason — the most professional moment of the demo.</p></div>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">05</span>Step-by-Step Workflows</h2>
+
+  <h3>Caption pipeline (any clip, forever)</h3>
+  <ol class="steps">
+    <li><strong>Transcribe</strong> with whatever's nearest (editor built-in, Descript-class, phone).</li>
+    <li><strong>Correct</strong> against the audio: names, terms, homophones. Log every correction.</li>
+    <li><strong>Format:</strong> ≤42 chars/line, 2 lines max, sense-boundary breaks, rhythm preserved.</li>
+    <li><strong>Export SRT</strong> → import to your editor → watch with sound OFF.</li>
+    <li>Keep the corrections table with the project.</li>
+  </ol>
+
+  <h3>The critique relay (any WIP, any discipline)</h3>
+  <ol class="steps">
+    <li>Screenshot the work (yours, or with permission).</li>
+    <li>Three named reviewers fitted to the work — pick personas who'd <em>disagree</em>.</li>
+    <li>Demand 3 observations + 1 priority fix each, no softening.</li>
+    <li><strong>Filter with written reasons</strong> — accept/reject every point.</li>
+    <li>Peer challenge: one accept + one reject defended.</li>
+    <li>Triage: blocker / should-fix / polish + minutes. Your next session, pre-planned.</li>
+  </ol>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">06</span>Prompt Recipes</h2>
+
+  <div class="prompt"><span class="prompt-label">The caption cleanup</span>Clean this raw transcript into captions. Fix obvious mis-hearings — it's "NCAD", "risograph", [your names/terms]. Break into caption-length lines: max 42 characters per line, max 2 lines per cue, break at sense boundaries, never mid-name. Keep my actual speech rhythm — don't formalize my voice. Output as SRT with placeholder timings. Then give me a corrections table: heard → corrected.</div>
+
+  <div class="prompt"><span class="prompt-label">The three-reviewer relay</span>Critique this [frame/layout/sheet/UI] as three different people: [reviewer 1], [reviewer 2], and an accessibility reviewer. Each gives exactly 3 observations and 1 priority fix. Reference what you can actually see. Don't soften, don't compliment.</div>
+
+  <div class="prompt"><span class="prompt-label">The edit triage</span>I've accepted these critique points: [paste your accepted list]. Merge them into one prioritized edit checklist: BLOCKER (breaks the piece) / SHOULD-FIX (hurts it) / POLISH (nice). Estimate minutes per fix. Order by impact-per-minute.</div>
+
+  <div class="prompt"><span class="prompt-label">The sound brief</span>From this treatment/edit description: [paste], draft a sound brief for a sound designer (or future me): overall feel in 2 sentences, moment-by-moment cues tied to shots, what silence is doing, references as QUALITIES (e.g., "close, dry, single-mic intimacy"), and what to avoid. No music generation — this is a brief for humans.</div>
+
+  <div class="prompt"><span class="prompt-label">The footage logger</span>Here is the transcript of my interview footage with rough timestamps: [paste]. Build me a log: topic per segment, the 5 strongest quotable moments (with timestamp + why), repeated themes, and a paper-edit order suggestion for a [60-second] cut. I make the final selects.</div>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: Screenshot Critique Relay (70 min)</h2>
+  <p class="lede">Cold start friendly. Bring any WIP — or use the provided set.</p>
+  <ol class="steps">
+    <li><strong>Record + transcribe (15 min):</strong> 45–60 seconds of you pitching your current project. Phone voice memo, imperfect on purpose → transcribe.</li>
+    <li><strong>Caption pass (20 min):</strong> cleanup recipe → <strong>corrections table</strong> (the assessed artifact) → SRT.</li>
+    <li><strong>The relay (20 min):</strong> your WIP → three reviewers → <strong>filter every point in writing with reasons</strong> → neighbour challenges one accept and one reject.</li>
+    <li><strong>Triage (15 min):</strong> blocker/should-fix/polish + minutes. Assemble the packet: clip + table + filtered critique + edit list.</li>
+  </ol>
+  <div class="callout try"><span class="label">Zero-AI track (fully equal)</span><p>Hand-transcribe 30 seconds (real subtitlers still do), format to BBC rules, then run the relay on paper with two classmates as named reviewers. The hand-transcription teaches caption rhythm <em>better</em>.</p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">This week's four</span>
+    <ol>
+      <li>Captions: did a human (you) verify every name and term against the audio? Autocaption sludge with your name on it is still your sludge.</li>
+      <li>Voice: every voice in your work is yours, consented, or clearly synthetic-and-labelled. <strong>No cloning real people. Ever.</strong></li>
+      <li>Relay on a classmate's work: permission first, always.</li>
+      <li>Music: nothing generated in deliverables — rights contested. Scratch-only, private.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>Transcription mangles Irish names/places</td><td>It will. The corrections pass exists for this — and feed correct spellings in the prompt next time</td></tr>
+    <tr><td>Captions read like a legal document</td><td>You let it formalize. "Keep my actual speech rhythm" — restore the "like"s that are voice, not noise</td></tr>
+    <tr><td>SRT timing drifts</td><td>Placeholder timings need an editor pass — nudge cues to the actual speech. Five minutes</td></tr>
+    <tr><td>All three reviewers agree</td><td>Personas too close. Pick reviewers who'd fight: a minimalist and a maximalist</td></tr>
+    <tr><td>The critique misreads the image</td><td>Multimodal models do that. Reject-with-reason — "it claims the type clips the edge; it doesn't" — that's why you filter</td></tr>
+    <tr><td>The edit list is huge and demoralizing</td><td>Triage IS the cure: blockers only for the next session; polish lives in someday</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+  <ul class="resources">
+    <li><span class="tag docs">Standard</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.bbc.co.uk/accessibility/forproducts/guides/subtitles/">BBC Subtitle Guidelines</a><span class="r-why">The professional captioning reference — line lengths, breaks, timing, sound labels. Today's caption rules come from here.</span></li>
+    <li><span class="tag docs">Standard</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.w3.org/WAI/media/av/">Making Audio and Video Media Accessible — W3C</a><span class="r-why">Captions, transcripts, audio description — what each is for and when it's required, from the standards body.</span></li>
+    <li><span class="tag docs">Tool</span><span class="tag linked">Linked</span><a class="r-title" href="https://github.com/openai/whisper">Whisper — OpenAI (open source)</a><span class="r-why">The model behind most transcription tools — free and local, for bulk transcription without uploading audio anywhere.</span></li>
+    <li><span class="tag docs">Tool</span><span class="tag verify">Verify before teaching</span><a class="r-title" href="https://www.descript.com/">Descript</a><span class="r-why">The edit-by-text workflow leader; features and pricing shift — check the current onboarding demo.</span></li>
+    <li><span class="tag docs">Policy</span><span class="tag verify">Verify before teaching</span><span class="r-title">ElevenLabs voice documentation + consent policy</span><span class="r-why">If you demo voice synthesis, read the current consent/verification requirements first — they change, and they matter.</span></li>
+    <li><span class="tag video">Video</span><span class="tag verify">Verify before teaching</span><span class="r-title">A current captions-advocacy video (deaf creator perspective)</span><span class="r-why">First-person "why captions matter" content lands better than any guideline — pick a current one before class.</span></li>
+  </ul>
+
+  <h3>Optional extension</h3>
+  <ul>
+    <li>Caption a minute of someone else's published video (privately) to BBC rules; compare against their official captions — who made better break decisions?</li>
+    <li>Run the relay weekly on your capstone WIP from here to Week 15 — the trajectory of your accepts/rejects is taste, documented.</li>
+    <li>Hard mode: record a 60-second audio description of one of your own silent pieces. Describing your work precisely will change what you make.</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-11.html">Coding for Artists →</a> — tiny tools, real builds, and the spec-first method.</p>
+</section>
+
+</main>
+</body>
+</html>

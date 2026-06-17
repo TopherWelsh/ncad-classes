@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 11 — Coding for Artists · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-11-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 11 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">All tracks · especially UX, motion, graphic design, 3D — 4 hours, drop-in friendly</p>
+  <h1>Coding for Artists: Websites, Tools, and Tiny Apps with Codex/Claude Code</h1>
+  <p class="promise">Turn a recurring annoyance in your practice into a working tiny tool — spec-first, built by AI, inspected by you. Zero coding experience required.</p>
+  <div class="resource-row">
+    <a href="./week-11-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#words">Glossary</a>
+  <a href="#demo">Demo</a>
+  <a href="#workflow">Workflows</a>
+  <a href="#recipes">Prompt Recipes</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> a tiny tool spec — user, problem, inputs, outputs, UI sketch, build prompt. Building it is the bonus round; many of you will.</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Concepts (40 min)</strong><p>The tiny tool category; spec-first; the build loop; inspection; the scope fence.</p></article>
+    <article><strong>2 · Demo (45 min)</strong><p>A working app built live from a spec the room writes — including the inspection and the planned failure.</p></article>
+    <article><strong>3 · Lab (70 min)</strong><p>Your friction → your spec → (your tool).</p></article>
+    <article><strong>4 · Pitches (35 min)</strong><p>60 seconds each, with honest ledgers.</p></article>
+  </div>
+  <div class="callout work">
+    <span class="label">Why this matters in real work</span>
+    <p>Not to become software engineers — code does four things for artists: <strong>prototype, automate, publish, make interactive work.</strong> The barrier collapsed; the bottleneck moved from "can you code?" to "can you <em>specify</em>?" — and specification is design thinking. <strong>The spec is the skill; the build is increasingly free.</strong></p>
+  </div>
+</section>
+
+<section class="b" id="concepts">
+  <h2><span class="bnum">02</span>Key Concepts</h2>
+
+  <h3>1 · The tiny tool category (where artists win)</h3>
+  <p><strong>One user (you), one problem, one file if possible, no accounts, no server, no other people's data.</strong> Examples students actually use: a moodboard prompt generator, an export checklist app, a riso separation previewer, a commission price calculator, a crit-notes formatter. Single-file HTML runs in any browser, can't touch anything else, and is fully inspectable — the most reliable, lowest-risk zone for AI coding.</p>
+
+  <h3>2 · Spec-first: the interview method</h3>
+  <p>Don't start with "build me an app." Make the model <strong>interview you</strong> — one question at a time, max 6. Your answers become the spec: user, problem with honest frequency, inputs (≤6), outputs, UI in words with exact button labels, <strong>what it does NOT do</strong> (the feature-creep fence), and <strong>acceptance checks</strong> (3–5 testable sentences). Template: <a href="../templates/tiny-tool-spec-template.md">tiny-tool-spec-template.md</a>.</p>
+  <div class="callout work"><span class="label">The professional sentence</span><p>"Wrote the spec, directed the build, verified the result." Current, honest, hireable — and exactly how you'll work with human developers later.</p></div>
+
+  <h3>3 · The build loop: client-revision thinking</h3>
+  <p>One prompt builds the file. Open it, use it. Then: <strong>change requests</strong> describe outcomes ("the Copy button should visibly confirm"), and <strong>bug reports</strong> describe steps and symptoms. Same spirit as Blender week's error loop — you report, it repairs.</p>
+
+  <h3>4 · Inspection habits (the trust layer)</h3>
+  <p>After any build, three questions: <em>what are the three main parts, where does my data go when I type it, does anything leave my computer?</em> For a true tiny tool the answer is "nothing leaves your machine" — and you can verify it: skim the file for <code>fetch</code> or <code>http</code>. Ten seconds.</p>
+  <div class="callout try"><span class="label">The big idea</span><p>Privacy became checkable the day software became readable conversation.</p></div>
+
+  <h3>5 · The scope fence</h3>
+  <div class="callout warn"><span class="label">The fence doesn't move</span><p>The moment a tool needs <strong>accounts, payments, or other people's data</strong> — it's not a tiny tool. App-builder platforms (Lovable/Bolt/v0-class) will happily build past the fence; the inspection habits stay mandatory and the risks multiply.</p></div>
+
+  <h3>6 · The deeper route: creative coding as craft</h3>
+  <p>Tiny tools are utility; <strong>creative coding</strong> (p5.js and friends) is art-making with code. AI is a patient tutor for it — and if today lights a fire, The Coding Train is where it goes next.</p>
+</section>
+
+<section class="b" id="words">
+  <h2><span class="bnum">03</span>This Week's Words</h2>
+  <div class="glossary">
+    <div class="term"><b>Tiny tool</b>One user, one problem, one file. No accounts, no server, no others' data.</div>
+    <div class="term"><b>Spec</b>The structured description a build runs from. The skill of the week.</div>
+    <div class="term"><b>Single-file HTML</b>A whole app in one file any browser opens.</div>
+    <div class="term"><b>Acceptance checks</b>3–5 testable sentences defining "done." You wrote them; you check them.</div>
+    <div class="term"><b>Change request</b>Describing a revision by outcome, not code.</div>
+    <div class="term"><b>Vibe coding</b>Building by description without inspection. Fine for toys; reckless past the fence.</div>
+    <div class="term"><b>The scope fence</b>Accounts / payments / others' data = not a tiny tool.</div>
+    <div class="term"><b>Inspection questions</b>"Three parts, where does my data go, does anything leave my machine?"</div>
+    <div class="term"><b>Coding agent</b>Claude Code / Codex-class tools that read and edit real files.</div>
+    <div class="term"><b>Creative coding</b>Code as art medium (p5.js etc.) — the deeper craft route.</div>
+  </div>
+  <p class="small"><a href="../GLOSSARY.md">Full course glossary →</a></p>
+</section>
+
+<section class="b" id="demo">
+  <h2><span class="bnum">04</span>Demo: The Moodboard Prompt Generator, Built Live</h2>
+  <div class="callout demo">
+    <span class="label">I made this, so can you</span>
+    <p>The room writes the spec by answering the model's interview; the spec becomes a working app; the app survives a change request, an inspection, and a planned failure.</p>
+  </div>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-11/moodboard-generator.html">moodboard-generator.html</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+  <ol class="steps">
+    <li><strong>The interview:</strong> the model asks; the room answers; the instructor arbitrates. Six questions → a complete spec.</li>
+    <li><strong>The build:</strong> spec + build prompt → saved as <code>.html</code> → opened → used live with shouted test inputs.</li>
+    <li><strong>The change request:</strong> the room picks one feature, pasted verbatim in client voice.</li>
+    <li><strong>The inspection:</strong> the three questions, then the proof — one scroll of the file: no <code>fetch</code>, no <code>http</code>, nothing leaves the machine.</li>
+    <li><strong>The planned failure:</strong> the change request breaks something; a client-voice bug report fixes it. <em>"Describe the bug, not the code."</em></li>
+  </ol>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">05</span>Step-by-Step Workflow: Friction to Tool</h2>
+  <ol class="steps">
+    <li><strong>Catch the friction:</strong> what do you rebuild, retype, recalculate weekly? Write the honest frequency down.</li>
+    <li><strong>Interview:</strong> the model asks you 6 questions, one at a time.</li>
+    <li><strong>Spec it</strong> (template): user, problem + frequency, inputs ≤6, outputs, UI in words, NOT-list, acceptance checks.</li>
+    <li><strong>Build prompt:</strong> spec + "single self-contained HTML file, no frameworks, no build step, no network calls, mobile-friendly."</li>
+    <li><strong>Save as <code>.html</code>, open in browser, run your acceptance checks.</strong></li>
+    <li><strong>One change request</strong> in client voice.</li>
+    <li><strong>Inspect</strong> — the three questions.</li>
+    <li><strong>Honest ledger:</strong> spec time / build time / savings per week. If saved &lt; cost, killing the tool is also success.</li>
+  </ol>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">06</span>Prompt Recipes</h2>
+
+  <div class="prompt"><span class="prompt-label">The spec interview</span>Help me write a build spec for a tiny tool. Interview me: ask one question at a time, max 6 questions. The tool solves this friction: [describe the recurring annoyance + how often it bites]. When you have enough, output a spec with exactly these sections: user, problem, inputs (max 6 fields), outputs, UI layout in words (with exact button labels and empty-state text), what it does NOT do, acceptance checks (3–5 testable sentences).</div>
+
+  <div class="prompt"><span class="prompt-label">The build prompt</span>Build this as a single self-contained HTML file, no frameworks, no build step, no network calls, mobile-friendly, pleasant typography. [PASTE SPEC]. When done, tell me how to save and open it, and list 3 things you'd improve with more time.</div>
+
+  <div class="prompt"><span class="prompt-label">The change request (client voice)</span>Change request on the tool you built: [describe the outcome you want, not the code — e.g., "when I press Copy, the button should visibly confirm, and the prompt should include today's date at the end"]. Keep everything else exactly as it is.</div>
+
+  <div class="prompt"><span class="prompt-label">The bug report (client voice)</span>Bug report: when I [exact steps], the tool [what actually happens] instead of [what should happen]. Fix it and tell me in one sentence what was wrong.</div>
+
+  <div class="prompt"><span class="prompt-label">The inspection</span>Walk me through this file like I'm an artist, not a programmer: what are the three main parts, where does my data go when I type it, and does anything leave my computer? Point to the exact part of the file that proves your answer to the last question.</div>
+
+  <div class="prompt"><span class="prompt-label">The p5 tutor</span>Here is a p5.js sketch: [paste]. Explain it line by line for a visual artist meeting code for the first time. Then suggest 3 one-line changes I could make, each with what it will do visually. I'll make them myself.</div>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: Tiny Tool Pitch (70 min)</h2>
+  <p class="lede">Cold start friendly. Friction-starved? Standing options: export checklist for your main platform · commission price calculator · crit-notes formatter.</p>
+  <ol class="steps">
+    <li><strong>Friction hunt (10 min):</strong> three recurring annoyances; pick the one with the most honest frequency. Write the number down. The boring candidate beats the impressive one.</li>
+    <li><strong>Interview + spec (25 min):</strong> run the interview; fill the template completely — NOT-list and acceptance checks are where specs earn trust. ✏️ the decisions only you could make.</li>
+    <li><strong>Build (20 min, bonus round):</strong> build prompt → save <code>.html</code> → open → <strong>run your acceptance checks.</strong> No build? Spec + build prompt is the full deliverable.</li>
+    <li><strong>Inspect + one change request (15 min):</strong> the three questions; one client-voice revision.</li>
+  </ol>
+  <div class="callout try"><span class="label">Zero-AI track (fully equal)</span><p>Template filled by hand + hand-drawn UI sketch; the "build prompt" becomes a brief you could hand any developer. Arguably the purer version of the skill.</p></div>
+  <div class="callout def"><span class="label">Pitch format</span><p>60 seconds: the friction (with frequency) → the tool → one acceptance check → the honest ledger. And every pitch answers: <strong>"Where does the data go?"</strong></p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">This week's four</span>
+    <ol>
+      <li>Could you explain to a classmate, without hand-waving, what your tool does with their input?</li>
+      <li>Did the tool pass <strong>your</strong> checks — or did you adjust your standards to what it built?</li>
+      <li>Does anything in your spec smell like accounts/payments/others' data? Redraw the fence now.</li>
+      <li>Shipping it anywhere public: "Built with AI assistance from my spec; inspected and tested by me."</li>
+    </ol>
+  </div>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>"I don't have friction worth a tool"</td><td>You do. What did you retype, re-look-up, or recalculate this week? The boring-est candidate is the best one</td></tr>
+    <tr><td>The interview asks dull questions</td><td>"Ask harder questions — edge cases, misuse, what I'd never want it to do"</td></tr>
+    <tr><td>The tool ignores part of the spec</td><td>Quote the spec line in a change request: "The spec says X; the tool does Y. Fix to spec."</td></tr>
+    <tr><td>It looks ugly</td><td>Taste is a change request: "more whitespace, bigger type, calmer colours." You're the art director here too</td></tr>
+    <tr><td>File won't open / blank page</td><td>Check it saved as <code>.html</code> (not .txt — TextEdit trap), then: bug report with exact steps</td></tr>
+    <tr><td>"This feels too easy to be real"</td><td>Run your acceptance checks. If it passes, it's real. Spend the unease on a better spec</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+  <ul class="resources">
+    <li><span class="tag docs">Library</span><span class="tag linked">Linked</span><a class="r-title" href="https://p5js.org/">p5.js</a><span class="r-why">The artist's coding canon — a friendly creative-coding library with a free in-browser editor. Where "tools" becomes "art medium."</span></li>
+    <li><span class="tag video">Channel</span><span class="tag linked">Linked</span><a class="r-title" href="https://thecodingtrain.com/">The Coding Train</a><span class="r-why">Daniel Shiffman — the most joyful creative-coding teacher alive. If today lit a fire, it goes here next.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag linked">Linked</span><a class="r-title" href="https://developer.mozilla.org/">MDN Web Docs</a><span class="r-why">What HTML/CSS/JS actually are, from the source — for when you want to read what you're running.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag verify">Verify before teaching</span><a class="r-title" href="https://code.claude.com/docs">Claude Code documentation</a><span class="r-why">The agentic-coding tool from the demo; docs and capabilities move fast.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag verify">Verify before teaching</span><span class="r-title">OpenAI Codex documentation</span><span class="r-why">The other coding agent; same caveat.</span></li>
+    <li><span class="tag docs">Platforms</span><span class="tag verify">Verify before teaching</span><span class="r-title">App-builder platforms (Lovable / Bolt / v0-class)</span><span class="r-why">Past-the-fence territory: powerful, fast, and where inspection habits matter most.</span></li>
+  </ul>
+
+  <h3>Optional extension</h3>
+  <ul>
+    <li>Build the second tool — for a classmate, from <em>their</em> friction. Specs for other people are the real test.</li>
+    <li>Style your tool with your Week 7 brand system — "apply these colours and type choices as CSS variables."</li>
+    <li>Hard mode: open the file and change one thing by hand — a label, a colour, a default. You're now editing code on purpose.</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-12.html">Agentic Workflows →</a> — when the AI doesn't just write the file, but organizes the whole folder. With checkpoints.</p>
+</section>
+
+</main>
+</body>
+</html>

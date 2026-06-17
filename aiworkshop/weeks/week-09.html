@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 09 — 3D Workflows · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-09-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 09 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">3D · animation · motion · game-adjacent design — 4 hours, drop-in friendly</p>
+  <h1>3D Workflows: Modeling Support, Materials, Scenes, and Render Planning</h1>
+  <p class="promise">Make AI write working Blender Python for you — no coding knowledge required — and learn to spot, in ten seconds of wireframe, why "free AI 3D model" usually means "paid in cleanup."</p>
+  <div class="resource-row">
+    <a href="./week-09-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#words">Glossary</a>
+  <a href="#demo">Demo</a>
+  <a href="#workflow">Workflows</a>
+  <a href="#recipes">Prompt Recipes</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> a 3D scene plan + one genuinely reusable AI-assisted script or checklist (your "keeper").</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Concepts (40 min)</strong><p>The 3D AI map; code as dictation; the error loop; safety rules.</p></article>
+    <article><strong>2 · Concepts (15 min)</strong><p>The topology tax; scene plans; render QA triage.</p></article>
+    <article><strong>3 · Demo (40 min)</strong><p>The scaffold, the dials, the planned crash, the artist's judgment.</p></article>
+    <article><strong>4 · Lab + share (105 min)</strong><p>Your scaffold + Topology Reality Check + keepers demoed.</p></article>
+  </div>
+  <div class="callout work">
+    <span class="label">The week in one line</span>
+    <p><strong>You don't need to learn Python. You need to describe, run, and report.</strong> 3D has the steepest grunt-to-art ratio of any track — and AI attacks exactly that layer, most powerfully through code as dictation.</p>
+  </div>
+</section>
+
+<section class="b" id="concepts">
+  <h2><span class="bnum">02</span>Key Concepts</h2>
+
+  <h3>1 · The 3D AI map (honestly rated)</h3>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Capability</th><th>State</th><th>Useful for</th></tr>
+    <tr><td><strong>AI-written scripts</strong> (Blender Python)</td><td>★★★</td><td>Scene scaffolds, repetitive setup, batch ops — today's core</td></tr>
+    <tr><td><strong>Planning/checklists</strong></td><td>★★★</td><td>Asset lists, shot breakdowns, render QA, triage</td></tr>
+    <tr><td><strong>Image gen for reference/previs</strong></td><td>★★</td><td>Lighting studies, set moods (Week 4 rules)</td></tr>
+    <tr><td><strong>Text-to-3D meshes</strong></td><td>★</td><td>Background props, blocking volumes — never hero assets</td></tr>
+    <tr><td><strong>Texture/material generation</strong></td><td>★★</td><td>Tileables and roughs; PBR correctness needs your eye</td></tr>
+  </table>
+  </div>
+
+  <h3>2 · Code as dictation</h3>
+  <ol class="steps">
+    <li><strong>Describe</strong> the setup in artist language ("ground plane with subtle displacement, 12 scattered low-poly rocks, three-point lighting, camera low, light fog").</li>
+    <li><strong>Demand artist comments</strong> — "comment every section in plain language for an artist who doesn't code."</li>
+    <li><strong>Paste → Scripting tab → Run.</strong></li>
+    <li><strong>Change values, re-run.</strong> A script is a dial, not a black box — the first time you edit a value, you've edited Python.</li>
+  </ol>
+
+  <h3>3 · The error loop: errors are conversation</h3>
+  <p>Copy the <strong>entire</strong> traceback → paste it back → "I ran your script in Blender 4.x and got this error; explain in plain language and fix it." It fixes itself, usually first try. <strong>You don't debug; you report.</strong></p>
+  <div class="callout warn"><span class="label">Safety rules — absolute</span>
+    <ul>
+      <li>Fresh or saved files only. Never your only copy of a project.</li>
+      <li>Read scripts for destructive operations first — <code>delete</code>, <code>remove</code>, file paths get a question before running.</li>
+    </ul>
+  </div>
+
+  <h3>4 · The topology tax</h3>
+  <p>AI mesh generators produce shapes that <em>look</em> right and are built wrong: triangle soup, no edge flow, ngons, melted backsides, absurd scale. <strong>"Free model" = "paid in cleanup."</strong> Legitimate uses anyway: background props, blocking volumes, scale reference — never hero assets, never anything that deforms.</p>
+  <div class="callout work"><span class="label">In real work</span><p>The professional eye — wireframe view, ten seconds, verdict — is exactly the evaluation labour studios now pay for. Today's Reality Check trains it.</p></div>
+
+  <h3>5 · Scene plans and render QA</h3>
+  <p>Before: the scene plan — frame contents, asset list with sources, <strong>every light with a stated motivation</strong>, camera intent, honest render budget. After: the render checklist (previz vs. final) and symptom-based triage ("grainy shadows, Cycles, 40-minute frames" → diagnostic order).</p>
+</section>
+
+<section class="b" id="words">
+  <h2><span class="bnum">03</span>This Week's Words</h2>
+  <div class="glossary">
+    <div class="term"><b>Topology</b>The structure/flow of a mesh's polygons. What AI generators get wrong first.</div>
+    <div class="term"><b>Retopology</b>Rebuilding a mesh with clean geometry. The "free model" tax.</div>
+    <div class="term"><b>Ngon</b>A face with more than 4 sides. Fine flat; chaos on curves.</div>
+    <div class="term"><b>Non-manifold</b>Geometry that couldn't physically exist. Breaks booleans and exports.</div>
+    <div class="term"><b>Edge flow</b>Polygon paths following form — essential wherever things bend.</div>
+    <div class="term"><b>Scene scaffold</b>A scripted starting scene: ground, props, lights, camera.</div>
+    <div class="term"><b>Blender Python (bpy)</b>Blender's scripting interface. AI writes it; you direct it.</div>
+    <div class="term"><b>PBR material</b>Physically-based surface response to light. Your eye judges.</div>
+    <div class="term"><b>Light motivation</b>The reason a light exists. Scripts place lights; motivation is yours.</div>
+    <div class="term"><b>HDRI</b>Panoramic image lighting — fast believable light for previs.</div>
+  </div>
+  <p class="small"><a href="../GLOSSARY.md">Full course glossary →</a></p>
+</section>
+
+<section class="b" id="demo">
+  <h2><span class="bnum">04</span>Demo: The Scene Scaffold (and the Planned Crash)</h2>
+  <div class="callout demo">
+    <span class="label">I made this, so can you</span>
+    <p>A dressed, lit, camera-ready previz scene from one paste — then a crash, repaired by copy-pasting the error.</p>
+  </div>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-09/scene_scaffold.py">scene_scaffold.py</a> <a href="../demos/week-09/scene_scaffold_broken.py">scene_scaffold_broken.py</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+  <ol class="steps">
+    <li><strong>The ask:</strong> plain-language scene description → Blender 4.x Python with artist comments → "list what could go wrong."</li>
+    <li><strong>The run:</strong> Scripting tab → paste → Run → orbit. One paste; forty minutes of setup, gone.</li>
+    <li><strong>The dials:</strong> rock count and fog density changed live, re-run. A script is a dial, not a black box.</li>
+    <li><strong>The planned crash:</strong> a version-mismatched script fails; the full traceback goes back to the model; the fix lands. <em>"You don't need Python. You need copy-paste and honesty about what happened."</em></li>
+    <li><strong>The artist's judgment:</strong> what no script provides — composition intent, story, materials with meaning, light motivation. Then the render checklist, previz vs. portfolio still.</li>
+  </ol>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">05</span>Step-by-Step Workflows</h2>
+
+  <h3>A script request that works first time (more often)</h3>
+  <ol class="steps">
+    <li><strong>Name your version:</strong> "Blender 4.x Python."</li>
+    <li><strong>Describe like a brief:</strong> objects + counts, placement logic, lighting (count, type, feel), camera (angle, subject).</li>
+    <li><strong>Demand artist comments</strong> on every section.</li>
+    <li><strong>Ask for the risk list:</strong> "what could go wrong when I run this?"</li>
+    <li><strong>Run in a fresh/saved file</strong> — after reading for destructive operations.</li>
+    <li><strong>Iterate by value, then by feature.</strong></li>
+  </ol>
+
+  <h3>The Topology Reality Check (10 seconds per asset, forever)</h3>
+  <ul class="check">
+    <li>Import → <strong>wireframe view</strong>.</li>
+    <li>Density: consistent, or soup with absurd concentrations?</li>
+    <li>Edge flow: loops where the form bends/deforms?</li>
+    <li>The backside: intact, or melted?</li>
+    <li>Ngons / non-manifold: check Mesh → Clean Up, or just look.</li>
+    <li>Scale + origin: sane?</li>
+    <li><strong>Verdict:</strong> background / blocking / retopo (cost it honestly) / reject.</li>
+  </ul>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">06</span>Prompt Recipes</h2>
+
+  <div class="prompt"><span class="prompt-label">The scene scaffold</span>Write a Blender 4.x Python script that builds a previz scene: [describe like a brief — objects + counts, placement logic, lighting (count, type, feel), camera (angle, subject), atmosphere]. Comment every section in plain language for an artist who doesn't code. At the end, list what could go wrong when I run it.</div>
+
+  <div class="prompt"><span class="prompt-label">The error loop</span>I ran your script in Blender [version] and got this error: [paste the ENTIRE traceback]. Explain what went wrong in plain language, then provide the fixed script.</div>
+
+  <div class="prompt"><span class="prompt-label">The repetitive-task killer</span>Write a Blender 4.x Python script that [the boring thing — renames all selected objects to the pattern PROJ_type_## / sets all selected materials' roughness to 0.4 / creates collections named X,Y,Z and sorts selected objects into them by name]. Plain-language comments. Nothing destructive: don't delete anything; if unsure, skip and report.</div>
+
+  <div class="prompt"><span class="prompt-label">The scene plan</span>I'm building a 3D scene: [concept + what it's for]. Draft my scene plan: everything in frame, asset list with source column (model / buy / scan / AI-mesh-for-background), lighting plan where every light has a stated motivation, camera intent, and an honest render budget (previz vs final). Flag the two assets that will eat the most time.</div>
+
+  <div class="prompt"><span class="prompt-label">The render triage</span>My render problem: [symptoms — grainy shadows / fireflies / 40-min frames / blotchy denoising]. Engine: [Cycles/Eevee], hardware: [GPU/CPU, RAM]. Diagnose the likely causes in order of probability and give me the settings to try, with what each trades away.</div>
+
+  <div class="prompt"><span class="prompt-label">The material describer</span>Describe a Blender shader node setup for [material — e.g., sea-worn painted steel, flaking, slightly oily]: nodes, key values, and what to photograph for reference. I'll build it by hand — give me the recipe, not a script.</div>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: Topology Reality Check + Your Scaffold (70 min)</h2>
+  <p class="lede">Cold start friendly. No Blender on your laptop? Pair up, or take the planning track — fully equal.</p>
+  <ol class="steps">
+    <li><strong>Run the class scaffold (15 min):</strong> paste the provided script → run → change <strong>two values</strong> → re-run. You've now edited Python.</li>
+    <li><strong>Your scaffold (20 min):</strong> request one for <em>your</em> project — Week 6 character's set, degree-show space, product turntable. Hit an error? <strong>Error loop — that's the skill, not a failure.</strong></li>
+    <li><strong>Reality Check (15 min):</strong> wireframe pass on the provided AI mesh → <strong>5 written findings</strong> + a verdict.</li>
+    <li><strong>Scene plan + keeper (20 min):</strong> plan for your real project + ONE script/checklist you'll actually reuse. Save the prompt with the script.</li>
+  </ol>
+  <div class="callout try"><span class="label">Planning track (no Blender needed)</span><p>Scene plan document (frame contents, asset sources, light motivations, camera intent, budget) + a written script <em>spec</em> + Reality Check on the provided annotated screenshots. The director's version of the same knowledge — equal credit.</p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">This week's four</span>
+    <ol>
+      <li>Did you read your script for destructive operations before running it?</li>
+      <li>AI meshes in your scene: would you disclose them in a portfolio breakdown? ("Background rocks AI-generated, cleaned; hero asset modelled by me" is exactly how studios talk.)</li>
+      <li>Can you state <strong>why each light exists</strong> — or did the script decide your look?</li>
+      <li>A script in your pipeline is a dependency: save the prompt with the script so future-you can regenerate it.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>Script errors immediately</td><td>Error loop with the WHOLE traceback. Confirm you said "Blender 4.x" — the API keeps moving</td></tr>
+    <tr><td>Script runs, nothing visible</td><td>Check the outliner/collections; ask "why might nothing appear in my viewport?"</td></tr>
+    <tr><td>Script wrecked my scene</td><td>You ran it in a real file. Undo — and fresh/saved files only, forever</td></tr>
+    <tr><td>AI mesh looks fine until it doesn't</td><td>Wireframe view. Always. Beauty renders hide topology crime</td></tr>
+    <tr><td>"It wrote 200 lines, I'm scared"</td><td>"Walk me through this script section by section like I'm an artist." Then change one value</td></tr>
+    <tr><td>Render triage doesn't help</td><td>Give symptoms + engine + hardware honestly; ask for the diagnostic order, not just settings</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+
+  <div class="video-embed">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/videoseries?list=PLa1F2ddGya_8acrgoQr1fTeIuQtkSd6BW" title="Scripting for Artists — Blender official series" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <p class="video-note"><b>Why this series:</b> Blender's official "Scripting for Artists" by Dr. Sybren Stüvel — the same artist-first stance as today's dictation method, for going deeper. Episode 1 starts exactly where this week leaves you.</p>
+  </div>
+
+  <ul class="resources">
+    <li><span class="tag video">Series</span><span class="tag embedded">Embedded</span><a class="r-title" href="https://www.youtube.com/playlist?list=PLa1F2ddGya_8acrgoQr1fTeIuQtkSd6BW">Scripting for Artists — Blender (official playlist)</a><span class="r-why">Embedded above. The on-ramp from dictation to actually reading what you run.</span></li>
+    <li><span class="tag docs">Course</span><span class="tag linked">Linked</span><a class="r-title" href="https://studio.blender.org/training/scripting-for-artists/">Scripting for Artists — Blender Studio course page</a><span class="r-why">The structured home of the series, with chapters and files.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag linked">Linked</span><a class="r-title" href="https://docs.blender.org/api/current/">Blender Python API documentation</a><span class="r-why">The source of truth your AI scripts approximate. Knowing it exists makes you dangerous.</span></li>
+    <li><span class="tag docs">Assets</span><span class="tag linked">Linked</span><a class="r-title" href="https://studio.blender.org/">Blender Studio — open movie assets</a><span class="r-why">Professionally-built rigs and scenes — what <em>good</em> topology and organization look like, free.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag verify">Verify before teaching</span><span class="r-title">Meshy / Tripo documentation (text-to-3D)</span><span class="r-why">Capabilities and pricing shift monthly — check the current state before demoing.</span></li>
+    <li><span class="tag video">Video</span><span class="tag verify">Verify before teaching</span><span class="r-title">A current topology-fundamentals video (credible 3D educator)</span><span class="r-why">For students who need the foundations — pick the current best before class.</span></li>
+  </ul>
+
+  <h3>Optional extension</h3>
+  <ul>
+    <li>Chain it: a script that builds your Week 6 character's <em>environment</em> — then art-direct it with three value changes and one feature request.</li>
+    <li>The gift script: kill a chore in a <em>classmate's</em> workflow. Different problems teach different dictation skills.</li>
+    <li>Hard mode: actually retopologize the provided AI mesh. Time yourself. Now you know the real price of "free" — quote cleanup honestly forever.</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-10.html">Audio, Voice, Video, and Multimodal Critique →</a> — transcripts, captions, temp VO, and screenshot-critique workflows.</p>
+</section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 14 — Capstone Sprint · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-14-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 14 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">All tracks — 4 hours, studio sprint</p>
+  <h1>Capstone Sprint: Build a Personal AI-Enhanced Creative Workflow</h1>
+  <p class="promise">Leave with a working draft of one real thing — a workflow, tiny tool, prompt system, process board, or prototype — that removes friction from <em>your</em> practice, plus the 1-page process explanation that proves your judgment shaped it.</p>
+  <div class="resource-row">
+    <a href="./week-14-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-14/capstone-gallery.html">capstone-gallery.html</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#bar">Quality Bar</a>
+  <a href="#shapes">Capstone Shapes</a>
+  <a href="#workflow">Build Sprint</a>
+  <a href="#recipes">Scoping Prompt</a>
+  <a href="#process">Process Page</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> a capstone draft + a 1-page process explanation (what it solves, AI's role, your role, time saved, disclosure).</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Frame + demo (35 min)</strong><p>The quality bar; three worked capstone shapes; live scoping.</p></article>
+    <article><strong>2 · Scope lock (20 min)</strong><p>Friction, shape, riskiest assumption — written down.</p></article>
+    <article><strong>3 · Two build sprints (120 min)</strong><p>Build the spine; refine and document, with a workflow clinic between.</p></article>
+    <article><strong>4 · Peer review (15 min)</strong><p>90-second rough shows; ethics, usefulness, craft.</p></article>
+  </div>
+  <div class="callout work">
+    <span class="label">The week in one line</span>
+    <p><strong>Ship one true thing that gives you leverage without taking your voice.</strong> Thirteen weeks of techniques are worth nothing until one lives in your practice. The trap to avoid: automating your <em>art</em> instead of your <em>friction</em>.</p>
+  </div>
+</section>
+
+<section class="b" id="bar">
+  <h2><span class="bnum">02</span>The Capstone Quality Bar</h2>
+  <p class="lede">Your capstone passes if it answers "yes" to all four. Print these; check them at the end.</p>
+  <ul class="check">
+    <li><strong>Real friction.</strong> It solves an actual recurring problem in <em>your</em> practice — not a hypothetical, not someone else's.</li>
+    <li><strong>Documented human decisions.</strong> Selection, rejection, refinement, and judgment are visible in the process explanation.</li>
+    <li><strong>Honest disclosure.</strong> It states clearly what AI did and what you did.</li>
+    <li><strong>Demo-able to an employer.</strong> You could show it in an interview and explain every choice without hand-waving.</li>
+  </ul>
+  <div class="callout try"><span class="label">The rule</span><p>A capstone that's small, finished, and passes all four beats an ambitious half-built thing every time.</p></div>
+</section>
+
+<section class="b" id="shapes">
+  <h2><span class="bnum">03</span>The Capstone Shapes — Pick Your Lane</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Shape</th><th>What it is</th><th>Built from</th><th>Best for</th></tr>
+    <tr><td><strong>Workflow / process system</strong></td><td>A repeatable chain (brief → boards → shot list → checklist)</td><td>Weeks 2, 3, 5, 6</td><td>Motion, animation, multi-stage pipelines</td></tr>
+    <tr><td><strong>Prompt system / kit</strong></td><td>A tuned, reusable prompt set for a recurring task</td><td>Weeks 2, 8, 10, 13</td><td>UX, design, illustration, writing-heavy practices</td></tr>
+    <tr><td><strong>Tiny coded tool</strong></td><td>A single-file tool removing a specific friction</td><td>Week 11</td><td>"I keep retyping/recalculating this" problems</td></tr>
+    <tr><td><strong>Supervised automation</strong></td><td>A spec'd agent workflow with checkpoints</td><td>Week 12</td><td>Anyone drowning in file/admin chores</td></tr>
+    <tr><td><strong>Process board / case study system</strong></td><td>A documentation system that makes your process portfolio-ready</td><td>Weeks 4, 13</td><td>Illustration, fine art, portfolio-building</td></tr>
+  </table>
+  </div>
+  <div class="callout try"><span class="label">The fastest capstone</span><p>You've already drafted candidates: your Week 11 tiny-tool spec, your Week 12 workflow spec, your Week 5 motion pack, your Week 13 prompt pack. <strong>The fastest capstone is finishing one of those.</strong></p></div>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">04</span>The Build Sprint (today's structure)</h2>
+  <ol class="steps">
+    <li><strong>Scope ruthlessly:</strong> name the friction, pick the shape, cut scope to ~6 hours of work total.</li>
+    <li><strong>Riskiest assumption first:</strong> what sinks the whole capstone if it fails? Test <em>that</em> first, not the easy parts.</li>
+    <li><strong>Build the spine:</strong> get the core working end-to-end, ugly. A rough complete thing beats a polished fragment.</li>
+    <li><strong>Clinic:</strong> a classmate tests whether it <em>actually</em> saves time or improves output.</li>
+    <li><strong>Refine + document:</strong> fix what the clinic found; write the process explanation as you go.</li>
+    <li><strong>Prep the 90-second show:</strong> what it solves, the decision you're proudest of, AI vs. you.</li>
+  </ol>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">05</span>The Scoping Conversation</h2>
+  <p class="small muted-text">Run this with AI, then run the same scope past a human — humans catch the "still over-scoped" the model is too agreeable to push on.</p>
+  <div class="prompt"><span class="prompt-label">The capstone advisor</span>Act as a capstone advisor. My project idea: [your idea]. Interview me briefly, then output a one-week build plan: scope cut to what's achievable in ~6 hours, the AI-role/human-role split, the riskiest assumption to test first, and what "done" looks like. Be ruthless about scope — I'd rather finish something small than half-build something big.</div>
+</section>
+
+<section class="b" id="process">
+  <h2><span class="bnum">06</span>The 1-Page Process Explanation (the assessed deliverable)</h2>
+  <p>This document is what makes the capstone <em>yours</em>. One page, these sections:</p>
+  <ul>
+    <li><strong>The friction</strong> — the real recurring problem, with honest frequency.</li>
+    <li><strong>What I built</strong> — the workflow/tool/system, in two sentences.</li>
+    <li><strong>AI's role</strong> — specifically what AI did (drafted, generated, structured, automated).</li>
+    <li><strong>My role</strong> — the decisions, selections, rejections, and craft that are yours. The ✏️ moments.</li>
+    <li><strong>Proof it works</strong> — your acceptance check or time-saved estimate; ideally a clinic-partner's verdict.</li>
+    <li><strong>Disclosure</strong> — the honest line you'd attach if this went in a portfolio.</li>
+    <li><strong>What's next</strong> — the one thing you'd improve with more time.</li>
+  </ul>
+  <p class="small">Template starting points: <a href="../templates/ai-workflow-spec-template.md">workflow spec</a>, <a href="../templates/tiny-tool-spec-template.md">tiny-tool spec</a>, <a href="../templates/process-documentation-template.md">process documentation</a>.</p>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: Build Sprint + Workflow Clinic (the whole session)</h2>
+  <ol class="steps">
+    <li><strong>Scope (Hour 1):</strong> scoping conversation (AI + human); lock your shape and 6-hour scope; name your riskiest assumption.</li>
+    <li><strong>Sprint 1 (Hour 2):</strong> build the spine — riskiest assumption first, then core end-to-end. Ugly is fine.</li>
+    <li><strong>Workflow Clinic (~20 min):</strong> swap with a classmate; they actually <em>try</em> your thing. Does it save time / improve output? Would they use it? Where did it break?</li>
+    <li><strong>Sprint 2 (Hour 3):</strong> fix what the clinic found; write the process explanation as you go.</li>
+    <li><strong>Show-and-tell + peer review (Hour 4):</strong> 90-second rough shows; critique on ethics, usefulness, craft — not polish.</li>
+  </ol>
+  <div class="callout try"><span class="label">Zero-AI / planning capstone (fully equal)</span><p>A fully-specified workflow or tool design — the complete spec + process explanation + a paper walkthrough — is a legitimate capstone. Several of the strongest capstones are <em>plans</em> for things students will build later.</p></div>
+  <div class="callout def"><span class="label">Came in cold today?</span><p>Pick the smallest shape (a prompt kit or tiny-tool spec), use a standing friction, and aim for "finished and honest" over "ambitious." A complete small capstone is a real capstone.</p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">This week's four</span>
+    <ol>
+      <li>Does your capstone automate your <strong>friction</strong> or your <strong>art</strong>? If it's making your finished work, re-scope.</li>
+      <li>Are your human decisions <em>documented</em>, not just claimed? Point to the ✏️ moments.</li>
+      <li>Is your disclosure honest and specific enough to stand in an interview?</li>
+      <li>Did a real human (clinic partner) confirm it does what you say? Untested "it saves time" is a hypothesis.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>My idea is too big for today</td><td>Good problem. Cut to the spine: smallest version that solves the core friction. The rest is homework</td></tr>
+    <tr><td>I don't know which shape to pick</td><td>Pick the one closest to a draft you already have. Finishing beats starting</td></tr>
+    <tr><td>It works but feels unimpressive</td><td>"Impressive" isn't the bar — useful, finished, honest is. The two hours a week it saves IS the impressive part</td></tr>
+    <tr><td>The clinic partner couldn't use it</td><td>The most valuable result of the day. Fix the thing they tripped on — that's real product feedback</td></tr>
+    <tr><td>I'm building something that makes my art</td><td>Stop and re-scope. Aim the leverage at the friction around your art, not the art itself</td></tr>
+    <tr><td>I can't finish in the time</td><td>You don't have to — today's deliverable is a draft + process explanation. Document where you got to and what's next</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+  <ul class="resources">
+    <li><span class="tag docs">Template</span><span class="tag linked">Linked</span><a class="r-title" href="../templates/ai-workflow-spec-template.md">AI Workflow Spec Template (this course)</a><span class="r-why">The scaffold for workflow/automation capstones — steps, checkpoints, risks, disclosure.</span></li>
+    <li><span class="tag docs">Template</span><span class="tag linked">Linked</span><a class="r-title" href="../templates/tiny-tool-spec-template.md">Tiny Tool Spec Template (this course)</a><span class="r-why">For coded-tool capstones — user, problem, inputs, outputs, acceptance checks.</span></li>
+    <li><span class="tag docs">Template</span><span class="tag linked">Linked</span><a class="r-title" href="../templates/process-documentation-template.md">Process Documentation Template (this course)</a><span class="r-why">The backbone of your 1-page process explanation.</span></li>
+    <li><span class="tag docs">Reference</span><span class="tag linked">Linked</span><a class="r-title" href="../DEMOS_AND_VISUAL_AIDS.md">Demos &amp; Visual Aids — Week 14 (this course)</a><span class="r-why">The three worked capstone shapes, in detail, with the scoping prompt.</span></li>
+    <li><span class="tag article">Guide</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.anthropic.com/research/building-effective-agents">Building Effective AI Agents — Anthropic</a><span class="r-why">If your capstone is an automation: the simplest-pattern-that-works principle keeps your scope honest.</span></li>
+    <li><span class="tag docs">Revisit</span><span class="tag linked">Linked</span><span class="r-title">Your own Weeks 5, 8, 11, 12, 13 deliverables</span><span class="r-why">Your fastest capstone is finishing one of these. Re-read your own specs before starting.</span></li>
+  </ul>
+
+  <h3>Optional extension</h3>
+  <ul>
+    <li>Build the second-smallest version: once the spine works, add the <em>one</em> feature your clinic partner most wanted — and only that one.</li>
+    <li>Write the capstone's own case study (Week 13 method) — the extraction interview on your own build.</li>
+    <li>Hard mode: design how your capstone fits a <em>team's</em> workflow, not just yours.</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-15.html">Demo Day &amp; the Artist's AI Operating System →</a> — present what you built, revise your Manifesto to v2, and build your system for staying current without drowning.</p>
+</section>
+
+</main>
+</body>
+</html>

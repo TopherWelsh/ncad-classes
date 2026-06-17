@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 08 — UX and Product Design · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-08-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 08 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">UX · graphic design · motion — 4 hours, drop-in friendly</p>
+  <h1>UX and Product Design: Research, Flows, Wireframes, and Prototypes</h1>
+  <p class="promise">A five-prompt UX planning kit — assumptions, flows, wireframe text, edge cases, accessibility — and the one rule that keeps AI-assisted UX honest: personas are hypotheses, not people.</p>
+  <div class="resource-row">
+    <a href="./week-08-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#words">Glossary</a>
+  <a href="#demo">Demo</a>
+  <a href="#workflow">Workflows</a>
+  <a href="#recipes">Prompt Recipes</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> one task flow + one low-fi wireframe + a critique checklist for an app idea.</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Concepts (40 min)</strong><p>Synthetic users vs. research; assumption audits; unhappy paths; ugly wireframes.</p></article>
+    <article><strong>2 · Concepts (15 min)</strong><p>Edge Case Hunt logic; accessibility specificity; the prototype chain.</p></article>
+    <article><strong>3 · Demo (35 min)</strong><p>"An app for plant people" — the five prompts, live.</p></article>
+    <article><strong>4 · Lab + share (110 min)</strong><p>Edge Case Hunt on your idea; trust-damage rankings.</p></article>
+  </div>
+  <div class="callout warn">
+    <span class="label">The week's stakes</span>
+    <p>UX is where AI's biggest lie lives: confident personas, quotes from users who don't exist, statistics from studies that never happened. <strong>Fake research is worse than no research</strong> — it carries authority without evidence.</p>
+  </div>
+  <div class="callout work">
+    <span class="label">The professional split</span>
+    <p><strong>AI for structure and pessimism</strong> (assumptions, flows, edge cases, microcopy). <strong>Research for evidence and empathy</strong> (what's actually true of real people). AI can imagine your users; only research can know them — label which one you're holding.</p>
+  </div>
+</section>
+
+<section class="b" id="concepts">
+  <h2><span class="bnum">02</span>Key Concepts</h2>
+
+  <h3>1 · Synthetic users vs. real research</h3>
+  <p>AI-invented users are <strong>hypotheses wearing name tags</strong> — useful exactly as hypotheses (they force assumptions into the open), poison the moment anyone treats them as findings.</p>
+  <ul class="check">
+    <li>Label every persona: <code>HYPOTHESIS — needs real research</code>.</li>
+    <li>For each persona claim, write the interview question that would test it.</li>
+    <li>Never present synthetic users as research. That's fabrication, and it gets discovered.</li>
+  </ul>
+
+  <h3>2 · The assumption audit: the cheapest UX win</h3>
+  <p>Before any design: "list every assumption hiding in this idea," then sort — <strong>safe to assume / must research / dangerous to guess.</strong> Ten minutes that reorder a project. This is AI at its best: pessimistic structure, no facts required.</p>
+
+  <h3>3 · Flows: the happy path is the easy 20%</h3>
+  <p>AI drafts a clean flow in seconds. The value move is the next prompt: <strong>"now give me the unhappy paths."</strong> Bad photo, no signal, ambiguous result, abandoned mid-task. Models are surprisingly good at enumerating failure — they've read every support forum on earth. Most of real UX is designing the recovery.</p>
+
+  <h3>4 · Wireframes: ugly on purpose</h3>
+  <p>Grey boxes, real structure, real microcopy. Polish hides thinking — yours and the model's. AI writes the <em>wireframe text</em> (each screen's purpose, elements, exact button labels, empty states); you draw the boxes. Microcopy is a real deliverable: error messages are where products feel human or hostile.</p>
+  <div class="callout warn"><span class="label">Watch out</span><p>AI-generated <em>visual</em> UI looks finished and thinks nothing. Wireframes stay grey this week. App-builders return in Week 11 — with inspection habits.</p></div>
+
+  <h3>5 · The Edge Case Hunt: pessimism as a service</h3>
+  <p>After any flow: "8 edge cases <strong>ranked by how badly each damages trust</strong>." Then accessibility made specific — not "be accessible" but <em>this flow's</em> risks (photo capture with low vision, colour-only status, touch targets in gloves) — verified against WCAG, because models paraphrase guidelines loosely.</p>
+
+  <h3>6 · From plan to prototype</h3>
+  <p>flow → wireframe text → boxes → clickable path. AI accelerates every document <em>before</em> the canvas; the canvas is still judgment.</p>
+</section>
+
+<section class="b" id="words">
+  <h2><span class="bnum">03</span>This Week's Words</h2>
+  <div class="glossary">
+    <div class="term"><b>Persona (hypothesis)</b>An invented user sketch. Question generator, never "findings."</div>
+    <div class="term"><b>Synthetic users</b>AI-simulated research participants. The industry fight of the moment.</div>
+    <div class="term"><b>Assumption audit</b>Listing what you're assuming before designing. Sort three ways.</div>
+    <div class="term"><b>Task flow</b>Step-by-step path to a user goal — including unhappy paths.</div>
+    <div class="term"><b>Unhappy path</b>What happens when things fail. Where the real design work lives.</div>
+    <div class="term"><b>Wireframe</b>Deliberately ugly structural layout. Grey boxes, real microcopy.</div>
+    <div class="term"><b>Microcopy</b>Buttons, errors, empty states — where products feel human or hostile.</div>
+    <div class="term"><b>Edge case</b>The unusual-but-real situation that breaks naive designs.</div>
+    <div class="term"><b>WCAG</b>The accessibility standard. Verify against the source, not paraphrase.</div>
+    <div class="term"><b>Information architecture</b>How content is organized and named so people can find things.</div>
+  </div>
+  <p class="small"><a href="../GLOSSARY.md">Full course glossary →</a></p>
+</section>
+
+<section class="b" id="demo">
+  <h2><span class="bnum">04</span>Demo: "An App for Plant People"</h2>
+  <div class="callout demo">
+    <span class="label">I made this, so can you</span>
+    <p>A vague idea becomes an honest UX plan in five prompts — with the model's most dangerous output (plausible personas) caught and labelled in front of the room.</p>
+  </div>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-08/ux-plan/flow.md">ux-plan/flow.md</a> <a href="../demos/week-08/ux-plan/wireframe.html">ux-plan/wireframe.html</a> <a href="../demos/week-08/ux-plan/personas.md">ux-plan/personas.md</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+  <ol class="steps">
+    <li><strong>Assumption audit</strong> — every assumption in the sentence, sorted; the dangerous-to-guess items starred.</li>
+    <li><strong>Personas as hypotheses</strong> — two contrasting hypotheses, labelled, each with 5 test questions. <em>"These people do not exist. They're hypotheses wearing name tags."</em></li>
+    <li><strong>Flow + unhappy paths</strong> — diagnose-my-plant with three failure states designed in; the Mermaid code pasted into mermaid.live becomes an instant diagram.</li>
+    <li><strong>Wireframe text</strong> — five screens with exact microcopy; one element overruled live and marked ⚠ ("on a diagnosis app the camera IS the app — moved, mine").</li>
+    <li><strong>Edge Case Hunt + accessibility</strong> — eight cases ranked by trust damage; one accessibility claim verified against actual WCAG numbers.</li>
+  </ol>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">05</span>Step-by-Step Workflows</h2>
+
+  <h3>The five-prompt UX planning kit (~45 min for any idea)</h3>
+  <ol class="steps">
+    <li><strong>Audit</strong> assumptions → sort three ways.</li>
+    <li><strong>Hypothesize</strong> 2 personas → label → write their test questions.</li>
+    <li><strong>Flow</strong> the core task → demand unhappy paths.</li>
+    <li><strong>Wireframe text</strong> per screen → exact microcopy → you box it.</li>
+    <li><strong>Attack:</strong> edge cases ranked by trust damage + flow-specific accessibility → verify against WCAG.</li>
+  </ol>
+
+  <h3>Wireframe from text (paper or Figma)</h3>
+  <ol class="steps">
+    <li>Take one screen's wireframe text.</li>
+    <li>Draw the boxes top to bottom — 5 minutes, ugly.</li>
+    <li>Write the microcopy <em>into</em> the boxes — real labels, not lorem.</li>
+    <li>Mark ⚠ any element you overruled — your judgment trail.</li>
+    <li>Connect the happy path; add one unhappy-path branch.</li>
+  </ol>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">06</span>Prompt Recipes</h2>
+
+  <div class="prompt"><span class="prompt-label">1 · The assumption audit</span>I want to design "[vague idea]". Before any design: list every assumption hiding in that sentence — about users, problems, context, and devices. Then sort them into three groups: safe to assume / must research / dangerous to guess. Don't design anything yet.</div>
+
+  <div class="prompt"><span class="prompt-label">2 · Personas as hypotheses</span>Draft 2 contrasting persona HYPOTHESES for this idea. Label each clearly as "UNVALIDATED HYPOTHESIS". For each: context, the frustration that brings them here, their moment of need, and what they'd never do in an app. Then write the 5 interview questions that would test whether each persona is real.</div>
+
+  <div class="prompt"><span class="prompt-label">3 · The flow with unhappy paths</span>Core task: "[the one job]". Write the task flow step by step. Then add 3 unhappy paths ([likely failures — bad input, no connection, ambiguous result]) and how the user recovers from each without a dead end.</div>
+
+  <div class="prompt"><span class="prompt-label">4 · Wireframe text + microcopy</span>Describe a [5]-screen low-fi wireframe for this flow, in text. Each screen: its single purpose, key elements top to bottom, and the EXACT microcopy for buttons, error messages, and empty states. Grey boxes only — no visual styling, no colours, no branding.</div>
+
+  <div class="prompt"><span class="prompt-label">5 · The edge case hunt + accessibility</span>Now attack this flow: list 8 edge cases or failure states we haven't handled, ranked by how badly each damages user trust. Then write an accessibility checklist specific to THIS flow (not generic WCAG boilerplate): the real risks for [photo capture / colour-coded status / outdoor use / screen readers] in this design.</div>
+
+  <div class="prompt"><span class="prompt-label">Bonus · The microcopy de-roboter</span>Rewrite this microcopy in a voice that is [calm, plain, slightly warm]: [paste]. Rules: no exclamation marks, no "oops", no blame, every error says what happened and what to do next, reading age ~12.</div>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: Edge Case Hunt (70 min)</h2>
+  <p class="lede">Cold start friendly. No idea? Standing brief: <em>an app that helps housemates fairly split chores without becoming the chore police.</em></p>
+  <ol class="steps">
+    <li><strong>Kit prompts 1–3 (20 min):</strong> audit → labelled personas with test questions → flow with unhappy paths.</li>
+    <li><strong>Wireframe (20 min):</strong> prompt 4 for the text, then <strong>box it yourself</strong> — paper or Figma, 5 screens, microcopy written in, ⚠ marks where you overruled.</li>
+    <li><strong>The Hunt (15 min):</strong> prompt 5 → pick the <strong>3 edge cases that most damage trust</strong> → amend your flow/wireframe to handle them. The amendment is the assessed thinking.</li>
+    <li><strong>Critique checklist (15 min):</strong> 6 lines (Week 2 method) from your brief + edge cases. Test against your own wireframe — at least one line should fail.</li>
+  </ol>
+  <div class="callout try"><span class="label">Zero-AI path (fully equal)</span><p>The question structures run beautifully on paper with a partner playing pessimist. Microcopy written by hand. Same deliverables, equal credit.</p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">This week's four</span>
+    <ol>
+      <li>Is every persona still wearing its <code>HYPOTHESIS</code> label — everywhere it travels?</li>
+      <li>Did any "users want…" sentence sneak in without a source? Kill it or mark it.</li>
+      <li>Accessibility claims: checked against actual WCAG, or model paraphrase?</li>
+      <li>Portfolio language: "Research direction AI-assisted; all user claims are labelled hypotheses pending research." Honesty reads as method maturity.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>Personas feel <em>so</em> plausible</td><td>That's the danger. Plausibility ≠ truth. Read the label aloud; write the test questions</td></tr>
+    <tr><td>Flow is suspiciously clean</td><td>You got the happy path. Demand the unhappy paths — that's where the design is</td></tr>
+    <tr><td>Wireframe text wants to be pretty</td><td>"Grey boxes only, no styling" — repeat; fresh chat if it persists</td></tr>
+    <tr><td>Microcopy sounds like a chatbot</td><td>Run the de-roboter; ban "oops" by name</td></tr>
+    <tr><td>Edge cases are generic ("slow internet")</td><td>Demand specificity to YOUR flow: "edge cases unique to photo-diagnosing plants outdoors"</td></tr>
+    <tr><td>Figma overwhelms</td><td>Paper. Genuinely. The thinking is identical and faster today</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+  <ul class="resources">
+    <li><span class="tag article">Article</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.nngroup.com/articles/ai-roles-ux/">AI as a UX Assistant — Nielsen Norman Group</a><span class="r-why">The respected research org's framework for which UX roles AI can play — matches this week's structure/evidence split.</span></li>
+    <li><span class="tag video">Video</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.nngroup.com/videos/ai-not-ready-for-ux/">AI Isn't Ready for UX Design — NN/g</a><span class="r-why">The skeptical counterpoint from people who test claims for a living. The skeptics are right about the dangerous part — know their argument. (Not embeddable — opens on nngroup.com.)</span></li>
+    <li><span class="tag article">Article</span><span class="tag linked">Linked</span><a class="r-title" href="https://ixdf.org/literature/article/ai-vs-researched-personas">AI-Generated Synthetic Users vs. Personas — IxDF</a><span class="r-why">Directly on this week's central rule: what synthetic users can and cannot tell you.</span></li>
+    <li><span class="tag docs">Standard</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.w3.org/WAI/WCAG22/quickref/">WCAG Quick Reference — W3C</a><span class="r-why">The actual accessibility standard. Verify model claims here — paraphrase is not compliance.</span></li>
+    <li><span class="tag docs">Tool</span><span class="tag linked">Linked</span><a class="r-title" href="https://mermaid.live/">Mermaid Live Editor</a><span class="r-why">Paste AI-generated flow-diagram code, get instant diagrams. The fastest text-to-flow path there is.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag verify">Verify before teaching</span><span class="r-title">Figma AI features documentation</span><span class="r-why">Figma's AI tooling changes quarterly — check what exists on your tier the week you teach. The planning chain works regardless.</span></li>
+  </ul>
+
+  <h3>Optional extension</h3>
+  <ul>
+    <li>Take your 5 persona test questions and <strong>interview one real person</strong> (a housemate counts). Note every place reality disagreed — that delta is what research is for.</li>
+    <li>Build the clickable path: 5 frames in Figma, linked. With the plan done, it's shockingly fast.</li>
+    <li>Hard mode: write the <strong>research plan</strong> that would retire your "dangerous to guess" assumptions: method, participants, questions, time.</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-09.html">3D Workflows →</a> — Blender scene scaffolds via Python, and the Topology Reality Check.</p>
+</section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../styles.css">
+<script src="../slides.js" defer></script>
+<title>Week 11 Slides — Coding for Artists</title>
+</head>
+<body class="slides">
+
+<section class="slide s-title">
+  <p class="kicker">NCAD AI for Artists Workshop · Week 11</p>
+  <h1>Coding for Artists</h1>
+  <p>Websites, Tools, and Tiny Apps with Codex/Claude Code</p>
+  <div class="notes">The empowerment week. No coding experience expected — say it in the first minute.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">60-second recap</p>
+  <h2>The deal</h2>
+  <p>AI for friction, humans for meaning.<br>Raw output is never finished work.<br>Verify before trusting. Disclose where it matters.<br>Skepticism welcome when specific.</p>
+  <div class="notes">Standing recap.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Why now</p>
+  <h2>Why artists and code, now</h2>
+  <p>Not to become software engineers. Code does four things for you:</p>
+  <p><strong>Prototype. Automate. Publish. Make interactive work.</strong></p>
+  <div class="notes">"The barrier just collapsed. Today you walk through where it stood."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The shift</p>
+  <h2>The bottleneck moved</h2>
+  <p>It used to be: <em>can you code?</em></p>
+  <h1 style="font-size:clamp(28px,4.4vw,56px)">Now it's: can you specify?</h1>
+  <p>And specification is design thinking. <strong>Your home turf.</strong></p>
+  <div class="notes">"You're closer to this than most programmers — you already know how to brief."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The week in one line</p>
+  <h1 style="font-size:clamp(28px,4.4vw,56px)">The spec is the skill.<br>The build is increasingly free.</h1>
+  <div class="notes">Board: INTERVIEW → SPEC → BUILD → CHECKS → INSPECT.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Deliverable</p>
+  <h2>You will leave with</h2>
+  <p><strong>A tiny tool spec:</strong> user, problem, inputs, outputs, UI sketch, NOT-list, acceptance checks, build prompt.</p>
+  <p>Most of you will also leave with <strong>the working tool.</strong></p>
+  <div class="notes">"The build is the bonus round. Specifying isn't delegable."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Today's map</p>
+  <h2>Today's map</h2>
+  <ol>
+    <li>Tiny tools + the spec-first method — 40 min</li>
+    <li>Demo: a working app, built live from the room's spec — 45 min</li>
+    <li>Lab: your friction → your spec → (your tool) — 70 min</li>
+    <li>Pitches: 60 seconds + honest ledger — 35 min</li>
+  </ol>
+  <div class="notes">Breaks protected.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1</p>
+  <h1>The tiny tool category</h1>
+  <div class="notes">~0:10.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Definition</p>
+  <h2>What counts as tiny</h2>
+  <p><strong>One user (you). One problem. One file if possible.</strong><br>No accounts. No server. No other people's data.</p>
+  <div class="notes">The definition is also the safety envelope.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Real examples</p>
+  <h2>Tools students actually use</h2>
+  <p>Moodboard prompt generator (today's demo) · export checklist app · riso separation previewer · commission price calculator · crit-notes formatter</p>
+  <div class="notes">"Boring-sounding tools get used; impressive-sounding ones don't." Returns in the lab.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Why tiny</p>
+  <h2>Where artists win</h2>
+  <p>Single-file HTML: runs in any browser · can't touch anything else · <strong>fully inspectable</strong></p>
+  <p>Most reliable zone for AI coding. Lowest risk. Yours.</p>
+  <div class="notes">"We stay in this category today on purpose."</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, continued</p>
+  <h1>Spec-first: the interview method</h1>
+  <div class="notes">~0:20.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The method</p>
+  <h2>Don't start with "build me an app"</h2>
+  <p>Start with: <strong>make it interview you.</strong><br>One question at a time, max 6.</p>
+  <p>Your answers become the spec.</p>
+  <div class="notes">Same interview move as Week 6 (characters) — name the rhyme.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The spec</p>
+  <h2>The load-bearing parts</h2>
+  <p>User · problem (<strong>with honest frequency</strong>) · inputs ≤6 · outputs · UI in words</p>
+  <p><strong>What it does NOT do</strong> — the feature-creep fence<br><strong>Acceptance checks</strong> — 3–5 testable sentences</p>
+  <div class="notes">Template: tiny-tool-spec-template.md. NOT-list and checks are where specs earn trust.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Career note</p>
+  <h2>The professional sentence</h2>
+  <h1 style="font-size:clamp(24px,3.4vw,44px)">"Wrote the spec, directed the build, verified the result."</h1>
+  <p>Current, honest, hireable.</p>
+  <div class="notes">Returns in Week 13 as CV language.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, continued</p>
+  <h1>The build loop</h1>
+  <p>Client-revision thinking</p>
+  <div class="notes">~0:30.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The build</p>
+  <h2>One prompt builds the file</h2>
+  <p>Spec + "single self-contained HTML file, no frameworks, no build step, no network calls, mobile-friendly."</p>
+  <p>Save as <code>.html</code>. Open in browser. <strong>Working software.</strong></p>
+  <div class="notes">Announce the TextEdit plain-text trap here, preemptively, kindly.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Revisions</p>
+  <h2>Revise like a client, not a coder</h2>
+  <p><strong>Change request:</strong> the outcome — "the Copy button should visibly confirm."</p>
+  <p><strong>Bug report:</strong> steps + symptoms — "when the mood field is empty, the output says 'undefined'."</p>
+  <div class="notes">"Same spirit as Blender's error loop. You report; it repairs."</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, the trust layer</p>
+  <h1>Inspection</h1>
+  <div class="notes">~0:36.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">No programming needed</p>
+  <h2>Three questions</h2>
+  <p>"Walk me through this file like I'm an artist:<br><strong>what are the three main parts,<br>where does my data go when I type it,<br>and does anything leave my computer?</strong>"</p>
+  <div class="notes">The week's most important slide. True tiny tool answer: "nothing leaves your machine."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">And verify</p>
+  <h2>Check the claim</h2>
+  <p>Skim the file for <code>fetch</code> or <code>http</code>. Ten seconds.</p>
+  <p><strong>Privacy became checkable the day software became readable conversation.</strong></p>
+  <div class="notes">Do this live in the demo. It lands.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">The rule</span>
+  <p class="kicker">Boundaries</p>
+  <h2>The scope fence</h2>
+  <p>The moment a tool needs <strong>accounts · payments · other people's data</strong> — it's not a tiny tool.</p>
+  <p>App builders will build past the fence. <strong>The fence doesn't move.</strong></p>
+  <div class="notes">Flat delivery. Lovable/Bolt/v0-class named in the handout with the same rule.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">And beyond</p>
+  <h2>The deeper route</h2>
+  <p>Tiny tools are utility. <strong>Creative coding is art-making with code.</strong></p>
+  <p>p5.js + The Coding Train, when today lights the fire.</p>
+  <div class="notes">For the students who feel something click — there's a whole medium waiting.</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <p>Demo next: the room writes a spec; the spec becomes software.</p>
+  <div class="notes">Stage the interview prompt. Safety twin tested and ready.</div>
+</section>
+
+<section class="slide s-section s-demo">
+  <p class="kicker">Demo</p>
+  <h1>The moodboard prompt generator, built live</h1>
+  <div class="notes">~1:00. The room answers the interview; you arbitrate.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 1</span>
+  <p class="kicker">The interview</p>
+  <h2>You're the client</h2>
+  <p>The model asks. <strong>The room answers.</strong> I arbitrate the fights.</p>
+  <p>Six questions → a complete spec, on screen.</p>
+  <div class="notes">Fast, fun, loud. Read the assembled spec; point at the NOT-list.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 2</span>
+  <p class="kicker">The build</p>
+  <h2>Spec → file → browser → working app</h2>
+  <p><strong>Shout me test inputs.</strong></p>
+  <div class="notes">Demonstrate the save correctly (plain text!). Let them feel the minutes-not-months moment.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 3</span>
+  <p class="kicker">The change request</p>
+  <h2>The room picks one feature</h2>
+  <p>Pasted <strong>verbatim, client voice.</strong></p>
+  <div class="notes">"Add a copy button" / "save the last 5" / "dark mode" — whatever the room wants.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 4</span>
+  <p class="kicker">The inspection</p>
+  <h2>Three questions, then the proof</h2>
+  <p><strong>Scroll the file once — where's <code>fetch</code>? where's <code>http</code>?</strong><br>Nothing leaves the machine.</p>
+  <div class="notes">"You don't have to read it all. You have to know its shape and where your data goes."</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 5</span>
+  <p class="kicker">The planned failure</p>
+  <h2>The change request broke something. Good.</h2>
+  <p>Bug report, client voice: "when I [steps], it [symptom] instead of [expected]."</p>
+  <h2 style="margin-top:8px">Describe the bug, not the code.</h2>
+  <div class="notes">If nothing broke, pick a request likely to break. The repair landing is the confidence moment.</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <p>Lab next: your friction becomes your spec.</p>
+  <div class="notes">Standing friction options staged.</div>
+</section>
+
+<section class="slide s-section s-lab">
+  <p class="kicker">Lab · 70 minutes</p>
+  <h1>Tiny Tool Pitch</h1>
+  <p>Friction hunt (10) → Interview + spec (25) → Build, bonus (20) → Inspect + change request (15)</p>
+  <p class="small" style="opacity:.7">Stuck? Export checklist · price calculator · crit-notes formatter</p>
+  <div class="notes">Parts + times on board.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 1</span>
+  <p class="kicker">10 min</p>
+  <h2>Friction hunt</h2>
+  <p>Three recurring annoyances from your actual practice.<br>Pick the one with the most honest frequency. <strong>Write the number down.</strong></p>
+  <p>The boring candidate beats the impressive one.</p>
+  <div class="notes">"What did you retype, re-look-up, or recalculate this week?"</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 2</span>
+  <p class="kicker">25 min</p>
+  <h2>Interview + spec</h2>
+  <p>Run the interview. Fill the template <strong>completely</strong> — NOT-list and acceptance checks are where specs earn trust.</p>
+  <p>✏️ the decisions only you could make.</p>
+  <div class="notes">Circulate: "What should it never do?" "Read me check #2 — is it testable?"</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 3</span>
+  <p class="kicker">20 min · bonus round</p>
+  <h2>Build it</h2>
+  <p>Build prompt → save <code>.html</code> → open → <strong>run YOUR acceptance checks.</strong></p>
+  <p>No build? Spec + build prompt is the full deliverable.<br>Specifying isn't delegable. Building is.</p>
+  <div class="notes">Chat route works for everyone. Watch for the TextEdit trap.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 4</span>
+  <p class="kicker">15 min</p>
+  <h2>Inspect + one change request</h2>
+  <p>The three questions. One client-voice revision.</p>
+  <div class="notes">Scope-fence patrol: logins/payments/classmates' data → redraw now.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Always available</span>
+  <p class="kicker">Alternative</p>
+  <h2>Zero-AI track (fully equal)</h2>
+  <p>Template by hand + hand-drawn UI sketch.<br>The "build prompt" becomes a brief you could hand any developer.</p>
+  <p><strong>Arguably the purer version of the skill.</strong></p>
+  <div class="notes">State it before anyone asks.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Pitches · 35 min</p>
+  <h2>60 seconds each</h2>
+  <p>The friction (with frequency) → the tool → one acceptance check → <strong>the honest ledger.</strong></p>
+  <p>Room asks: <em>Would you actually open this next Tuesday?</em><br>And always: <strong>"Where does the data go?"</strong></p>
+  <div class="notes">Every pitch answers the data question — the habit is the point.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Every week</span>
+  <p class="kicker">Integrity check</p>
+  <h2>This week's four</h2>
+  <ol>
+    <li>Could you explain what your tool does with input — no hand-waving?</li>
+    <li>Did it pass YOUR checks — or did you lower them?</li>
+    <li>Anything smell like accounts/payments/others' data? <strong>Redraw the fence</strong></li>
+    <li>"Built with AI assistance from my spec; inspected and tested by me"</li>
+  </ol>
+  <div class="notes">Four beats.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Reflection</p>
+  <h2>Write 4 lines</h2>
+  <ul>
+    <li>Your friction, and its honest weekly cost</li>
+    <li>The spec decision only you could have made</li>
+    <li>What the inspection told you about your data</li>
+    <li>The ledger — and keep the spec: it's a capstone candidate</li>
+  </ul>
+  <div class="notes">Two quiet minutes. Plant the Week 14 seed explicitly.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Next Wednesday</p>
+  <h2>Agents, Automation, and Creative Operations</h2>
+  <p>When the AI doesn't just write the file — it organizes the whole folder. <strong>With checkpoints.</strong></p>
+  <p class="small" style="opacity:.6">Bring a messy project folder. Or rather — a COPY of one.</p>
+  <div class="notes">End on time; corridor questions after.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Tonight, optional</p>
+  <h2>Go deeper</h2>
+  <ul>
+    <li>p5.js + The Coding Train — when tools become a medium</li>
+    <li>MDN — what HTML/CSS/JS actually are</li>
+    <li>Build the second tool: a classmate's friction, their interview</li>
+    <li>Open your tool's file and change one thing by hand</li>
+  </ul>
+  <div class="notes">Final slide stays up while people pack.</div>
+</section>
+
+<nav class="slide-nav">
+  <a href="./week-11.html">Week Page</a>
+  <a href="../index.html">Home</a>
+</nav>
+
+</body>
+</html>

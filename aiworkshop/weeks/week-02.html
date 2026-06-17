@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 02 — Prompting Like an Art Director · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-02-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 02 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">All tracks · 4 hours · drop-in friendly</p>
+  <h1>Prompting Like an Art Director: Briefs, References, and Critique Loops</h1>
+  <p class="promise">You leave with a reusable briefing system — a creative brief that works on AI (and on humans), plus a critique rubric tuned to your track.</p>
+  <div class="resource-row">
+    <a href="./week-02-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#words">Glossary</a>
+  <a href="#demo">Demo</a>
+  <a href="#workflow">Workflows</a>
+  <a href="#recipes">Prompt Recipes</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> one AI-ready creative brief for a real project + your track critique rubric.</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Concepts (40 min)</strong><p>The 8-part brief anatomy; constraints as direction; references and the consent line; critique loops.</p></article>
+    <article><strong>2 · Demo (45 min)</strong><p>One brief adapted live for six disciplines — and turned into a rubric.</p></article>
+    <article><strong>3 · Lab (70 min)</strong><p>Prompt surgery in teams → your real brief → your rubric.</p></article>
+    <article><strong>4 · Share + reflect (45 min)</strong><p>Before/after pairs, authorship lines, rubrics that bite.</p></article>
+  </div>
+  <div class="callout work">
+    <span class="label">Why this matters in real work</span>
+    <p>The skill gap this term isn't "who knows the magic words" — it's <strong>who can give creative direction</strong>. Briefing is an art director's craft, and everything here also makes you better at briefing printers, photographers, and collaborators. The AI is just the cheapest, most patient practice partner you'll ever get.</p>
+  </div>
+  <div class="callout warn">
+    <span class="label">Kill this myth now</span>
+    <p>There are no magic words. "Prompt engineering" for creative work is ~90% classic creative-brief discipline — something agencies have done for a century. The other 10% is machine quirks, covered below.</p>
+  </div>
+</section>
+
+<section class="b" id="concepts">
+  <h2><span class="bnum">02</span>Key Concepts</h2>
+
+  <h3>1 · Prompting is briefing, not spellcasting</h3>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Part</th><th>What it does</th><th>Without it</th></tr>
+    <tr><td><strong>Role</strong></td><td>"Act as a practical creative director" — sets voice and standards</td><td>Generic assistant tone</td></tr>
+    <tr><td><strong>Context</strong></td><td>Project, audience, where the work lives</td><td>The model invents a (wrong) default</td></tr>
+    <tr><td><strong>Constraints</strong></td><td>Format, palette, duration, non-negotiables</td><td>The average of the internet</td></tr>
+    <tr><td><strong>References</strong></td><td>Qualities you want — shown or described</td><td>"Style" becomes cliché</td></tr>
+    <tr><td><strong>Avoid list</strong></td><td>What you explicitly don't want</td><td>The clichés walk right in</td></tr>
+    <tr><td><strong>Output format</strong></td><td>"5 directions, each with a risk"</td><td>One long confident essay</td></tr>
+    <tr><td><strong>Criteria</strong></td><td>How drafts will be judged</td><td>Nothing to critique against</td></tr>
+    <tr><td><strong>The decision line</strong></td><td>"Don't pick a winner — that's my job"</td><td>The model decides; you rubber-stamp</td></tr>
+  </table>
+  </div>
+
+  <h3>2 · Constraints are creative direction</h3>
+  <p>Counterintuitive but reliable: <strong>more constraints → more interesting output.</strong> "Poster, any style" returns the global average. Tight constraints force the model into corners — and corners are where interesting work lives.</p>
+  <div class="callout warn"><span class="label">Watch out</span><p>Models confidently ignore constraints they can't satisfy (exact word counts, arithmetic, precise layouts). Constrain direction; <strong>verify compliance yourself</strong>. Tip: "list my constraints back before answering."</p></div>
+
+  <h3>3 · References: show, don't just tell</h3>
+  <ol>
+    <li><strong>Telling:</strong> "1970s print feeling" — okay.</li>
+    <li><strong>Telling precisely:</strong> "flat colour, heavy grain, slight misregistration, like a 1970s risograph gig poster" — much better. Name qualities: materials, light, colour behaviour, texture, type feeling.</li>
+    <li><strong>Showing (few-shot):</strong> paste 1–3 examples of what good looks like. The fastest taste transfer.</li>
+  </ol>
+  <div class="callout ethics"><span class="label">The consent line — course rule</span><p>We don't prompt with living artists' names. Describe <em>qualities</em>; use historical movements as qualities. Beyond the ethics: naming qualities forces you to understand <strong>why</strong> you like a reference — and that understanding is the transferable skill.</p></div>
+
+  <h3>4 · The critique loop: your hostile reviewer on demand</h3>
+  <p>The highest-value prompting skill — it works even if you never generate anything. Work + <strong>your criteria</strong> + a demand for specifics + <strong>your decision</strong> about what to accept. A model with no criteria gives compliments (the word is <em>sycophancy</em>). A model holding your rubric gives you a second pair of eyes at 2am.</p>
+
+  <h3>5 · Iteration etiquette</h3>
+  <ul>
+    <li>React with specifics — "No. 2 is closest but the tone is corporate; push it stranger."</li>
+    <li>One variable at a time when close; start over when not.</li>
+    <li>Fresh chats for genuinely different directions (context anchoring is real).</li>
+    <li>Three failed revisions in a row = the <strong>brief</strong> has a hole.</li>
+    <li>Briefs live in docs, never only inside chats.</li>
+  </ul>
+</section>
+
+<section class="b" id="words">
+  <h2><span class="bnum">03</span>This Week's Words</h2>
+  <div class="glossary">
+    <div class="term"><b>Prompt</b>Everything you give the model: instruction, context, constraints, examples.</div>
+    <div class="term"><b>System prompt</b>Standing instructions framing every reply — a persistent job description for your tool.</div>
+    <div class="term"><b>Creative brief</b>Structured statement of project, audience, goal, constraints, references, criteria.</div>
+    <div class="term"><b>Constraints</b>The limits you set. Where creative direction lives.</div>
+    <div class="term"><b>Style reference</b>The qualities you want, named precisely — not a living artist's name.</div>
+    <div class="term"><b>Few-shot / examples</b>Showing 1–3 examples of "good" instead of describing it.</div>
+    <div class="term"><b>Negative prompt / avoid list</b>Explicitly stating what you don't want. Cheap and powerful.</div>
+    <div class="term"><b>Critique loop</b>Feeding work back with criteria and demanding structured criticism.</div>
+    <div class="term"><b>Iteration</b>Generate → reject → refine. Selection is the skill.</div>
+    <div class="term"><b>Sycophancy</b>The model's habit of flattering you. Counter with criteria that bite.</div>
+  </div>
+  <p class="small"><a href="../GLOSSARY.md">Full course glossary →</a></p>
+</section>
+
+<section class="b" id="demo">
+  <h2><span class="bnum">04</span>Demo: One Brief, Six Tracks</h2>
+  <div class="callout demo">
+    <span class="label">I made this, so can you</span>
+    <p>One base brief (Week 1's degree-show poster) adapted live for motion, UX, and 3D — with illustration, graphic design, and animation versions prepared. Then the brief becomes a critique rubric.</p>
+  </div>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-02/one-brief-six-tracks.html">one-brief-six-tracks.html</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+  <ul class="check">
+    <li><strong>The spine never changes:</strong> audience, goal, tone survive every translation.</li>
+    <li><strong>The moving parts:</strong> constraints, deliverable specs, references, critique criteria.</li>
+    <li><strong>The planned failure:</strong> one adaptation keeps an irrelevant constraint (riso colours in a website brief). Catching that is your job — every time, with every tool.</li>
+    <li><strong>The closing move:</strong> a 6-line rubric where every line cites a real constraint — and generic lines get rejected and regenerated.</li>
+  </ul>
+  <div class="tracks">
+    <div class="track"><b>Motion</b>Specs and timing for a 15s story; type-in-motion constraints; sound note.</div>
+    <div class="track"><b>UX</b>Wayfinding, accessibility, mobile-first, performance constraints.</div>
+    <div class="track"><b>Illustration</b>Medium, silhouette readability, print process constraints.</div>
+    <div class="track"><b>3D</b>Materials, sightlines, fabrication and budget constraints.</div>
+  </div>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">05</span>Step-by-Step Workflows</h2>
+
+  <h3>Prompt surgery (the diagnostic loop)</h3>
+  <ol class="steps">
+    <li><strong>Run once; read closely.</strong> What <em>kind</em> of bad? Generic = missing constraints/references. Wrong direction = missing context. Essay wall = missing output format. Bossy = missing decision line.</li>
+    <li><strong>Name the missing organ</strong> using the anatomy table.</li>
+    <li><strong>Transplant it in.</strong> Add the one missing part. Re-run.</li>
+    <li><strong>Compare side by side.</strong> Note what changed — your evidence trail.</li>
+    <li><strong>One more pass.</strong> Two surgical passes beat ten random tweaks.</li>
+  </ol>
+
+  <h3>Build your track rubric (10 minutes)</h3>
+  <ol class="steps">
+    <li>Take your brief's constraints and goal.</li>
+    <li>Convert each into a <strong>pass/fail question</strong>. ("Must work as a phone story" → "Does type survive at story-size?")</li>
+    <li>Add the course's five standing critique questions (<a href="../templates/critique-rubric-template.md">rubric template</a>).</li>
+    <li>Test on any AI output. If a mediocre draft passes everything, sharpen until it bites.</li>
+  </ol>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">06</span>Prompt Recipes</h2>
+
+  <div class="prompt"><span class="prompt-label">The full brief skeleton</span>ROLE: Act as a practical [creative director / design director / story editor] for my discipline: [track].
+PROJECT: [what's being made, for what occasion]
+AUDIENCE: [who actually encounters it — be narrow]
+GOAL: [what they should think/feel/do — one sentence]
+CONSTRAINTS: [format, dimensions, colours, duration, budget, deadline, non-negotiables]
+REFERENCES: [2–3 named QUALITIES you want, not living artists]
+AVOID: [clichés, competitor looks, anything off-limits]
+OUTPUT: [exact shape: e.g., 5 directions, each with one-line concept, layout in words, one risk]
+Don't pick a winner — that's my job. Ask up to 3 clarifying questions first if anything is unclear.</div>
+
+  <div class="prompt"><span class="prompt-label">The rubric builder</span>Here is my creative brief: [paste]. Build me a 6-line critique rubric. Each line: one pass/fail question I should ask of any draft, tied to a SPECIFIC constraint or goal in this brief. No generic design-school questions — if a line could apply to any project, replace it.</div>
+
+  <div class="prompt"><span class="prompt-label">The track adapter</span>Here is my base brief: [paste]. Rewrite it for a [motion designer / illustrator / UX designer / 3D artist] producing [specific deliverable]. Change only what must change: deliverable specs, constraints, references, critique criteria. Highlight what you changed and why.</div>
+
+  <div class="prompt"><span class="prompt-label">The prompt diagnostician</span>Here is a prompt I wrote and the output it produced: [paste both]. Diagnose the prompt like an art director reviewing a bad brief: which of these is missing or weak — role, context, constraints, references, output format, criteria, decision ownership? Rewrite the prompt fixing only the weakest two parts.</div>
+
+  <div class="prompt"><span class="prompt-label">The anti-sycophancy clause</span>Do not compliment me. Do not soften. If the work is generic, say where and why. I am asking for the review a tired, skeptical creative director would give at 6pm on a Friday.</div>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: Surgery → Brief → Rubric (70 min)</h2>
+  <p class="lede">Cold start friendly — Week 1 attendance not required.</p>
+
+  <h3>Part A — Prompt surgery, in teams (25 min)</h3>
+  <p>Teams of 2–3. Three genuinely bad prompts. For each: <strong>predict what's wrong before running</strong> → run → fix the <strong>two weakest organs only</strong> → re-run → save before/after.</p>
+  <div class="callout def"><span class="label">The patients</span>
+    <ul>
+      <li>"Design me a logo for my brand. Make it modern and clean."</li>
+      <li>"Write something for my portfolio about my project."</li>
+      <li>"Give me ideas for my animation."</li>
+    </ul>
+  </div>
+
+  <h3>Part B — Your AI-ready brief (25 min, solo)</h3>
+  <p>Full skeleton for a <strong>real current project</strong>. Run it; one surgery pass. Then mark ✏️ every line only <em>you</em> could have written — your audience knowledge, your taste, your constraints. That's the authorship evidence.</p>
+
+  <h3>Part C — Your track rubric (20 min)</h3>
+  <p>Six lines from your brief. Test on Part B's output: <strong>at least two lines must fail.</strong> If everything passes, sharpen the rubric, not your feelings.</p>
+
+  <div class="callout try"><span class="label">Zero-generation track</span><p>Part A as paper diagnosis (predict, don't run). Parts B and C are writing tasks — the actual deliverable — with the model as optional critic only. Equal credit.</p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">This week's four</span>
+    <ol>
+      <li>Whose <strong>taste</strong> is in the brief? If the model wrote your references and you kept them unread — whose direction is this?</li>
+      <li>Are your references <strong>qualities</strong>, or a living artist's name wearing a trench coat?</li>
+      <li>If this brief produces portfolio work, your disclosure note starts now: "Brief and direction mine; AI used for [x]."</li>
+      <li>Briefing with a classmate's project or client-confidential material? <strong>Permission first.</strong></li>
+    </ol>
+  </div>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>Output ignores a constraint</td><td>Repeat it at the END of the prompt; ask it to "list my constraints back before answering"</td></tr>
+    <tr><td>Everything comes back as bullet lists</td><td>Specify format: "flowing prose, 120 words, no lists"</td></tr>
+    <tr><td>It agrees with everything</td><td>Sycophancy — append the anti-sycophancy clause; give criteria with teeth</td></tr>
+    <tr><td>Endless clarifying questions</td><td>Cap it: "ask up to 3 questions, then proceed with stated assumptions"</td></tr>
+    <tr><td>Five outputs, all weirdly similar</td><td>Context anchoring — fresh chats for genuinely different directions</td></tr>
+    <tr><td>My rewrite made it worse</td><td>Too many organs at once. Revert, change one part, compare</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+
+  <div class="video-embed">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/ysPbXH0LpIE" title="Prompting 101 — Anthropic" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <p class="video-note"><b>Why this video:</b> Anthropic's own applied team walking through real prompt anatomy — watch for how much of it is simply context, constraints, and examples. Official source, zero hype.</p>
+  </div>
+
+  <ul class="resources">
+    <li><span class="tag video">Video</span><span class="tag embedded">Embedded</span><a class="r-title" href="https://www.youtube.com/watch?v=ysPbXH0LpIE">Prompting 101 — Anthropic (Code w/ Claude)</a><span class="r-why">Embedded above. The official version of everything this page teaches.</span></li>
+    <li><span class="tag video">Video</span><span class="tag verify">Verify before teaching</span><a class="r-title" href="https://www.youtube.com/watch?v=T9aRN5JkmL8">AI prompt engineering: A deep dive — Anthropic</a><span class="r-why">Hour-long roundtable for students who want depth.</span></li>
+    <li><span class="tag docs">Tutorial</span><span class="tag linked">Linked</span><a class="r-title" href="https://github.com/anthropics/prompt-eng-interactive-tutorial">Anthropic's Interactive Prompt Engineering Tutorial</a><span class="r-why">Free, hands-on, 9 chapters. Techniques transfer to every chat tool.</span></li>
+    <li><span class="tag article">Article</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.ibm.com/think/prompt-engineering">The 2026 Guide to Prompt Engineering — IBM</a><span class="r-why">Sober corporate reference — proof that prompting is documentation skill, not wizardry.</span></li>
+    <li><span class="tag docs">Docs</span><span class="tag linked">Linked</span><a class="r-title" href="https://platform.openai.com/docs/guides/prompt-engineering">OpenAI prompting guide</a><span class="r-why">Compare with Anthropic's and notice they agree: context, constraints, examples.</span></li>
+    <li><span class="tag article">Article</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.thefutur.com/content/write-web-design-brief-keep-on-track">Write a Design Brief That Keeps Projects on Track — The Futur</a><span class="r-why">Brief discipline from the client-services world: goal in one sentence, parameters neither stifling nor wide open. Same anatomy, aimed at humans.</span></li>
+    <li><span class="tag video">Video</span><span class="tag verify">Verify before teaching</span><a class="r-title" href="https://www.thefutur.com/content/live-design-critique-chris-do">Live Design Critique with Chris Do — The Futur</a><span class="r-why">A human creative director running a critique loop — then notice this page's rubric prompts are the same moves.</span></li>
+  </ul>
+
+  <h3>Optional extension</h3>
+  <ul>
+    <li>Set up your tool's custom instructions / Project system prompt: role line, track, standing standards.</li>
+    <li>Anthropic's interactive tutorial, chapters 1–3.</li>
+    <li>Hard mode: write the <em>worst possible brief that still looks professional</em>; trade with a neighbour and diagnose each other's sabotage.</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-03.html">Research, Moodboards, and Concept Development Without Copying →</a></p>
+</section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 01 — AI Without the Ick · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-01-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 01 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">All tracks · 4 hours · drop-in friendly</p>
+  <h1>AI Without the Ick: Literacy, Integrity, and Creative Control</h1>
+  <p class="promise">You leave today knowing what AI actually is, where it reliably fails, and with your own first-draft rules for using it without losing your voice.</p>
+  <div class="resource-row">
+    <a href="./week-01-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#words">Glossary</a>
+  <a href="#demo">Demo</a>
+  <a href="#workflow">Workflows</a>
+  <a href="#recipes">Prompt Recipes</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> an AI Boundary Map + your Personal AI Use Manifesto v1 (8–12 bullets).</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Concepts (50 min)</strong><p>What LLMs and image models actually do; the four reliable failure modes.</p></article>
+    <article><strong>2 · Objections + framework (20 min)</strong><p>Consent, copyright, labor, slop, disclosure — taken seriously. Then: friction vs. meaning.</p></article>
+    <article><strong>3 · Demo (30 min)</strong><p>One task, three ways: weak prompt → creative brief → critique loop.</p></article>
+    <article><strong>4 · Lab + share (110 min)</strong><p>Boundary Map → two-tool comparison → Manifesto v1 → critique.</p></article>
+  </div>
+  <div class="callout work">
+    <span class="label">Why this matters in real work</span>
+    <p>AI is already inside studios, agencies, and client expectations. You don't have to like it — but there's a difference between <strong>refusing from knowledge</strong> and refusing from fear. This course builds the knowledge; what you do with it is your artistic decision.</p>
+  </div>
+</section>
+
+<section class="b" id="concepts">
+  <h2><span class="bnum">02</span>Key Concepts</h2>
+
+  <h3>1 · An LLM is a prediction machine, not a knowledge machine</h3>
+  <p>The model inside ChatGPT/Claude does one job: predict what plausibly comes next, one token at a time. That produces useful writing, critique, and code — but it optimizes for <strong>plausible</strong>, not <strong>true</strong>, and sounds equally confident either way.</p>
+  <div class="callout work"><span class="label">In real work</span><p>Treat it like a brilliant, fast, overconfident intern: great at drafts, options, structure. Never the final authority on facts, sources, or specs.</p></div>
+
+  <div class="video-embed">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/wjZofJX0v4M" title="But what is a GPT? — 3Blue1Brown" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <p class="video-note"><b>Why this video:</b> the clearest visual explanation of what's inside an LLM. Watch at least the first 3½ minutes — the "predict, sample, repeat" loop explains every weird AI behaviour you'll ever meet.</p>
+  </div>
+
+  <h3>2 · Image models don't collage — they synthesize (and that cuts both ways)</h3>
+  <p>Diffusion models turn noise into images, steered by your words. They don't store or paste anyone's image — <em>and</em> they were trained on millions of artists' works, mostly scraped without consent. Both facts are true. The mechanism being non-copying doesn't settle the consent question.</p>
+  <div class="callout warn"><span class="label">Watch out</span><p>The output is statistically <strong>average</strong> by default. "Make it cyberpunk" returns the mean of every cyberpunk image online. Specific direction is the only escape from average.</p></div>
+
+  <div class="video-embed">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/SVcsDDABEkM" title="AI art, explained — Vox" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <p class="video-note"><b>Why this video:</b> how image generators went from research toy to artist controversy — the diffusion animation at 5:30 is the part to watch. Made in 2022: the tools are dated, the questions aren't.</p>
+  </div>
+
+  <h3>3 · The four reliable failure modes</h3>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Failure</th><th>Looks like</th><th>Your counter-move</th></tr>
+    <tr><td><strong>Hallucination</strong></td><td>Invented facts, fake sources, artists who don't exist</td><td>Verify every name, date, quote, citation</td></tr>
+    <tr><td><strong>Genericness</strong></td><td>Competent, soulless, like everything else</td><td>Constraints, references, your taste</td></tr>
+    <tr><td><strong>Bias</strong></td><td>Default faces, default beauty, default art history</td><td>Notice the defaults; direct against them</td></tr>
+    <tr><td><strong>Amnesia</strong></td><td>Forgets your brief mid-chat (context window full)</td><td>Restate constraints; fresh chats</td></tr>
+  </table>
+  </div>
+
+  <h3>4 · The artist's objections — taken seriously</h3>
+  <ul>
+    <li><strong>Consent:</strong> training data was largely scraped without permission. True. Tools differ (Firefly trains on licensed content) — tool choice is an ethical act.</li>
+    <li><strong>Copyright:</strong> purely AI-generated output generally can't be copyrighted — <em>human authorship is the legal test</em>. Your judgment isn't just ethics; it's ownership.</li>
+    <li><strong>Labor:</strong> some tasks are getting automated. The defensible ground: taste, judgment, accountability, relationships — this course's syllabus.</li>
+    <li><strong>Slop:</strong> generic is now free, so distinctive human work gains value.</li>
+    <li><strong>Disclosure:</strong> the EU is making synthetic-media transparency law. Honesty is becoming a hard skill.</li>
+  </ul>
+
+  <h3>5 · The one rule</h3>
+  <div class="callout ethics">
+    <span class="label">The course in one line</span>
+    <p><strong>Use AI for friction. Keep meaning human.</strong> Friction = the parts that aren't your art (summaries, options, checklists, file names). Meaning = concept, taste, selection, ethics, final craft, your name on it. Where the line sits is yours to draw — that's today's lab.</p>
+  </div>
+</section>
+
+<section class="b" id="words">
+  <h2><span class="bnum">03</span>This Week's Words</h2>
+  <div class="glossary">
+    <div class="term"><b>LLM</b>Text-prediction model behind ChatGPT/Claude. Plausibility machine, not truth machine.</div>
+    <div class="term"><b>Token</b>The word-chunk unit models read and write. Limits and pricing count in these.</div>
+    <div class="term"><b>Context window</b>The model's working memory. Outgrow it and it forgets your brief.</div>
+    <div class="term"><b>Hallucination</b>Confident invention of facts, sources, or artists. Verify before trusting.</div>
+    <div class="term"><b>Multimodal model</b>Handles images/audio too — why you can screenshot work and ask for critique.</div>
+    <div class="term"><b>Diffusion model</b>Image/video generator: noise → image, steered by your prompt.</div>
+    <div class="term"><b>Training data</b>What the model learned from. The ethical centre of the artist debate.</div>
+    <div class="term"><b>Prompt</b>Everything you give the model. Output ceiling = brief quality.</div>
+    <div class="term"><b>Model bias</b>Defaults inherited from data. Counter with specific direction.</div>
+    <div class="term"><b>Slop</b>Low-effort AI content at volume. What your work must visibly not be.</div>
+    <div class="term"><b>Synthetic media</b>Any AI-generated image/video/audio. EU labelling law is phasing in.</div>
+    <div class="term"><b>Disclosure</b>Saying specifically what AI did. Specific beats vague, always.</div>
+  </div>
+  <p class="small"><a href="../GLOSSARY.md">Full course glossary →</a></p>
+</section>
+
+<section class="b" id="demo">
+  <h2><span class="bnum">04</span>Demo: One Task, Three Ways</h2>
+  <div class="callout demo">
+    <span class="label">I made this, so can you</span>
+    <p>The instructor runs the same task three ways. Watch what changes — it isn't the model.</p>
+  </div>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-01/comparison-board.html">comparison-board.html</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+  <ol class="steps">
+    <li><strong>Weak prompt.</strong> <em>"Make a poster concept for an art school degree show."</em> → fast, confident, generic. Could be any college, anywhere.</li>
+    <li><strong>Creative brief.</strong> Same ask + audience, tone, constraints (2-colour riso, typography-led), references, and the line that matters: <em>"Don't pick a winner — that's my job."</em> → five usable directions with risks.</li>
+    <li><strong>Critique loop.</strong> <em>"Direction 3 is weakest. Critique it against my brief, then give two sharper variants."</em> → the model attacks its own genericness, steered by human taste.</li>
+  </ol>
+  <div class="callout try"><span class="label">What to notice</span><p>The human supplied audience, constraints, taste, and the final call. The model supplied speed and volume. <strong>That division of labor is the whole course.</strong> Adapt it: swap in any project, keep the structure.</p></div>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">05</span>Step-by-Step Workflows</h2>
+
+  <h3>Your first real AI conversation (the non-sucky version)</h3>
+  <ol class="steps">
+    <li><strong>Give it a role and a job.</strong> Not "hi." Who to be, what you're working on.</li>
+    <li><strong>Paste context.</strong> Project, audience, constraints. Nothing private, nothing that isn't yours to share.</li>
+    <li><strong>Ask for options, not answers.</strong> "Five directions with risks" beats "what should I do."</li>
+    <li><strong>Make it ask first.</strong> "Ask clarifying questions before answering" — instantly better output.</li>
+    <li><strong>React with specifics.</strong> "No. 2 is closest but the tone is too corporate" beats "make it better."</li>
+    <li><strong>Keep your decision.</strong> Choose, reject, refine yourself — and note why. That's process documentation.</li>
+  </ol>
+
+  <h3>The 60-second sanity check (before any AI use)</h3>
+  <ul class="check">
+    <li>Is this task <strong>friction</strong> or <strong>meaning</strong>? (Meaning → don't outsource.)</li>
+    <li>Would I be embarrassed if the raw output were shown as mine?</li>
+    <li>Does anything need <strong>verification</strong> before reuse?</li>
+    <li>Would an honest viewer want to know AI was involved?</li>
+    <li>Whose material am I uploading — and is it mine to upload?</li>
+  </ul>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">06</span>Prompt Recipes</h2>
+  <p class="small muted-text">Copy, adapt, reuse. The copy button grabs the whole recipe.</p>
+
+  <div class="prompt"><span class="prompt-label">The practical creative director</span>I am an NCAD student working in [your track]. I want help with this project: [describe project in 2–3 sentences, with audience and constraints]. Act as a practical creative director, not a replacement artist. Ask clarifying questions first if needed. Help me create options, critique them against my goals, and identify what I should make or revise myself. Don't pick winners — that's my job.</div>
+
+  <div class="prompt"><span class="prompt-label">The critique loop</span>Here is my [brief/draft/image]. Critique it against these criteria: [paste 3–5 criteria from your brief]. Be specific and unsentimental. For each weakness: name it, explain why it matters for my audience, and suggest one concrete revision. Do not rewrite the whole thing.</div>
+
+  <div class="prompt"><span class="prompt-label">The verification pass</span>List every factual claim you just made (names, dates, sources, statistics, artists, tools). For each one, tell me how confident you are and how I could verify it independently. Flag anything you may have invented.</div>
+
+  <div class="prompt"><span class="prompt-label">The generic detector</span>Read this back and tell me: which parts could appear in any art student's work, and which parts could only have come from my specific project? Be brutal about the generic parts.</div>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: Boundary Map + Manifesto (70 min)</h2>
+  <p class="lede">Cold start friendly — this lab needs nothing from before today.</p>
+
+  <h3>Part A — AI Boundary Map (20 min, paper first)</h3>
+  <p>Three columns; sort your <em>actual</em> creative tasks. Minimum 5 per column. "Ideation" is not a task — "finding type references" is.</p>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Green — AI freely</th><th>Yellow — AI with care</th><th>Red — human only</th></tr>
+    <tr><td>Friction; no authorship at stake</td><td>Touches creative territory; needs control + maybe disclosure</td><td>Where your voice lives</td></tr>
+  </table>
+  </div>
+
+  <h3>Part B — Same brief, two tools (30 min, pairs welcome)</h3>
+  <ol class="steps">
+    <li>Write a 5-line brief for a real project (Creative Director recipe above).</li>
+    <li>Run it in ChatGPT <strong>and</strong> Claude — one account each per pair is plenty.</li>
+    <li>Compare: where do they differ? What did <em>both</em> get generic?</li>
+    <li>Run the Critique Loop on the better one.</li>
+    <li>Write down <strong>three places the human had to intervene</strong> — they feed your manifesto.</li>
+  </ol>
+  <div class="callout try"><span class="label">Zero-generation track</span><p>Do Part B entirely as critique: paste a <em>past project description</em> into both tools and compare their critiques. Same lesson, no generation, equal credit.</p></div>
+
+  <h3>Part C — Personal AI Use Manifesto v1 (20 min)</h3>
+  <p>8–12 bullets defining ethical, useful AI use for <em>your</em> practice. Specific enough to act on:</p>
+  <ul>
+    <li>✗ Weak: "I'll use AI responsibly."</li>
+    <li>✓ Strong: "AI can generate layout options, but the final composition is always drawn by me — and I keep the rejected options as process evidence."</li>
+  </ul>
+  <div class="callout warn"><span class="label">Keep it findable</span><p>This is v1. You'll rewrite it in Week 15, and the distance between versions is what the course measures. Photograph it now.</p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">The weekly four — same every week</span>
+    <ol>
+      <li>What part of this work requires <strong>your taste</strong>?</li>
+      <li>What can AI <strong>safely accelerate</strong>?</li>
+      <li>What must be <strong>verified</strong> before you trust it?</li>
+      <li>What should be <strong>disclosed</strong> if this becomes portfolio or client work?</li>
+    </ol>
+  </div>
+  <p>This week's special case: your manifesto itself. If AI helped you draft it — did the bullets stay <em>yours</em>? If you can't tell, that's worth a bullet of its own. Full agreement: <a href="../STUDENT_AI_INTEGRITY_PACT.md">Student AI Integrity Pact</a>.</p>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>Free tier ran out mid-lab</td><td>Pair with a neighbour, or switch to the zero-generation track — it's half the lesson anyway</td></tr>
+    <tr><td>Output feels generic</td><td>It is. Add constraints, audience, references, and an "avoid" list. Generic in = generic out</td></tr>
+    <tr><td>A "fact" smells wrong</td><td>It probably is. Run the Verification Pass recipe; check anything you'd repeat aloud</td></tr>
+    <tr><td>It forgot my brief mid-chat</td><td>Context window full. Fresh chat, re-paste the brief (keep briefs in a doc)</td></tr>
+    <tr><td>I feel gross using this</td><td>Legitimate. Stay in the room: take the critique/planning track and put the discomfort into your manifesto. Informed refusal is a course outcome, not a failure</td></tr>
+    <tr><td>It refused a harmless request</td><td>Rephrase with context about your legitimate creative purpose — tools over-refuse art tasks sometimes</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+  <ul class="resources">
+    <li><span class="tag video">Video</span><span class="tag embedded">Embedded</span><a class="r-title" href="https://www.youtube.com/watch?v=wjZofJX0v4M">But what is a GPT? — 3Blue1Brown</a><span class="r-why">The best visual explanation of what's inside an LLM — embedded above in Concepts. First 10 minutes minimum.</span></li>
+    <li><span class="tag video">Video</span><span class="tag embedded">Embedded</span><a class="r-title" href="https://www.youtube.com/watch?v=SVcsDDABEkM">AI art, explained — Vox</a><span class="r-why">Image generation's history and the artist-ethics framing; diffusion animation at 5:30. From 2022 — tools dated, questions current.</span></li>
+    <li><span class="tag article">Article</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.3blue1brown.com/lessons/gpt/">Transformers, visual lesson — 3blue1brown.com</a><span class="r-why">The same explanation as the video, readable at your own pace.</span></li>
+    <li><span class="tag video">Video</span><span class="tag verify">Verify before teaching</span><a class="r-title" href="https://www.youtube.com/watch?v=zjkBMFhNj_g">Intro to Large Language Models — Andrej Karpathy</a><span class="r-why">A calm one-hour deep dive from a leading researcher, for students who want the full picture.</span></li>
+    <li><span class="tag docs">Official</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.copyright.gov/ai/">Copyright and AI — US Copyright Office</a><span class="r-why">Classroom takeaway: purely AI-generated work generally can't be copyrighted — human authorship is the test, which is why your judgment legally matters.</span></li>
+    <li><span class="tag docs">Official</span><span class="tag linked">Linked</span><a class="r-title" href="https://artificialintelligenceact.eu/">EU AI Act explorer</a><span class="r-why">Plain-language guide to the law phasing in around you: synthetic-media transparency is becoming a legal requirement, not a courtesy.</span></li>
+    <li><span class="tag docs">Tool</span><span class="tag linked">Linked</span><a class="r-title" href="https://haveibeentrained.com/">Have I Been Trained — Spawning</a><span class="r-why">Search whether artwork appears in common training datasets and register opt-outs. Makes the training-data debate concrete in 90 seconds.</span></li>
+    <li><span class="tag article">Article</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.oneusefulthing.org/">One Useful Thing — Ethan Mollick</a><span class="r-why">Hype-free ongoing commentary; a good "stay current without doomscrolling" subscription.</span></li>
+  </ul>
+  <div class="callout warn"><span class="label">Goes stale</span><p>Tool names and free-tier limits change fast. Anything tool-specific here was accurate June 2026 — check <code>TOOLS_AND_ACCESS_JUNE_2026.md</code> for the current state.</p></div>
+
+  <h3>Optional extension (fast finishers)</h3>
+  <ul>
+    <li>Read the full <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>; mark one line you'd change and bring the edit next week.</li>
+    <li>Run your Part B brief through a third tool (Gemini free tier); add one comparison note.</li>
+    <li>Hard mode: write a 100-word <strong>refusal statement</strong> — one AI use you reject, with specific reasoning. Informed refusal stated well is rarer than enthusiasm.</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-02.html">Prompting Like an Art Director →</a></p>
+</section>
+
+</main>
+</body>
+</html>

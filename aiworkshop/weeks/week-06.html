@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 06 — Animation and Story · NCAD AI Workshop</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html">NCAD AI Workshop</a>
+  <nav class="topbar-links">
+    <a href="./week-06-slides.html">Slides</a>
+    <a href="../GLOSSARY.md">Glossary</a>
+    <a href="../STUDENT_AI_INTEGRITY_PACT.md">Integrity Pact</a>
+  </nav>
+  <span>Week 06 / 15</span>
+</header>
+
+<main class="week-page">
+
+<section class="week-hero">
+  <p class="eyebrow">Animation · illustration · motion · 3D — 4 hours, drop-in friendly</p>
+  <h1>Animation and Story: Characters, Worlds, Continuity, and Previsualization</h1>
+  <p class="promise">Use AI for story development, character briefs, beat boards, and continuity planning — while keeping acting, timing, and authorship exactly where they belong.</p>
+  <div class="resource-row">
+    <a href="./week-06-slides.html">▶ HTML Slides</a>
+  </div>
+</section>
+
+<nav class="page-nav">
+  <a href="#overview">Overview</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#words">Glossary</a>
+  <a href="#demo">Demo</a>
+  <a href="#workflow">Workflows</a>
+  <a href="#recipes">Prompt Recipes</a>
+  <a href="#lab">Lab</a>
+  <a href="#integrity">Integrity</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<section class="b" id="overview">
+  <h2><span class="bnum">01</span>This Week at a Glance</h2>
+  <p class="lede"><strong>You will make:</strong> a one-scene animation packet — character brief + model sheet (or thumbnails) + beat list + continuity bible entry.</p>
+  <div class="schedule" style="margin:16px 0 6px">
+    <article><strong>1 · Concepts (40 min)</strong><p>Story interrogation; character briefs as design thinking; the continuity problem; beats and previs.</p></article>
+    <article><strong>2 · What stays human (10 min)</strong><p>A master draws — and the appeal argument, stated precisely.</p></article>
+    <article><strong>3 · Demo (40 min)</strong><p>The lighthouse keeper: brief → sheet → Continuity Cop → bible.</p></article>
+    <article><strong>4 · Lab + share (110 min)</strong><p>The full chain on your character; drift trophies.</p></article>
+  </div>
+  <div class="callout work">
+    <span class="label">This week's twist</span>
+    <p>Generative tools have a <strong>continuity problem</strong> — characters drift between runs. Which means model sheets and continuity bibles, the oldest disciplines in animation, just became the <strong>QA layer of the newest pipelines</strong>. Your traditional training got more valuable, not less.</p>
+  </div>
+</section>
+
+<section class="b" id="concepts">
+  <h2><span class="bnum">02</span>Key Concepts</h2>
+
+  <h3>1 · AI as story interrogator, not story author</h3>
+  <p>The weak move: "write me a story about X" → generic three-act sludge. The strong move: <strong>make it ask you questions.</strong> Its questions surface holes you didn't know you had; your answers are the authorship. AI is also genuinely useful for structure audits ("where does my second act sag?") and option generation ("five ways this scene could end").</p>
+  <div class="callout warn"><span class="label">Watch out — the yes-and machine</span><p>It will enthusiastically extend your worst idea and sand your weirdest one into screenplay formula. <strong>Keep the weird. The weird is the value</strong> — it's the only thing the average can't contain.</p></div>
+
+  <h3>2 · Character briefs: design thinking in document form</h3>
+  <ul class="check">
+    <li><strong>Silhouette-first</strong> — recognizable as a black shape?</li>
+    <li><strong>5 traits readable in pose</strong> — not dialogue.</li>
+    <li><strong>Costume with 3 signature details</strong> — never change.</li>
+    <li><strong>The prop</strong> they're never without.</li>
+    <li><strong>Avoid list</strong> — the clichés circling this character type.</li>
+  </ul>
+  <p>With AI, this brief becomes the <strong>source of truth every generation run is checked against.</strong></p>
+
+  <h3>3 · The continuity problem</h3>
+  <p>Generate the same character four times: buttons migrate, proportions wander, the prop vanishes. Not a bug being patched soon — a structural weakness. Animation solved this 90 years ago:</p>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Artifact</th><th>Job in an AI pipeline</th></tr>
+    <tr><td><strong>Model sheet</strong></td><td>Defines what's true</td></tr>
+    <tr><td><strong>Continuity bible</strong></td><td>What must be verified, per shot / per generation</td></tr>
+    <tr><td><strong>The Cop pass</strong></td><td>Hunting drift before the audience does — today's lab</td></tr>
+  </table>
+  </div>
+  <div class="callout work"><span class="label">In real work</span><p>Studios experimenting with generative pipelines hire people who can <em>catch and fix</em> drift. That's a trained eye — yours, after today.</p></div>
+
+  <h3>4 · Beats and previs: structure cheap, soul expensive</h3>
+  <p><strong>Beat</strong> = one unit of story change. AI drafts beat structures; you choose what the scene is <em>about</em>. Beat boards prize staging clarity over rendering. Animatics (Week 5 timing audit applies) are the cheapest place to find the 4 extra seconds.</p>
+
+  <h3>5 · What stays human, said precisely</h3>
+  <p>Acting choices. Timing and spacing. Weight. <strong>Appeal.</strong> The 2% of a pose that makes it <em>that character</em>. Watch the video below and notice where the decisions happen — in the hand, in contact with the work. Not sentiment: nothing else takes direction at that resolution.</p>
+
+  <div class="video-embed">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/GSbkn6mCfXE" title="Glen Keane — Step into the Page" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <p class="video-note"><b>Why this video:</b> the animator of Ariel and the Beast drawing at life size. Watch where the decisions happen — it's a working description of where animation quality lives, and the precise thing this course never points AI at.</p>
+  </div>
+</section>
+
+<section class="b" id="words">
+  <h2><span class="bnum">03</span>This Week's Words</h2>
+  <div class="glossary">
+    <div class="term"><b>Model sheet</b>Reference views + details keeping a character consistent — across artists and generation runs.</div>
+    <div class="term"><b>Turnaround</b>Front/¾/side/back views. The consistency contract.</div>
+    <div class="term"><b>Continuity</b>Everything staying true between shots. Generative imagery's weak spot.</div>
+    <div class="term"><b>Continuity bible</b>The per-shot verification checklist. Today's deliverable includes one.</div>
+    <div class="term"><b>Beat</b>A single unit of story change.</div>
+    <div class="term"><b>Beat board</b>One image per beat; staging clarity over polish.</div>
+    <div class="term"><b>Animatic</b>Beats cut to time with scratch audio.</div>
+    <div class="term"><b>Silhouette</b>The character as pure shape. If it doesn't read, nothing else matters.</div>
+    <div class="term"><b>Appeal</b>The designed charisma of a character — the principle AI can't fake.</div>
+    <div class="term"><b>Previs</b>Rough visualization for staging, camera, scale decisions.</div>
+  </div>
+  <p class="small"><a href="../GLOSSARY.md">Full course glossary →</a></p>
+</section>
+
+<section class="b" id="demo">
+  <h2><span class="bnum">04</span>Demo: The Lighthouse Keeper</h2>
+  <div class="callout demo">
+    <span class="label">I made this, so can you</span>
+    <p>A character developed by interview, generated as a model sheet, audited for drift, and protected by a continuity bible.</p>
+  </div>
+  <div class="callout demo demo-artifact-link">
+    <span class="label">Prepared demo artifact</span>
+    <p>Instructor backup / finished example: <a href="../demos/week-06/continuity-packet.html">continuity-packet.html</a>. Use it if the live tool run fails, or to reveal the finished structure after critique.</p>
+  </div>
+  <ol class="steps">
+    <li><strong>Brief by interview.</strong> A retired lighthouse keeper who secretly curates a museum of things the sea returned. The model asks the instructor 3 questions — and the answers visibly change her. Authorship on display.</li>
+    <li><strong>Model sheet prompt.</strong> Front/¾/side, neutral pose, flat colour — plus the 6 details that must stay identical.</li>
+    <li><strong>Continuity Cop, live.</strong> Four views side by side; the room hunts the drift before the instructor points. Buttons change, the prop vanishes, proportions wander.</li>
+    <li><strong>The bible.</strong> The errors become a per-shot checklist — a real industry artifact that AI just made load-bearing again.</li>
+  </ol>
+  <div class="callout try"><span class="label">What to notice</span><p>The interview did the creative work; generation was fast and unreliable; the drift was foreseeable and catchable. Adapt the chain — brief → sheet → cop → bible — to any character, creature, or mascot.</p></div>
+</section>
+
+<section class="b" id="workflow">
+  <h2><span class="bnum">05</span>Step-by-Step Workflows</h2>
+
+  <h3>Character development chain</h3>
+  <ol class="steps">
+    <li><strong>Seed</strong> (2 lines): who they are + the tension that makes them interesting.</li>
+    <li><strong>Interview:</strong> the model asks you 5 questions, one at a time. Your answers are the design.</li>
+    <li><strong>Brief:</strong> silhouette notes, traits-in-pose, signature details, the prop, the avoid list.</li>
+    <li><strong>Sheet:</strong> generate turnarounds (or draw thumbnails) — checked against the brief.</li>
+    <li><strong>Cop pass:</strong> hunt drift; annotate every error.</li>
+    <li><strong>Bible entry:</strong> errors + signature details → the per-shot checklist.</li>
+  </ol>
+
+  <h3>Beat board in 20 minutes</h3>
+  <ol class="steps">
+    <li>One sentence: what does the character believe at the start vs. the end?</li>
+    <li>Ask for 5 beat structures; pick 3–5 beats. <strong>You choose what the scene is about.</strong></li>
+    <li>One image per beat — generated rough, thumbnail, or written frame brief.</li>
+    <li>Read left to right: does the <em>silhouette story</em> work with no words?</li>
+  </ol>
+</section>
+
+<section class="b" id="recipes">
+  <h2><span class="bnum">06</span>Prompt Recipes</h2>
+
+  <div class="prompt"><span class="prompt-label">The character interviewer</span>Act as a story development partner. I'm developing a character: [2-line seed]. Don't write the character for me. Interview me — one question at a time, max 6 questions — hunting for: what I haven't decided yet, contradictions worth keeping, and the specific details that would make this character only mine. Then assemble my answers into a character brief: silhouette-first design notes, 5 personality traits readable in POSE (not dialogue), costume with 3 signature details, one prop they're never without, and what to avoid (the clichés circling this character type).</div>
+
+  <div class="prompt"><span class="prompt-label">The model sheet prompt builder</span>Turn this character brief into an image-generation prompt for a model sheet: front, three-quarter, and side views, neutral standing pose, flat colour, consistent proportions, white background, space for annotations. Then list the 6 details that MUST stay identical across all views — these are my continuity checks.</div>
+
+  <div class="prompt"><span class="prompt-label">The continuity cop</span>I generated these views from the model sheet prompt. Compare them against the brief and the 6 must-stay-identical details. List every continuity drift you can detect or suspect: costume, proportions, props, colours. Rank by how badly each would break a scene.</div>
+
+  <div class="prompt"><span class="prompt-label">The continuity bible writer</span>The generated views drifted: [list the errors found]. Write the continuity bible entry for this character: a per-shot checklist an animator — or a future generation run — must verify. Group by: silhouette/proportions, costume, props, colour. Keep it under 12 lines.</div>
+
+  <div class="prompt"><span class="prompt-label">The beat optioner</span>My scene: [character] starts believing [X] and ends believing [Y]. Setting: [where]. Give me 5 different beat structures (3–5 beats each) for this change. For each: one line per beat + what shifts emotionally. Make them genuinely different in approach, not rephrasings. Don't pick.</div>
+
+  <div class="prompt"><span class="prompt-label">The story sag audit</span>Here is my beat list / synopsis: [paste]. Audit it like a story editor: where does momentum sag, which beat is doing no work, what does the character want in each beat, and what's the one cut that would tighten it most? Do not rewrite it.</div>
+</section>
+
+<section class="b" id="lab">
+  <h2><span class="bnum">07</span>Lab: Continuity Cop (70 min)</h2>
+  <p class="lede">Cold start friendly. No character? Standing seed: <em>a Dublin bus inspector who collects forgotten umbrellas and gives them names.</em></p>
+  <ol class="steps">
+    <li><strong>Brief by interview (20 min):</strong> answer every question yourself, specifically. The brief is assessed on its specificity.</li>
+    <li><strong>Sheet (15 min):</strong> generate turnarounds (Week 4 discipline) — or draw 3 thumbnail poses — or take the prepared drifting set.</li>
+    <li><strong>Cop pass (15 min):</strong> hunt drift; minimum 3 errors annotated. Then trade with a neighbour and find one error in theirs — fresh eyes are part of the method.</li>
+    <li><strong>Bible + packet (20 min):</strong> bible entry under 12 lines; packet = brief + sheet + 3–5 beats + bible.</li>
+  </ol>
+  <div class="callout try"><span class="label">Zero-generation track</span><p>Prepared drifting set for the cop pass; brief, beats, and bible are text; the sheet becomes 3 hand-drawn thumbnails — which is, frankly, the superior version. Fully equal.</p></div>
+</section>
+
+<section class="b" id="integrity">
+  <h2><span class="bnum">08</span>Integrity Check</h2>
+  <div class="callout ethics">
+    <span class="label">This week's four</span>
+    <ol>
+      <li>Whose answers built the character — <strong>yours</strong>, or the model's suggestions accepted unexamined?</li>
+      <li>Original character test: yours — or a franchise design with the serial numbers filed off? Models drift toward famous designs; that's training data showing. Hunt it like drift.</li>
+      <li>Generated views in your portfolio → disclosure: "design and brief mine; views generated, then corrected."</li>
+      <li>Classmates' characters or likenesses: <strong>never without permission.</strong> Character design counts.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="b" id="trouble">
+  <h2><span class="bnum">09</span>Troubleshooting</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr><td>Character feels like a Pixar knockoff</td><td>Avoid-list needs teeth: name the franchise clichés explicitly — and check whether your seed was specific</td></tr>
+    <tr><td>Views won't stay consistent</td><td>They won't, fully — that's the point. Tighten the 6 details; reference the first image; the cop pass is part of the pipeline</td></tr>
+    <tr><td>Interview questions are shallow</td><td>"Ask harder questions — contradictions, secrets, what she'd never admit"</td></tr>
+    <tr><td>Beats all feel formula</td><td>Ask for structures that break the obvious pattern; steal <em>across</em> options — combination is yours</td></tr>
+    <tr><td>Model dialogue isn't your voice</td><td>Placeholder rhythm only. Rewrite every line that survives to the animatic</td></tr>
+    <tr><td>"It designed a better character than me"</td><td>It designed a more <em>average</em> character. Your weird detail is the appeal — protect it</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="b" id="resources">
+  <h2><span class="bnum">10</span>Resources</h2>
+  <ul class="resources">
+    <li><span class="tag video">Video</span><span class="tag embedded">Embedded</span><a class="r-title" href="https://www.youtube.com/watch?v=GSbkn6mCfXE">Glen Keane — Step into the Page</a><span class="r-why">Embedded above. The animator of Ariel and the Beast, drawing at life size — where animation quality actually lives.</span></li>
+    <li><span class="tag video">Video</span><span class="tag linked">Linked</span><a class="r-title" href="https://creatureartteacher.com/ai-animation-aaron-blaise-reacts/">AI Animation — Aaron Blaise Reacts</a><span class="r-why">A Disney veteran (Lion King, Beauty and the Beast) responding to AI animation experiments — measured, neither panic nor hype, with the Corridor Crew controversy in context.</span></li>
+    <li><span class="tag article">Article</span><span class="tag linked">Linked</span><a class="r-title" href="https://www.animationandvideo.com/2025/06/art-just-needs-to-be-yours-aaron-blaise.html">"Art Just Needs to be Yours" — Aaron Blaise on generative AI</a><span class="r-why">The lived-experience argument for hand-made animation, from someone with nothing to prove. Good crit fuel.</span></li>
+    <li><span class="tag article">Book</span><span class="tag linked">Linked</span><a class="r-title" href="https://en.wikipedia.org/wiki/The_Animator%27s_Survival_Kit">The Animator's Survival Kit — Richard Williams</a><span class="r-why">The craft canon. Nothing in it is automatable; everything in it is why your timing beats the machine's.</span></li>
+    <li><span class="tag docs">Course</span><span class="tag linked">Linked</span><a class="r-title" href="https://creatureartteacher.com/product/character-design-course-aaron-blaise/">Character Design Course — Aaron Blaise</a><span class="r-why">For going deep on the design craft this week's briefs depend on (paid; watch for sales).</span></li>
+    <li><span class="tag article">Article</span><span class="tag verify">Verify before teaching</span><span class="r-title">Model sheet / continuity practice articles (StudioBinder-class sites)</span><span class="r-why">Good industry walkthroughs of model-sheet practice exist; verify the current best one before class.</span></li>
+  </ul>
+
+  <h3>Optional extension</h3>
+  <ul>
+    <li>Run the full chain on a <strong>second</strong> character in the same world; write the <em>world</em> bible entry both obey.</li>
+    <li>Cut a 20–30s animatic from your beat board (Week 5 timings, phone scratch audio).</li>
+    <li>Hard mode: draw your character's turnaround by hand, then run the cop pass on your own drawings. Humans drift too — the checklist doesn't care who drew it.</li>
+  </ul>
+  <p><strong>Next week:</strong> <a href="./week-07.html">Graphic Design and Branding →</a> — systems, layouts, and why design judgment is the thing clients actually buy.</p>
+</section>
+
+</main>
+</body>
+</html>

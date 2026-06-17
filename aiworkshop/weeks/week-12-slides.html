@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../styles.css">
+<script src="../slides.js" defer></script>
+<title>Week 12 Slides — Agentic Workflows</title>
+</head>
+<body class="slides">
+
+<section class="slide s-title">
+  <p class="kicker">NCAD AI for Artists Workshop · Week 12</p>
+  <h1>Agentic Workflows</h1>
+  <p>Automating the Boring Parts Without Losing Control</p>
+  <div class="notes">Bring a COPY of a messy folder — say it twice. The demo is on a copy.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">60-second recap</p>
+  <h2>The deal</h2>
+  <p>AI for friction, humans for meaning.<br>Raw output is never finished work.<br>Verify before trusting. Disclose where it matters.<br>Skepticism welcome when specific.</p>
+  <div class="notes">Standing recap.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The shift</p>
+  <h2>Last week it wrote a file. This week it acts.</h2>
+  <p>An <strong>agent</strong> breaks a goal into steps, uses tools, reads and writes files, checks itself, continues.</p>
+  <p>An extremely fast intern with no judgment, no stake, total confidence.</p>
+  <div class="notes">"Used well: your evenings back. Used carelessly: it renames your only copy at 2am and feels great about it."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The week in one line</p>
+  <h1 style="font-size:clamp(24px,3.6vw,48px)">Automate friction, never judgment —<br>and put a human at every door that doesn't open backwards.</h1>
+  <div class="notes">Board: PLAN FIRST · CHECKPOINT · RAILS · CHANGELOG.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Deliverable</p>
+  <h2>You will leave with</h2>
+  <p><strong>An agent workflow spec</strong> — steps, tools, risks, checkpoints<br><strong>An Automation Boundary Map</strong> — automate / assist / human-only</p>
+  <div class="notes">Both are design documents. No agent software required to build them.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Today's map</p>
+  <h2>Today's map</h2>
+  <ol>
+    <li>Agents, tool use, checkpoints, rails — 40 min</li>
+    <li>The Automation Boundary Map — 15 min</li>
+    <li>Demo: an agent organizes a messy folder (supervised) — 35 min</li>
+    <li>Lab: your boundary map + workflow spec — 70 min</li>
+    <li>Share: find the missing checkpoint — 35 min</li>
+  </ol>
+  <div class="notes">Breaks protected.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1</p>
+  <h1>Agent vs chatbot vs workflow</h1>
+  <div class="notes">~0:10.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Three things, not one</p>
+  <h2>Sort them</h2>
+  <ul>
+    <li><strong>Chatbot</strong> — answers; you drive each turn; low risk</li>
+    <li><strong>Workflow</strong> — fixed steps you defined; you wrote the path</li>
+    <li><strong>Agent</strong> — picks its own steps; higher risk</li>
+  </ul>
+  <div class="notes">Most students conflate all three. This sorts them.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The reframe</p>
+  <h2>You don't need a robot.</h2>
+  <p>Most "agentic" creative work is a <strong>workflow</strong> — predictable, repeatable, safe — with one or two agentic steps.</p>
+  <h2 style="margin-top:8px">You need an assembly line with a human inspector.</h2>
+  <div class="notes">Anthropic's own engineers: prefer the simplest pattern that works.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, continued</p>
+  <h1>Tool use</h1>
+  <p>Where capability and danger both live</p>
+  <div class="notes">~0:22.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Every tool is a risk surface</p>
+  <h2>Smallest access that does the job</h2>
+  <p>An agent's power = tool use: read/write files, run code, search, call services.</p>
+  <div class="notes">"A folder-organizer needs to move files. It does not need the internet or the power to delete."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Why scope tightly</p>
+  <h2>Broad access is how</h2>
+  <p>"organize my folder"</p>
+  <h2>becomes "email my drafts to a client."</h2>
+  <div class="notes">Concrete, memorable, true. Scope is a safety decision.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, the thesis</p>
+  <h1>The checkpoint</h1>
+  <p>Where you stay the director</p>
+  <div class="notes">~0:30.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The pattern</p>
+  <h2>Plan first, act second</h2>
+  <p>Make the agent propose its plan —<br><strong>and STOP for approval before touching anything.</strong></p>
+  <div class="notes">Two words: plan first. The whole safety pattern compresses to this.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Non-negotiable</p>
+  <h1 style="font-size:clamp(26px,4vw,52px)">A checkpoint before every irreversible action.</h1>
+  <p>Sending · deleting · publishing · paying · overwriting.</p>
+  <div class="notes">"Irreversible + outward-facing = highest checkpoint category."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The whole difference</p>
+  <h2>Twenty seconds</h2>
+  <p>Reading a plan and killing one bad line is the entire difference between</p>
+  <h1 style="font-size:clamp(28px,4.4vw,56px)">delegating and abdicating.</h1>
+  <div class="notes">You'll demo exactly this. Reference it forward.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 1, the seatbelt</p>
+  <h1>Safety rails</h1>
+  <div class="notes">~0:38. Absolute, like Blender week.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Design these in, every time</p>
+  <h2>The four rails</h2>
+  <ol>
+    <li><strong>Never delete</strong> — move to <code>/_review</code></li>
+    <li><strong>Run on copies</strong> — your only copy is sacred</li>
+    <li><strong>Changelog everything</strong> — every action + every uncertainty</li>
+    <li><strong>Flag uncertainty</strong> — skip and report, don't guess</li>
+  </ol>
+  <div class="notes">"Not best practices. The seatbelt."</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Watch out</p>
+  <h2>It will invent a decision you never gave it</h2>
+  <p>A naming rule, an alt-text guess, a "this is probably the final."</p>
+  <p>The changelog and <code>/_review</code> <strong>catch</strong> those. So read the log.</p>
+  <div class="notes">Rails don't prevent improvisation; they make it recoverable and visible.</div>
+</section>
+
+<section class="slide s-section">
+  <p class="kicker">Part 2</p>
+  <h1>The Automation Boundary Map</h1>
+  <div class="notes">~1:00.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Sort everything three ways</p>
+  <h2>Three columns</h2>
+  <p><strong>Automate</strong> — friction, repeatable, reversible, taste-free<br><strong>Assist</strong> — AI helps, a human decides every time<br><strong>Human-only</strong> — your authorship, your relationships</p>
+  <div class="notes">All three columns should be full.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">The warning sign</p>
+  <h2>An empty "human-only" column</h2>
+  <h1 style="font-size:clamp(28px,4.4vw,56px)">is a warning sign.</h1>
+  <p>If nothing is sacred, something is about to be automated that shouldn't be.</p>
+  <div class="notes">Callback to Week 1's manifesto — this is its operational form.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Candidates</p>
+  <h2>Good agent tasks</h2>
+  <p>Structured · repetitive · reversible · verifiable.</p>
+  <p>Batch renaming · alt-text drafts · folder packaging · contact sheets · QA checklists · admin scaffolding</p>
+  <div class="notes">"Not all four? It wants assist, not automate."</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <p>Demo next: an agent on a COPY of a messy folder.</p>
+  <div class="notes">Confirm it's a copy. Recorded backup ready.</div>
+</section>
+
+<section class="slide s-section s-demo">
+  <p class="kicker">Demo</p>
+  <h1>An agent does production chores (supervised)</h1>
+  <div class="notes">~1:15. On the copy. Recorded run is the fallback.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo</span>
+  <p class="kicker">The mess</p>
+  <h2><code>final_v2_FINAL(3).png</code> · <code>untitled.psd</code> · <code>IMG_4421.jpg</code></h2>
+  <div class="notes">Everyone laughs in recognition. The laugh is buy-in.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 1</span>
+  <p class="kicker">Plan first</p>
+  <div class="prompt">Plan first, act second. Step 1: propose a folder structure and a naming convention — STOP and show me before touching anything.</div>
+  <div class="notes">When the plan appears, stop. Read it aloud.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 2</span>
+  <p class="kicker">The checkpoint (the thesis)</p>
+  <h2>I reject ONE element out loud</h2>
+  <p><em>"Client name goes first in the convention — fix that."</em> Approve the rest.</p>
+  <h2 style="margin-top:8px">That twenty seconds is the whole week.</h2>
+  <div class="notes">"I delegated. I didn't abdicate." Land it.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 3</span>
+  <p class="kicker">The run, with rails</p>
+  <h2>Rename (never delete) · ambiguous → /_review</h2>
+  <p>alt-text.md · QA-CHECKLIST.md · CHANGELOG.md</p>
+  <div class="notes">Narrate the rails as they fire.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Demo · move 4</span>
+  <p class="kicker">The audit</p>
+  <h2>Open CHANGELOG.md and /_review</h2>
+  <p><strong>What did it decide that I never told it?<br>Which of those hurts on a real client job?</strong></p>
+  <div class="notes">Alt text needs a human pass against the actual images — show it.</div>
+</section>
+
+<section class="slide s-demo">
+  <span class="flag">Planned failure</span>
+  <p class="kicker">Caught by the rails</p>
+  <h2>It misfiled an ambiguous file</h2>
+  <p><strong>The rails caught it. That's the point — we plan, log, and quarantine instead of trust.</strong></p>
+  <div class="notes">Celebrate the catch.</div>
+</section>
+
+<section class="slide s-section" style="background:var(--green)">
+  <p class="kicker">Break</p>
+  <h1>Break — 10 minutes</h1>
+  <p>Lab next: your map, your spec.</p>
+  <div class="notes">Standing chore options staged. Template linked.</div>
+</section>
+
+<section class="slide s-section s-lab">
+  <p class="kicker">Lab · 70 minutes</p>
+  <h1>Boundary Map + Workflow Spec</h1>
+  <p>Boundary map (15) → Pick + spec (30) → Critique swap (15) → Revise (10)</p>
+  <p class="small" style="opacity:.7">No agent software needed. The spec is the deliverable.</p>
+  <div class="notes">Parts + times on board.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 1</span>
+  <p class="kicker">15 min</p>
+  <h2>Boundary map</h2>
+  <p>10–15 real tasks → Automate / Assist / Human-only.</p>
+  <p><strong>Defend your "human-only" column to a neighbour.</strong></p>
+  <div class="notes">Empty human-only column → "Really? The concept? The client trust?"</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 2</span>
+  <p class="kicker">30 min</p>
+  <h2>Pick + spec</h2>
+  <p>One "automate" task → template completely: steps · smallest access per step · <strong>a checkpoint before every irreversible action</strong> · the four rails · a verification method.</p>
+  <p>✏️ each checkpoint with <em>what would make you reject.</em></p>
+  <div class="notes">The checkpoint-before-irreversible is the assessed element.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Lab · step 3</span>
+  <p class="kicker">15 min</p>
+  <h2>Critique swap</h2>
+  <p>Trade specs. Find in your partner's:<br><strong>the missing checkpoint</strong> and <strong>the over-broad access.</strong></p>
+  <p>Every first draft has at least one.</p>
+  <div class="notes">This peer-audit is the real teaching of the day.</div>
+</section>
+
+<section class="slide s-lab">
+  <span class="flag">Always available</span>
+  <p class="kicker">Alternative</p>
+  <h2>Zero-AI / paper track (fully equal)</h2>
+  <p>The boundary map and the spec are design documents.</p>
+  <p><strong>A workflow you can't write on paper, you can't trust to a machine.</strong></p>
+  <div class="notes">This week's lab is paper-native. Say so.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Share-out · 35 min</p>
+  <h2>Find the missing checkpoint</h2>
+  <p>Read the chore, the irreversible step, the checkpoint that guards it.</p>
+  <p>Room asks: <strong>"What happens if that checkpoint isn't there?"</strong></p>
+  <div class="notes">One "human-only" column read aloud — applaud the refusals.</div>
+</section>
+
+<section class="slide s-ethics">
+  <span class="flag">Every week</span>
+  <p class="kicker">Integrity check</p>
+  <h2>This week's four</h2>
+  <ol>
+    <li>A checkpoint before EVERY irreversible step?</li>
+    <li>Any step with broader access than the task needs?</li>
+    <li>Whose material does it touch — all permission-cleared?</li>
+    <li>Client deliverables: "organized by a supervised agent; all client-facing decisions human"</li>
+  </ol>
+  <div class="notes">Four beats.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Reflection</p>
+  <h2>Write 4 lines</h2>
+  <ul>
+    <li>The task you moved from "automate" to "assist" once you thought about reversibility</li>
+    <li>The checkpoint you originally forgot</li>
+    <li>One thing in "human-only" you'll never let an agent near, and why</li>
+    <li>Keep the spec — a supervised workflow is a strong capstone shape</li>
+  </ul>
+  <div class="notes">Two quiet minutes. Plant the Week 14 seed.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Next Wednesday</p>
+  <h2>Jobs, Portfolios, and Career Leverage</h2>
+  <p>Turning everything you've built into the materials that get you hired — in your voice, not generic sludge.</p>
+  <p class="small" style="opacity:.6">Bring a real project you'd put in a portfolio.</p>
+  <div class="notes">End on time; corridor questions after.</div>
+</section>
+
+<section class="slide">
+  <p class="kicker">Tonight, optional</p>
+  <h2>Go deeper</h2>
+  <ul>
+    <li>Anthropic — <em>Building Effective AI Agents</em> (this week's stance, from the source)</li>
+    <li>Anthropic — <em>Writing Tools for AI Agents</em> (scope and least-privilege)</li>
+    <li>The EU AI Act explorer — automated decisions are tightening</li>
+    <li>Design a second workflow for a collaborative chore</li>
+  </ul>
+  <div class="notes">Final slide stays up while people pack.</div>
+</section>
+
+<nav class="slide-nav">
+  <a href="./week-12.html">Week Page</a>
+  <a href="../index.html">Home</a>
+</nav>
+
+</body>
+</html>
