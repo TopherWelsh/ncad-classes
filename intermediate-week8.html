@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8: VFX Shot Planning + 3D Camera Tracking - Intermediate Motion Design - NCAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand"><img src="homepage/NCAD-lockup-orange-white.webp" alt="NCAD"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="capstone2.html">Capstone 2</a>
+            <a href="intermediate.html" class="active">Intermediate Motion</a>
+            <a href="capstone1.html">Capstone 1 (IS)</a>
+            <a href="intro-motion.html">Intro Motion (IS)</a>
+        </div>
+    </div>
+</nav>
+
+<div class="page">
+
+    <div class="hero">
+        <div class="label">Week 8 &bull; June 25, 2026</div>
+        <h1 class="gradient-blue">VFX Shot Planning + 3D Camera Tracking</h1>
+        <p>Plan, shoot, track, and composite digital objects into real-world video. This week is part field trip, part VFX lab, and part production workflow.</p>
+    </div>
+
+    <div class="resource-row">
+        <a href="https://discord.gg/HESQKd4Nzf" class="resource-btn discord">Discord</a>
+        <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" class="resource-btn drive">Student Resources Drive</a>
+        <a href="intermediate-week9.html" class="resource-btn template">Week 9 Production</a>
+    </div>
+
+    <div class="goal-box">
+        <h2>What We Are Building</h2>
+        <p>You will create <strong>three short VFX shots</strong> where artwork, text, 3D layers, or 3D models feel like they belong inside real-world footage. Each shot should be 5-10 seconds long and can be portrait or landscape.</p>
+    </div>
+
+    <div class="callout callout-info">
+        <span class="icon">&#127909;</span>
+        <strong class="label">Today's Two-Part Lesson</strong>
+        <p><strong>Part 1:</strong> how to plan and shoot footage that can actually be tracked. <strong>Part 2:</strong> how to bring that footage into After Effects, use the 3D Camera Tracker, create a matching camera/null, and composite digital objects into the shot.</p>
+    </div>
+
+    <h2 class="section-header">The Assignment</h2>
+    <div class="grid-3">
+        <div class="card card-accent">
+            <h3>3 Finished VFX Shots</h3>
+            <ul>
+                <li><strong>Quantity:</strong> 3 separate shots.</li>
+                <li><strong>Length:</strong> 5-10 seconds each.</li>
+                <li><strong>Format:</strong> Portrait or landscape.</li>
+                <li><strong>Goal:</strong> Composite a digital element into real footage so it feels grounded in the scene.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-yellow">
+            <h3>What Can Be Composited?</h3>
+            <ul>
+                <li>3D text attached to a wall, floor, sign, desk, or sidewalk.</li>
+                <li>2D artwork placed into a real scene as signage, stickers, posters, screens, or objects.</li>
+                <li>3D model/object integrated into footage with lighting, shadow, and color matching.</li>
+                <li>Motion graphic elements that feel physically connected to camera movement.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-green">
+            <h3>What Makes It Work?</h3>
+            <ul>
+                <li>Clean camera track.</li>
+                <li>Stable placement in 3D space.</li>
+                <li>Correct scale and perspective.</li>
+                <li>Matching light, color, grain, blur, and shadows.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">Before We Shoot: Think Like a VFX Artist</h2>
+    <div class="checklist">
+        <h3>Shot Planning Checklist</h3>
+        <div class="cols">
+            <ul>
+                <li><strong>What is the effect?</strong> Know what you are adding before you shoot.</li>
+                <li><strong>Where does it live?</strong> Floor, wall, table, sign, sidewalk, doorway, sky, screen, or object.</li>
+                <li><strong>What plane are you tracking?</strong> Find a flat surface with texture and visible detail.</li>
+                <li><strong>What blocks it?</strong> Plan foreground objects if you want the composite to pass behind something.</li>
+                <li><strong>What is the camera doing?</strong> Push in, pan, tilt, walk-by, orbit, or handheld move.</li>
+            </ul>
+            <ul>
+                <li><strong>Is there enough detail?</strong> Blank walls and shiny glass are hard to track.</li>
+                <li><strong>Is the lighting readable?</strong> Notice shadow direction, color temperature, and brightness.</li>
+                <li><strong>Is the shot long enough?</strong> Hold the move long enough to get usable seconds.</li>
+                <li><strong>Is it stable enough?</strong> Handheld is fine, but chaotic shaking creates bad tracks.</li>
+                <li><strong>Did you shoot options?</strong> Get extra takes. Bad footage wastes more time than extra footage.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">Field Trip Shooting Rules</h2>
+    <div class="grid-2">
+        <div class="card card-accent-dark">
+            <h3>Phone / iPhone Shooting Basics</h3>
+            <ul>
+                <li><strong>Clean the lens:</strong> Seriously. Do this first.</li>
+                <li><strong>Use 4K if available:</strong> More detail gives the tracker more information.</li>
+                <li><strong>Use 24 or 30 fps:</strong> Keep the frame rate normal and consistent.</li>
+                <li><strong>Lock exposure/focus:</strong> Avoid brightness pulsing while you move.</li>
+                <li><strong>Avoid digital zoom:</strong> Move your body instead.</li>
+                <li><strong>Hold before and after:</strong> Give each shot a few clean seconds at the start and end.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-orange">
+            <h3>Camera Moves That Track Well</h3>
+            <ul>
+                <li><strong>Slow push-in:</strong> Move toward the tracked plane.</li>
+                <li><strong>Sideways slide:</strong> Move parallel to a wall, desk, sidewalk, or sign.</li>
+                <li><strong>Small orbit:</strong> Move slightly around an object or corner.</li>
+                <li><strong>Tilt/reveal:</strong> Reveal a surface with visible detail.</li>
+                <li><strong>Avoid:</strong> fast whip pans, blurry footage, blank walls, reflections, and people crossing the whole frame.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="callout callout-warn">
+        <span class="icon">&#9888;&#65039;</span>
+        <strong class="label">The Tracker Cannot Save Bad Footage</strong>
+        <p>If the footage has no texture, too much motion blur, extreme shakiness, or giant moving objects covering the frame, After Effects will struggle. Shoot for the tracker first. Make the footage interesting second.</p>
+    </div>
+
+    <h2 class="section-header">Good Shot Ideas</h2>
+    <div class="grid-3">
+        <div class="card card-accent">
+            <h3>Easy</h3>
+            <ul>
+                <li>3D text sitting on a table or sidewalk.</li>
+                <li>Animated poster placed on a wall.</li>
+                <li>Logo or graphic attached to a sign.</li>
+                <li>Glowing portal/card/object on a flat surface.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-yellow">
+            <h3>Medium</h3>
+            <ul>
+                <li>3D object on a desk with fake shadow.</li>
+                <li>Animated graffiti tracked onto a wall.</li>
+                <li>Floating UI panel locked to a real surface.</li>
+                <li>Object passes behind a foreground pole/person/door frame using masks.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-red">
+            <h3>Ambitious</h3>
+            <ul>
+                <li>3D model integrated with matching light and shadow.</li>
+                <li>Camera move around an inserted object.</li>
+                <li>Multiple objects on different planes.</li>
+                <li>Scene extension or surreal environmental addition.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">After Effects 3D Camera Tracker Workflow</h2>
+    <div class="grid-5">
+        <div class="pin-card">
+            <strong>1. Import</strong>
+            <small>Bring in footage and make a comp from the clip.</small>
+        </div>
+        <div class="pin-card">
+            <strong>2. Track</strong>
+            <small>Select footage, then Animation &gt; Track Camera.</small>
+        </div>
+        <div class="pin-card">
+            <strong>3. Solve</strong>
+            <small>Wait for AE to analyze and solve the camera.</small>
+        </div>
+        <div class="pin-card">
+            <strong>4. Place</strong>
+            <small>Select good points, create Camera + Null/Solid/Text.</small>
+        </div>
+        <div class="pin-card">
+            <strong>5. Composite</strong>
+            <small>Match color, blur, grain, light, shadow, and occlusion.</small>
+        </div>
+    </div>
+
+    <div class="grid-2">
+        <div class="card card-accent-green">
+            <h3>What to Click in AE</h3>
+            <ul>
+                <li>Select your footage layer.</li>
+                <li>Go to <strong>Animation &gt; Track Camera</strong>.</li>
+                <li>Wait for <strong>Analyzing</strong> and <strong>Solving Camera</strong>.</li>
+                <li>Hover over track points until the red target sits on the correct plane.</li>
+                <li>Right-click and choose <strong>Create Null and Camera</strong>, <strong>Create Text and Camera</strong>, or <strong>Create Solid and Camera</strong>.</li>
+                <li>Parent your graphic/object to the tracked null or replace the created solid.</li>
+            </ul>
+        </div>
+        <div class="card card-accent-purple">
+            <h3>Composite Polish Pass</h3>
+            <ul>
+                <li><strong>Scale:</strong> Does the object feel the correct size?</li>
+                <li><strong>Perspective:</strong> Does it sit on the same plane?</li>
+                <li><strong>Lighting:</strong> Does it match the direction and softness of the real shot?</li>
+                <li><strong>Color:</strong> Does it match the footage temperature and contrast?</li>
+                <li><strong>Blur/grain:</strong> Does it look too sharp or too clean?</li>
+                <li><strong>Occlusion:</strong> Should anything pass in front of it?</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">Tutorials + Support Videos</h2>
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/LAmyH1WaXqc" title="Jake in Motion 3D Tracking Tutorial" allowfullscreen></iframe></div>
+            <p><strong>3D tracking basics:</strong> Quick method for using AE's 3D Camera Tracker and attaching assets to footage.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/fKwTdWAxfg8" title="SternFX Complete Camera Tracking Guide" allowfullscreen></iframe></div>
+            <p><strong>Complete camera tracking guide:</strong> Deeper workflow for camera tracking, placement, and 3D integration.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/YzUa-Kr2ntY" title="Realistic 3D Integration in After Effects" allowfullscreen></iframe></div>
+            <p><strong>Realistic integration:</strong> Lighting, shadows, masking, and making inserted elements feel grounded.</p>
+        </div>
+        <div class="video-card">
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/uMaoISp66NA" title="Adding 3D Objects with After Effects and Blender" allowfullscreen></iframe></div>
+            <p><strong>3D object workflow:</strong> Tracking footage and adding 3D objects with AE/Blender-style VFX thinking.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">Common Problems</h2>
+    <div class="grid-3">
+        <div class="card card-accent-red">
+            <h3>Analysis Solve Failed</h3>
+            <p>The footage may be too blurry, too blank, too shaky, or full of moving subjects. Try Detailed Analysis, trim to the cleanest part, or choose a better shot.</p>
+        </div>
+        <div class="card card-accent-yellow">
+            <h3>Object Slides Around</h3>
+            <p>Your points may not be on the same plane, or the track is weak. Choose a better cluster of points and set the object on a stable surface.</p>
+        </div>
+        <div class="card card-accent">
+            <h3>Object Looks Fake</h3>
+            <p>It may be too sharp, too bright, the wrong color, missing shadow, or not masked behind foreground objects. Composite polish matters.</p>
+        </div>
+    </div>
+
+    <div class="submission">
+        <h3>Week 8 Submission / Progress Standard</h3>
+        <div class="file-format">Intermediate_W8_StudentName_VFXPlanning_YYYYMMDD_v01</div>
+        <p><strong>Deliverable:</strong> Upload your shot plan, selected footage or footage links, and at least one early 3D track/composite test if you have time in class.</p>
+    </div>
+
+    <p style="text-align:center;margin-top:20px;"><a href="intermediate.html">&larr; Intermediate Home</a> &nbsp;&bull;&nbsp; <a href="intermediate-week9.html">Week 9: VFX Production &rarr;</a></p>
+
+    <div class="site-footer">NCAD Motion Design &bull; Intermediate Motion Design Week 8 &bull; Spring 2026</div>
+</div>
+
+</body>
+</html>
