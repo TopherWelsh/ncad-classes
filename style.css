@@ -368,6 +368,12 @@ a:hover { color: #fff; }
   margin: 40px 0 20px;
   font-weight: 700;
 }
+.section-intro {
+  color: #cfcfcf;
+  max-width: 860px;
+  margin: -8px 0 18px;
+  line-height: 1.6;
+}
 
 /* WEEK SCHEDULE TABLE */
 .week-grid {
