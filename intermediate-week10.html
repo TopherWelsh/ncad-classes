@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10: The 12 Principles of UX in Motion - Intermediate Motion Design - NCAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand"><img src="homepage/NCAD-lockup-orange-white.webp" alt="NCAD"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="capstone2.html">Capstone 2</a>
+            <a href="intermediate.html" class="active">Intermediate Motion</a>
+            <a href="capstone1.html">Capstone 1 (IS)</a>
+            <a href="intro-motion.html">Intro Motion (IS)</a>
+        </div>
+    </div>
+</nav>
+
+<div class="page">
+    <div class="hero">
+        <div class="label">Week 10 &bull; UX Motion Design &bull; July 9, 2026</div>
+        <h1 class="gradient-blue">The 12 Principles of UX in Motion</h1>
+        <p>Motion is not only style. In interface design, motion can support usability by clarifying expectation, continuity, narrative, and relationship.</p>
+    </div>
+
+    <div class="resource-row">
+        <a href="https://discord.gg/HESQKd4Nzf" class="resource-btn discord">Discord</a>
+        <a href="https://drive.google.com/drive/folders/1nnjav-DzK0dLBMpy107mKZYyMsQ18I0n?usp=sharing" class="resource-btn drive">Google Drive</a>
+        <a href="https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc" class="resource-btn template">UX in Motion Article</a>
+    </div>
+
+    <div class="goal-box">
+        <h2>Lesson Goal</h2>
+        <p>This week introduces Issara Willenskomer's <strong>12 Principles of UX in Motion</strong> and connects each principle to motion design decisions students can build in After Effects. The goal is not to memorize effect names. The goal is to understand what motion is doing for the user's comprehension.</p>
+    </div>
+
+    <h2 class="section-header">Why UX Motion Is Different</h2>
+    <div class="grid-2">
+        <div class="card card-accent">
+            <h3>Animation Is The Execution</h3>
+            <p>Keyframes, eases, masks, parenting, cameras, and effects are the construction tools. They make motion happen, but they do not automatically make motion useful.</p>
+        </div>
+        <div class="card card-accent-green">
+            <h3>UX Motion Is The Design Reason</h3>
+            <p>UX motion answers the question: what does this movement help the user understand? It can show where something came from, what changed, what matters next, or how objects relate.</p>
+        </div>
+    </div>
+
+    <div class="callout callout-info">
+        <span class="icon">&#128214;</span>
+        <strong class="label">Reading Frame</strong>
+        <p>As you read the article, separate the <strong>principle</strong> from the <strong>technique</strong>. A principle explains why motion supports usability. A technique is one possible visual execution.</p>
+    </div>
+
+    <h2 class="section-header">The Four Usability Jobs</h2>
+    <div class="grid-2">
+        <div class="card card-accent-yellow">
+            <h3>Expectation</h3>
+            <p>Motion should reduce the gap between what the user expects and what the interface does. If a panel behaves like a physical object, its timing should feel believable.</p>
+        </div>
+        <div class="card card-accent-purple">
+            <h3>Continuity</h3>
+            <p>Motion helps the user follow changes within one scene and between scenes. It prevents interface states from feeling like disconnected screenshots.</p>
+        </div>
+        <div class="card card-accent-red">
+            <h3>Narrative</h3>
+            <p>Motion creates a sequence: this happened, then this happened, now this is the result. That sequence helps the user build a mental model.</p>
+        </div>
+        <div class="card card-accent-orange">
+            <h3>Relationship</h3>
+            <p>Motion can show which objects belong together, which object controls another, and which elements are primary, secondary, or background.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">Principle Map</h2>
+    <div class="grid-3">
+        <div class="card card-accent">
+            <h3>Timing</h3>
+            <ul>
+                <li>Easing</li>
+                <li>Offset &amp; Delay</li>
+            </ul>
+        </div>
+        <div class="card card-accent-green">
+            <h3>Object Relationship</h3>
+            <ul>
+                <li>Parenting</li>
+            </ul>
+        </div>
+        <div class="card card-accent-yellow">
+            <h3>Object Continuity</h3>
+            <ul>
+                <li>Transformation</li>
+                <li>Value Change</li>
+                <li>Masking</li>
+                <li>Overlay</li>
+                <li>Cloning</li>
+            </ul>
+        </div>
+        <div class="card card-accent-purple">
+            <h3>Temporal Hierarchy</h3>
+            <ul>
+                <li>Parallax</li>
+            </ul>
+        </div>
+        <div class="card card-accent-red">
+            <h3>Spatial Continuity</h3>
+            <ul>
+                <li>Obscuration</li>
+                <li>Dimensionality</li>
+                <li>Dolly &amp; Zoom</li>
+            </ul>
+        </div>
+        <div class="card card-accent-orange">
+            <h3>After Effects Translation</h3>
+            <ul>
+                <li>Properties</li>
+                <li>Keyframes</li>
+                <li>Graph Editor</li>
+                <li>Parenting</li>
+                <li>Masks and cameras</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">The 12 Principles</h2>
+    <div class="principle-grid">
+        <div class="principle-card card-accent"><strong>1. Easing</strong><p>Object behavior aligns with user expectations when temporal events occur.</p><p><em>AE build:</em> Graph Editor, speed curves, spatial interpolation.</p></div>
+        <div class="principle-card card-accent"><strong>2. Offset &amp; Delay</strong><p>Staggered timing defines relationships and hierarchy when new elements or scenes appear.</p><p><em>AE build:</em> sequenced keyframes, layer offsets, precomp timing.</p></div>
+        <div class="principle-card card-accent-green"><strong>3. Parenting</strong><p>Linked movement creates spatial and temporal relationships between interface objects.</p><p><em>AE build:</em> parent pick whip, null controllers, inverse/delayed movement.</p></div>
+        <div class="principle-card card-accent-yellow"><strong>4. Transformation</strong><p>An object changes utility while maintaining continuity, like a button becoming a progress indicator.</p><p><em>AE build:</em> shape morphs, scale/roundness changes, path animation.</p></div>
+        <div class="principle-card card-accent-yellow"><strong>5. Value Change</strong><p>Numbers, labels, or data change dynamically so the user can follow the meaning of the update.</p><p><em>AE build:</em> text animators, counters, source text keyframes.</p></div>
+        <div class="principle-card card-accent-yellow"><strong>6. Masking</strong><p>Revealing or concealing part of an object creates continuity and clarifies utility.</p><p><em>AE build:</em> masks, track mattes, shape-layer reveals.</p></div>
+        <div class="principle-card card-accent-yellow"><strong>7. Overlay</strong><p>Layered objects use spatial position to show which content sits above, below, in front, or behind.</p><p><em>AE build:</em> stacked layers, opacity, blur, shadow, z-order timing.</p></div>
+        <div class="principle-card card-accent-yellow"><strong>8. Cloning</strong><p>A new object is created from an existing one, giving the user a clear origin story for duplicated content.</p><p><em>AE build:</em> duplicated layers, animated copies, repeater setups.</p></div>
+        <div class="principle-card card-accent-red"><strong>9. Obscuration</strong><p>Background or secondary scenes are partially hidden so the user understands another space exists without losing the current context.</p><p><em>AE build:</em> blur, dimming, translucency, modal overlays.</p></div>
+        <div class="principle-card card-accent-purple"><strong>10. Parallax</strong><p>Different objects move at different rates to establish temporal hierarchy and separate primary content from ambient content.</p><p><em>AE build:</em> layered position keyframes, camera depth, 2.5D space.</p></div>
+        <div class="principle-card card-accent-red"><strong>11. Dimensionality</strong><p>Objects appear to have spatial origin, depth, or physical orientation as they enter, leave, fold, or rotate.</p><p><em>AE build:</em> 3D layers, card flips, fold reveals, camera/null rigs.</p></div>
+        <div class="principle-card card-accent-red"><strong>12. Dolly &amp; Zoom</strong><p>Camera-like movement preserves spatial narrative while moving into, out of, or across interface spaces.</p><p><em>AE build:</em> camera moves, scale transitions, null-controlled zoom systems.</p></div>
+    </div>
+
+    <h2 class="section-header">Class Discussion</h2>
+    <div class="grid-2">
+        <div class="card card-accent">
+            <h3>Principle vs. Decoration</h3>
+            <ul>
+                <li>What does this motion help the user understand?</li>
+                <li>Would the task still be clear if the motion were removed?</li>
+                <li>Is the motion clarifying hierarchy or competing for attention?</li>
+                <li>Does the motion answer a user question?</li>
+            </ul>
+        </div>
+        <div class="card card-accent-green">
+            <h3>AE Planning Questions</h3>
+            <ul>
+                <li>Which AE properties are actually changing?</li>
+                <li>What should happen first, second, and third?</li>
+                <li>Which layers need to be parented, masked, cloned, or placed in depth?</li>
+                <li>What timing curve best communicates the interface behavior?</li>
+            </ul>
+        </div>
+    </div>
+
+    <p style="text-align:center;margin-top:20px;"><a href="intermediate-week9.html">&larr; Week 9</a> &nbsp;&bull;&nbsp; <a href="intermediate.html">Intermediate Home</a> &nbsp;&bull;&nbsp; <a href="intermediate-week11.html">Week 11 Lab &rarr;</a></p>
+    <div class="site-footer">NCAD Motion Design &bull; Intermediate Motion Design &bull; Week 10 &bull; Spring 2026</div>
+</div>
+
+</body>
+</html>
