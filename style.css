@@ -269,6 +269,8 @@ a:hover { color: #fff; }
   border-left: 5px solid #555;
   margin: 14px 0;
   color: var(--ncad-accent-blue);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .submission p { color: #aaa; }
 
@@ -541,4 +543,5 @@ a.class-card:hover {
   .site-nav .nav-inner { gap: 15px; }
   .site-nav .nav-links { gap: 4px; }
   .site-nav .nav-links a { padding: 4px 8px; font-size: 0.8em; }
+  .grid-2 > * { min-width: 100%; }
 }
