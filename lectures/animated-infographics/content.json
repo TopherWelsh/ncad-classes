@@ -1,0 +1,504 @@
+[
+  {
+    "section": "Opening",
+    "title": "Animated Infographics",
+    "lead": "Designing understanding",
+    "items": [
+      "Advanced Motion Design",
+      "Week 1 · September 9, 2026"
+    ],
+    "notes": "Today we will treat an animated infographic as a visual argument: a sequence of design decisions that helps a particular audience understand a relationship. The goal is a focused 15–30 second piece with demo-reel craft. Software comes after the idea.",
+    "prompt": "",
+    "kind": "cover"
+  },
+  {
+    "section": "01 · Meaning",
+    "title": "An animated infographic is a visual argument",
+    "lead": "What should the viewer understand?",
+    "items": [
+      "What matters?",
+      "What relates?",
+      "What changes?",
+      "What does it mean?"
+    ],
+    "notes": "An infographic bridges the distance between an abstract idea and a useful mental model. You choose evidence, establish relationships, build a visual language, and control when the audience encounters each idea. Beauty and entertainment help sustain attention, but the argument still needs to be understandable and supported. Ask students to describe a graphic they remember and what it helped them understand.",
+    "prompt": "What is the actual job of an infographic?",
+    "kind": "statement"
+  },
+  {
+    "section": "01 · Meaning",
+    "title": "The four-stage translation",
+    "lead": "Data → Information → Meaning → Experience",
+    "items": [
+      "24 min / 36 min",
+      "Route B takes 12 min longer",
+      "That is 50% more travel time",
+      "The viewer feels the delay"
+    ],
+    "notes": "Our running example uses invented classroom data: Route A takes 24 minutes and Route B takes 36 minutes over the same illustrative distance. Data is the pair of values. Information is the comparison. Meaning is a 12-minute difference, or 50% longer relative to Route A. Experience is the viewer recognizing or feeling the extra wait. Experience should emerge from evidence; it cannot replace evidence. This is a teaching example, not a claim about real commuters.",
+    "prompt": "Where did we move from a fact to an interpretation?",
+    "kind": "translation"
+  },
+  {
+    "section": "01 · Meaning",
+    "title": "Relationships are the verbs",
+    "lead": "The topic names things. The relationship tells them what to do.",
+    "items": [
+      "Compare · accumulate · transform",
+      "Flow · sequence · contain",
+      "Correlate · cause · feed back"
+    ],
+    "notes": "Comparison establishes relative values. Accumulation adds units. Transformation changes a state or representation. Flow moves something through a system. Sequence orders events. Hierarchy contains or ranks entities. Correlation describes co-variation. Cause and effect asserts a mechanism. Feedback returns an output to influence the system. These require different evidence and different movement. An arrow can imply a causal claim even when the underlying evidence only shows sequence.",
+    "prompt": "Name the verb in “a diagram about money.”",
+    "kind": "standard"
+  },
+  {
+    "section": "01 · Meaning",
+    "title": "Motion directs discovery",
+    "lead": "Space establishes relationships. Time controls the reading order.",
+    "items": [
+      "1  Establish the baseline",
+      "2  Introduce the comparison",
+      "3  Isolate the difference",
+      "4  Hold the takeaway"
+    ],
+    "notes": "Instead of introducing 30 points at once, establish what normal looks like, add the change, guide attention to the relevant category, and allow a comparison. Progressive disclosure reduces the amount a viewer must decode at one moment. Keep context visible while introducing detail. Each reveal must answer the next useful question; hiding the scale to manufacture surprise undermines understanding.",
+    "prompt": "What does the viewer know after each beat?",
+    "kind": "sequence"
+  },
+  {
+    "section": "01 · Meaning",
+    "title": "The comparison needs context",
+    "lead": "Route B takes 12 minutes longer",
+    "items": [
+      "Route A: 24 min",
+      "Route B: 36 min",
+      "Same illustrative distance"
+    ],
+    "notes": "Use the chart to connect the translation framework to actual design. Both bars share a zero baseline and the same unit. The difference is 12 minutes. Relative to Route A, 12 ÷ 24 = 50%. Relative to Route B, the same 12 minutes is one third; the denominator matters. All route values in this lecture are invented for demonstration.",
+    "prompt": "What would “36 minutes” mean without Route A?",
+    "kind": "bar"
+  },
+  {
+    "section": "02 · Visual language",
+    "title": "A visual grammar is a set of rules",
+    "lead": "One property should have one dependable job.",
+    "items": [
+      "Shape identifies an entity",
+      "Color distinguishes a category",
+      "Position or length compares values",
+      "Motion describes the relationship"
+    ],
+    "notes": "A visual grammar lets the audience learn the system once and reuse that knowledge. For the route example: a labeled dot is a traveler, a line is the route, an endpoint is the destination, and the label identifies A or B. Consistent color helps identity, but labels also carry it. A motif is the recurring visual idea; the grammar is the rule set that gives it meaning. Opacity and texture can indicate uncertainty only if their meanings are explained.",
+    "prompt": "If color means category, what happens when it suddenly means danger?",
+    "kind": "standard"
+  },
+  {
+    "section": "02 · Visual language",
+    "title": "Visual variables",
+    "lead": "The encoding should match the question.",
+    "items": [
+      "Position / length → precise comparison",
+      "Area / size → magnitude",
+      "Hue / shape → category",
+      "Lightness / texture → ordered value or uncertainty"
+    ],
+    "notes": "Position along a common scale and length are useful for comparisons. Size can suggest quantity or importance, so specify which. Hue differentiates categories; an ordered light-to-dark scale can communicate magnitude. Shape can distinguish kinds of entities, orientation can convey direction, and texture can communicate density or uncertainty. These are conventions that depend on context and audience. Avoid requiring the audience to decode too many unfamiliar variables at once.",
+    "prompt": "Can the same idea use fewer visual variables?",
+    "kind": "standard"
+  },
+  {
+    "section": "02 · Visual language",
+    "title": "Area scaling changes the claim",
+    "lead": "2× width × 2× height = 4× area",
+    "items": [
+      "To show twice the area:",
+      "Scale each dimension by √2",
+      "Approximately 141%, not 200%"
+    ],
+    "notes": "When area encodes a value, doubling both dimensions quadruples the visible area. To represent a value ratio r, multiply the diameter or side length by the square root of r. A doubling is √2 ≈ 1.414. By contrast, doubling the length of a constant-width bar doubles its area and displayed length. Say whether an object is a quantitative encoding or a qualitative emphasis device.",
+    "prompt": "Which dimension is actually carrying the number?",
+    "kind": "math"
+  },
+  {
+    "section": "02 · Visual language",
+    "title": "Color needs a second cue",
+    "lead": "Category and quantity use different color logic.",
+    "items": [
+      "Category: A, B, C + distinct hues",
+      "Quantity: low → high + ordered lightness",
+      "Identity: color + persistent text label"
+    ],
+    "notes": "Use different hues for unordered categories and a perceptually ordered sequence for increasing values. Add labels, shape, or patterns so meaning does not depend on color alone. Red does not universally mean bad, and green does not universally mean good. Changes in opacity may read as importance or disappearance unless you explicitly define them as uncertainty. Stable labels are especially valuable during motion.",
+    "prompt": "Would this still make sense in grayscale?",
+    "kind": "standard"
+  },
+  {
+    "section": "02 · Visual language",
+    "title": "Symbols, motifs, and abstraction",
+    "lead": "The simplest form that preserves the meaning",
+    "items": [
+      "Photograph → illustration → silhouette",
+      "Icon → circle → dot",
+      "Remove detail; preserve the distinction"
+    ],
+    "notes": "A symbol compresses a concept. A motif repeats a meaningful idea across shots. Abstraction removes detail that is irrelevant to the question. A portrait can support an individual story; a dot can support a population comparison. Do not assume an oil barrel, government building, or warning triangle has a universal meaning. Context determines the interpretation. Repetition should preserve the visual rule instead of simply repeating decoration.",
+    "prompt": "When would a dot erase something essential about a person?",
+    "kind": "standard"
+  },
+  {
+    "section": "02 · Visual language",
+    "title": "Metaphors build mental models",
+    "lead": "The metaphor must preserve the relationship.",
+    "items": [
+      "Container → capacity or proportion",
+      "Journey / flow → process or transfer",
+      "Distance → difference or separation",
+      "Weight / scale → burden or magnitude"
+    ],
+    "notes": "A stadium filling can make capacity tangible, but it also suggests a fixed maximum. A pipe suggests a constrained flow. Distance can suggest inequality but needs a scale if it encodes actual values. Up often means increase; it does not automatically mean improvement. Forward, center, near, and far carry learned spatial associations that vary with context. Analogies such as stadiums or building heights require a verified conversion and stated assumptions.",
+    "prompt": "What extra claim does your metaphor accidentally introduce?",
+    "kind": "standard"
+  },
+  {
+    "section": "02 · Visual language",
+    "title": "One in five, three meanings",
+    "lead": "Illustrative proportion: 20%",
+    "items": [
+      "A  Five equal marks; highlight one",
+      "B  Five rooms; one changes state",
+      "C  Five seats; one becomes empty"
+    ],
+    "notes": "Sketch each version in two minutes and compare interpretations. Equal marks emphasize proportion. Rooms suggest households or spaces, which changes the unit unless that unit is justified. An empty seat may imply absence or loss. Keep the denominator visible and label the unit. Do not attach this invented statistic to a real health or social claim. Discuss how the same numeric proportion can carry very different emotional implications.",
+    "prompt": "Which version changes the meaning of “one”?",
+    "kind": "exercise"
+  },
+  {
+    "section": "03 · Story through time",
+    "title": "A short infographic has an arc",
+    "lead": "Hook → Setup → Explanation → Payoff",
+    "items": [
+      "Question: what are we trying to understand?",
+      "Evidence: what relationship answers it?",
+      "Insight: what should stay with the viewer?"
+    ],
+    "notes": "A longer documentary may include setup, context, question, investigation, complication, reveal, consequence, and resolution. A 15–30 second piece compresses that structure into four beats. Every beat should advance the same focused idea. What is the information? So what makes it matter? Now what should the viewer understand or do? A payoff can be an insight; it does not always need a call to action.",
+    "prompt": "Write the takeaway before designing the first shot.",
+    "kind": "standard"
+  },
+  {
+    "section": "03 · Story through time",
+    "title": "A reveal has a reading order",
+    "lead": "Normal → expectation → exception → meaning",
+    "items": [
+      "Establish the pattern",
+      "Let the exception appear",
+      "Explain the consequence"
+    ],
+    "notes": "Use this invented series to discuss an unexpected change: 10, 11, 10, 11, 24 units across five observations. The final increase is visually distinctive only because the earlier pattern establishes an expectation. The timing of a reveal creates emphasis, but the last point still needs context. A dramatic reveal is not evidence for why the change occurred.",
+    "prompt": "What evidence would you need to explain the jump?",
+    "kind": "line"
+  },
+  {
+    "section": "03 · Story through time",
+    "title": "Comparison keeps its frame",
+    "lead": "Before / after and small multiples need stable references.",
+    "items": [
+      "Same axes and units",
+      "Same framing and baseline",
+      "Same animation clock when comparing change"
+    ],
+    "notes": "Before/after preserves continuity by keeping spatial positions, framing, and key landmarks. Small multiples repeat the same visual structure for different groups so viewers can compare patterns. If each panel uses a different scale or playback rate, apparent differences may be artifacts of the design. When scale changes are necessary, label them explicitly. A number becomes meaningful through a relevant comparison, not through size alone.",
+    "prompt": "What must remain unchanged for this comparison to be fair?",
+    "kind": "standard"
+  },
+  {
+    "section": "03 · Story through time",
+    "title": "Continuity preserves identity",
+    "lead": "The viewer should know what survived the transition.",
+    "items": [
+      "Persistent identity: A remains A",
+      "Visual anchor: the route stays visible",
+      "Match cut: a shape links two ideas",
+      "Morph: a label explains the new meaning"
+    ],
+    "notes": "Object permanence helps viewers track an entity while its position or representation changes. Keep a stable label, color, or route as an anchor. A match cut or morph can link ideas, but a coin becoming a globe may falsely suggest they are the same entity. Distinguish representation change, scale change, spatial regrouping, and semantic change. Give semantic transformations extra context because the meaning, not just the appearance, changes.",
+    "prompt": "Why did this object become that object?",
+    "kind": "standard"
+  },
+  {
+    "section": "03 · Story through time",
+    "title": "The camera communicates logic",
+    "lead": "Framing is part of the explanation.",
+    "items": [
+      "Zoom in → examine a detail",
+      "Zoom out → restore context",
+      "Pan / track → connect or follow",
+      "Focus change → prioritize information"
+    ],
+    "notes": "Camera movement can guide conceptual navigation: region, city, building, room, person. Preserve an orientation cue as you move. In 2D, cropping, scaling, and position can serve the same functions as a camera. An orbit can reveal additional aspects, but gratuitous depth and perspective may interfere with a quantitative comparison. Ask whether a move adds understanding or merely adds spectacle.",
+    "prompt": "What question does this camera move answer?",
+    "kind": "standard"
+  },
+  {
+    "section": "03 · Story through time",
+    "title": "Screening: the visual argument",
+    "lead": "Watch once for meaning. Watch again for the mechanism.",
+    "items": [
+      "What is the claim and who is it for?",
+      "What visual rule holds it together?",
+      "Where does the eye land?",
+      "What does motion explain beyond the words?"
+    ],
+    "notes": "Use instructor-selected clips. Compare data-heavy work, talking-head plus graphics, character-led explanation, typography, and process diagrams. First play a short excerpt without commentary; have students paraphrase the idea. Replay and pause on a specific transition, focal point, or change in timing. Record creator, title, link, and excerpt timecode. The approved curriculum leaves exact screening selections to the instructor; no invented clip list is required.",
+    "prompt": "Pause on one frame. What is the next thing the viewer needs?",
+    "kind": "exercise"
+  },
+  {
+    "section": "04 · Motion as information",
+    "title": "Movement can carry the data",
+    "lead": "The motion itself can be the visualization.",
+    "items": [
+      "Speed → a rate",
+      "Frequency → events per interval",
+      "Direction → flow",
+      "Duration → elapsed time"
+    ],
+    "notes": "Motion can encode quantities instead of decorating a static chart. Define the mapping explicitly. In our equal-distance route example, the traveler taking 36 minutes moves at two thirds the speed of the traveler taking 24 minutes. A longer route and slower speed would be two different explanations; do not change both without evidence. If playback time is compressed, label the conversion. Earthquake magnitude is logarithmic, so a simple shake amplitude is only a qualitative metaphor unless calibrated.",
+    "prompt": "Which visible behavior changes when the value changes?",
+    "kind": "motion"
+  },
+  {
+    "section": "04 · Motion as information",
+    "title": "Typography, counters, and repetition",
+    "lead": "A number can be the main graphic.",
+    "items": [
+      "Scale or weight can emphasize magnitude",
+      "Counters reveal a transition",
+      "Repeated units show a quantity",
+      "Pattern breaks expose an exception"
+    ],
+    "notes": "Large type emphasizes a value but is not automatically a calibrated comparison. A counter that lands at 71% can create anticipation, yet its intermediate values are animation frames, not historical observations. Keep the final value visible long enough to read and avoid bouncy overshoot on a measured total. Repeated marks need a unit key. Isolating one mark while dimming the others can direct attention without deleting the denominator.",
+    "prompt": "Could a viewer mistake the animation for real change over time?",
+    "kind": "standard"
+  },
+  {
+    "section": "04 · Motion as information",
+    "title": "Choreography creates hierarchy",
+    "lead": "Headline → graphic → value → annotation",
+    "items": [
+      "One primary reading task at a time",
+      "A pause after new information",
+      "A stable final state for comparison"
+    ],
+    "notes": "Simultaneous motion competes for attention. Stage arrivals so the viewer can land, read, understand, and reset. Rhythm can accelerate through familiar material and slow down for a new relationship or a key insight. Isolation, contrast, and restrained movement are tools for focus. There is no universal perfect hold duration: test with a first-time viewer, at the actual size and viewing conditions. Provide a static state and respect reduced-motion preferences on interactive versions.",
+    "prompt": "Can you read, interpret, and compare before the next change?",
+    "kind": "standard"
+  },
+  {
+    "section": "04 · Motion as information",
+    "title": "Narration and graphics share the work",
+    "lead": "The voice can explain why while the image shows what.",
+    "items": [
+      "Redundant: voice and screen repeat",
+      "Complementary: each adds useful evidence",
+      "Expansion: the image reveals another layer"
+    ],
+    "notes": "Redundancy can support a crucial number, vocabulary, or captions; it is not inherently wrong. The problem is making the audience read a paragraph while hearing different words. Complementary audio and graphics divide the explanation thoughtfully. Sound design can reinforce events, while sonification maps values to pitch, pulse frequency, or sound density. Label and keep that mapping stable. Do not rely on sound alone to communicate required information.",
+    "prompt": "What is lost when the sound is muted?",
+    "kind": "standard"
+  },
+  {
+    "section": "04 · Motion as information",
+    "title": "The PowerPoint test",
+    "lead": "What does the movement mean?",
+    "items": [
+      "Does a transition explain a relationship?",
+      "Does timing change the reading order?",
+      "Can an object remain in one visual world?"
+    ],
+    "notes": "The critique is about the student’s animated film, not a ban on lecture slides. If a film works equally well as six independent title cards with generic fades, look for an explanation that only motion can provide. In a repair exercise, replace unrelated entrances with a persistent entity moving through a process, or turn two separate value cards into a shared comparison. A deliberate hold can be more useful than constant movement.",
+    "prompt": "Repair a weak 10-second sequence with one meaningful transition.",
+    "kind": "exercise"
+  },
+  {
+    "section": "05 · Models and integrity",
+    "title": "Charts have different jobs",
+    "lead": "The relationship determines the chart.",
+    "items": [
+      "Bars → compare quantities",
+      "Lines / areas → change over time",
+      "Donut / pie → parts of one whole",
+      "Scatter → relationship between variables"
+    ],
+    "notes": "Bars usually need a zero baseline because their lengths encode magnitude. Lines emphasize change and can use a narrower labeled axis when that serves the question. Areas encode filled magnitude, so their baseline needs care. Pie and donut charts show parts of a common whole; avoid too many small slices. Scatter plots show relationships, not proof of causation. Maps answer geographic questions; use one when location matters.",
+    "prompt": "What relationship would this chart make harder to see?",
+    "kind": "chartjobs"
+  },
+  {
+    "section": "05 · Models and integrity",
+    "title": "Processes are systems",
+    "lead": "Entities + relationships + rules + change",
+    "items": [
+      "Timeline → sequence",
+      "Tree → hierarchy",
+      "Network → connections",
+      "Sankey → proportional flow"
+    ],
+    "notes": "A timeline places events in time; a tree organizes containment or branching; a network shows connections; a Sankey uses band width to represent flow quantity. Ask what exists, what flows, what changes, what stays fixed, and where feedback returns. For a measured flow, labels and totals must agree. Animate the behavior of the system instead of giving every object an unrelated entrance.",
+    "prompt": "What enters the system, and where can it leave?",
+    "kind": "standard"
+  },
+  {
+    "section": "05 · Models and integrity",
+    "title": "A baseline can exaggerate a difference",
+    "lead": "98 and 100 are only two units apart.",
+    "items": [
+      "Bar lengths should represent the values",
+      "A cropped axis amplifies the visual gap",
+      "Context belongs beside the comparison"
+    ],
+    "notes": "The example values are invented. With a zero baseline, 98 and 100 are close. With a baseline at 95, the visible bar lengths become 3 and 5; the second looks roughly 67% longer even though 100 is only about 2% above 98. This is why a zero baseline is normally appropriate for bar charts. Non-zero line-chart axes may be useful if clearly labeled and chosen to answer the question honestly.",
+    "prompt": "How would your emotional reaction change with the baseline?",
+    "kind": "ethics"
+  },
+  {
+    "section": "05 · Models and integrity",
+    "title": "Sequence is not proof of cause",
+    "lead": "A → B can become a claim the evidence never made.",
+    "items": [
+      "Timing suggests connection",
+      "Arrows suggest mechanisms",
+      "Camera and sound add emphasis",
+      "Sources must support the implied claim"
+    ],
+    "notes": "Viewers can read sequential events as causally connected. A factory, emissions, atmosphere, and rising temperature may imply a specific causal chain; the source needs to support that chain and its scope. Two variables moving together establish neither direction nor causation by themselves. Clarify uncertainty, missing data, denominators, time windows, and fair comparisons. Timing and selective holds can mislead even when every printed number is correct.",
+    "prompt": "What claim is the animation making without any text?",
+    "kind": "standard"
+  },
+  {
+    "section": "05 · Models and integrity",
+    "title": "Every element has a job",
+    "lead": "Clarity, emotion, and engagement can coexist.",
+    "items": [
+      "Remove clutter that obscures evidence",
+      "Keep units, labels, and source context",
+      "Use emphasis in proportion to the claim",
+      "Credit data and third-party assets"
+    ],
+    "notes": "Data-ink ratio is a useful lens associated with Edward Tufte: consider how much of the visible design communicates relevant information. Chartjunk describes additions that distract or distort, such as perspective that changes perceived bar lengths. It is not a requirement to eliminate all beauty or emotion. Decorative gradients, shadows, textures, and particles deserve scrutiny when they compete with the evidence. Label fictional, estimated, missing, or uncertain values honestly.",
+    "prompt": "What could disappear without losing meaning?",
+    "kind": "standard"
+  },
+  {
+    "section": "06 · Studio practice",
+    "title": "Concept before keyframes",
+    "lead": "A small system is easier to test and refine.",
+    "items": [
+      "Idea → relationship → visual model",
+      "Grammar → hierarchy → reveal",
+      "Animate → test → revise"
+    ],
+    "notes": "Write a one-sentence promise to a defined audience. Choose the relationship and an appropriate chart, map, process, or metaphor. Decide which visual variables carry meaning and how the eye moves through the composition. Design what the viewer knows at each beat before building the animation. The four levels are a useful critique ladder: an animated graphic, a guided visualization, a visual explanation, and a visual argument. These are teaching categories, not a formal industry rating.",
+    "prompt": "What will a first-time viewer be able to explain afterward?",
+    "kind": "standard"
+  },
+  {
+    "section": "06 · Studio practice",
+    "title": "After Effects: concepts into controls",
+    "lead": "A controller can keep the graphic and its label in agreement.",
+    "items": [
+      "Growth → scale / paths / expressions",
+      "Flow → path animation / repeaters",
+      "Reveal → masks / mattes / sequencing",
+      "Systems → parenting / shared controllers"
+    ],
+    "notes": "Connect techniques students already know to the information task. Networks can use shape paths and nulls; maps can use masks and camera navigation; counters can use Slider Control and a Source Text expression. Imported JSON, CSV, or TSV can drive properties through expressions. When one value controls both a chart and its label, revisions are easier to keep consistent. Use procedural rules for repeated entities: value sets size, category sets position, status sets color, and index sets delay. Check anchor points and whether size refers to length or area. Adobe references: https://helpx.adobe.com/after-effects/desktop/animate-in-after-effects/data-driven-animation/data-driven-animations.html and https://helpx.adobe.com/after-effects/desktop/work-with-expressions/expression-controls/expression-controls.html.",
+    "prompt": "What should update automatically when the data changes?",
+    "kind": "standard"
+  },
+  {
+    "section": "06 · Studio practice",
+    "title": "A 24-second explanation",
+    "lead": "A storyboard for the route comparison",
+    "items": [
+      "0–3 s   Hook: same trip, different wait",
+      "3–7 s   Setup: routes and labels",
+      "7–18 s  Explanation: shared playback clock",
+      "18–24 s Payoff: +12 min, then hold"
+    ],
+    "notes": "This is an illustrative timing plan, not a required template. Establish that the distance is the same. Use an explicit compressed clock for the demonstration so A reaches the destination before B. Keep A at the endpoint while B finishes. End with both values and the 12-minute difference. The audience should be able to track identity, compare duration, and state the insight after one viewing. Allow the final hold to adjust based on a real clarity test.",
+    "prompt": "What would you cut if this had to fit 15 seconds?",
+    "kind": "sequence"
+  },
+  {
+    "section": "06 · Studio practice",
+    "title": "Project 1: explain one thing",
+    "lead": "15–30 seconds. Clear enough to understand; polished enough for a reel.",
+    "items": [
+      "One focused idea and a defined audience",
+      "A deliberate motif and readable progression",
+      "Any coherent mix of techniques",
+      "Landscape, square, or portrait"
+    ],
+    "notes": "This matches the approved assignment. Students may use 2D, 3D, typography, characters, data, diagrams, collage, talking-head footage, live action, or hybrids. Judge technique by its role in the message. Required technical consistency includes a deliberate frame rate and suitable resolution: landscape 1920 × 1080, square 1080 × 1080, or portrait 1080 × 1920. Exact codec, filename, and submission destination should follow the instructor’s instructions. No new grading weights or hard quantities have been introduced.",
+    "prompt": "What makes this idea worth 15–30 seconds of attention?",
+    "kind": "standard"
+  },
+  {
+    "section": "06 · Studio practice",
+    "title": "Concept sprint",
+    "lead": "One idea, four beats, one visual rule",
+    "items": [
+      "0–5 min   Generate possible topics",
+      "5–10 min  Write the viewer promise",
+      "10–20 min Sketch four story beats",
+      "20–30 min Define motif + first test"
+    ],
+    "notes": "This 30-minute sprint is an adaptable in-class exercise. Choose a simple, funny, useful, or surprising concept. If it relies on factual claims, identify a source before polishing the metaphor. Sketch entities and relationships, define what color, shape, and motion mean, then choose the riskiest assumption to test with a styleframe or motion test. The supplied lecture also suggests a no-text visualization challenge; use an explicitly hypothetical food-waste quantity if no verified statistic is available.",
+    "prompt": "My video explains ____. My motif helps because ____.",
+    "kind": "exercise"
+  },
+  {
+    "section": "06 · Studio practice",
+    "title": "Week 1 checkpoint",
+    "lead": "An idea ready for production",
+    "items": [
+      "Concept, audience, format, source notes",
+      "Four beats and a storyboard / animatic plan",
+      "Reference board and motif direction",
+      "At least one styleframe or initial motion test"
+    ],
+    "notes": "Check that the promise is focused, the chosen format serves the viewing context, and any factual claims are traceable. The reference board should explain what the student learned from each reference instead of simply collecting visual styles. The storyboard should show where attention moves and why each transition occurs. Use the initial frame or motion test to expose a clarity problem early, before full production.",
+    "prompt": "Which part of your visual system is least proven?",
+    "kind": "standard"
+  },
+  {
+    "section": "06 · Studio practice",
+    "title": "Week 2: clarity test and completion",
+    "lead": "A first-time viewer is the best test of the explanation.",
+    "items": [
+      "Play once without a preamble",
+      "Ask the viewer to state the main idea",
+      "Find the moment of confusion",
+      "Revise and package the final work"
+    ],
+    "notes": "Week 2 is the production, critique, revision, and completion phase. Final package: a finished 15–30 second video; process board or PDF showing concept, motif, storyboard, and styleframe; source and credit list; source project with linked assets; and a short reflection on what the motion helps the viewer understand. Confirm final submission details with the instructor. Ask the test viewer what happened, what the comparison meant, and where they lost the thread.",
+    "prompt": "Did they understand what you intended—or something else?",
+    "kind": "standard"
+  },
+  {
+    "section": "Closing",
+    "title": "What does the movement mean?",
+    "lead": "Use movement to make information understandable.",
+    "items": [
+      "Name the relationship",
+      "Explain the motion choice",
+      "Check the evidence",
+      "Test the understanding"
+    ],
+    "notes": "Return to the opening question. A circle is not just moving: an entity is passing through a system. A bar is not just growing: a quantity is changing. The value of the animation lies in what a viewer can understand because of it. Exit prompt: name one movement in your planned film, the relationship it represents, and how you will test whether that relationship is clear.",
+    "prompt": "",
+    "kind": "closing"
+  }
+]
